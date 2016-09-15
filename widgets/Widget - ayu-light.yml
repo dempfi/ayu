@@ -1,0 +1,45 @@
+# [PackageDev] target_format: plist, ext: stTheme
+---
+
+name: Ayu
+author: Ike Ku
+colorSpaceName: sRGB
+semanticClass: ayu.light
+
+settings:
+
+- settings:
+    background: &bg '#F7F9FA'
+    caret: '#E62E2E'
+    foreground: &fg '#5C6773'
+    inactiveSelection: &in_selection '#F2F2EB'
+    invisibles: '#343434'
+    lineHighlight: '#F2F2F2'
+    selection: &selection '#F0EEE4'
+    selectionBorder: *selection
+
+- name: Comments
+  scope: comment
+  settings:
+    fontStyle: italic
+    foreground: &comment '#ABB0B6'
+
+- name: Keyword
+  scope: keyword, storage
+  settings:
+    foreground: &keyword '#F2590C'
+
+- name: Constant
+  scope: constant
+  settings:
+    foreground: &constant '#A37ACC'
+
+- name: String
+  scope: string
+  settings:
+    foreground: &string '#86B300'
+
+- name: Escape
+  scope: constant.character.escape
+  settings:
+    foreground: &regexp '#4DBF99'
