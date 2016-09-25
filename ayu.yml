@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 ---
 
-name: Ayu
+name: ayu
 author: Ike Ku
 uuid: 0e709986-46a0-40a0-b3bf-c8dfe525c455
 colorSpaceName: sRGB
@@ -11,21 +11,53 @@ settings:
 
 - settings:
     activeGuide: '#314559'
-    background: &bg '#0F161C'
+    background: &bg '#0F1419'
     caret: '#F29718'
     findHighlight: &constant '#FFE792'
     findHighlightForeground: '#00000050'
-    foreground: &fg '#F2EDDA'
+    foreground: &fg '#E6E1CF'
     guide: '#2D3640'
     gutter: *bg
     gutterForeground: &selection '#253340'
     inactiveSelection: &in_selection '#1E2A35'
     invisibles: '#343434'
-    lineHighlight: '#0d1319'
+    lineHighlight: '#151A1F'
     selection: *selection
     selectionBorder: *selection
     shadow: '#00000010'
     stackGuide: *in_selection
+    popupCss: |
+        html, body {
+          background-color: #14191F;
+          font-size: 12px;
+          color: #E6E1CF;
+          padding: 0;
+        }
+        body {
+          padding: 5px;
+        }
+        div {
+          padding-bottom: -3px;
+        }
+        b, strong {
+          font-weight: normal;
+        }
+        a {
+          color: rgba(54, 163, 217, .7);
+          line-height: 16px;
+        }
+        .type {
+          color: #F07178;
+        }
+        .name {
+          color: #FFB454;
+        }
+        .param {
+          color: #FFEE99;
+        }
+        .current {
+          text-decoration: underline;
+        }
 
 - name: Comments
   scope: comment, punctuation.definition.comment

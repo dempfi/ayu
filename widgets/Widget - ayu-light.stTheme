@@ -9,16 +9,16 @@
 	<key>name</key>
 	<string>ayu</string>
 	<key>semanticClass</key>
-	<string>ayu.dark</string>
+	<string>ayu.light</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#F7F9FA</string>
+				<string>#FFFFFF</string>
 				<key>caret</key>
-				<string>#E62E2E</string>
+				<string>#FF6A00</string>
 				<key>foreground</key>
 				<string>#5C6773</string>
 				<key>inactiveSelection</key>
