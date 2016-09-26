@@ -1,7 +1,7 @@
 # [PackageDev] target_format: plist, ext: stTheme
 ---
 
-name: Ayu
+name: ayu
 author: Ike Ku
 colorSpaceName: sRGB
 semanticClass: ayu.light
@@ -9,8 +9,8 @@ semanticClass: ayu.light
 settings:
 
 - settings:
-    background: &bg '#F7F9FA'
-    caret: '#E62E2E'
+    background: &bg '#FFFFFF'
+    caret: '#FF6A00'
     foreground: &fg '#5C6773'
     inactiveSelection: &in_selection '#F2F2EB'
     invisibles: '#343434'

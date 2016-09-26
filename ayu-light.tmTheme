@@ -20,7 +20,7 @@
 				<key>background</key>
 				<string>#FAFAFA</string>
 				<key>caret</key>
-				<string>#E62E2E</string>
+				<string>#FF6A00</string>
 				<key>findHighlight</key>
 				<string>#A37ACC</string>
 				<key>findHighlightForeground</key>
@@ -41,6 +41,38 @@
 				<string>#FF0000</string>
 				<key>lineHighlight</key>
 				<string>#F2F2F2</string>
+				<key>popupCss</key>
+				<string>html, body {
+  background-color: #FFFFFF;
+  padding: 0;
+  color: #5C6773;
+}
+body {
+  padding: 5px;
+}
+div {
+  padding-bottom: -3px;
+}
+b, strong {
+  font-weight: normal;
+}
+a {
+  color: rgba(65, 166, 217, .7);
+  line-height: 16px;
+}
+.type {
+  color: #F07178;
+}
+.name {
+  color: #CCA37A;
+}
+.param {
+  color: #F29718;
+}
+.current {
+  text-decoration: underline;
+}
+</string>
 				<key>selection</key>
 				<string>#F0EEE4</string>
 				<key>selectionBorder</key>
