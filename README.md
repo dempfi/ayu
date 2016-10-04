@@ -18,8 +18,8 @@ Dark with `ui_separators` option off
 # Settings
 
 ```json
-"ui_separator":       "true" // separators between panels
-"ui_font_size_small": "true" // smaller UI font size(sidebar, statusbar etc)
+"ui_separator":       true // separators between panels
+"ui_font_size_small": true // smaller UI font size(sidebar, statusbar etc)
 ```
 
 # Installation
