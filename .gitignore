@@ -5,3 +5,6 @@
 
 # Thumbnails
 ._*
+
+*.cache
+*.pyc

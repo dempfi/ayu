@@ -527,7 +527,7 @@
 
   {
     "class": "sidebar_tree",
-    "row_padding": [20, 6],
+    "row_padding": [30, 6],
     "indent": 12,
     "indent_offset": 0,
     "indent_top_level": false,
@@ -620,146 +620,17 @@
     "font.italic": false
   },
 
-  // File icons and folder
-
-  {
-    "class": "icon_file_type",
-  // layer0.texture is filled in by code with the relevant icon name
-    "layer0.opacity": 0.6,
-    "layer0.inner_margin": [0, 2, 0, -2],
-    "content_margin": [9, 9]
-  },
-  {
-    "class": "icon_file_type",
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "layer0.opacity": 1
-  },
-  {
-    "class": "icon_file_type",
-    "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-    "layer0.opacity": 1
-  },
-
-  // Secondary folder icon (original) used as main folder icon
-
-  {
-    "class": "icon_folder",
-    "content_margin": [9, 9],
-    "layer0.tint": [15, 20, 25],
-    "layer0.opacity": 0,
-    "layer1.texture": "ayu/assets/dark/folder.png",
-    "layer1.opacity": 1,
-    "layer2.texture": "ayu/assets/dark/folder--hover.png",
-    "layer2.opacity": 0.0,
-    "layer3.texture": "ayu/assets/dark/folder_opened.png",
-    "layer3.opacity": 0.0
-  },
-
-  {
-    "class": "icon_folder",
-    "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-    "layer1.opacity": 0.0,
-    "layer2.opacity": 0.0,
-    "layer3.opacity": 1.0
-  },
-
-  {
-    "class": "icon_folder",
-    "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-    "layer1.opacity": 0.0,
-    "layer2.opacity": 1.0,
-    "layer3.opacity": 0.0
-  },
-
-  {
-    "class": "icon_folder",
-    "parents": [{ "class": "tree_row", "attributes": ["expanded", "hover"] }],
-    "layer3.texture": {
-      "keyframes": [
-        "ayu/assets/dark/folder_opened--hover-0.png",
-        "ayu/assets/dark/folder_opened--hover-1.png",
-        "ayu/assets/dark/folder_opened--hover-2.png",
-        "ayu/assets/dark/folder_opened--hover-3.png",
-        "ayu/assets/dark/folder_opened--hover-4.png",
-        "ayu/assets/dark/folder_opened--hover-5.png",
-        "ayu/assets/dark/folder_opened--hover-5.png",
-        "ayu/assets/dark/folder_opened--hover-5.png",
-        "ayu/assets/dark/folder_opened--hover-6.png",
-        "ayu/assets/dark/folder_opened--hover-6.png",
-        "ayu/assets/dark/folder_opened--hover-6.png",
-        "ayu/assets/dark/folder_opened--hover-6.png",
-        "ayu/assets/dark/folder_opened--hover-7.png"
-      ],
-      "loop": false,
-      "frame_time": 0.020
-    },
-    "layer1.opacity": 0.0,
-    "layer2.opacity": 0.0,
-    "layer3.opacity": 1.0
-  },
-
-  {
-    "class": "icon_folder",
-    "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-    "layer1.texture": "ayu/assets/dark/folder--hover.png"
-  },
-
-  {
-    "class": "icon_folder_loading",
-    "layer1.texture": {
-      "keyframes": [
-        "ayu/assets/dark/spinner11.png",
-        "ayu/assets/dark/spinner10.png",
-        "ayu/assets/dark/spinner9.png",
-        "ayu/assets/dark/spinner8.png",
-        "ayu/assets/dark/spinner7.png",
-        "ayu/assets/dark/spinner6.png",
-        "ayu/assets/dark/spinner5.png",
-        "ayu/assets/dark/spinner4.png",
-        "ayu/assets/dark/spinner3.png",
-        "ayu/assets/dark/spinner2.png",
-        "ayu/assets/dark/spinner1.png",
-        "ayu/assets/dark/spinner.png"
-      ],
-      "loop": true,
-      "frame_time": 0.075
-    },
-
-    "layer0.opacity": 0.0,
-    "content_margin": [8, 8]
-  },
-
-  // Symlink folder icon
-  {
-    "class": "icon_folder_dup",
-    "layer0.texture": "ayu/assets/dark/symlink_folder.png",
-    "layer0.opacity": 1.0,
-    "content_margin": [9, 9]
-  },
-
-  {
-    "class": "icon_folder_dup",
-    "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
-    "layer0.texture": "ayu/assets/dark/symlink_folder--hover.png"
-  },
-
-  {
-    "class": "icon_folder_dup",
-    "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
-    "layer0.texture": "ayu/assets/dark/symlink_folder--hover.png"
-  },
-
   // Hidden arrow icon before folder
 
   {
     "class": "disclosure_button_control",
-    "layer0.texture": "ayu/assets/dark/folder.png",
+    "layer0.texture": "ayu/assets/dark/arrow_right.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": 0,
-    "layer1.texture": "ayu/assets/dark/folder--hover.png",
+    "layer1.texture": "ayu/assets/dark/arrow_right--hover.png",
     "layer1.opacity": 0.0,
     "layer1.inner_margin": 0,
-    "content_margin": [0, 0, 0, 0]
+    "content_margin": [12, 15]
   },
 
   {
@@ -772,7 +643,18 @@
   {
     "class": "disclosure_button_control",
     "attributes": ["expanded"],
-    "layer0.texture": "ayu/assets/dark/folder_opened.png"
+    "layer0.texture": "ayu/assets/dark/overflow_menu--hover.png",
+    "content_margin": [12, 12]
+  },
+
+  {
+    "class": "disclosure_button_control",
+    "attributes": ["expanded"],
+    "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
+    "layer1.texture": "ayu/assets/dark/overflow_menu--hover.png",
+    "layer0.opacity": 0.0,
+    "layer1.opacity": 1.0,
+    "content_margin": [12, 12]
   },
 
   // Opened files
@@ -952,22 +834,13 @@
   {
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
-    "viewport_color": [100, 100, 100],
-    "viewport_opacity": 0.2
+    "viewport_color": [100, 100, 100, 30]
   },
 
   {
     "class": "minimap_control",
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_color": [100, 100, 100],
-    "viewport_opacity": { "target": 0, "speed": 4.0, "interpolation": "smoothstep" }
-  },
-
-  {
-    "class": "minimap_control",
-    "attributes": ["hover"],
-    "settings": ["!always_show_minimap_viewport"],
-    "viewport_opacity": { "target": 0.2, "speed": 20.0, "interpolation": "smoothstep" }
+    "viewport_color": [100, 100, 100, 20]
   },
 
 
@@ -1005,7 +878,7 @@
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/dark/separator_top.png",
     "layer1.inner_margin": [1, 2, 1, 0],
-    "content_margin": [10, 0]
+    "content_margin": [10, 5]
   },
   {
     "class": "status_bar",
