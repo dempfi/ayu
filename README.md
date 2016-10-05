@@ -53,7 +53,7 @@ For light theme:
 ## Sublime Text 2
 Add this lines to your user settings *Preferences > Setting - User*:
 
-_Sublime Text 2 version may have some glitches, if you notice something, please file and issue._
+_Sublime Text 2 version may have some glitches, if you notice something, please file an issue._
 
 For dark theme:
 ```json
