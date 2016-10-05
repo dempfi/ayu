@@ -282,7 +282,7 @@
     "content_margin": [0, 0, 0, 0],
     "layer1.opacity": 0.3,
     "layer1.texture": "ayu/assets/dark/separator_bottom.png",
-    "layer1.inner_margin": [0, 1]
+    "layer1.inner_margin": [1, 0, 1, 2]
   },
 
   // Tabs
@@ -295,7 +295,7 @@
     "layer1.texture": "",
 
     "layer2.texture": "ayu/assets/dark/tab_active.png",
-    "layer2.inner_margin": [0, 3, 0, 1],
+    "layer2.inner_margin": [1, 4, 1, 1],
     "layer2.opacity": 0.0,
 
     "layer3.texture": "",
@@ -308,11 +308,11 @@
     "settings": ["ui_separator"],
 
     "layer1.texture": "ayu/assets/dark/separator_right.png",
-    "layer1.inner_margin": [1, 1],
+    "layer1.inner_margin": [0, 1, 2, 1],
     "layer1.opacity": 0.3,
 
     "layer3.texture": "ayu/assets/dark/separator_bottom.png",
-    "layer3.inner_margin": [1, 1],
+    "layer3.inner_margin": [1, 0, 1, 2],
     "layer3.opacity": 0.3
   },
 
@@ -400,7 +400,7 @@
     "settings": ["show_tab_close_buttons"],
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
     "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 1, // Close Icon Hover
+    "layer1.opacity": 1 // Close Icon Hover
   },
   // Default hover
   {
@@ -408,7 +408,7 @@
     "settings": ["show_tab_close_buttons"],
     "attributes": ["hover"],
     "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 1, // Close Icon Hover
+    "layer1.opacity": 1 // Close Icon Hover
   },
   // Dirty tab
   {
@@ -479,7 +479,7 @@
     "settings": ["ui_separator"],
     "layer2.texture": "ayu/assets/dark/separator_right.png",
     "layer2.opacity": 0.3,
-    "layer2.inner_margin": [0, 0, 1, 0]
+    "layer2.inner_margin": [0, 1, 2, 1]
   },
 
   {
@@ -521,7 +521,7 @@
     "settings": ["ui_separator"],
     "content_margin": [0, -10, 0, 0],
     "layer1.texture": "ayu/assets/dark/separator_right.png",
-    "layer1.inner_margin": [0, 0, 1, 0],
+    "layer1.inner_margin": [0, 1, 2, 1],
     "layer1.opacity": 0.3
   },
 
@@ -536,14 +536,14 @@
 
   {
     "class": "sidebar_heading",
-    "color": [0,0,0,0]
+    "color": [0, 0, 0, 0]
   },
 
   {
     "class": "tree_row",
     "layer1.texture": "ayu/assets/dark/tree_highlight.png",
     "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-    "layer1.inner_margin": [20, 8, 0, 0]
+    "layer1.inner_margin": [5, 0, 0, 0]
   },
 
   {
@@ -688,10 +688,10 @@
         "ayu/assets/dark/folder_opened--hover-6.png",
         "ayu/assets/dark/folder_opened--hover-6.png",
         "ayu/assets/dark/folder_opened--hover-6.png",
-        "ayu/assets/dark/folder_opened--hover-7.png",
+        "ayu/assets/dark/folder_opened--hover-7.png"
       ],
       "loop": false,
-      "frame_time": 0.020,
+      "frame_time": 0.020
     },
     "layer1.opacity": 0.0,
     "layer2.opacity": 0.0,
@@ -719,10 +719,10 @@
         "ayu/assets/dark/spinner3.png",
         "ayu/assets/dark/spinner2.png",
         "ayu/assets/dark/spinner1.png",
-        "ayu/assets/dark/spinner.png",
+        "ayu/assets/dark/spinner.png"
       ],
       "loop": true,
-      "frame_time": 0.075,
+      "frame_time": 0.075
     },
 
     "layer0.opacity": 0.0,
@@ -773,19 +773,6 @@
     "class": "disclosure_button_control",
     "attributes": ["expanded"],
     "layer0.texture": "ayu/assets/dark/folder_opened.png"
-  },
-
-  {
-    "class": "tree_row",
-    "layer0.texture": "ayu/assets/dark/tree_highlight.png",
-    "layer0.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-    "layer0.inner_margin": [22, 8, 0, 0]
-  },
-
-  {
-    "class": "tree_row",
-    "attributes": ["selected"],
-    "layer0.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" }
   },
 
   // Opened files
@@ -1017,13 +1004,13 @@
     "layer0.tint": [15, 20, 25],
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/dark/separator_top.png",
-    "layer1.inner_margin": [0, 1, 0, 0],
+    "layer1.inner_margin": [1, 2, 1, 0],
     "content_margin": [10, 0]
   },
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
-    "layer0.tint": [20, 25, 31],
+    "layer0.tint": [20, 25, 31]
     // "layer1.opacity": 0.2
   },
 
@@ -1055,7 +1042,7 @@
     "settings": ["ui_separator"],
     "layer0.tint": [20, 25, 31],
     "layer1.texture": "ayu/assets/dark/separator_top.png",
-    "layer1.inner_margin": [0, 1, 0, 0],
+    "layer1.inner_margin": [1, 2, 1, 0],
     "layer1.opacity": 0.3
   },
 
@@ -1253,7 +1240,6 @@
     "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
     "content_margin": [12, 12]
   },
-
 
   {
     "class": "icon_in_selection",
