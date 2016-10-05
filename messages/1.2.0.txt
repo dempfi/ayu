@@ -1,0 +1,10 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 1.2.0
+********************************************************************************
+
+Changes:
+
+  * Fix UI contrast in dark theme
+  * Full support for Sublime Text 2
