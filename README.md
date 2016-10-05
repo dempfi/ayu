@@ -1,4 +1,4 @@
-![ayu](http://i.imgur.com/0CLI3DH.png)
+![ayu](http://i.imgur.com/h56iGcG.png)
 
 `ayu` is a simple theme with bright colors and comes in two versions — *dark* and *light* for all day long comfortable work.
 
@@ -35,6 +35,7 @@ You can install `ayu` via [Package Control](https://packagecontrol.io/).
 2. Move the directory inside your sublime `/Packages` directory. *(Preferences > Browse packages...)*
 
 # Activation
+## Sublime Text 3
 Add this lines to your user settings *Preferences > Setting - User*:
 
 For dark theme:
@@ -49,4 +50,22 @@ For light theme:
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
 ```
 
+## Sublime Text 2
+Add this lines to your user settings *Preferences > Setting - User*:
+
+_Sublime Text 2 version may have some glitches, if you notice something, please file and issue._
+
+For dark theme:
+```json
+"theme": "ayu2.sublime-theme",
+"color_scheme": "Packages/ayu/ayu.tmTheme",
+```
+
+For light theme:
+```json
+"theme": "ayu-light2.sublime-theme",
+"color_scheme": "Packages/ayu/ayu-light.tmTheme",
+```
+
 **NOTE:** Restart Sublime Text after activation of the theme to avoid any glitches.
+
