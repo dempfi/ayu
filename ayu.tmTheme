@@ -40,18 +40,15 @@
 				<key>lineHighlight</key>
 				<string>#151A1F</string>
 				<key>popupCss</key>
-				<string>html, body {
+				<string>html {
   background-color: #14191F;
-  font-size: 12px;
-  color: #E6E1CF;
   padding: 0;
+  color: #E6E1CF;
 }
 body {
-  padding: 5px;
+  padding: 10px
 }
-div {
-  padding-bottom: -3px;
-}
+
 b, strong {
   font-weight: normal;
 }
@@ -785,7 +782,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF3333</string>
+				<string>#36A3D9</string>
 			</dict>
 		</dict>
 		<dict>
