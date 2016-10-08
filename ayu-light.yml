@@ -388,7 +388,7 @@ settings:
 - name: SublimeLinter Error
   scope: sublimelinter.mark.error
   settings:
-    foreground: *tag
+    foreground: *error
 
 # GitGutter
 - name: GitGutter Ignored

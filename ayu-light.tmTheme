@@ -44,8 +44,9 @@
 				<key>popupCss</key>
 				<string>html, body {
   background-color: #FFFFFF;
-  padding: 0;
+  font-size: 12px;
   color: #5C6773;
+  padding: 0;
 }
 body {
   padding: 5px;
@@ -786,7 +787,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#41A6D9</string>
+				<string>#FF3333</string>
 			</dict>
 		</dict>
 		<dict>
