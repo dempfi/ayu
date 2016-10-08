@@ -300,7 +300,7 @@
 
     "layer3.texture": "",
 
-    "content_margin": [10, 0],
+    "content_margin": [10, -2, 10, 0],
     "max_margin_trim": 12
   },
   {
@@ -342,9 +342,9 @@
 
   {
     "class": "tab_label",
-    "fg": [130, 142, 153, 0],
-    "shadow_color": [130, 142, 153],
-    "shadow_offset": [0, -2],
+    "fg": [130, 142, 153],
+    "shadow_color": [0, 0, 0, 0],
+    "shadow_offset": [0, 0],
     "font.size": 12,
     "font.italic": false,
     "font.bold": false,
@@ -356,9 +356,9 @@
   {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": [71, 80, 89, 0],
-    "shadow_color": [71, 80, 89],
-    "shadow_offset": [0, -2]
+    "fg": [71, 80, 89],
+    "shadow_color": [0, 0, 0, 0],
+    "shadow_offset": [0, 0]
   },
 
   {
