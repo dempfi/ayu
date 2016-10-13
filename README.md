@@ -8,10 +8,10 @@
 
 # Screenshots
 
-Light with `ui_separators` option on
+Light with `ui_separator` option on
 ![Light with separators on](http://i.imgur.com/vidbstL.png)
 
-Dark with `ui_separators` option off
+Dark with `ui_separator` option off
 ![Dark with separators off](http://i.imgur.com/r1mqHyx.png)
 
 
