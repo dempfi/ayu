@@ -1,0 +1,9 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 1.3.2
+********************************************************************************
+
+Changes:
+
+  * Add option for bigger tabs — "ui_big_tabs"
