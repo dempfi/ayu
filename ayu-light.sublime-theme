@@ -284,6 +284,11 @@
     "layer1.texture": "ayu/assets/light/separator_bottom.png",
     "layer1.inner_margin": [1, 0, 1, 2]
   },
+  {
+    "class": "tabset_control",
+    "settings": ["ui_big_tabs"],
+    "tab_height": 44
+  },
 
   // Tabs
   {
@@ -314,6 +319,11 @@
     "layer3.texture": "ayu/assets/light/separator_bottom.png",
     "layer3.inner_margin": [1, 0, 1, 2],
     "layer3.opacity": 0.2
+  },
+  {
+    "class": "tab_control",
+    "settings": ["ui_big_tabs"],
+    "content_margin": [15, -2, 15, 0]
   },
 
   // Selected current tab
