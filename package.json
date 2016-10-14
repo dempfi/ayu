@@ -1,0 +1,50 @@
+{
+    "name": "ayu",
+    "displayName": "Ayu",
+    "description": "A simple theme with bright colors and comes in two versions — dark and light for all day long comfortable work.",
+    "version": "0.1.0",
+    "publisher": "teabyii",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jsenjoy/vscode-ayu"
+    },
+    "bugs": {
+        "url": "https://github.com/jsenjoy/vscode-ayu/issues",
+        "email": "teabyii@gmail.com"
+    },
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "keywords": [
+        "icon-theme",
+        "theme",
+        "ayu"
+    ],
+    "homepage": "https://github.com/jsenjoy/vscode-ayu",
+    "icon": "logo.png",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Ayu Dark",
+                "uiTheme": "vs-dark",
+                "path": "./ayu-dark.tmTheme"
+            },
+            {
+                "label": "Ayu Light",
+                "uiTheme": "vs",
+                "path": "./ayu-light.tmTheme"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "ayu",
+                "label": "Ayu",
+                "path": "./ayu-icons.json"
+            }
+        ]
+    }
+}
