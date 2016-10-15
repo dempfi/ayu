@@ -1,0 +1,9 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 1.3.3
+********************************************************************************
+
+Changes:
+
+  * Gray close icon on active tab
