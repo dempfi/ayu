@@ -37,7 +37,11 @@ You can install `ayu` via [Package Control](https://packagecontrol.io/).
 
 # Activation
 ## Sublime Text 3
-Add this lines to your user settings *Preferences > Setting - User*:
+### Skins package
+[Skins](https://packagecontrol.io/packages/Skins) provides a simple and efficient way to change themes, save your own presets and quickly try out new looks. Activation is as simple as opening up the command palette, running `Select Skin` and choosing `Ayu - Dark` or `Ayu - Light` from the list. 
+
+### Normal way
+Add these lines to your user settings *Preferences > Setting - User*:
 
 For dark theme:
 ```json
@@ -52,7 +56,7 @@ For light theme:
 ```
 
 ## Sublime Text 2
-Add this lines to your user settings *Preferences > Setting - User*:
+Add these lines to your user settings *Preferences > Setting - User*:
 
 _Sublime Text 2 version may have some glitches, if you notice something, please file an issue._
 
