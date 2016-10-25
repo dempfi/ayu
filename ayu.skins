@@ -1,0 +1,15 @@
+{
+    "Ayu - Dark": {
+        "Preferences": {
+            "color_scheme": "Packages/ayu/ayu.tmTheme",
+            "theme": "ayu.sublime-theme",
+        }
+    },
+
+    "Ayu - Light": {
+        "Preferences": {
+            "color_scheme": "Packages/ayu/ayu-light.tmTheme",
+            "theme": "ayu-light.sublime-theme",
+        }
+    }
+}
