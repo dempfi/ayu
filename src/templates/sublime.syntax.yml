@@ -1,4 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmTheme
+# prefix=""
+# sublime=""
+# ext="yml"
 ---
 
 name: ayu
@@ -10,28 +13,28 @@ semanticClass: ayu.dark
 settings:
 
 - settings:
-    activeGuide: '#"{active_guide}"'
-    background: &bg '#"{bg}"'
+    activeGuide: '#"{syntax.active_guide}"'
+    background: &bg '#"{syntax.bg}"'
     inactiveBackground: *bg
-    caret: '#"{caret}"'
-    findHighlight: &constant '#"{constant}"'
+    caret: '#"{syntax.caret}"'
+    findHighlight: &constant '#"{syntax.constant}"'
     findHighlightForeground: &white '#FFFFFF'
-    foreground: &fg '#"{fg}"'
-    guide: &gutter '#"{gutterFg}"'
+    foreground: &fg '#"{syntax.fg}"'
+    guide: &gutter '#"{syntax.gutterFg}"'
     gutter: *bg
     gutterForeground: *gutter
-    inactiveSelection: &in_selection '#"{in_selection}"'
+    inactiveSelection: &in_selection '#"{syntax.in_selection}"'
     invisibles: '#FF0000'
-    lineHighlight: '#"{line_hg}"'
-    selection: &selection '#"{selection}"'
+    lineHighlight: '#"{syntax.line_hg}"'
+    selection: &selection '#"{syntax.selection}"'
     selectionBorder: *selection
     shadow: '#00000010'
-    stackGuide: '#"{stack_guide}"'
+    stackGuide: '#"{syntax.stack_guide}"'
     popupCss: |
         html, body {
           background-color: #FFFFFF;
           font-size: 12px;
-          color: #"{fg}";
+          color: #"{syntax.fg}";
           padding: 0;
         }
         body {
@@ -48,13 +51,13 @@ settings:
           line-height: 16px;
         }
         .type {
-          color: #"{sup_var}";
+          color: #"{syntax.sup_var}";
         }
         .name {
-          color: #"{es_spec}";
+          color: #"{syntax.es_spec}";
         }
         .param {
-          color: #"{func}";
+          color: #"{syntax.func}";
         }
         .current {
           text-decoration: underline;
@@ -64,7 +67,7 @@ settings:
   scope: comment, punctuation.definition.comment
   settings:
     fontStyle: italic
-    foreground: &comment '#"{comment}"'
+    foreground: &comment '#"{syntax.comment}"'
 
 - name: Variable
   scope: variable
@@ -74,27 +77,27 @@ settings:
 - name: Keyword, Storage
   scope: keyword, storage.type, storage.modifier
   settings:
-    foreground: &keyword '#"{keyword}"'
+    foreground: &keyword '#"{syntax.keyword}"'
 
 - name: Operator, Misc
   scope: constant.other.color, meta.tag, punctuation.separator.inheritance.php, punctuation.section.embedded, keyword.other.substitution
   settings:
-    foreground: &operator '#"{operator}"'
+    foreground: &operator '#"{syntax.operator}"'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
   settings:
-    foreground: &tag '#"{tag}"'
+    foreground: &tag '#"{syntax.tag}"'
 
 - name: Function, Special Method, Block Level
   scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level
   settings:
-    foreground: &function '#"{func}"'
+    foreground: &function '#"{syntax.func}"'
 
 - name: Other Variable, String Link
   scope: support.other.variable, string.other.link
   settings:
-    foreground: &sup_var '#"{sup_var}"'
+    foreground: &sup_var '#"{syntax.sup_var}"'
 
 - name: Number, Constant, Function Argument, Tag Attribute, Embedded
   scope: constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit
@@ -105,7 +108,7 @@ settings:
   scope: string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
   settings:
     fontStyle: normal
-    foreground: &string '#"{string}"'
+    foreground: &string '#"{syntax.string}"'
 
 - name: Class, Support
   scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter
@@ -126,7 +129,7 @@ settings:
 - name: Invalid
   scope: invalid
   settings:
-    foreground: &error '#"{error}"'
+    foreground: &error '#"{syntax.error}"'
 
 - name: Deprecated
   scope: invalid.deprecated
@@ -137,7 +140,7 @@ settings:
 - name: Html punctuations tags
   scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
   settings:
-    foreground: &tag_punc '#"{tag_punc}"' # opacity of tag verson of &tag_punctag
+    foreground: &tag_punc '#"{syntax.tag_punc}"' # opacity of tag verson of &tag_punctag
 
 - name: Attributes
   scope: entity.other.attribute-name
@@ -162,7 +165,7 @@ settings:
 - name: Regular Expressions and Escape Characters
   scope: string.regexp, constant.character.escape
   settings:
-    foreground: &regexp '#"{regexp}"'
+    foreground: &regexp '#"{syntax.regexp}"'
 
 - name: URL
   scope: '*url*, *link*, *uri*'
@@ -184,7 +187,7 @@ settings:
   scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
   settings:
     fontStyle: italic
-    foreground: &es_spec '#"{es_spec}"'
+    foreground: &es_spec '#"{syntax.es_spec}"'
 
 - name: ES7 Bind Operator
   scope: source.js constant.other.object.key.js string.unquoted.label.js

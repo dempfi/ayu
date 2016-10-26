@@ -16,6 +16,7 @@ ui:
   opacity: '0.2'
 
 syntax:
+  panel_bg: FFFFFF
   active_guide: B3B2B1
   bg: FAFAFA
   caret: FF6A00

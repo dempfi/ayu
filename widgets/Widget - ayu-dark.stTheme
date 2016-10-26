@@ -12,28 +12,28 @@
   <key>name</key>
   <string>ayu</string>
   <key>semanticClass</key>
-  <string>ayu.light</string>
+  <string>ayu.dark</string>
   <key>settings</key>
   <array>
     <dict>
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#FFFFFF</string>
+        <string>#14191F</string>
         <key>caret</key>
-        <string>#FF6A00</string>
+        <string>#F29718</string>
         <key>foreground</key>
-        <string>#5C6773</string>
+        <string>#E6E1CF</string>
         <key>inactiveSelection</key>
-        <string>#F2F2EB</string>
+        <string>#1E2A35</string>
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
-        <string>#F2F2F2</string>
+        <string>#151A1F</string>
         <key>selection</key>
-        <string>#F0EEE4</string>
+        <string>#253340</string>
         <key>selectionBorder</key>
-        <string>#F0EEE4</string>
+        <string>#253340</string>
       </dict>
     </dict>
     <dict>
@@ -46,7 +46,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#ABB0B6</string>
+        <string>#5C6773</string>
       </dict>
     </dict>
     <dict>
@@ -57,7 +57,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#F2590C</string>
+        <string>#FF7733</string>
       </dict>
     </dict>
     <dict>
@@ -68,7 +68,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#A37ACC</string>
+        <string>#FFEE99</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +79,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#86B300</string>
+        <string>#B8CC52</string>
       </dict>
     </dict>
     <dict>
@@ -90,7 +90,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4DBF99</string>
+        <string>#95E6CB</string>
       </dict>
     </dict>
   </array>

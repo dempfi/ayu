@@ -12,28 +12,28 @@
   <key>name</key>
   <string>ayu</string>
   <key>semanticClass</key>
-  <string>ayu.light</string>
+  <string>ayu."{theme}"</string>
   <key>settings</key>
   <array>
     <dict>
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#FFFFFF</string>
+        <string>#"{syntax.panel_bg}"</string>
         <key>caret</key>
-        <string>#FF6A00</string>
+        <string>#"{syntax.caret}"</string>
         <key>foreground</key>
-        <string>#5C6773</string>
+        <string>#"{syntax.fg}"</string>
         <key>inactiveSelection</key>
-        <string>#F2F2EB</string>
+        <string>#"{syntax.in_selection}"</string>
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
-        <string>#F2F2F2</string>
+        <string>#"{syntax.line_hg}"</string>
         <key>selection</key>
-        <string>#F0EEE4</string>
+        <string>#"{syntax.selection}"</string>
         <key>selectionBorder</key>
-        <string>#F0EEE4</string>
+        <string>#"{syntax.selection}"</string>
       </dict>
     </dict>
     <dict>
@@ -46,7 +46,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#ABB0B6</string>
+        <string>#"{syntax.comment}"</string>
       </dict>
     </dict>
     <dict>
@@ -57,7 +57,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#F2590C</string>
+        <string>#"{syntax.keyword}"</string>
       </dict>
     </dict>
     <dict>
@@ -68,7 +68,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#A37ACC</string>
+        <string>#"{syntax.constant}"</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +79,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#86B300</string>
+        <string>#"{syntax.string}"</string>
       </dict>
     </dict>
     <dict>
@@ -90,7 +90,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4DBF99</string>
+        <string>#"{syntax.regexp}"</string>
       </dict>
     </dict>
   </array>

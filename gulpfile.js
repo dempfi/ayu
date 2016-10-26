@@ -10,49 +10,54 @@ const through = require('through2')
 _.templateSettings.interpolate = /"{([\s\S]+?)}"/g;
 
 function templates (type) {
-  const matching = { ui: '*.json', syntax: '*.yml' }[type]
-  return fs.find('./src/templates', { matching })
+  return fs.find('./src/templates', { matching: '*' + type })
     .map(p => fs.read(p, 'utf8'))
     .map(_.template)
 }
 
-function themePath (str, name, type) {
-  const rx = /sublime=(\d)/g
-  const match = rx.exec(str)
-  const suffix = match ? match[1] : ''
-  const ext = { ui: '.sublime-theme', syntax: '.yml' }[type]
-  return path.join(process.cwd(), `ayu-${name}${suffix}${ext}`)
+function fileNmae (str, name) {
+  const version = /sublime="(.*?)"/g.exec(str)[1]
+  const prefix = /prefix="(.*?)"/g.exec(str)[1]
+  const ext = /ext="(.*?)"/g.exec(str)[1]
+  return path.join(process.cwd(), `${prefix}ayu-${name}${version}.${ext}`)
 }
 
-function buildSyntaxThemes (theme, syntax) {
+function buildWidgets (defs) {
   const base = process.cwd()
-  return templates('syntax')
-    .map(template => template(syntax))
-    .map(compiled => [themePath(compiled, theme, 'ui'), compiled])
+  const files = [].concat(templates('widget.xml'), templates('widget.json'))
+  return files
+    .map(template => template(defs))
+    .map(compiled => [fileNmae(compiled, defs.theme), compiled])
     .map(([path, compiled]) => [path, new Buffer(compiled)])
     .map(([path, contents]) => new File({ path, base, contents }))
 }
 
-function buildTheme (type, theme, options) {
+function widgets (file, enc, next) {
+  const content = file.contents.toString('ascii')
+  buildWidgets(yaml.parse(content)).map(this.push.bind(this))
+  next()
+}
+
+function buildTheme (type, defs) {
   const base = process.cwd()
   return templates(type)
-    .map(template => template(options))
-    .map(compiled => [themePath(compiled, theme, type), compiled])
+    .map(template => template(defs))
+    .map(compiled => [fileNmae(compiled, defs.theme), compiled])
     .map(([path, compiled]) => [path, new Buffer(compiled)])
     .map(([path, contents]) => new File({ path, base, contents }))
 }
 
 function buildUI (file, enc, next) {
   const content = file.contents.toString('ascii')
-  const {theme, ui, syntax} = yaml.parse(content)
-  buildTheme('ui', theme, ui).map(this.push.bind(this))
+  buildTheme('ui.json', yaml.parse(content))
+    .map(this.push.bind(this))
   next()
 }
 
 function buildSyntax (file, enc, next) {
   const content = file.contents.toString('ascii')
-  const {theme, ui, syntax} = yaml.parse(content)
-  buildTheme('syntax', theme, syntax).map(this.push.bind(this))
+  buildTheme('syntax.yml', yaml.parse(content))
+    .map(this.push.bind(this))
   next()
 }
 
@@ -61,6 +66,12 @@ gulp.task('clean', () => {
   fs.find({ recursive: false, matching: '*.tmTheme' }).forEach(fs.remove)
   fs.find({ recursive: false, matching: '*.yml' }).forEach(fs.remove)
 })
+
+gulp.task('widgets', ['clean'], () =>
+  gulp.src('./src/themes/*.yml')
+    .pipe(through.obj(widgets))
+    .pipe(gulp.dest('./widgets'))
+)
 
 gulp.task('ui', ['clean'], () =>
   gulp.src('./src/themes/*.yml')
@@ -76,8 +87,8 @@ gulp.task('syntax', ['clean'], () =>
     .pipe(exec.reporter())
 )
 
-gulp.task('default', ['ui', 'syntax'])
+gulp.task('default', ['ui', 'syntax', 'widgets'])
 
 gulp.task('watch', () => {
-  gulp.watch('./src/**/*', ['ui', 'syntax'])
+  gulp.watch('./src/**/*', ['ui', 'syntax', 'widgets'])
 })

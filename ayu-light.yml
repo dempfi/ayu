@@ -1,4 +1,7 @@
 # [PackageDev] target_format: plist, ext: tmTheme
+# prefix=""
+# sublime=""
+# ext="yml"
 ---
 
 name: ayu
