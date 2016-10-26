@@ -22,10 +22,10 @@ function fileNmae (str, name) {
   return path.join(process.cwd(), `${prefix}ayu-${name}${version}.${ext}`)
 }
 
-function buildWidgets (defs) {
+function build (types, defs) {
   const base = process.cwd()
-  const files = [].concat(templates('widget.xml'), templates('widget.json'))
-  return files
+  const themes = _.concat([], types).map(templates)
+  return _.flatten(themes)
     .map(template => template(defs))
     .map(compiled => [fileNmae(compiled, defs.theme), compiled])
     .map(([path, compiled]) => [path, new Buffer(compiled)])
@@ -34,29 +34,21 @@ function buildWidgets (defs) {
 
 function widgets (file, enc, next) {
   const content = file.contents.toString('ascii')
-  buildWidgets(yaml.parse(content)).map(this.push.bind(this))
-  next()
-}
-
-function buildTheme (type, defs) {
-  const base = process.cwd()
-  return templates(type)
-    .map(template => template(defs))
-    .map(compiled => [fileNmae(compiled, defs.theme), compiled])
-    .map(([path, compiled]) => [path, new Buffer(compiled)])
-    .map(([path, contents]) => new File({ path, base, contents }))
-}
-
-function buildUI (file, enc, next) {
-  const content = file.contents.toString('ascii')
-  buildTheme('ui.json', yaml.parse(content))
+  build(['widget.xml', 'widget.json'],  yaml.parse(content))
     .map(this.push.bind(this))
   next()
 }
 
-function buildSyntax (file, enc, next) {
+function ui (file, enc, next) {
   const content = file.contents.toString('ascii')
-  buildTheme('syntax.yml', yaml.parse(content))
+  build('ui.json', yaml.parse(content))
+    .map(this.push.bind(this))
+  next()
+}
+
+function syntax (file, enc, next) {
+  const content = file.contents.toString('ascii')
+  build('syntax.yml', yaml.parse(content))
     .map(this.push.bind(this))
   next()
 }
@@ -75,13 +67,13 @@ gulp.task('widgets', ['clean'], () =>
 
 gulp.task('ui', ['clean'], () =>
   gulp.src('./src/themes/*.yml')
-    .pipe(through.obj(buildUI))
+    .pipe(through.obj(ui))
     .pipe(gulp.dest('./'))
 )
 
 gulp.task('syntax', ['clean'], () =>
   gulp.src('./src/themes/*.yml')
-    .pipe(through.obj(buildSyntax))
+    .pipe(through.obj(syntax))
     .pipe(gulp.dest('./'))
     .pipe(exec('subl "<%= file.path %>" && subl --command "convert_file"'))
     .pipe(exec.reporter())
