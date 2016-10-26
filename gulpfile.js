@@ -15,10 +15,15 @@ function templates (type) {
     .map(_.template)
 }
 
+function parse (rx, str, def = '') {
+  let parsed = rx.exec(str)
+  return parsed ? parsed[1] : def
+}
+
 function fileNmae (str, name) {
-  const version = /sublime="(.*?)"/g.exec(str)[1]
-  const prefix = /prefix="(.*?)"/g.exec(str)[1]
-  const ext = /ext="(.*?)"/g.exec(str)[1]
+  let version = parse(/sublime="(.*?)"/g, str)
+  let prefix = parse(/prefix="(.*?)"/g, str)
+  let ext = parse(/ext="(.*?)"/g, str, 'tmTheme')
   return path.join(process.cwd(), `${prefix}ayu-${name}${version}.${ext}`)
 }
 
@@ -39,16 +44,9 @@ function widgets (file, enc, next) {
   next()
 }
 
-function ui (file, enc, next) {
+function themes (file, enc, next) {
   const content = file.contents.toString('ascii')
-  build('ui.json', yaml.parse(content))
-    .map(this.push.bind(this))
-  next()
-}
-
-function syntax (file, enc, next) {
-  const content = file.contents.toString('ascii')
-  build('syntax.yml', yaml.parse(content))
+  build(['syntax.xml', 'ui.json'], yaml.parse(content))
     .map(this.push.bind(this))
   next()
 }
@@ -56,31 +54,22 @@ function syntax (file, enc, next) {
 gulp.task('clean', () => {
   fs.find({ recursive: false, matching: '*.sublime-theme' }).forEach(fs.remove)
   fs.find({ recursive: false, matching: '*.tmTheme' }).forEach(fs.remove)
-  fs.find({ recursive: false, matching: '*.yml' }).forEach(fs.remove)
 })
 
-gulp.task('widgets', ['clean'], () =>
+gulp.task('widgets', () =>
   gulp.src('./src/themes/*.yml')
     .pipe(through.obj(widgets))
     .pipe(gulp.dest('./widgets'))
 )
 
-gulp.task('ui', ['clean'], () =>
+gulp.task('themes', () =>
   gulp.src('./src/themes/*.yml')
-    .pipe(through.obj(ui))
+    .pipe(through.obj(themes))
     .pipe(gulp.dest('./'))
 )
 
-gulp.task('syntax', ['clean'], () =>
-  gulp.src('./src/themes/*.yml')
-    .pipe(through.obj(syntax))
-    .pipe(gulp.dest('./'))
-    .pipe(exec('subl "<%= file.path %>" && subl --command "convert_file"'))
-    .pipe(exec.reporter())
-)
-
-gulp.task('default', ['ui', 'syntax', 'widgets'])
+gulp.task('default', ['themes', 'widgets'])
 
 gulp.task('watch', () => {
-  gulp.watch('./src/**/*', ['ui', 'syntax', 'widgets'])
+  gulp.watch('./src/**/*', ['themes', 'widgets'])
 })

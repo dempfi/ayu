@@ -1,4 +1,4 @@
-# [PackageDev] target_format: plist, ext: tmTheme
+# [PackageDev] target_format: plist, ext: xml
 # prefix=""
 # sublime=""
 # ext="yml"
@@ -8,7 +8,7 @@ name: ayu
 author: Ike Ku
 uuid: 0e709986-46a0-40a0-b3bf-c8dfe525c455
 colorSpaceName: sRGB
-semanticClass: ayu.dark
+semanticClass: ayu."{theme}"
 
 settings:
 

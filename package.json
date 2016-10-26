@@ -13,7 +13,8 @@
   },
   "scripts": {
     "start": "gulp watch",
-    "b": "gulp"
+    "b": "gulp",
+    "c": "gulp clean"
   },
   "homepage": "https://github.com/dempfi/ayu#readme",
   "devDependencies": {
