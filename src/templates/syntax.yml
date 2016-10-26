@@ -10,27 +10,28 @@ semanticClass: ayu.dark
 settings:
 
 - settings:
-    activeGuide: '#314559'
-    background: &bg '#0F1419'
-    caret: '#F29718'
-    findHighlight: &constant '#FFE792'
-    findHighlightForeground: '#00000050'
-    foreground: &fg '#E6E1CF'
-    guide: '#2D3640'
+    activeGuide: '#"{active_guide}"'
+    background: &bg '#"{bg}"'
+    inactiveBackground: *bg
+    caret: '#"{caret}"'
+    findHighlight: &constant '#"{constant}"'
+    findHighlightForeground: &white '#FFFFFF'
+    foreground: &fg '#"{fg}"'
+    guide: &gutter '#"{gutterFg}"'
     gutter: *bg
-    gutterForeground: &selection '#253340'
-    inactiveSelection: &in_selection '#1E2A35'
-    invisibles: '#343434'
-    lineHighlight: '#151A1F'
-    selection: *selection
+    gutterForeground: *gutter
+    inactiveSelection: &in_selection '#"{in_selection}"'
+    invisibles: '#FF0000'
+    lineHighlight: '#"{line_hg}"'
+    selection: &selection '#"{selection}"'
     selectionBorder: *selection
     shadow: '#00000010'
-    stackGuide: *in_selection
+    stackGuide: '#"{stack_guide}"'
     popupCss: |
         html, body {
-          background-color: #14191F;
+          background-color: #FFFFFF;
           font-size: 12px;
-          color: #E6E1CF;
+          color: #"{fg}";
           padding: 0;
         }
         body {
@@ -43,17 +44,17 @@ settings:
           font-weight: normal;
         }
         a {
-          color: rgba(54, 163, 217, .7);
+          color: rgba(65, 166, 217, .7);
           line-height: 16px;
         }
         .type {
-          color: #F07178;
+          color: #"{sup_var}";
         }
         .name {
-          color: #FFB454;
+          color: #"{es_spec}";
         }
         .param {
-          color: #FFEE99;
+          color: #"{func}";
         }
         .current {
           text-decoration: underline;
@@ -63,7 +64,7 @@ settings:
   scope: comment, punctuation.definition.comment
   settings:
     fontStyle: italic
-    foreground: &comment '#5C6773'
+    foreground: &comment '#"{comment}"'
 
 - name: Variable
   scope: variable
@@ -73,27 +74,27 @@ settings:
 - name: Keyword, Storage
   scope: keyword, storage.type, storage.modifier
   settings:
-    foreground: &keyword '#FF7733'
+    foreground: &keyword '#"{keyword}"'
 
 - name: Operator, Misc
   scope: constant.other.color, meta.tag, punctuation.separator.inheritance.php, punctuation.section.embedded, keyword.other.substitution
   settings:
-    foreground: &operator '#E7C547'
+    foreground: &operator '#"{operator}"'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
   settings:
-    foreground: &tag '#36A3D9'
+    foreground: &tag '#"{tag}"'
 
 - name: Function, Special Method, Block Level
   scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level
   settings:
-    foreground: &function '#E6B673'
+    foreground: &function '#"{func}"'
 
 - name: Other Variable, String Link
   scope: support.other.variable, string.other.link
   settings:
-    foreground: &sup_var '#F07178'
+    foreground: &sup_var '#"{sup_var}"'
 
 - name: Number, Constant, Function Argument, Tag Attribute, Embedded
   scope: constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit
@@ -104,7 +105,7 @@ settings:
   scope: string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
   settings:
     fontStyle: normal
-    foreground: &string '#B8CC52'
+    foreground: &string '#"{string}"'
 
 - name: Class, Support
   scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter
@@ -125,18 +126,18 @@ settings:
 - name: Invalid
   scope: invalid
   settings:
-    foreground: &error '#FF3333'
+    foreground: &error '#"{error}"'
 
 - name: Deprecated
   scope: invalid.deprecated
   settings:
     background: *keyword
-    foreground: &white '#ffffff'
+    foreground: *white
 
 - name: Html punctuations tags
   scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
   settings:
-    foreground: &tag_punc '#36A3D990' # darker version of tag
+    foreground: &tag_punc '#"{tag_punc}"' # opacity of tag verson of &tag_punctag
 
 - name: Attributes
   scope: entity.other.attribute-name
@@ -161,7 +162,7 @@ settings:
 - name: Regular Expressions and Escape Characters
   scope: string.regexp, constant.character.escape
   settings:
-    foreground: &regexp '#95E6CB'
+    foreground: &regexp '#"{regexp}"'
 
 - name: URL
   scope: '*url*, *link*, *uri*'
@@ -183,7 +184,7 @@ settings:
   scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
   settings:
     fontStyle: italic
-    foreground: &es_spec '#ffb454'
+    foreground: &es_spec '#"{es_spec}"'
 
 - name: ES7 Bind Operator
   scope: source.js constant.other.object.key.js string.unquoted.label.js

@@ -15,7 +15,7 @@ settings:
     inactiveBackground: *bg
     caret: '#FF6A00'
     findHighlight: &constant '#A37ACC'
-    findHighlightForeground: &white '#ffffff'
+    findHighlightForeground: &white '#FFFFFF'
     foreground: &fg '#5C6773'
     guide: &gutter '#D9D8D7'
     gutter: *bg
@@ -137,7 +137,7 @@ settings:
 - name: Html punctuations tags
   scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
   settings:
-    foreground: &tag_punc '#41A6D990' # opacity of tag verson of &tag
+    foreground: &tag_punc '#41A6D990' # opacity of tag verson of &tag_punctag
 
 - name: Attributes
   scope: entity.other.attribute-name

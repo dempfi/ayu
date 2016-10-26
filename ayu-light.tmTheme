@@ -24,7 +24,7 @@
 				<key>findHighlight</key>
 				<string>#A37ACC</string>
 				<key>findHighlightForeground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 				<key>foreground</key>
 				<string>#5C6773</string>
 				<key>guide</key>
@@ -243,7 +243,7 @@ a {
 				<key>background</key>
 				<string>#F2590C</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -715,7 +715,7 @@ a {
 				<key>background</key>
 				<string>#41A6D9</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -728,7 +728,7 @@ a {
 				<key>background</key>
 				<string>#86B300</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -741,7 +741,7 @@ a {
 				<key>background</key>
 				<string>#F2590C</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -754,7 +754,7 @@ a {
 				<key>background</key>
 				<string>#F07178</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -776,7 +776,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -820,7 +820,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 	</array>

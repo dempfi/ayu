@@ -1,3 +1,4 @@
+// sublime=2
 [
 
   /* @ EMPTY WINDOW
@@ -85,7 +86,7 @@
 
   {
     "class": "popup_control",
-    "layer0.tint": [250, 250, 250],
+    "layer0.tint": [255, 255, 255],
     "layer0.opacity": 1.0,
     "content_margin": [0, 0]
   },
@@ -99,7 +100,7 @@
 
   {
     "class": "auto_complete_label",
-    "fg": [130, 142, 153],
+    "fg": [130, 140, 153],
     "match_fg": [255, 106, 0],
     "selected_fg": [71, 80, 89],
     "selected_match_fg": [255, 106, 0]
@@ -132,7 +133,7 @@
 
   {
     "class": "tool_tip_label_control",
-    "color": [130, 142, 153],
+    "color": [130, 140, 153],
     "font.face": "Roboto mono",
     "font.size": 12
   },
@@ -182,7 +183,7 @@
   {
     "class": "quick_panel_row",
     "layer0.texture": "",
-    "layer0.tint": [10, 15, 21, 0],
+    "layer0.tint": [255, 255, 255],
     "layer0.inner_margin": 0,
     "layer0.opacity": 1.0
   },
@@ -192,7 +193,7 @@
   {
     "class": "quick_panel_row",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint": [0, 0, 0, 0],
+    "layer0.tint": [255, 255, 255],
     "layer0.opacity": 1.0
   },
 
@@ -202,7 +203,7 @@
     "class": "quick_panel",
     "parents": [{"class": "overlay_control"}],
     "row_padding": [10, 7],
-    "layer0.tint": [0, 0, 0, 0],
+    "layer0.tint": [255, 255, 255],
     "layer0.opacity": 1.0
   },
 
@@ -218,9 +219,9 @@
 
   {
     "class": "quick_panel_label",
-    "fg": [71, 80, 89],
+    "fg": [130, 140, 153],
     "match_fg": [255, 106, 0],
-    "selected_fg": [94, 235, 184],
+    "selected_fg": [71, 80, 89],
     "selected_match_fg": [255, 106, 0]
   },
 
@@ -229,7 +230,7 @@
   {
     "class": "quick_panel_label",
     "parents": [{"class": "overlay_control"}],
-    "fg": [130, 142, 153],
+    "fg": [130, 140, 153],
     "match_fg": [255, 106, 0],
     "selected_fg": [71, 80, 89],
     "selected_match_fg": [255, 106, 0]
@@ -241,7 +242,7 @@
     "class": "quick_panel_path_label",
     "fg": [176, 190, 197],
     "match_fg": [71, 80, 89],
-    "selected_fg": [130, 142, 153],
+    "selected_fg": [130, 140, 153],
     "selected_match_fg": [71, 80, 89]
   },
 
@@ -249,8 +250,8 @@
 
   {
     "class": "quick_panel_score_label",
-    "fg": [130, 142, 153],
-    "selected_fg": [130, 142, 153]
+    "fg": [130, 140, 153],
+    "selected_fg": [130, 140, 153]
   },
 
 
@@ -300,7 +301,7 @@
     "layer1.texture": "",
 
     "layer2.texture": "ayu/assets/light/tab_active.png",
-    "layer2.inner_margin": [1, 5, 1, 0],
+    "layer2.inner_margin": [1, 4, 1, 1],
     "layer2.opacity": 0.0,
 
     "layer3.texture": "",
@@ -352,7 +353,7 @@
 
   {
     "class": "tab_label",
-    "fg": [130, 142, 153],
+    "fg": [130, 140, 153],
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.size": 12,
@@ -488,7 +489,7 @@
     "class": "scroll_tabs_right_button",
     "settings": ["ui_separator"],
     "layer2.texture": "ayu/assets/light/separator_right.png",
-    "layer2.opacity": 0.2,
+    "layer2.opacity": 0.3,
     "layer2.inner_margin": [0, 1, 2, 1]
   },
 
@@ -541,7 +542,7 @@
     "indent": 12,
     "indent_offset": 0,
     "indent_top_level": false,
-    "dark_content": false
+    "dark_content": true
   },
 
   {
@@ -564,7 +565,7 @@
 
   {
     "class": "sidebar_label",
-    "color": [130, 142, 153],
+    "color": [130, 140, 153],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0],
     "font.face": "Roboto mono",
@@ -588,7 +589,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-    "color": [130, 142, 153],
+    "color": [130, 140, 153],
     "font.bold": false
   },
 
@@ -729,7 +730,7 @@
   {
     "class": "scroll_bar_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint": [250, 250, 250, 0],
+    "layer0.tint": [15, 20, 25, 0],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 2],
     "blur": false
@@ -844,13 +845,13 @@
   {
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
-    "viewport_color": [130, 142, 153, 50]
+    "viewport_color": [130, 140, 153],
   },
 
   {
     "class": "minimap_control",
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_color": [130, 142, 153, 30]
+    "viewport_color": [130, 140, 153, 20]
   },
 
 
@@ -862,7 +863,7 @@
 
   {
     "class": "label_control",
-    "color": [130, 142, 153],
+    "color": [130, 140, 153],
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
@@ -875,7 +876,7 @@
   {
     "class": "label_control",
     "parents": [{"class": "status_bar"}],
-    "color": [130, 142, 153],
+    "color": [130, 140, 153],
     "font.bold": false
   },
 
@@ -1017,7 +1018,7 @@
   {
     "class": "label_control",
     "parents": [{"class": "button_control"}],
-    "color":  [130, 142, 153]
+    "color":  [130, 140, 153]
   },
 
   {

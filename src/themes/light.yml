@@ -1,0 +1,40 @@
+theme: light
+
+ui:
+  scrollbar:
+    puck: '0, 0, 0'
+  accent: '255, 106, 0'
+  assets: light
+  bg: '250, 250, 250'
+  divider: '217, 221, 226'
+  fg: &fg '130, 140, 153'
+  fg_active: '71, 80, 89'
+  panel_bg: '255, 255, 255'
+  panel_path_fg: '176, 190, 197'
+  panel_row_bg: '245, 245, 245'
+  minimap: *fg
+  opacity: '0.2'
+
+syntax:
+  active_guide: B3B2B1
+  bg: FAFAFA
+  caret: FF6A00
+  error: FF3333
+  fg: 5C6773
+  gutterFg: D9D8D7
+  in_selection: F2F2EB
+  line_hg: F2F2F2
+  stack_guide: DEDDDC
+
+  comment: ABB0B6
+  constant: A37ACC
+  es_spec: CCA37A
+  func: F29718
+  keyword: F2590C
+  operator: E7C547
+  regexp: 4DBF99
+  selection: F0EEE4
+  string: 86B300
+  sup_var: F07178
+  tag: 41A6D9
+  tag_punc: 41A6D990
