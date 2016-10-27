@@ -9,7 +9,7 @@
 
   {
     "class" : "sheet_container_control",
-    "layer0.tint" : ["{ui.bg}"],
+    "layer0.tint" : ["{common.bg.rgb}"],
     "layer0.opacity" : 1
   },
 
@@ -21,7 +21,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": ["{ui.divider}"]
+    "border_color": ["{ui.grid_divider.rgb}"]
   },
   {
     "class": "grid_layout_control",
@@ -35,20 +35,20 @@
   // !!!
   {
     "class": "progress_gauge_control",
-    "layer0.tint": ["{ui.accent}"],
+    "layer0.tint": ["{common.accent.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [0, 6]
   },
 
   {
     "class": "dialog",
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1.0
   },
 
   {
     "class": "progress_bar_control",
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1.0
   },
 
@@ -58,27 +58,23 @@
   ========================================================================= */
   {
     "class": "fold_button_control",
-    "layer0.texture": "ayu/assets/"{theme}"/unfold.png",
+    "layer0.texture": "ayu/assets/common/unfold.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": 0,
-    "layer1.texture": "ayu/assets/"{theme}"/unfold--hover.png",
-    "layer1.opacity": 0.0,
-    "layer1.inner_margin": 0,
+    "layer0.tint": ["{ui.fg.rgb}"],
     "content_margin": [8, 6, 8, 6]
   },
 
   {
     "class": "fold_button_control",
     "attributes": ["hover"],
-    "layer0.opacity": 0.0,
-    "layer1.opacity": 1.0
+    "layer0.tint": ["{common.accent.rgb}"],
   },
 
   {
     "class": "fold_button_control",
     "attributes": ["expanded"],
-    "layer0.texture": "ayu/assets/"{theme}"/fold.png",
-    "layer1.texture": "ayu/assets/"{theme}"/fold--hover.png"
+    "layer0.texture": "ayu/assets/common/fold.png"
   },
 
 
@@ -88,7 +84,7 @@
 
   {
     "class": "popup_control",
-    "layer0.tint": ["{ui.panel_bg}"],
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [0, 0]
   },
@@ -96,21 +92,21 @@
   {
     "class": "auto_complete",
     "row_padding": [12, 6],
-    "layer0.tint": ["{ui.panel_bg}"],
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
     "layer0.opacity": 1.0
   },
 
   {
     "class": "auto_complete_label",
-    "fg": ["{ui.fg}"],
-    "match_fg": ["{ui.accent}"],
-    "selected_fg": ["{ui.fg_active}"],
-    "selected_match_fg": ["{ui.accent}"]
+    "fg": ["{ui.fg.rgb}"],
+    "match_fg": ["{common.accent.rgb}"],
+    "selected_fg": ["{common.fg.rgb}"],
+    "selected_match_fg": ["{common.accent.rgb}"]
   },
 
   {
     "class": "table_row",
-    "layer0.tint": ["{ui.panel_row_bg}"],
+    "layer0.tint": ["{ui.panel.row_bg.rgb}"],
     "layer0.opacity": 0.0
   },
 
@@ -127,7 +123,7 @@
 
   {
     "class": "tool_tip_control",
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.inner_margin": [0, 0],
     "layer0.opacity": 1.0,
     "content_margin": [10, 6]
@@ -135,7 +131,7 @@
 
   {
     "class": "tool_tip_label_control",
-    "color": ["{ui.fg}"],
+    "color": ["{ui.fg.rgb}"],
     "font.face": "Roboto mono",
     "font.size": 12
   },
@@ -148,9 +144,16 @@
   // Command Panel
   {
     "class": "overlay_control",
-    "layer0.texture": "ayu/assets/"{theme}"/overlay_bg.png",
+    "layer0.texture": "ayu/assets/common/overlay-shadow.png",
     "layer0.inner_margin": [25, 45, 25, 35],
     "layer0.opacity": 1.0,
+    "layer0.tint": ["{ui.panel.shadow.rgb}"],
+
+    "layer1.texture": "ayu/assets/common/overlay-bg.png",
+    "layer1.inner_margin": [25, 45, 25, 35],
+    "layer1.opacity": 1.0,
+    "layer1.tint": ["{ui.panel.bg.rgb}"],
+
     "content_margin": [20, 45, 20, 35]
   },
 
@@ -158,7 +161,7 @@
 
   {
     "class": "mini_quick_panel_row",
-    "layer0.tint": ["{ui.bg}", 0],
+    "layer0.tint": ["{common.bg.rgb}", 0],
     "layer0.inner_margin": [2, 2, 2, 2],
     "layer0.opacity": 1.0
   },
@@ -168,7 +171,7 @@
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": ["{ui.panel_row_bg}"]
+    "layer0.tint": ["{ui.panel.row_bg.rgb}"]
   },
 
   // Quick panel project setting (project manager) (cmd + ctrl + p)
@@ -176,7 +179,7 @@
   {
     "class": "quick_panel",
     "row_padding": [32, 12],
-    "layer0.tint": ["{ui.panel_bg}"],
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
     "layer0.opacity": 1.0
   },
 
@@ -185,7 +188,7 @@
   {
     "class": "quick_panel_row",
     "layer0.texture": "",
-    "layer0.tint": ["{ui.panel_bg}"],
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
     "layer0.inner_margin": 0,
     "layer0.opacity": 1.0
   },
@@ -195,7 +198,7 @@
   {
     "class": "quick_panel_row",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint": ["{ui.panel_bg}"],
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
     "layer0.opacity": 1.0
   },
 
@@ -205,7 +208,7 @@
     "class": "quick_panel",
     "parents": [{"class": "overlay_control"}],
     "row_padding": [10, 7],
-    "layer0.tint": ["{ui.panel_bg}"],
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
     "layer0.opacity": 1.0
   },
 
@@ -214,17 +217,17 @@
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": ["{ui.panel_row_bg}"]
+    "layer0.tint": ["{ui.panel.row_bg.rgb}"]
   },
 
   // Panel labels
 
   {
     "class": "quick_panel_label",
-    "fg": ["{ui.fg}"],
-    "match_fg": ["{ui.accent}"],
-    "selected_fg": ["{ui.fg_active}"],
-    "selected_match_fg": ["{ui.accent}"]
+    "fg": ["{ui.fg.rgb}"],
+    "match_fg": ["{common.accent.rgb}"],
+    "selected_fg": ["{common.fg.rgb}"],
+    "selected_match_fg": ["{common.accent.rgb}"]
   },
 
   // Panel labels
@@ -232,28 +235,28 @@
   {
     "class": "quick_panel_label",
     "parents": [{"class": "overlay_control"}],
-    "fg": ["{ui.fg}"],
-    "match_fg": ["{ui.accent}"],
-    "selected_fg": ["{ui.fg_active}"],
-    "selected_match_fg": ["{ui.accent}"]
+    "fg": ["{ui.fg.rgb}"],
+    "match_fg": ["{common.accent.rgb}"],
+    "selected_fg": ["{common.fg.rgb}"],
+    "selected_match_fg": ["{common.accent.rgb}"]
   },
 
   // Panels sublabels
 
   {
     "class": "quick_panel_path_label",
-    "fg": ["{ui.panel_path_fg}"],
-    "match_fg": ["{ui.fg_active}"],
-    "selected_fg": ["{ui.fg}"],
-    "selected_match_fg": ["{ui.fg_active}"]
+    "fg": ["{ui.panel.path_fg.rgb}"],
+    "match_fg": ["{common.fg.rgb}"],
+    "selected_fg": ["{ui.fg.rgb}"],
+    "selected_match_fg": ["{common.fg.rgb}"]
   },
 
   // Panels data / score
 
   {
     "class": "quick_panel_score_label",
-    "fg": ["{ui.fg}"],
-    "selected_fg": ["{ui.fg}"]
+    "fg": ["{ui.fg.rgb}"],
+    "selected_fg": ["{ui.fg.rgb}"]
   },
 
 
@@ -271,7 +274,7 @@
     "mouse_wheel_switch": false,
 
     "layer0.opacity": 1.0,
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "content_margin": [10, 0]
   },
   {
@@ -284,7 +287,8 @@
     "settings": ["ui_separator"],
     "content_margin": [0, 0, 0, 0],
     "layer1.opacity": "{ui.opacity}",
-    "layer1.texture": "ayu/assets/"{theme}"/separator_bottom.png",
+    "layer1.texture": "ayu/assets/common/separator-bottom.png",
+    "layer1.tint": ["{ui.fg.rgb}"],
     "layer1.inner_margin": [1, 0, 1, 2]
   },
   {
@@ -297,13 +301,14 @@
   {
     "class": "tab_control",
 
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1.0,
 
     "layer1.texture": "",
 
-    "layer2.texture": "ayu/assets/"{theme}"/tab_active.png",
-    "layer2.inner_margin": [1, 5, 1, 0],
+    "layer2.texture": "ayu/assets/common/separator-bottom.png",
+    "layer2.tint": ["{common.accent.rgb}"],
+    "layer2.inner_margin": [1, 0, 1, 2],
     "layer2.opacity": 0.0,
 
     "layer3.texture": "",
@@ -315,11 +320,13 @@
     "class": "tab_control",
     "settings": ["ui_separator"],
 
-    "layer1.texture": "ayu/assets/"{theme}"/separator_right.png",
+    "layer1.texture": "ayu/assets/common/separator-right.png",
+    "layer1.tint": ["{ui.fg.rgb}"],
     "layer1.inner_margin": [0, 1, 2, 1],
     "layer1.opacity": "{ui.opacity}",
 
-    "layer3.texture": "ayu/assets/"{theme}"/separator_bottom.png",
+    "layer3.texture": "ayu/assets/common/separator-bottom.png",
+    "layer3.tint": ["{ui.fg.rgb}"],
     "layer3.inner_margin": [1, 0, 1, 2],
     "layer3.opacity": "{ui.opacity}"
   },
@@ -355,7 +362,7 @@
 
   {
     "class": "tab_label",
-    "fg": ["{ui.fg}"],
+    "fg": ["{ui.fg.rgb}"],
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.size": 12,
@@ -369,7 +376,7 @@
   {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": ["{ui.fg_active}"],
+    "fg": ["{common.fg.rgb}"],
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0]
   },
@@ -386,19 +393,14 @@
     "content_margin": [0, 0],
 
   // Close Icon
-    "layer0.texture": "ayu/assets/"{theme}"/close.png",
-    "layer0.opacity": 1,
-
-  // Close Icon Hover
-    "layer1.texture": "ayu/assets/"{theme}"/close--hover.png",
-    "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/close.png",
+    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.opacity": 1.0,
 
   // Dirty Icon
-    "layer2.texture": "ayu/assets/"{theme}"/dirty.png",
-
-  // Dirty Icon Hover
-    "layer3.texture": "ayu/assets/"{theme}"/dirty--hover.png",
-    "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" }
+    "layer1.texture": "ayu/assets/common/dirty.png",
+    "layer1.tint": ["{ui.fg.rgb}"],
+    "layer1.opacity": 0,
   },
 
   // Default
@@ -407,30 +409,21 @@
     "settings": ["show_tab_close_buttons"],
     "content_margin": [8, 8]
   },
-  // Selected Tab
-  {
-    "class": "tab_close_button",
-    "settings": ["show_tab_close_buttons"],
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "layer0.opacity": 1, // Close Icon
-    "layer1.opacity": 0 // Close Icon Hover
-  },
+
   // Default hover
   {
     "class": "tab_close_button",
     "settings": ["show_tab_close_buttons"],
     "attributes": ["hover"],
-    "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 1 // Close Icon Hover
+    "layer0.tint": ["{common.accent.rgb}"]
   },
+
   // Dirty tab
   {
     "class": "tab_close_button",
     "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
     "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 0, // Close Icon Hover
-    "layer2.opacity": 0, // Dirty Icon
-    "layer3.opacity": 1, // Dirty Icon Hover
+    "layer1.opacity": 1.0, // dirty Icon
     "content_margin": [8, 8]
   },
 
@@ -439,83 +432,78 @@
     "class": "tab_close_button",
     "parents": [{"class": "tab_control", "attributes": ["dirty"]}],
     "attributes": ["hover"],
-    "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 1, // Close Icon Hover
-    "layer2.opacity": 0, // Dirty Icon
-    "layer3.opacity": 0  // Dirty Icon Hover
+    "layer0.opacity": 1.0, // Close Icon
+    "layer1.opacity": 0 // Close Icon
   },
+
   // Selected dirty tab
   {
     "class": "tab_close_button",
     "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
     "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 0, // Close Icon Hover
-    "layer2.opacity": 0, // Dirty Icon
-    "layer3.opacity": 1  // Dirty Icon Hover
+    "layer1.opacity": 1.0, // Dirty Icon
+    "layer1.tint": ["{common.accent.rgb}"]
   },
+
   // Selected dirty tab on hover
   {
     "class": "tab_close_button",
     "parents": [{"class": "tab_control", "attributes": ["selected", "dirty"]}],
     "attributes": ["hover"],
-    "layer0.opacity": 0, // Close Icon
-    "layer1.opacity": 1, // Close Icon Hover
-    "layer2.opacity": 0, // Dirty Icon
-    "layer3.opacity": 0  // Dirty Icon Hover
+    "layer0.opacity": 1.0,
+    "layer1.opacity": 0
   },
+
   // tab set scroll left | scroll right
   {
     "class": "scroll_tabs_left_button",
     "content_margin": [12, 15],
-    "layer0.texture": "ayu/assets/"{theme}"/arrow_left.png",
-    "layer0.opacity": 1.0,
-    "layer1.texture": "ayu/assets/"{theme}"/arrow_left--hover.png",
-    "layer1.opacity": 0.0
+    "layer0.texture": "ayu/assets/common/arrow-left.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0
   },
 
   {
     "class": "scroll_tabs_left_button",
     "attributes": ["hover"],
-    "layer1.opacity": 1.0
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   {
     "class": "scroll_tabs_right_button",
     "content_margin": [12, 15],
-    "layer0.texture": "ayu/assets/"{theme}"/arrow_right.png",
-    "layer0.opacity": 1.0,
-    "layer1.texture": "ayu/assets/"{theme}"/arrow_right--hover.png",
-    "layer1.opacity": 0.0
+    "layer0.texture": "ayu/assets/common/arrow-right.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0
   },
   {
     "class": "scroll_tabs_right_button",
     "settings": ["ui_separator"],
-    "layer2.texture": "ayu/assets/"{theme}"/separator_right.png",
+    "layer2.texture": "ayu/assets/common/separator-right.png",
+    "layer2.tint": ["{ui.fg.rgb}"],
     "layer2.opacity": "{ui.opacity}",
-    "layer2.inner_margin": [0, 1, 2, 1]
+    "layer2.inner_margin" : [0, 1, 2, 1]
   },
 
   {
     "class": "scroll_tabs_right_button",
     "attributes": ["hover"],
-    "layer1.opacity": 1.0
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   {
     "class": "show_tabs_dropdown_button",
     "content_margin": [12, 12],
-    "layer0.texture": "ayu/assets/"{theme}"/overflow_menu.png",
+    "layer0.texture": "ayu/assets/common/overflow-menu.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
     "layer0.opacity": 1.0,
-    "layer0.inner_margin": 0,
-    "layer1.texture": "ayu/assets/"{theme}"/overflow_menu--hover.png",
-    "layer1.opacity": 0.0,
-    "layer1.inner_margin": 0
+    "layer0.inner_margin": [0, 0]
   },
 
   {
     "class": "show_tabs_dropdown_button",
     "attributes": ["hover"],
-    "layer1.opacity": 1.0
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
 
@@ -525,15 +513,15 @@
 
   {
     "class": "sidebar_container",
-    "content_margin": [0, -10, 0, 0],
+    "content_margin": [0, 5, 0, 0],
     "layer0.opacity": 1,
-    "layer0.tint": ["{ui.bg}"]
+    "layer0.tint": ["{common.bg.rgb}"]
   },
   {
     "class": "sidebar_container",
     "settings": ["ui_separator"],
-    "content_margin": [0, -10, 0, 0],
-    "layer1.texture": "ayu/assets/"{theme}"/separator_right.png",
+    "layer1.texture": "ayu/assets/common/separator-right.png",
+    "layer1.tint": ["{ui.fg.rgb}"],
     "layer1.inner_margin": [0, 1, 2, 1],
     "layer1.opacity": "{ui.opacity}"
   },
@@ -549,13 +537,17 @@
 
   {
     "class": "sidebar_heading",
-    "color": [0, 0, 0, 0]
+    "color": ["{ui.fg.rgb}", 150],
+    "font.face": "Roboto mono",
+    "font.bold": true,
+    "font.size": 11
   },
 
   {
     "class": "tree_row",
-    "layer1.texture": "ayu/assets/"{theme}"/tree_highlight.png",
+    "layer1.texture": "ayu/assets/common/tree-highlight.png",
     "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
+    "layer1.tint": ["{common.accent.rgb}"],
     "layer1.inner_margin": [5, 0, 0, 0]
   },
 
@@ -567,7 +559,7 @@
 
   {
     "class": "sidebar_label",
-    "color": ["{ui.fg}"],
+    "color": ["{ui.fg.rgb}"],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0],
     "font.face": "Roboto mono",
@@ -577,13 +569,13 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["hover"]}],
-    "color": ["{ui.fg_active}"]
+    "color": ["{common.fg.rgb}"]
   },
 
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "color": ["{ui.fg_active}"],
+    "color": ["{common.fg.rgb}"],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0]
   },
@@ -591,7 +583,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-    "color": ["{ui.fg}"],
+    "color": ["{ui.fg.rgb}"],
     "font.bold": false
   },
 
@@ -605,13 +597,13 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-    "color": ["{ui.fg_active}"]
+    "color": ["{common.fg.rgb}"]
   },
 
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "color": ["{ui.fg_active}"]
+    "color": ["{common.fg.rgb}"]
   },
 
   {
@@ -624,7 +616,7 @@
   // {
   //  "class": "sidebar_label",
   //  "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
-  //  "color": ["{ui.fg_active}"]
+  //  "color": ["{common.fg.rgb}"]
   // },
 
   {
@@ -658,85 +650,84 @@
   {
     "class": "icon_folder",
     "content_margin": [9, 9],
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 0,
-    "layer1.texture": "ayu/assets/"{theme}"/folder.png",
+
+    "layer1.texture": "ayu/assets/common/folder.png",
+    "layer1.tint": ["{ui.folder.normal.rgb}"],
     "layer1.opacity": 1,
-    "layer2.texture": "ayu/assets/"{theme}"/folder--hover.png",
-    "layer2.opacity": 0.0,
-    "layer3.texture": "ayu/assets/"{theme}"/folder_opened.png",
-    "layer3.opacity": 0.0
+
+    "layer2.texture": "ayu/assets/common/folder-open.png",
+    "layer2.tint": ["{common.accent.rgb}"],
+    "layer2.opacity": 0.0
   },
 
   {
     "class": "icon_folder",
     "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
     "layer1.opacity": 0.0,
-    "layer2.opacity": 0.0,
-    "layer3.opacity": 1.0
+    "layer2.opacity": 1.0
   },
 
   {
     "class": "icon_folder",
     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-    "layer1.opacity": 0.0,
-    "layer2.opacity": 1.0,
-    "layer3.opacity": 0.0
+    "layer1.tint": ["{common.accent.rgb}"]
   },
 
   {
     "class": "icon_folder",
     "parents": [{ "class": "tree_row", "attributes": ["expanded", "hover"] }],
-    "layer3.texture": {
+    "layer2.texture": {
       "keyframes": [
-        "ayu/assets/"{theme}"/folder_opened--hover-0.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-1.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-2.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-3.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-4.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-5.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-5.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-5.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-6.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-6.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-6.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-6.png",
-        "ayu/assets/"{theme}"/folder_opened--hover-7.png"
+        "ayu/assets/common/folder-open-1.png",
+        "ayu/assets/common/folder-open-1.png",
+        "ayu/assets/common/folder-open-2.png",
+        "ayu/assets/common/folder-open-3.png",
+        "ayu/assets/common/folder-open-4.png",
+        "ayu/assets/common/folder-open-5.png",
+        "ayu/assets/common/folder-open-5.png",
+        "ayu/assets/common/folder-open-5.png",
+        "ayu/assets/common/folder-open-6.png",
+        "ayu/assets/common/folder-open-6.png",
+        "ayu/assets/common/folder-open-6.png",
+        "ayu/assets/common/folder-open-6.png",
+        "ayu/assets/common/folder-open.png"
       ],
       "loop": false,
       "frame_time": 0.020
     },
     "layer1.opacity": 0.0,
-    "layer2.opacity": 0.0,
-    "layer3.opacity": 1.0
+    "layer2.opacity": 1.0
   },
 
   {
     "class": "icon_folder",
     "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-    "layer1.texture": "ayu/assets/"{theme}"/folder--hover.png"
+    "layer1.tint": ["{common.accent.rgb}"]
   },
 
   {
     "class": "icon_folder_loading",
     "layer1.texture": {
       "keyframes": [
-        "ayu/assets/"{theme}"/spinner11.png",
-        "ayu/assets/"{theme}"/spinner10.png",
-        "ayu/assets/"{theme}"/spinner9.png",
-        "ayu/assets/"{theme}"/spinner8.png",
-        "ayu/assets/"{theme}"/spinner7.png",
-        "ayu/assets/"{theme}"/spinner6.png",
-        "ayu/assets/"{theme}"/spinner5.png",
-        "ayu/assets/"{theme}"/spinner4.png",
-        "ayu/assets/"{theme}"/spinner3.png",
-        "ayu/assets/"{theme}"/spinner2.png",
-        "ayu/assets/"{theme}"/spinner1.png",
-        "ayu/assets/"{theme}"/spinner.png"
+        "ayu/assets/common/spinner11.png",
+        "ayu/assets/common/spinner10.png",
+        "ayu/assets/common/spinner9.png",
+        "ayu/assets/common/spinner8.png",
+        "ayu/assets/common/spinner7.png",
+        "ayu/assets/common/spinner6.png",
+        "ayu/assets/common/spinner5.png",
+        "ayu/assets/common/spinner4.png",
+        "ayu/assets/common/spinner3.png",
+        "ayu/assets/common/spinner2.png",
+        "ayu/assets/common/spinner1.png",
+        "ayu/assets/common/spinner.png"
       ],
       "loop": true,
       "frame_time": 0.075
     },
+    "layer1.tint": ["{common.accent.rgb}"],
 
     "layer0.opacity": 0.0,
     "content_margin": [8, 8]
@@ -745,47 +736,33 @@
   // Symlink folder icon
   {
     "class": "icon_folder_dup",
-    "layer0.texture": "ayu/assets/"{theme}"/symlink_folder.png",
+    "content_margin": [9, 9],
+    "layer0.texture": "ayu/assets/common/folder.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
     "layer0.opacity": 1.0,
-    "content_margin": [9, 9]
+
+    "layer1.texture": "ayu/assets/common/folder-symlink.png",
+    "layer1.tint": ["{ui.fg.rgb}"],
+    "layer1.opacity": 0.3
   },
 
   {
     "class": "icon_folder_dup",
     "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
-    "layer0.texture": "ayu/assets/"{theme}"/symlink_folder--hover.png"
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   {
     "class": "icon_folder_dup",
     "parents": [{"class": "tree_row", "attributes": ["expanded"] }],
-    "layer0.texture": "ayu/assets/"{theme}"/symlink_folder--hover.png"
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Hidden arrow icon before folder
 
   {
     "class": "disclosure_button_control",
-    "layer0.texture": "ayu/assets/"{theme}"/folder.png",
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": 0,
-    "layer1.texture": "ayu/assets/"{theme}"/folder--hover.png",
-    "layer1.opacity": 0.0,
-    "layer1.inner_margin": 0,
     "content_margin": [0, 0, 0, 0]
-  },
-
-  {
-    "class": "disclosure_button_control",
-    "parents": [{ "class": "tree_row", "attributes": ["hover"]}],
-    "layer0.opacity": 0.0,
-    "layer1.opacity": 1.0
-  },
-
-  {
-    "class": "disclosure_button_control",
-    "attributes": ["expanded"],
-    "layer0.texture": "ayu/assets/"{theme}"/folder_opened.png"
   },
 
   // Opened files
@@ -794,14 +771,10 @@
     "content_margin": [8, 8],
 
   // Default Close icon
-    "layer0.texture": "ayu/assets/"{theme}"/close.png",
-    "layer0.opacity": { "target": 0.0, "speed": 7.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/close.png",
+    "layer0.opacity": 0,
     "layer0.inner_margin": [0, 0],
-
-  // Hover close icon
-    "layer1.texture": "ayu/assets/"{theme}"/close--hover.png",
-    "layer1.opacity": 0,
-    "layer1.inner_margin": [0, 0]
+    "layer0.tint": ["{ui.fg.rgb}"]
   },
 
 
@@ -811,23 +784,22 @@
     "class": "close_button",
     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
   // Default Close icon
-    "layer0.texture": "ayu/assets/"{theme}"/close.png",
-    "layer0.opacity": { "target": 1.0, "speed": 7.0, "interpolation": "smoothstep" },
-    "layer0.inner_margin": [0, 0]
+    "layer0.opacity": 0.6
   },
 
   {
     "class": "close_button",
     "attributes": ["dirty"],
-    "layer0.texture": "ayu/assets/"{theme}"/dirty--hover.png",
+    "layer0.texture": "ayu/assets/common/dirty.png",
+    "layer0.tint": ["{ui.fg.rgb}"],
     "layer0.opacity": 1.0
   },
 
   {
     "class": "close_button",
     "attributes": ["hover"],
-    "layer0.opacity": 0,
-    "layer1.opacity": 1.0
+    "layer0.opacity": 1.0,
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
 
@@ -839,7 +811,7 @@
   // !!!
   {
     "class": "scroll_bar_control",
-    "layer0.tint" : ["{ui.bg}"],
+    "layer0.tint" : ["{common.bg.rgb}"],
     "layer0.opacity": 1,
     "layer0.inner_margin": [0, 0],
     "blur": false
@@ -850,7 +822,7 @@
   {
     "class": "scroll_bar_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint": ["{ui.bg}", 0],
+    "layer0.tint": ["{common.bg.rgb}", 0],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 2],
     "blur": false
@@ -862,7 +834,7 @@
     "class": "scroll_bar_control",
     "attributes": ["horizontal"],
     "layer0.texture": "",
-    "layer0.tint" : ["{ui.bg}"],
+    "layer0.tint" : ["{common.bg.rgb}"],
     "layer0.inner_margin": [0, 0],
     "blur": false
   },
@@ -873,7 +845,7 @@
   //  "class": "scroll_bar_control",
   //  "attributes": ["horizontal"],
   //  "parents": [{"class": "overlay_control"}],
-  //  "layer0.tint": ["{ui.bg}", 0],
+  //  "layer0.tint": ["{common.bg.rgb}", 0],
   //  "layer0.opacity": 0.0,
   //  "layer0.inner_margin": [0, 2],
   //  "blur": false
@@ -884,7 +856,7 @@
   {
     "class": "scroll_corner_control",
     "layer0.texture": "",
-    "layer0.tint":["{ui.bg}"],
+    "layer0.tint":["{common.bg.rgb}"],
     "layer0.inner_margin": [0, 0],
     "layer0.opacity": 1,
     "blur": false
@@ -895,7 +867,7 @@
   {
     "class": "puck_control",
     "layer0.texture": "",
-    "layer0.tint": ["{ui.scrollbar.puck}", 50],
+    "layer0.tint": ["{ui.scrollbar.puck.rgb}", 50],
     "layer0.opacity": 1,
     "layer0.inner_margin": [0, 0],
     "content_margin": [1, 12],
@@ -908,7 +880,7 @@
     "class": "puck_control",
     "attributes": ["horizontal"],
     "layer0.texture": "",
-    "layer0.tint": ["{ui.scrollbar.puck}", 50],
+    "layer0.tint": ["{ui.scrollbar.puck.rgb}", 50],
     "layer0.inner_margin": [0, 0],
     "content_margin": [12, 1],
     "blur": false
@@ -992,7 +964,7 @@
 
   {
     "class": "label_control",
-    "color": ["{ui.fg}"],
+    "color": ["{ui.fg.rgb}"],
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
@@ -1005,7 +977,7 @@
   {
     "class": "label_control",
     "parents": [{"class": "status_bar"}],
-    "color": ["{ui.fg}"],
+    "color": ["{ui.fg.rgb}"],
     "font.bold": false
   },
 
@@ -1014,16 +986,16 @@
   {
     "class": "status_bar",
     "layer0.texture": "",
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1,
-    "layer1.texture": "ayu/assets/"{theme}"/separator_top.png",
+    "layer1.texture": "ayu/assets/common/separator-top.png",
     "layer1.inner_margin": [1, 2, 1, 0],
     "content_margin": [10, 0]
   },
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.panel_bg}"]
+    "layer0.tint": ["{ui.panel.bg.rgb}"]
     // "layer1.opacity": "{ui.opacity}"
   },
 
@@ -1046,15 +1018,16 @@
   // Status bar panel
   {
     "class": "panel_control",
-    "layer0.tint": ["{ui.bg}"],
+    "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [0, 5]
   },
   {
     "class": "panel_control",
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.panel_bg}"],
-    "layer1.texture": "ayu/assets/"{theme}"/separator_top.png",
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
+    "layer1.texture": "ayu/assets/common/separator-top.png",
+    "layer1.tint": ["{ui.fg.rgb}"],
     "layer1.inner_margin": [1, 2, 1, 0],
     "layer1.opacity": "{ui.opacity}"
   },
@@ -1063,30 +1036,31 @@
 
   {
     "class": "panel_close_button",
-    "layer0.texture": "ayu/assets/"{theme}"/close.png",
-    "layer0.opacity": 0.6,
-    "layer1.texture": "ayu/assets/"{theme}"/close--hover.png",
-    "layer1.opacity": 0.0,
+    "layer0.texture": "ayu/assets/common/close.png",
+    "layer0.opacity": 1.0,
+    "layer0.tint": ["{ui.fg.rgb}"],
     "content_margin": [0, 0] // 8,8 to show
   },
   // !!!
   {
     "class": "panel_close_button",
     "attributes": ["hover"],
-    "layer0.opacity": 0.0,
-    "layer1.opacity": 1.0
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Texline input
 
   {
     "class": "text_line_control",
-    "layer0.texture": "ayu/assets/"{theme}"/input_bg.png",
+    "layer0.texture": "ayu/assets/common/input-bg.png",
     "layer0.opacity": 1,
     "layer0.inner_margin": [10, 8],
-    "layer1.texture": "ayu/assets/"{theme}"/input_border.png",
+    "layer0.tint": ["{ui.panel.bg.rgb}"],
+
+    "layer1.texture": "ayu/assets/common/input-border.png",
     "layer1.opacity": "{ui.opacity}",
     "layer1.inner_margin": [10, 8],
+    "layer1.tint": ["{ui.fg.rgb}"],
     "content_margin": [10, 7, 10, 5]
   },
 
@@ -1098,8 +1072,9 @@
     "parents": [{"class": "overlay_control"}],
     "layer0.texture": "",
     "layer0.opacity": 0,
-    "layer1.texture": "ayu/assets/"{theme}"/input_search.png",
+    "layer1.texture": "ayu/assets/common/input-search.png",
     "layer1.opacity": 1,
+    "layer1.tint": ["{common.accent.rgb}"],
     "layer1.inner_margin": [35, 0, 0, 0],
     "content_margin": [43, 7, 10, 4]
   },
@@ -1108,17 +1083,14 @@
   {
     "class": "dropdown_button_control",
     "content_margin": [12, 12],
-    "layer0.texture": "ayu/assets/"{theme}"/overflow_menu.png",
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [0, 0],
-    "layer1.texture": "ayu/assets/"{theme}"/overflow_menu--hover.png",
-    "layer1.opacity": 0.0,
-    "layer1.inner_margin": [0, 0]
+    "layer0.texture": "ayu/assets/common/overflow-menu.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0
   },
   {
     "class": "dropdown_button_control",
     "attributes": ["hover"],
-    "layer1.opacity": 1.0
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
 
@@ -1133,8 +1105,8 @@
     "class": "button_control",
     "content_margin": [15, 9, 15, 10],
     "min_size": [60, 0],
-    "layer0.tint": ["{ui.accent}", 10],
-    "layer0.texture": "ayu/assets/"{theme}"/input_bg.png",
+    "layer0.tint": ["{common.accent.rgb}", 10],
+    "layer0.texture": "ayu/assets/common/input-bg.png",
     "layer0.inner_margin": [10, 8],
     "layer0.opacity": 0
   },
@@ -1147,13 +1119,13 @@
   {
     "class": "label_control",
     "parents": [{"class": "button_control"}],
-    "color":  ["{ui.fg}"]
+    "color":  ["{ui.fg.rgb}"]
   },
 
   {
     "class": "label_control",
     "parents": [{"class": "button_control", "attributes": ["hover"]}],
-    "color":  ["{ui.accent}"]
+    "color":  ["{common.accent.rgb}"]
   },
 
   // !!!
@@ -1162,7 +1134,7 @@
     "class": "icon_button_control",
     "layer0.tint": [0, 0, 0],
     "layer0.opacity": 0,
-    "layer2.tint": ["{ui.fg_active}"],
+    "layer2.tint": ["{common.fg.rgb}"],
     "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
     "content_margin": [10, 5]
   },
@@ -1174,46 +1146,41 @@
   // Regex Icon
   {
     "class": "icon_regex",
-    "layer0.texture": "ayu/assets/"{theme}"/regex--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/regex.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/regex.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_regex",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Preserve case sensitive
 
   {
     "class": "icon_case",
-    "layer0.texture": "ayu/assets/"{theme}"/matchcase--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/matchcase.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/matchcase.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_case",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Wholeword
 
   {
     "class": "icon_whole_word",
-    "layer0.texture": "ayu/assets/"{theme}"/word--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/word.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/word.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
@@ -1221,90 +1188,80 @@
   {
     "class": "icon_whole_word",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Wrap
 
   {
     "class": "icon_wrap",
-    "layer0.texture": "ayu/assets/"{theme}"/wrap--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/wrap.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/wrap.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_wrap",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // In selection
 
   {
     "class": "icon_in_selection",
-    "layer0.texture": "ayu/assets/"{theme}"/inselection--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/inselection.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/inselection.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_in_selection",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Highlight Result
 
   {
     "class": "icon_highlight",
-    "layer0.texture": "ayu/assets/"{theme}"/highlight--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/highlight.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/highlight.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_highlight",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Preserve Case
 
   {
     "class": "icon_preserve_case",
-    "layer0.texture": "ayu/assets/"{theme}"/replace_preserve_case--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/replace_preserve_case.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/replace-preserve-case.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_preserve_case",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Show context
 
   {
     "class": "icon_context",
-    "layer0.texture": "ayu/assets/"{theme}"/context--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/context.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/context.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
@@ -1312,44 +1269,39 @@
   {
     "class": "icon_context",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Use buffer
 
   {
     "class": "icon_use_buffer",
-    "layer0.texture": "ayu/assets/"{theme}"/buffer--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/buffer.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/buffer.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_use_buffer",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
   // Reverse direction
 
   {
     "class": "icon_reverse",
-    "layer0.texture": "ayu/assets/"{theme}"/reverse--hover.png",
-    "layer0.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.texture": "ayu/assets/"{theme}"/reverse.png",
-    "layer1.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
+    "layer0.texture": "ayu/assets/common/reverse.png",
+    "layer0.tint": ["{ui.folder.normal.rgb}"],
+    "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
 
   {
     "class": "icon_reverse",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
-    "layer0.opacity": { "target": 1.0, "speed": 6.0, "interpolation": "smoothstep" },
-    "layer1.opacity": { "target": 0.0, "speed": 6.0, "interpolation": "smoothstep" }
+    "layer0.tint": ["{common.accent.rgb}"]
   },
 
 

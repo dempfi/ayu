@@ -378,6 +378,8 @@ a {
 			<string>entity.name.method.js</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
 				<string>#CCA37A</string>
 			</dict>
@@ -625,7 +627,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F2590C</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -636,7 +638,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F07178</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -647,7 +649,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CCA37A</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -658,7 +660,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CCA37A</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -680,7 +682,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A37ACC</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>

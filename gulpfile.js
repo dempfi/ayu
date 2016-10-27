@@ -7,6 +7,8 @@ const fs = require('fs-jetpack')
 const exec = require('gulp-exec')
 const through = require('through2')
 
+const hexRx = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i
+
 _.templateSettings.interpolate = /"{([\s\S]+?)}"/g;
 
 function templates (type) {
@@ -16,15 +18,36 @@ function templates (type) {
 }
 
 function parse (rx, str, def = '') {
-  let parsed = rx.exec(str)
+  const parsed = rx.exec(str)
   return parsed ? parsed[1] : def
 }
 
-function fileNmae (str, name) {
-  let version = parse(/sublime="(.*?)"/g, str)
-  let prefix = parse(/prefix="(.*?)"/g, str)
-  let ext = parse(/ext="(.*?)"/g, str, 'tmTheme')
-  return path.join(process.cwd(), `${prefix}ayu-${name}${version}.${ext}`)
+function fileNmae (str, theme) {
+  const version = parse(/sublime="(.*?)"/g, str)
+  const prefix = parse(/prefix="(.*?)"/g, str)
+  const ext = parse(/ext="(.*?)"/g, str, 'tmTheme')
+  const name = `${prefix}ayu-${theme}${version}.${ext}`
+  return path.join(process.cwd(), name)
+}
+
+function tryRbg (hex) {
+  const n16 = (c) => parseInt(c, 16)
+  const isRgb = hexRx.test(hex)
+  const cs = isRgb ? hexRx.exec(hex) : []
+  const rgb = `${n16(cs[1])}, ${n16(cs[2])}, ${n16(cs[3])}`
+  return isRgb ? { hex, rgb } : hex
+}
+
+function convertColors (obj) {
+  return _.mapValues(obj, col => {
+    return _.isString(col) ? tryRbg(col) : convertColors(col)
+  })
+}
+
+function colors (file) {
+  const content = file.contents.toString('ascii')
+  const defs = yaml.parse(content)
+  return convertColors(defs)
 }
 
 function build (types, defs) {
@@ -38,15 +61,15 @@ function build (types, defs) {
 }
 
 function widgets (file, enc, next) {
-  const content = file.contents.toString('ascii')
-  build(['widget.xml', 'widget.json'],  yaml.parse(content))
+  const defs = colors(file)
+  build(['widget.xml', 'widget.json'],  defs)
     .map(this.push.bind(this))
   next()
 }
 
 function themes (file, enc, next) {
-  const content = file.contents.toString('ascii')
-  build(['syntax.xml', 'ui.json'], yaml.parse(content))
+  const defs = colors(file)
+  build(['syntax.xml', 'ui.json'], defs)
     .map(this.push.bind(this))
   next()
 }

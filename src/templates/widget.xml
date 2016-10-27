@@ -19,21 +19,21 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#"{syntax.panel_bg}"</string>
+        <string>#"{ui.panel.bg.hex}"</string>
         <key>caret</key>
-        <string>#"{syntax.caret}"</string>
+        <string>#"{common.accent.hex}"</string>
         <key>foreground</key>
-        <string>#"{syntax.fg}"</string>
+        <string>#"{common.fg.hex}"</string>
         <key>inactiveSelection</key>
-        <string>#"{syntax.in_selection}"</string>
+        <string>#"{syntax.in_selection.hex}"</string>
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
-        <string>#"{syntax.line_hg}"</string>
+        <string>#"{syntax.line_hg.hex}"</string>
         <key>selection</key>
-        <string>#"{syntax.selection}"</string>
+        <string>#"{syntax.selection.hex}"</string>
         <key>selectionBorder</key>
-        <string>#"{syntax.selection}"</string>
+        <string>#"{syntax.selection.hex}"</string>
       </dict>
     </dict>
     <dict>
@@ -46,7 +46,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#"{syntax.comment}"</string>
+        <string>#"{syntax.comment.hex}"</string>
       </dict>
     </dict>
     <dict>
@@ -57,7 +57,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#"{syntax.keyword}"</string>
+        <string>#"{syntax.keyword.hex}"</string>
       </dict>
     </dict>
     <dict>
@@ -68,7 +68,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#"{syntax.constant}"</string>
+        <string>#"{syntax.constant.hex}"</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +79,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#"{syntax.string}"</string>
+        <string>#"{syntax.string.hex}"</string>
       </dict>
     </dict>
     <dict>
@@ -90,7 +90,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#"{syntax.regexp}"</string>
+        <string>#"{syntax.regexp.hex}"</string>
       </dict>
     </dict>
   </array>
