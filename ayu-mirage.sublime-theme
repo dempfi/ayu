@@ -362,13 +362,20 @@
 
   {
     "class": "tab_label",
-    "fg": [96, 112, 128],
-    "shadow_color": [0, 0, 0, 0],
-    "shadow_offset": [0, 0],
+    "fg": [33, 39, 51, 0],
+    "shadow_color": [96, 112, 128],
+    "shadow_offset": [0, -1],
     "font.size": 12,
     "font.italic": false,
     "font.bold": false,
     "font.face": "Roboto mono"
+  },
+  {
+    "class": "tab_label",
+    "fg": [96, 112, 128],
+    "settings": ["ui_fix_tab_labels"],
+    "shadow_color": [33, 39, 51, 0],
+    "shadow_offset": [0, 0]
   },
 
   // Tab selected label color
@@ -376,8 +383,16 @@
   {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "fg": [33, 39, 51, 0],
+    "shadow_color": [217, 215, 206],
+    "shadow_offset": [0, -1],
+  },
+  {
+    "class": "tab_label",
+    "settings": ["ui_fix_tab_labels"],
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
     "fg": [217, 215, 206],
-    "shadow_color": [0, 0, 0, 0],
+    "shadow_color": [33, 39, 51, 0],
     "shadow_offset": [0, 0]
   },
 

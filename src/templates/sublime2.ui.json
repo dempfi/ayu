@@ -362,13 +362,20 @@
 
   {
     "class": "tab_label",
-    "fg": ["{ui.fg.rgb}"],
-    "shadow_color": [0, 0, 0, 0],
-    "shadow_offset": [0, 0],
+    "fg": ["{common.bg.rgb}", 0],
+    "shadow_color": ["{ui.fg.rgb}"],
+    "shadow_offset": [0, -1],
     "font.size": 12,
     "font.italic": false,
     "font.bold": false,
     "font.face": "Roboto mono"
+  },
+  {
+    "class": "tab_label",
+    "fg": ["{ui.fg.rgb}"],
+    "settings": ["ui_fix_tab_labels"],
+    "shadow_color": ["{common.bg.rgb}", 0],
+    "shadow_offset": [0, 0]
   },
 
   // Tab selected label color
@@ -376,8 +383,16 @@
   {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "fg": ["{common.bg.rgb}", 0],
+    "shadow_color": ["{common.fg.rgb}"],
+    "shadow_offset": [0, -1],
+  },
+  {
+    "class": "tab_label",
+    "settings": ["ui_fix_tab_labels"],
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
     "fg": ["{common.fg.rgb}"],
-    "shadow_color": [0, 0, 0, 0],
+    "shadow_color": ["{common.bg.rgb}", 0],
     "shadow_offset": [0, 0]
   },
 
