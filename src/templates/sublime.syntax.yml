@@ -23,11 +23,11 @@ settings:
     guide: &gutter '#"{syntax.gutterFg.hex}"'
     gutter: *bg
     gutterForeground: *gutter
-    inactiveSelection: &in_selection '#"{syntax.in_selection.hex}"'
     invisibles: '#FF0000'
     lineHighlight: '#"{syntax.line_hg.hex}"'
     selection: &selection '#"{syntax.selection.hex}"'
-    selectionBorder: *selection
+    selectionBorder: '#"{common.fg.hex}"35'
+    inactiveSelection: &in_selection '#"{syntax.in_selection.hex}"'
     shadow: '#00000010'
     stackGuide: '#"{syntax.stack_guide.hex}"'
     popupCss: |

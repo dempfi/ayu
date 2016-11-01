@@ -36,7 +36,7 @@
 				<key>inactiveBackground</key>
 				<string>#212733</string>
 				<key>inactiveSelection</key>
-				<string>#1E2A35</string>
+				<string>#2D3640</string>
 				<key>invisibles</key>
 				<string>#FF0000</string>
 				<key>lineHighlight</key>
@@ -75,9 +75,9 @@ a {
 }
 </string>
 				<key>selection</key>
-				<string>#313B47</string>
+				<string>#343F4D</string>
 				<key>selectionBorder</key>
-				<string>#313B47</string>
+				<string>#D9D7CE35</string>
 				<key>shadow</key>
 				<string>#00000010</string>
 				<key>stackGuide</key>

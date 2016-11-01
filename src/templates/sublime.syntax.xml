@@ -77,7 +77,7 @@ a {
 				<key>selection</key>
 				<string>#"{syntax.selection.hex}"</string>
 				<key>selectionBorder</key>
-				<string>#"{syntax.selection.hex}"</string>
+				<string>#"{common.fg.hex}"35</string>
 				<key>shadow</key>
 				<string>#00000010</string>
 				<key>stackGuide</key>

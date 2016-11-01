@@ -27,9 +27,9 @@ syntax:
   error: FF3333
   gutterFg: 3D4752
   line_hg: '242B38'
-  selection: '313B47'
+  selection: '343F4D'
   stack_guide: '39434D'
-  in_selection: 1E2A35
+  in_selection: 2D3640
   active_guide: '606F80'
 
   tag: 5CCFE6

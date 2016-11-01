@@ -25,15 +25,15 @@
         <key>foreground</key>
         <string>#D9D7CE</string>
         <key>inactiveSelection</key>
-        <string>#1E2A35</string>
+        <string>#2D3640</string>
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
         <string>#242B38</string>
         <key>selection</key>
-        <string>#313B47</string>
+        <string>#343F4D</string>
         <key>selectionBorder</key>
-        <string>#313B47</string>
+        <string>#343F4D</string>
       </dict>
     </dict>
     <dict>
