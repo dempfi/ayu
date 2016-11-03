@@ -528,7 +528,7 @@
 
   {
     "class": "sidebar_container",
-    "content_margin": [0, 5, 0, 0],
+    "content_margin": [0, -10, 0, 0],
     "layer0.opacity": 1,
     "layer0.tint": ["{common.bg.rgb}"]
   },
@@ -552,7 +552,7 @@
 
   {
     "class": "sidebar_heading",
-    "color": ["{ui.fg.rgb}", 150],
+    "color": ["{common.bg.rgb}"],
     "font.face": "Roboto mono",
     "font.bold": true,
     "font.size": 11

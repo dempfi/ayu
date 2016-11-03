@@ -9,7 +9,7 @@ ui:
   fg: '828C99'
   panel:
     bg: FFFFFF
-    shadow: '000000'
+    shadow: 'A0A0A0'
     path_fg: B0BEC5
     row_bg: F5F5F5
 

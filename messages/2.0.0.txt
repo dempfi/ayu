@@ -1,0 +1,25 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 2.0.0
+********************************************************************************
+
+Changes:
+  * 🎨 💄 [NEW] Mirage theme 👻
+    activate with
+    ```json
+      "theme": "ayu-mirage.sublime-theme",
+      "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+    ```
+  * [NEW] build system
+  * [NEW] Reduced most of the assets
+
+  * Renamed `ayu-dark`
+    use following settings for dark theme:
+    ```json
+      "theme": "ayu-dark.sublime-theme",
+      "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+    ```
+
+  * Fix for issue with cut tab labels
+  * Fix for issue with sidebar labels

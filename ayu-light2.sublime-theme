@@ -147,7 +147,7 @@
     "layer0.texture": "ayu/assets/common/overlay-shadow.png",
     "layer0.inner_margin": [25, 45, 25, 35],
     "layer0.opacity": 1.0,
-    "layer0.tint": [0, 0, 0],
+    "layer0.tint": [160, 160, 160],
 
     "layer1.texture": "ayu/assets/common/overlay-bg.png",
     "layer1.inner_margin": [25, 45, 25, 35],
