@@ -1,0 +1,44 @@
+theme: dark
+
+common:
+  bg: 0F1419
+  fg: E6E1CF
+  accent: F29718
+
+ui:
+  fg: '3E4B59'
+  panel:
+    bg: 14191F
+    shadow: '000000'
+    path_fg: 42505E
+    row_bg: 191F26
+
+  folder:
+    normal: '3E4B59'
+
+  scrollbar:
+    puck: 'FFFFFF'
+
+  grid_divider: '1D242C' # {fg} at {opacity}
+  minimap: '100, 100, 100'
+  opacity: '0.3'
+
+syntax:
+  active_guide: '314559'
+  error: FF3333
+  gutterFg: 2D3640
+  in_selection: 1E2A35
+  line_hg: 151A1F
+  selection: '253340'
+  stack_guide: 1A2633
+
+  tag: 36A3D9
+  func: FFB454
+  regexp: 95E6CB
+  string: B8CC52
+  sup_var: F07178
+  keyword: FF7733
+  es_spec: E6B673
+  comment: 5C6773
+  constant: FFEE99
+  operator: E7C547

@@ -1,4 +1,4 @@
-![ayu](http://i.imgur.com/h56iGcG.png)
+![ayu](http://i.imgur.com/b3etBQX.png)
 
 `ayu` is a simple theme with bright colors and comes in two versions — *dark* and *light* for all day long comfortable work.
 
@@ -9,18 +9,21 @@
 # Screenshots
 
 Light with `ui_separator` option on
-![Light with separators on](http://i.imgur.com/vidbstL.png)
+![Light with separators on](http://i.imgur.com/AJbChTB.png)
 
-Dark with `ui_separator` option off
-![Dark with separators off](http://i.imgur.com/r1mqHyx.png)
+🎉**NEW**🎉 Mirage with `ui_separator` option off
+![Mirage with separators off](http://i.imgur.com/3kkWv8k.png)
 
+Dark with `ui_separator` option on
+![Dark with separators on](http://i.imgur.com/bbH1K5O.png)
 
 # Settings
 
 ```json
 "ui_separator":       true, // separators between panels
 "ui_font_size_small": true, // smaller UI font size(sidebar, statusbar etc)
-"ui_big_tabs":        true  // increased tab height
+"ui_big_tabs":        true, // increased tab height
+"ui_fix_tab_labels":  true  // to fix tab labels if they look not right
 ```
 
 # Installation
@@ -38,16 +41,10 @@ You can install `ayu` via [Package Control](https://packagecontrol.io/).
 # Activation
 ## Sublime Text 3
 ### Skins package
-[Skins](https://packagecontrol.io/packages/Skins) provides a simple and efficient way to change themes, save your own presets and quickly try out new looks. Activation is as simple as opening up the command palette, running `Select Skin` and choosing `Ayu - Dark` or `Ayu - Light` from the list. 
+[Skins](https://packagecontrol.io/packages/Skins) provides a simple and efficient way to change themes, save your own presets and quickly try out new looks. Activation is as simple as opening up the command palette, running `Select Skin` and choosing `Ayu - Dark` or `Ayu - Light` from the list.
 
 ### Normal way
 Add these lines to your user settings *Preferences > Setting - User*:
-
-For dark theme:
-```json
-"theme": "ayu.sublime-theme",
-"color_scheme": "Packages/ayu/ayu.tmTheme",
-```
 
 For light theme:
 ```json
@@ -55,21 +52,39 @@ For light theme:
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
 ```
 
-## Sublime Text 2
-Add these lines to your user settings *Preferences > Setting - User*:
-
-_Sublime Text 2 version may have some glitches, if you notice something, please file an issue._
+For mirage theme:
+```json
+"theme": "ayu-mirage.sublime-theme",
+"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+```
 
 For dark theme:
 ```json
-"theme": "ayu2.sublime-theme",
-"color_scheme": "Packages/ayu/ayu.tmTheme",
+"theme": "ayu-dark.sublime-theme",
+"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 ```
+
+## Sublime Text 2
+Add this lines to your user settings *Preferences > Setting - User*:
+
+_Sublime Text 2 version may have some glitches, if you notice something, please file an issue._
 
 For light theme:
 ```json
 "theme": "ayu-light2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
+```
+
+For mirage theme:
+```json
+"theme": "ayu-mirage2.sublime-theme",
+"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+```
+
+For dark theme:
+```json
+"theme": "ayu-dark2.sublime-theme",
+"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 ```
 
 **NOTE:** Restart Sublime Text after activation of the theme to avoid any glitches.

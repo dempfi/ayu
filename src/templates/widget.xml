@@ -1,0 +1,98 @@
+<!-- prefix="Widget - " -->
+<!-- sublime="" -->
+<!-- ext="stTheme" -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>author</key>
+  <string>Ike Ku</string>
+  <key>colorSpaceName</key>
+  <string>sRGB</string>
+  <key>name</key>
+  <string>ayu</string>
+  <key>semanticClass</key>
+  <string>ayu."{theme}"</string>
+  <key>settings</key>
+  <array>
+    <dict>
+      <key>settings</key>
+      <dict>
+        <key>background</key>
+        <string>#"{ui.panel.bg.hex}"</string>
+        <key>caret</key>
+        <string>#"{common.accent.hex}"</string>
+        <key>foreground</key>
+        <string>#"{common.fg.hex}"</string>
+        <key>inactiveSelection</key>
+        <string>#"{syntax.in_selection.hex}"</string>
+        <key>invisibles</key>
+        <string>#343434</string>
+        <key>lineHighlight</key>
+        <string>#"{syntax.line_hg.hex}"</string>
+        <key>selection</key>
+        <string>#"{syntax.selection.hex}"</string>
+        <key>selectionBorder</key>
+        <string>#"{syntax.selection.hex}"</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Comments</string>
+      <key>scope</key>
+      <string>comment</string>
+      <key>settings</key>
+      <dict>
+        <key>fontStyle</key>
+        <string>italic</string>
+        <key>foreground</key>
+        <string>#"{syntax.comment.hex}"</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Keyword</string>
+      <key>scope</key>
+      <string>keyword, storage</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#"{syntax.keyword.hex}"</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Constant</string>
+      <key>scope</key>
+      <string>constant</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#"{syntax.constant.hex}"</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>String</string>
+      <key>scope</key>
+      <string>string</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#"{syntax.string.hex}"</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
+      <string>Escape</string>
+      <key>scope</key>
+      <string>constant.character.escape</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#"{syntax.regexp.hex}"</string>
+      </dict>
+    </dict>
+  </array>
+</dict>
+</plist>

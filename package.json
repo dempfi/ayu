@@ -1,0 +1,29 @@
+{
+  "name": "ayu",
+  "version": "0.0.1",
+  "description": "Sublime theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dempfi/ayu.git"
+  },
+  "author": "Ike Ku",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dempfi/ayu/issues"
+  },
+  "scripts": {
+    "start": "gulp watch",
+    "b": "gulp",
+    "c": "gulp clean"
+  },
+  "homepage": "https://github.com/dempfi/ayu#readme",
+  "devDependencies": {
+    "fs-jetpack": "^0.10.0",
+    "gulp": "^3.9.1",
+    "gulp-exec": "^2.1.2",
+    "lodash": "^4.16.4",
+    "through2": "^2.0.1",
+    "vinyl": "^2.0.0",
+    "yamljs": "^0.2.8"
+  }
+}

@@ -8,3 +8,14 @@
 
 *.cache
 *.pyc
+npm-debug.log
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Optional npm cache directory
+.npm
+
+# color scheme gens
+/ayu-*.yml
