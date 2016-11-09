@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>ayu</string>
 	<key>semanticClass</key>
-	<string>ayu.dark</string>
+	<string>ayu.light</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -24,7 +24,7 @@
 				<key>findHighlight</key>
 				<string>#A37ACC</string>
 				<key>findHighlightForeground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 				<key>foreground</key>
 				<string>#5C6773</string>
 				<key>guide</key>
@@ -77,7 +77,7 @@ a {
 				<key>selection</key>
 				<string>#F0EEE4</string>
 				<key>selectionBorder</key>
-				<string>#F0EEE4</string>
+				<string>#5C677335</string>
 				<key>shadow</key>
 				<string>#00000010</string>
 				<key>stackGuide</key>
@@ -145,7 +145,7 @@ a {
 			<key>name</key>
 			<string>Function, Special Method, Block Level</string>
 			<key>scope</key>
-			<string>entity.name.function, keyword.other.special-method, meta.block-level</string>
+			<string>entity.name.function, keyword.other.special-method, variable.function, meta.block-level</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -243,7 +243,7 @@ a {
 				<key>background</key>
 				<string>#F2590C</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -625,7 +625,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F2590C</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -636,7 +636,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F07178</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -647,7 +647,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CCA37A</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -658,7 +658,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CCA37A</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -680,7 +680,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A37ACC</string>
+				<string>#41A6D9</string>
 			</dict>
 		</dict>
 		<dict>
@@ -715,7 +715,7 @@ a {
 				<key>background</key>
 				<string>#41A6D9</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -728,7 +728,7 @@ a {
 				<key>background</key>
 				<string>#86B300</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -741,7 +741,7 @@ a {
 				<key>background</key>
 				<string>#F2590C</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -754,7 +754,7 @@ a {
 				<key>background</key>
 				<string>#F07178</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -776,7 +776,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -820,7 +820,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#FFFFFF</string>
 			</dict>
 		</dict>
 	</array>

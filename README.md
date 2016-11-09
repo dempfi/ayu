@@ -2,7 +2,7 @@
 
 > Source from: https://github.com/dempfi/ayu
 
-A simple theme with bright colors and comes in two versions — *dark* and *light* for all day long comfortable work.
+A simple theme with bright colors and comes in three versions — *dark*, *light* and *mirage* for all day long comfortable work.
 
 ## Install
 
@@ -10,7 +10,7 @@ A simple theme with bright colors and comes in two versions — *dark* and *ligh
 ext install ayu
 ```
 
-Then go to `Preferences > Color Theme > Ayu Light(or Ayu Dark)`.  
+Then go to `Preferences > Color Theme > Ayu Light(or Ayu Dark, or Ayu Mirage)`.  
 If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`.
 
 ## Font
@@ -20,8 +20,11 @@ If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`
 ## Screenshots
 
 #### Light
-![Light](http://imageshack.com/a/img922/9809/t6KnId.png)
+![Light](http://ww2.sinaimg.cn/large/006tNbRwgw1f9lyd104zsj30xc0m778c.jpg)
 
 #### Dark
-![Dark](http://imageshack.com/a/img922/6946/vGOiNa.png)
+![Dark](http://ww2.sinaimg.cn/large/006tNbRwgw1f9lydwpxp8j30xc0m8gpy.jpg)
+
+#### Mirage
+![Mirage](http://ww1.sinaimg.cn/large/006tNbRwgw1f9lyfkgfq5j30xc0m842n.jpg)
 

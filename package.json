@@ -1,8 +1,8 @@
 {
     "name": "ayu",
     "displayName": "Ayu",
-    "description": "A simple theme with bright colors and comes in two versions — dark and light for all day long comfortable work.",
-    "version": "0.1.0",
+    "description": "A simple theme with bright colors and comes in three versions — dark, light and mirage for all day long comfortable work.",
+    "version": "0.2.0",
     "publisher": "teabyii",
     "license": "MIT",
     "repository": {
@@ -37,6 +37,11 @@
                 "label": "Ayu Light",
                 "uiTheme": "vs",
                 "path": "./ayu-light.tmTheme"
+            },
+            {
+                "label": "Ayu Mirage",
+                "uiTheme": "vs-dark",
+                "path": "./ayu-mirage.tmTheme"
             }
         ],
         "iconThemes": [
