@@ -1,6 +1,6 @@
 ![ayu](http://i.imgur.com/b3etBQX.png)
 
-`ayu` is a simple theme with bright colors and comes in two versions — *dark* and *light* for all day long comfortable work.
+`ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
 # Font
 
