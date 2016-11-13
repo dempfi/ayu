@@ -1162,7 +1162,7 @@
   {
     "class": "icon_regex",
     "layer0.texture": "ayu/assets/regex.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1178,7 +1178,7 @@
   {
     "class": "icon_case",
     "layer0.texture": "ayu/assets/matchcase.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1194,7 +1194,7 @@
   {
     "class": "icon_whole_word",
     "layer0.texture": "ayu/assets/word.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1211,7 +1211,7 @@
   {
     "class": "icon_wrap",
     "layer0.texture": "ayu/assets/wrap.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1227,7 +1227,7 @@
   {
     "class": "icon_in_selection",
     "layer0.texture": "ayu/assets/inselection.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1243,7 +1243,7 @@
   {
     "class": "icon_highlight",
     "layer0.texture": "ayu/assets/highlight.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1259,7 +1259,7 @@
   {
     "class": "icon_preserve_case",
     "layer0.texture": "ayu/assets/replace-preserve-case.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1275,7 +1275,7 @@
   {
     "class": "icon_context",
     "layer0.texture": "ayu/assets/context.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1292,7 +1292,7 @@
   {
     "class": "icon_use_buffer",
     "layer0.texture": "ayu/assets/buffer.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1308,7 +1308,7 @@
   {
     "class": "icon_reverse",
     "layer0.texture": "ayu/assets/reverse.png",
-    "layer0.tint": [62, 75, 89],
+    "layer0.tint": [96, 112, 128],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
