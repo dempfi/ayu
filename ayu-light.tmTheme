@@ -38,7 +38,7 @@
 				<key>inactiveSelection</key>
 				<string>#F2F2EB</string>
 				<key>invisibles</key>
-				<string>#FF0000</string>
+				<string>#EAEBEB</string>
 				<key>lineHighlight</key>
 				<string>#F2F2F2</string>
 				<key>popupCss</key>
