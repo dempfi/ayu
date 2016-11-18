@@ -25,7 +25,7 @@
         <key>foreground</key>
         <string>#"{common.fg.hex}"</string>
         <key>inactiveSelection</key>
-        <string>#"{syntax.in_selection.hex}"</string>
+        <string>#"{syntax.selection.hex}"88</string>
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
