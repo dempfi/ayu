@@ -18,7 +18,7 @@ settings:
     inactiveBackground: *bg
     caret: '#"{common.accent.hex}"'
     findHighlight: &constant '#"{syntax.constant.hex}"'
-    findHighlightForeground: &white '#FFFFFF'
+    findHighlightForeground: *bg
     foreground: &fg '#"{common.fg.hex}"'
     guide: &gutter '#"{syntax.gutterFg.hex}"'
     gutter: *bg
@@ -135,7 +135,7 @@ settings:
   scope: invalid.deprecated
   settings:
     background: *keyword
-    foreground: *white
+    foreground: &white '#FFFFFF'
 
 - name: Html punctuations tags
   scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
