@@ -24,13 +24,12 @@ ui:
   opacity: '0.3'
 
 syntax:
-  active_guide: '314559'
   error: FF3333
-  gutterFg: 2D3640
-  in_selection: 1E2A35
   line_hg: 151A1F
+  gutterFg: 2D3640
   selection: '253340'
   stack_guide: 1A2633
+  active_guide: '314559'
 
   tag: 36A3D9
   func: FFB454

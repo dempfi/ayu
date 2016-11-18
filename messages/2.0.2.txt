@@ -1,0 +1,11 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 2.0.2
+********************************************************************************
+
+Changes:
+
+  * Fix inactive selection color
+  * Fix selection border color
+  * Fix find highlight

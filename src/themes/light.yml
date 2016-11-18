@@ -29,7 +29,6 @@ syntax:
   gutterFg: D9D8D7
   selection: F0EEE4
   stack_guide: DEDDDC
-  in_selection: F2F2EB
   active_guide: B3B2B1
 
   tag: 41A6D9
