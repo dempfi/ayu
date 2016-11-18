@@ -24,7 +24,7 @@
 				<key>findHighlight</key>
 				<string>#"{syntax.constant.hex}"</string>
 				<key>findHighlightForeground</key>
-				<string>#"{syntax.find_highlight_fg.hex}"</string>
+				<string>#"{common.bg.hex}"</string>
 				<key>foreground</key>
 				<string>#"{common.fg.hex}"</string>
 				<key>guide</key>

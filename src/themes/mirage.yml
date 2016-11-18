@@ -31,7 +31,6 @@ syntax:
   stack_guide: '39434D'
   in_selection: 2D3640
   active_guide: '606F80'
-  find_highlight_fg: '212733'
 
   tag: 5CCFE6
   func: FFD580

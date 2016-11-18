@@ -31,7 +31,6 @@ syntax:
   line_hg: 151A1F
   selection: '253340'
   stack_guide: 1A2633
-  find_highlight_fg: 0F1419
 
   tag: 36A3D9
   func: FFB454
