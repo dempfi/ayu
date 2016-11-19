@@ -91,5 +91,5 @@ For dark theme:
 
 # Others
 
-- `ayu` for Ace: https://github.com/k15a/ayu-ace
-- `ayu` colors as NPM package: https://github.com/k15a/ayu-colors
+- `ayu` for Ace: https://github.com/ayu-theme/ayu-ace
+- `ayu` colors as NPM package: https://github.com/ayu-theme/ayu-colors
