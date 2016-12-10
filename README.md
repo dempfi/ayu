@@ -89,3 +89,7 @@ For dark theme:
 
 **NOTE:** Restart Sublime Text after activation of the theme to avoid any glitches.
 
+# Others
+
+- `ayu` for Ace: https://github.com/ayu-theme/ayu-ace
+- `ayu` colors as NPM package: https://github.com/ayu-theme/ayu-colors
