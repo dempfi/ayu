@@ -563,13 +563,22 @@
     "layer1.texture": "ayu/assets/tree-highlight.png",
     "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
     "layer1.tint": ["{common.accent.rgb}"],
-    "layer1.inner_margin": [5, 0, 0, 0]
+    "layer1.inner_margin": [5, 0, 0, 3],
+    "layer0.tint": ["{common.accent.rgb}"],
+    "layer0.opacity": 0
   },
 
   {
     "class": "tree_row",
     "attributes": ["selected"],
     "layer1.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" }
+  },
+
+  {
+    "class": "tree_row",
+    "attributes": ["selected"],
+    "settings": ["ui_sidebar_highlight_row"],
+    "layer0.opacity": 0.08
   },
 
   {

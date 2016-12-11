@@ -20,10 +20,11 @@ Dark with `ui_separator` option on
 # Settings
 
 ```json
-"ui_separator":       true, // separators between panels
-"ui_font_size_small": true, // smaller UI font size(sidebar, statusbar etc)
-"ui_big_tabs":        true, // increased tab height
-"ui_fix_tab_labels":  true  // to fix tab labels if they look not right
+"ui_separator":             true, // separators between panels
+"ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
+"ui_big_tabs":              true, // increased tab height
+"ui_fix_tab_labels":        true, // to fix tab labels if they look not right
+"ui_sidebar_highlight_row": true, // to highlight whole row for current item in sidebar
 ```
 
 # Installation
