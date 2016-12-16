@@ -1,0 +1,10 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 2.0.3
+********************************************************************************
+
+Changes:
+
+  * Support highlight_modified_tabs setting
+  * Add switch panel button icon
