@@ -1024,6 +1024,18 @@
     "min_size": [100, 0]
   },
 
+  {
+    "class": "panel_button_control",
+    "layer0.texture": "ayu/assets/switch-panel.png",
+    "layer0.tint": [62, 75, 89],
+    "layer0.opacity": 1.0
+  },
+
+  {
+    "class": "panel_button_control",
+    "attributes": ["hover"],
+    "layer0.tint": [242, 151, 24]
+  },
 
   /* @ WIDGET PANEL
   * Widget, input, buttons settings and behavioring
