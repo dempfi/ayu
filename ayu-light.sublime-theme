@@ -372,10 +372,23 @@
   },
   {
     "class": "tab_label",
+    "settings": ["highlight_modified_tabs"],
+    "font.italic": true,
+    "attributes": ["dirty"],
+    "shadow_color": [255, 106, 0]
+  },
+  {
+    "class": "tab_label",
     "fg": [130, 140, 153],
     "settings": ["ui_fix_tab_labels"],
     "shadow_color": [250, 250, 250, 0],
     "shadow_offset": [0, 0]
+  },
+  {
+    "class": "tab_label",
+    "fg": [255, 106, 0],
+    "attributes": ["dirty"],
+    "settings": ["ui_fix_tab_labels", "highlight_modified_tabs"]
   },
 
   // Tab selected label color
@@ -428,7 +441,7 @@
   // Default hover
   {
     "class": "tab_close_button",
-    "settings": ["show_tab_close_buttons"],
+    "settings": ["show_tab_close_buttons", "highlight_modified_tabs"],
     "attributes": ["hover"],
     "layer0.tint": [255, 106, 0]
   },

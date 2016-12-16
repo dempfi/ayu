@@ -372,10 +372,23 @@
   },
   {
     "class": "tab_label",
+    "settings": ["highlight_modified_tabs"],
+    "font.italic": true,
+    "attributes": ["dirty"],
+    "shadow_color": ["{common.accent.rgb}"]
+  },
+  {
+    "class": "tab_label",
     "fg": ["{ui.fg.rgb}"],
     "settings": ["ui_fix_tab_labels"],
     "shadow_color": ["{common.bg.rgb}", 0],
     "shadow_offset": [0, 0]
+  },
+  {
+    "class": "tab_label",
+    "fg": ["{common.accent.rgb}"],
+    "attributes": ["dirty"],
+    "settings": ["ui_fix_tab_labels", "highlight_modified_tabs"]
   },
 
   // Tab selected label color
@@ -428,7 +441,7 @@
   // Default hover
   {
     "class": "tab_close_button",
-    "settings": ["show_tab_close_buttons"],
+    "settings": ["show_tab_close_buttons", "highlight_modified_tabs"],
     "attributes": ["hover"],
     "layer0.tint": ["{common.accent.rgb}"]
   },
