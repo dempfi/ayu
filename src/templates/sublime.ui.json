@@ -137,7 +137,7 @@
   },
   {
     "class": "tool_tip_label_control",
-    "setting": ["ui_font_source_code_pro"],
+    "settings": ["ui_font_source_code_pro"],
     "font.face": "Source Code Pro"
   },
 
@@ -376,7 +376,7 @@
   },
   {
     "class": "tab_label",
-    "setting": ["ui_font_source_code_pro"],
+    "settings": ["ui_font_source_code_pro"],
     "font.face": "Source Code Pro"
   },
   {
@@ -581,7 +581,7 @@
   },
   {
     "class": "sidebar_heading",
-    "setting": ["ui_font_source_code_pro"],
+    "settings": ["ui_font_source_code_pro"],
     "font.face": "Source Code Pro"
   },
 
@@ -609,7 +609,7 @@
   },
   {
     "class": "sidebar_label",
-    "setting": ["ui_font_source_code_pro"],
+    "settings": ["ui_font_source_code_pro"],
     "font.face": "Source Code Pro"
   },
 
@@ -1020,7 +1020,7 @@
   },
   {
     "class": "label_control",
-    "setting": ["ui_font_source_code_pro"],
+    "settings": ["ui_font_source_code_pro"],
     "font.face": "Source Code Pro"
   },
 
