@@ -1,0 +1,9 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 2.1.1
+********************************************************************************
+
+Changes:
+
+  * Fix for scrollbar issues for Windows users
