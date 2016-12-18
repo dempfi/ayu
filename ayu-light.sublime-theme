@@ -135,7 +135,11 @@
     "font.face": "Roboto mono",
     "font.size": 12
   },
-
+  {
+    "class": "tool_tip_label_control",
+    "settings": ["ui_font_source_code_pro"],
+    "font.face": "Source Code Pro"
+  },
 
   /* @OVERLAY PANELS
   * Overlay panels setting and behavioring
@@ -372,6 +376,11 @@
   },
   {
     "class": "tab_label",
+    "settings": ["ui_font_source_code_pro"],
+    "font.face": "Source Code Pro"
+  },
+  {
+    "class": "tab_label",
     "settings": ["highlight_modified_tabs"],
     "font.italic": true,
     "attributes": ["dirty"],
@@ -570,6 +579,11 @@
     "font.bold": true,
     "font.size": 11
   },
+  {
+    "class": "sidebar_heading",
+    "settings": ["ui_font_source_code_pro"],
+    "font.face": "Source Code Pro"
+  },
 
   {
     "class": "tree_row",
@@ -601,6 +615,11 @@
     "shadow_offset": [0, 0],
     "font.face": "Roboto mono",
     "font.size": 12
+  },
+  {
+    "class": "sidebar_label",
+    "settings": ["ui_font_source_code_pro"],
+    "font.face": "Source Code Pro"
   },
 
   {
@@ -1007,6 +1026,11 @@
     "font.bold": false,
     "font.face": "Roboto mono",
     "font.size": 12
+  },
+  {
+    "class": "label_control",
+    "settings": ["ui_font_source_code_pro"],
+    "font.face": "Source Code Pro"
   },
 
   // Status bar labels

@@ -1,0 +1,10 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 2.1.0
+********************************************************************************
+
+Changes:
+
+  * Wider scrollbars. Activate with option `ui_wide_scrollbars`
+  * Add support for [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) as UI font
