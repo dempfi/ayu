@@ -25,8 +25,11 @@ Dark with `ui_separator` option on
 "ui_big_tabs":              true, // increased tab height
 "ui_fix_tab_labels":        true, // to fix tab labels if they look not right
 "ui_font_source_code_pro": true, // use [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) for UI
+<<<<<<< HEAD
 "ui_wide_scrollbars":  true,  // wider scrollbars
 "ui_sidebar_highlight_row": true // to highlight whole row for current item in sidebar
+=======
+>>>>>>> dempfi/master
 ```
 
 # Installation

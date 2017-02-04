@@ -862,129 +862,118 @@
   /* @ SCROLLBARS
   * Scrollbars settings and behavioring
   ========================================================================= */
-
-  // Normal Vertical scrollbar track
-  // !!!
   {
     "class": "scroll_bar_control",
-    "layer0.tint" : [33, 39, 51],
-    "layer0.opacity": 1,
-    "layer0.inner_margin": [0, 0],
+    "layer0.tint": [33, 39, 51],
+    "layer0.opacity": 1.0,
+
+    "layer1.texture": "ayu/assets/scrollbar-vertical-wide.png",
+    "layer1.tint": [96, 112, 128],
+    "layer1.opacity": 0.1,
+    "layer1.inner_margin": [0, 10],
     "blur": false
   },
-
-  // Normal Vertical scrollbar track inside overlay panel
-
   {
     "class": "scroll_bar_control",
     "parents": [{"class": "overlay_control"}],
-    "layer0.tint": [33, 39, 51, 0],
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [0, 2],
+    "layer0.tint": [39, 45, 56],
     "blur": false
   },
-
-  // Normal horizontal scrollbar track
-
   {
     "class": "scroll_bar_control",
     "attributes": ["horizontal"],
-    "layer0.texture": "",
-    "layer0.tint" : [33, 39, 51],
-    "layer0.inner_margin": [0, 0],
+    "layer1.texture": "ayu/assets/scrollbar-horizontal-wide.png",
+    "layer1.inner_margin": [10, 0],
     "blur": false
   },
-
-  // Normal horizontal scrollbar track inside overlay panel
-  // !!!
-  // {
-  //  "class": "scroll_bar_control",
-  //  "attributes": ["horizontal"],
-  //  "parents": [{"class": "overlay_control"}],
-  //  "layer0.tint": [33, 39, 51, 0],
-  //  "layer0.opacity": 0.0,
-  //  "layer0.inner_margin": [0, 2],
-  //  "blur": false
-  //  },
-
-  // Scrollbars corner
-
   {
     "class": "scroll_corner_control",
-    "layer0.texture": "",
-    "layer0.tint":[33, 39, 51],
-    "layer0.inner_margin": [0, 0],
-    "layer0.opacity": 1,
-    "blur": false
+    "layer0.tint": [33, 39, 51],
+    "layer0.opacity": 1.0
   },
-
-  // Vertical puck controller
-
   {
     "class": "puck_control",
-    "layer0.texture": "",
-    "layer0.tint": [255, 255, 255, 50],
-    "layer0.opacity": 1,
-    "layer0.inner_margin": [0, 0],
-    "content_margin": [1, 12],
+    "layer0.texture": "ayu/assets/scrollbar-vertical-wide.png",
+    "layer0.tint": [96, 112, 128],
+    "layer0.opacity": 0.3,
+    "layer0.inner_margin": [0, 10],
+    "content_margin": [6, 12],
     "blur": false
   },
-
-  // Horizontal puck controller
-
   {
     "class": "puck_control",
     "attributes": ["horizontal"],
-    "layer0.texture": "",
-    "layer0.tint": [255, 255, 255, 50],
-    "layer0.inner_margin": [0, 0],
-    "content_margin": [12, 1],
+    "layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png",
+    "layer0.inner_margin": [10, 0],
+    "content_margin": [12, 6],
     "blur": false
   },
-
   {
     "class": "scroll_area_control",
     "settings": ["overlay_scroll_bars"],
     "overlay": true
   },
-
   {
     "class": "scroll_area_control",
     "settings": ["!overlay_scroll_bars"],
-    "overlay": false // set to false for the original behavior
+    "overlay": false
   },
-
-
-  {
-    "class": "scroll_area_control",
-    "parents": [{"class": "overlay_control"}],
-    "settings": ["overlay_scroll_bars"],
-    "overlay": true // set to false for the original behavior
-  },
-
-  {
-    "class": "scroll_area_control",
-    "parents": [{"class": "sidebar_container"}],
-    "settings": ["!overlay_scroll_bars"],
-    "overlay": false // set to false for the original behavior
-  },
-
   {
     "class": "scroll_bar_control",
     "settings": ["overlay_scroll_bars"],
-    "layer0.tint": [28, 31, 38],
-    "layer0.inner_margin": [0, 5],
+    "layer0.opacity": 0,
+    "layer1.texture": "ayu/assets/scrollbar-vertical.png",
+    "layer1.inner_margin": [0, 5],
     "blur": false
   },
-
+  {
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars", "ui_wide_scrollbars"],
+    "layer0.texture": "ayu/assets/scrollbar-vertical-wide.png"
+  },
   {
     "class": "scroll_bar_control",
     "settings": ["overlay_scroll_bars"],
     "attributes": ["horizontal"],
-    "layer0.inner_margin": [5, 0],
-    "blur": true
+    "layer0.opacity": 0,
+    "layer1.texture": "ayu/assets/scrollbar-horizontal.png",
+    "layer1.inner_margin": [5, 0],
+    "blur": false
   },
-
+  {
+    "class": "scroll_bar_control",
+    "attributes": ["horizontal"],
+    "settings": ["overlay_scroll_bars", "ui_wide_scrollbars"],
+    "layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png"
+  },
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.texture": "ayu/assets/scrollbar-vertical.png",
+    "layer0.inner_margin": [0, 5],
+    "content_margin": [5, 20],
+    "blur": false
+  },
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars", "ui_wide_scrollbars"],
+    "layer0.texture": "ayu/assets/scrollbar-vertical-wide.png"
+  },
+  {
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "ayu/assets/scrollbar-horizontal.png",
+    "layer0.inner_margin": [5, 0],
+    "content_margin": [20, 5],
+    "blur": false
+  },
+  {
+    "class": "puck_control",
+    "attributes": ["horizontal"],
+    "settings": ["overlay_scroll_bars", "ui_wide_scrollbars"],
+    "layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png"
+  },
 
   /* @ MINIMAP
   * Minimap settings and behavioring
