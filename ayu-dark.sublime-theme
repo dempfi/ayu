@@ -591,7 +591,7 @@
     "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
     "layer1.tint": [242, 151, 24],
     "layer1.inner_margin": [5, 0, 0, 3],
-    "layer0.tint": [242, 151, 24],
+    "layer0.tint": [25, 31, 38],
     "layer0.opacity": 0
   },
 
@@ -605,7 +605,7 @@
     "class": "tree_row",
     "attributes": ["selected"],
     "settings": ["ui_sidebar_highlight_row"],
-    "layer0.opacity": 0.08
+    "layer0.opacity": 1
   },
 
   {
