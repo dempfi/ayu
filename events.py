@@ -1,8 +1,6 @@
 import sys
 
-
 package_name = 'ayu'
-
 
 def plugin_loaded():
     from package_control import events

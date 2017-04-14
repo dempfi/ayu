@@ -133,7 +133,7 @@
     "class": "tool_tip_label_control",
     "color": [115, 134, 153],
     // "font.face": "Roboto mono",
-    "font.size": 12
+    "font.size": 13
   },
   {
     "class": "tool_tip_label_control",
@@ -609,32 +609,21 @@
   {
     "class": "tree_row",
     "layer1.texture": "ayu/assets/tree-highlight.png",
-    "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-    "layer1.tint": [255, 204, 102],
-    "layer1.inner_margin": [5, 0, 0, 3],
-    "layer0.tint": [48, 53, 64],
-    "layer0.opacity": 0
+    "layer1.tint": [48, 53, 64],
+    "layer1.inner_margin": [8, 4, 8, 4],
+    "layer1.opacity": 0
   },
 
   {
     "class": "tree_row",
     "attributes": ["selected"],
-    "layer1.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" }
-  },
-
-  {
-    "class": "tree_row",
-    "attributes": ["selected"],
-    "settings": ["ui_sidebar_highlight_row"],
-    "layer0.opacity": 1
+    "layer1.opacity": 1
   },
 
   {
     "class": "sidebar_label",
     "color": [115, 134, 153],
-    "shadow_color": [0, 0, 0],
-    "shadow_offset": [0, 0],
-    // "font.face": "Roboto",
+    // "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -657,9 +646,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "color": [217, 215, 206],
-    "shadow_color": [0, 0, 0],
-    "shadow_offset": [0, 0]
+    "color": [217, 215, 206]
   },
 
   {
@@ -1402,7 +1389,7 @@
   {
     "class": "title_bar",
     "bg": [33, 39, 51],
-    "fg": [217, 215, 206]
+    "fg": [115, 134, 153]
   },
 
 

@@ -11,7 +11,7 @@ ui:
     bg: FFFFFF
     shadow: '999999'
     path_fg: B0BEC5
-    row_bg: F2F2F2
+    row_bg: EFEFEF
 
   folder:
     normal: '878F99'

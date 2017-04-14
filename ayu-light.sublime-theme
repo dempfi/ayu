@@ -106,7 +106,7 @@
 
   {
     "class": "table_row",
-    "layer0.tint": [242, 242, 242],
+    "layer0.tint": [239, 239, 239],
     "layer0.opacity": 0.0
   },
 
@@ -133,7 +133,7 @@
     "class": "tool_tip_label_control",
     "color": [133, 136, 140],
     // "font.face": "Roboto mono",
-    "font.size": 12
+    "font.size": 13
   },
   {
     "class": "tool_tip_label_control",
@@ -185,7 +185,7 @@
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [242, 242, 242]
+    "layer0.tint": [239, 239, 239]
   },
 
   // Quick panel project setting (project manager) (cmd + ctrl + p)
@@ -231,7 +231,7 @@
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [242, 242, 242]
+    "layer0.tint": [239, 239, 239]
   },
 
   // Panel labels
@@ -609,32 +609,21 @@
   {
     "class": "tree_row",
     "layer1.texture": "ayu/assets/tree-highlight.png",
-    "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-    "layer1.tint": [255, 106, 0],
-    "layer1.inner_margin": [5, 0, 0, 3],
-    "layer0.tint": [242, 242, 242],
-    "layer0.opacity": 0
+    "layer1.tint": [239, 239, 239],
+    "layer1.inner_margin": [8, 4, 8, 4],
+    "layer1.opacity": 0
   },
 
   {
     "class": "tree_row",
     "attributes": ["selected"],
-    "layer1.opacity": { "target": 1.0, "speed": 5.0, "interpolation": "smoothstep" }
-  },
-
-  {
-    "class": "tree_row",
-    "attributes": ["selected"],
-    "settings": ["ui_sidebar_highlight_row"],
-    "layer0.opacity": 1
+    "layer1.opacity": 1
   },
 
   {
     "class": "sidebar_label",
     "color": [133, 136, 140],
-    "shadow_color": [0, 0, 0],
-    "shadow_offset": [0, 0],
-    // "font.face": "Roboto",
+    // "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -657,9 +646,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "color": [92, 96, 102],
-    "shadow_color": [0, 0, 0],
-    "shadow_offset": [0, 0]
+    "color": [92, 96, 102]
   },
 
   {
@@ -1402,7 +1389,7 @@
   {
     "class": "title_bar",
     "bg": [250, 250, 250],
-    "fg": [92, 96, 102]
+    "fg": [133, 136, 140]
   },
 
 
