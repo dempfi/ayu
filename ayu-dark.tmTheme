@@ -15,6 +15,8 @@
 		<dict>
 			<key>settings</key>
 			<dict>
+				<key>accent</key>
+				<string>#F29718</string>
 				<key>activeGuide</key>
 				<string>#314559</string>
 				<key>background</key>

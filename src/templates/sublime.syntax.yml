@@ -21,6 +21,7 @@ settings:
     findHighlightForeground: *bg
     foreground: &fg '#"{common.fg.hex}"'
     guide: &gutter '#"{syntax.gutter.hex}"'
+    accent: '#"{common.accent.hex}"'
     gutter: *bg
     gutterForeground: *gutter
     invisibles: '#FF0000'

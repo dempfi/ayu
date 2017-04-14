@@ -132,7 +132,7 @@
   {
     "class": "tool_tip_label_control",
     "color": [81, 92, 102],
-    "font.face": "Roboto mono",
+    // "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -216,7 +216,7 @@
   {
     "class": "quick_panel",
     "parents": [{"class": "overlay_control"}],
-    "row_padding": [10, 7],
+    "row_padding": [20, 5],
     "layer0.tint": [20, 25, 31],
     "layer0.opacity": 1.0
   },
@@ -278,8 +278,8 @@
     "class": "tabset_control",
     "tab_overlap": 0,
     "tab_width": 50,
-    "tab_min_width": 50,
     "tab_height": 30,
+    "tab_min_width": 50,
     "mouse_wheel_switch": false,
 
     "layer0.opacity": 1.0,
@@ -303,7 +303,7 @@
   {
     "class": "tabset_control",
     "settings": ["ui_big_tabs"],
-    "tab_height": 44
+    "tab_height": 40
   },
 
   // Tabs
@@ -374,10 +374,10 @@
     "fg": [15, 20, 25, 0],
     "shadow_color": [81, 92, 102],
     "shadow_offset": [0, -1],
-    "font.size": 12,
     "font.italic": false,
     "font.bold": false,
-    "font.face": "Roboto mono"
+    "font.size": 12,
+    // "font.face": "Roboto mono"
   },
   {
     "class": "tab_label",
@@ -560,7 +560,7 @@
 
   {
     "class": "sidebar_container",
-    "content_margin": [0, -10, 0, 0],
+    "content_margin": [0, 4, 0, 0],
     "layer0.opacity": 1,
     "layer0.tint": [15, 20, 25]
   },
@@ -584,8 +584,8 @@
 
   {
     "class": "sidebar_heading",
-    "color": [15, 20, 25],
-    "font.face": "Roboto mono",
+    "color": [81, 92, 102],
+    // "font.face": "Roboto mono",
     "font.bold": true,
     "font.size": 11
   },
@@ -628,7 +628,7 @@
     "color": [81, 92, 102],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0],
-    "font.face": "Roboto mono",
+    // "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -1033,7 +1033,7 @@
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
-    "font.face": "Roboto mono",
+    // "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -1389,6 +1389,14 @@
     "class": "icon_reverse",
     "parents": [{"class": "icon_button_control", "attributes": ["selected"]}],
     "layer0.tint": [242, 151, 24]
+  },
+
+  /* Title bar
+  ===================================================================== */
+  {
+    "class": "title_bar",
+    "bg": [15, 20, 25],
+    "fg": [230, 225, 207]
   },
 
 
