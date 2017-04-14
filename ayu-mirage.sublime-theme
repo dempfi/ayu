@@ -158,10 +158,15 @@
     "layer0.opacity": 1.0,
     "layer0.tint": [17, 20, 26],
 
-    "layer1.texture": "ayu/assets/overlay-bg.png",
+    "layer1.texture": "ayu/assets/overlay-border.png",
     "layer1.inner_margin": [25, 45, 25, 35],
     "layer1.opacity": 1.0,
-    "layer1.tint": [39, 45, 56],
+    "layer1.tint": [217, 215, 206, 30],
+
+    "layer2.texture": "ayu/assets/overlay-bg.png",
+    "layer2.inner_margin": [25, 45, 25, 35],
+    "layer2.opacity": 1.0,
+    "layer2.tint": [39, 45, 56],
 
     "content_margin": [20, 45, 20, 35]
   },
@@ -575,11 +580,12 @@
 
   {
     "class": "sidebar_tree",
-    "row_padding": [20, 6],
-    "indent": 12,
-    "indent_offset": 0,
     "indent_top_level": false,
-    "dark_content": false
+    "row_padding": [20, 6],
+    "dark_content": false,
+    "spacer_rows": true,
+    "indent_offset": 0,
+    "indent": 12
   },
 
   {
@@ -628,7 +634,7 @@
     "color": [115, 134, 153],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0],
-    // "font.face": "Roboto mono",
+    // "font.face": "Roboto",
     "font.size": 12
   },
   {

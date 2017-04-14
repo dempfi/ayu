@@ -106,7 +106,7 @@
 
   {
     "class": "table_row",
-    "layer0.tint": [245, 245, 245],
+    "layer0.tint": [242, 242, 242],
     "layer0.opacity": 0.0
   },
 
@@ -156,12 +156,17 @@
     "layer0.texture": "ayu/assets/overlay-shadow.png",
     "layer0.inner_margin": [25, 45, 25, 35],
     "layer0.opacity": 1.0,
-    "layer0.tint": [126, 132, 140],
+    "layer0.tint": [153, 153, 153],
 
-    "layer1.texture": "ayu/assets/overlay-bg.png",
+    "layer1.texture": "ayu/assets/overlay-border.png",
     "layer1.inner_margin": [25, 45, 25, 35],
     "layer1.opacity": 1.0,
-    "layer1.tint": [255, 255, 255],
+    "layer1.tint": [92, 96, 102, 30],
+
+    "layer2.texture": "ayu/assets/overlay-bg.png",
+    "layer2.inner_margin": [25, 45, 25, 35],
+    "layer2.opacity": 1.0,
+    "layer2.tint": [255, 255, 255],
 
     "content_margin": [20, 45, 20, 35]
   },
@@ -180,7 +185,7 @@
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [245, 245, 245]
+    "layer0.tint": [242, 242, 242]
   },
 
   // Quick panel project setting (project manager) (cmd + ctrl + p)
@@ -226,7 +231,7 @@
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [245, 245, 245]
+    "layer0.tint": [242, 242, 242]
   },
 
   // Panel labels
@@ -254,7 +259,7 @@
 
   {
     "class": "quick_panel_path_label",
-    "fg": [149, 156, 166],
+    "fg": [176, 190, 197],
     "match_fg": [92, 96, 102],
     "selected_fg": [133, 136, 140],
     "selected_match_fg": [92, 96, 102]
@@ -575,11 +580,12 @@
 
   {
     "class": "sidebar_tree",
-    "row_padding": [20, 6],
-    "indent": 12,
-    "indent_offset": 0,
     "indent_top_level": false,
-    "dark_content": false
+    "row_padding": [20, 6],
+    "dark_content": false,
+    "spacer_rows": true,
+    "indent_offset": 0,
+    "indent": 12
   },
 
   {
@@ -606,7 +612,7 @@
     "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
     "layer1.tint": [255, 106, 0],
     "layer1.inner_margin": [5, 0, 0, 3],
-    "layer0.tint": [245, 245, 245],
+    "layer0.tint": [242, 242, 242],
     "layer0.opacity": 0
   },
 
@@ -628,7 +634,7 @@
     "color": [133, 136, 140],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0],
-    // "font.face": "Roboto mono",
+    // "font.face": "Roboto",
     "font.size": 12
   },
   {

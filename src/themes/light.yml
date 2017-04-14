@@ -9,9 +9,9 @@ ui:
   fg: '85888C'
   panel:
     bg: FFFFFF
-    row_bg: F5F5F5
-    shadow: '7E848C'
-    path_fg: 959CA6
+    shadow: '999999'
+    path_fg: B0BEC5
+    row_bg: F2F2F2
 
   folder:
     normal: '878F99'
