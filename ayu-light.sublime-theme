@@ -3,9 +3,9 @@
 // ext="sublime-theme"
 [
 
-  /* @ EMPTY WINDOW
-  * Style for empty (no tabs) window
-  ========================================================================= */
+  /* EMPTY WINDOW
+   * Style for empty (no tabs) window
+   */
 
   {
     "class" : "sheet_container_control",
@@ -14,9 +14,9 @@
   },
 
 
-  /* @ GRID LAYOUT
-  * Grid style
-  ========================================================================= */
+  /* GRID LAYOUT
+   * Grid style
+   */
 
   {
     "class": "grid_layout_control",
@@ -29,10 +29,9 @@
     "border_size": 1
   },
 
-  /* @ DIALOG POPUP
-  * Dialog popup style and progressbar
-  ========================================================================= */
-  // !!!
+  /* DIALOG POPUP
+   * Dialog popup style and progressbar
+   */
   {
     "class": "progress_gauge_control",
     "layer0.tint": [255, 106, 0],
@@ -53,9 +52,9 @@
   },
 
 
-  /* @ CODE FOLDING
-  * Folding arrow setting and behavioring
-  ========================================================================= */
+  /* CODE FOLDING
+   * Folding arrow setting and behavioring
+   */
   {
     "class": "fold_button_control",
     "layer0.texture": "ayu/assets/unfold.png",
@@ -78,10 +77,9 @@
   },
 
 
-  /* @ AUTOCOMPLETE
-  * Autocomplete popup setting and behavioring
-  ========================================================================= */
-
+  /* AUTOCOMPLETE
+   * Autocomplete popup setting and behavioring
+   */
   {
     "class": "popup_control",
     "layer0.tint": [255, 255, 255],
@@ -117,10 +115,9 @@
   },
 
 
-  /* @ TOOLTIP
-  * Tooltip setting and behavioring
-  ========================================================================= */
-
+  /* TOOLTIP
+   * Tooltip setting and behavioring
+   */
   {
     "class": "tool_tip_control",
     "layer0.tint": [250, 250, 250],
@@ -146,9 +143,9 @@
     "font.face": ""
   },
 
-  /* @OVERLAY PANELS
-  * Overlay panels setting and behavioring
-  ========================================================================= */
+  /* OVERLAY PANELS
+   * Overlay panels setting and behavioring
+   */
 
   // Command Panel
   {
@@ -275,9 +272,9 @@
 
 
 
-  /* @ TABS
-  * Tabs settings and behavioring
-  ========================================================================= */
+  /* TABS
+   * Tabs settings and behavioring
+   */
 
   {
     "class": "tabset_control",
@@ -559,9 +556,9 @@
   },
 
 
-  /* @ SIDEBAR
-  * Sidebar panel settings and behavioring
-  ========================================================================= */
+  /* SIDEBAR
+   * Sidebar panel settings and behavioring
+   */
 
   {
     "class": "sidebar_container",
@@ -872,9 +869,9 @@
   },
 
 
-  /* @ SCROLLBARS
-  * Scrollbars settings and behavioring
-  ========================================================================= */
+  /* SCROLLBARS
+   * Scrollbars settings and behavioring
+   */
   {
     "class": "scroll_bar_control",
     "layer0.tint": [250, 250, 250],
@@ -988,9 +985,9 @@
     "layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png"
   },
 
-  /* @ MINIMAP
-  * Minimap settings and behavioring
-  ========================================================================= */
+  /* MINIMAP
+   * Minimap settings and behavioring
+   */
 
   {
     "class": "minimap_control",
@@ -1014,9 +1011,9 @@
   },
 
 
-  /* @ STATUS BAR
-  * Status bar settings and behavioring
-  ========================================================================= */
+  /* STATUS BAR
+   * Status bar settings and behavioring
+   */
 
   // All labels
 
@@ -1090,9 +1087,9 @@
     "layer0.tint": [255, 106, 0]
   },
 
-  /* @ WIDGET PANEL
-  * Widget, input, buttons settings and behavioring
-  ========================================================================= */
+  /* WIDGET PANEL
+   * Widget, input, buttons settings and behavioring
+   */
 
 
   // Status bar panel
@@ -1121,7 +1118,6 @@
     "layer0.tint": [133, 136, 140],
     "content_margin": [0, 0] // 8,8 to show
   },
-  // !!!
   {
     "class": "panel_close_button",
     "attributes": ["hover"],
@@ -1174,9 +1170,9 @@
   },
 
 
-  /* @ BUTTONS
-  * Buttons panels settings and behavioring
-  ========================================================================= */
+  /* BUTTONS
+   * Buttons panels settings and behavioring
+   */
 
 
   // Button labels
@@ -1208,7 +1204,6 @@
     "color":  [255, 106, 0]
   },
 
-  // !!!
   // Small Icon Buttons
   {
     "class": "icon_button_control",
@@ -1221,7 +1216,7 @@
 
 
   /* Buttons icons settings
-  ===================================================================== */
+   */
 
   // Regex Icon
   {
@@ -1263,7 +1258,6 @@
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
-
 
   {
     "class": "icon_whole_word",
@@ -1385,7 +1379,7 @@
   },
 
   /* Title bar
-  ===================================================================== */
+   */
   {
     "class": "title_bar",
     "bg": [250, 250, 250],
@@ -1394,7 +1388,7 @@
 
 
   /* Visual settings
-  ===================================================================== */
+   */
 
   // UI font sizees
   // ==============
