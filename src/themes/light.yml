@@ -1,9 +1,9 @@
 theme: light
 
 common:
-  accent: 'FF6A00'
-  bg: 'FAFAFA'
-  fg: '5C6066'
+  fg: 3D434C
+  bg: FAFAFA
+  accent: FF6A00
 
 ui:
   fg: '85888C'
