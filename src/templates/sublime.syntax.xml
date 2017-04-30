@@ -42,38 +42,27 @@
 				<key>lineHighlight</key>
 				<string>#"{syntax.line_hg.hex}"</string>
 				<key>popupCss</key>
-				<string>html, body {
-  background-color: #"{ui.panel.bg.hex}";
-  font-size: 12px;
-  color: #"{common.fg.hex}";
-  padding: 0;
-}
-body {
-  padding: 5px;
-}
-div {
-  padding-bottom: -3px;
-}
-b, strong {
-  font-weight: normal;
-}
-a {
-  color: rgba("{syntax.tag.rgb}", .7);
-  line-height: 16px;
-}
-.type {
-  color: #"{syntax.sup_var.hex}";
-}
-.name {
-  color: #"{syntax.es_spec.hex}";
-}
-.param {
-  color: #"{syntax.func.hex}";
-}
-.current {
-  text-decoration: underline;
-}
-</string>
+				<string>
+					html, body {
+						background-color: #"{syntax.gutterFg.hex}";
+						color: #"{common.fg.hex}";
+					}
+					a {
+						color: rgba("{syntax.tag.rgb}", .7);
+					}
+					.type {
+						color: #"{syntax.sup_var.hex}";
+					}
+					.name {
+						color: #"{syntax.es_spec.hex}";
+					}
+					.param {
+						color: #"{syntax.func.hex}";
+					}
+					.current {
+						text-decoration: underline;
+					}
+				</string>
 				<key>selection</key>
 				<string>#"{syntax.selection.hex}"</string>
 				<key>selectionBorder</key>
