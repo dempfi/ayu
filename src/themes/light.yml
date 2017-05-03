@@ -1,17 +1,17 @@
 theme: light
 
 common:
-  fg: 3D434C
-  bg: FAFAFA
-  accent: FF6A00
+  accent: 'FF6A00'
+  bg: 'FAFAFA'
+  fg: '5C6066'
 
 ui:
   fg: '85888C'
   panel:
     bg: FFFFFF
-    shadow: '999999'
-    path_fg: B0BEC5
-    row_bg: EFEFEF
+    row_bg: F5F5F5
+    shadow: '7E848C'
+    path_fg: 959CA6
 
   folder:
     normal: '878F99'
