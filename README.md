@@ -4,18 +4,16 @@
 
 A simple theme with bright colors and comes in three versions — *dark*, *light* and *mirage* for all day long comfortable work.
 
+> Note that this isn't a theme maintained by the original [Ayu theme](https://github.com/dempfi/ayu) author so please report issues related to this theme here.
+
 ## Install
 
 ```shell
 ext install ayu
 ```
 
-Then go to `Preferences > Color Theme > Ayu Light(or Ayu Dark, or Ayu Mirage)`.  
+Then go to `Preferences > Color Theme > Ayu Light(or Ayu Dark, or Ayu Mirage)`.
 If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`.
-
-## Font
-
-`ayu` uses [__Roboto Mono__](https://www.google.com/fonts/specimen/Roboto+Mono) as main font and it's highly recommended to install it to get monospaced font in filetree. 
 
 ## Screenshots
 
@@ -28,3 +26,14 @@ If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`
 #### Mirage
 ![Mirage](http://ww1.sinaimg.cn/large/006tNbRwgw1f9lyfkgfq5j30xc0m842n.jpg)
 
+## Development
+
+Install dependencies
+```shell
+npm install 
+```
+
+Update themes and build VSIX package
+```shell
+npm run build && npm run package
+```

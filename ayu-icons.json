@@ -3,11 +3,17 @@
     "_file": {
       "iconPath": "./icons/file_type_default@2x.png"
     },
-    "_folder": {
-      "iconPath": "./icons/folder@2x.png"
+    "_folder_light": {
+      "iconPath": "./icons/folder_light@2x.png"
     },
-    "_folder_open": {
-      "iconPath": "./icons/folder_opened@2x.png"
+    "_folder_open_light": {
+      "iconPath": "./icons/folder_opened_light@2x.png"
+    },
+    "_folder_dark": {
+      "iconPath": "./icons/folder_dark@2x.png"
+    },
+    "_folder_open_dark": {
+      "iconPath": "./icons/folder_opened_dark@2x.png"
     },
     "_f_actionscript": {
       "iconPath": "./icons/file_type_actionscript@2x.png"
@@ -269,8 +275,12 @@
     }
   },
   "file": "_file",
-  "folder": "_folder",
-  "folderExpanded": "_folder_open",
+  "folder": "_folder_dark",
+  "folderExpanded": "_folder_open_dark",
+  "light": {
+    "folderExpanded": "_folder_open_light",
+    "folder": "_folder_light"
+  },
   "fileExtensions": {
     "as": "_f_actionscript",
     "ai": "_f_ai",
