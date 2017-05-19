@@ -96,3 +96,4 @@ For dark theme:
 
 - `ayu` for Ace: https://github.com/ayu-theme/ayu-ace
 - `ayu` colors as NPM package: https://github.com/ayu-theme/ayu-colors
+- `ayu` for VSCode: https://github.com/teabyii/vscode-ayu
