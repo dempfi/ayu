@@ -256,7 +256,8 @@ function getThemeColors(variant) {
         // ----- Workbench: side bar -----
         'sideBar.background': scheme.common.bg,
         'sideBarTitle.foreground': scheme.ui.fg,
-        'sideBarSectionHeader.background': scheme.ui.panel.rowBg,
+        'sideBarSectionHeader.background': scheme.syntax.lineHg,
+        'sideBarSectionHeader.foreground': scheme.ui.fg,
         'sideBar.border': scheme.ui.gridDivider,
 
         // ----- Workbench: title bar -----
