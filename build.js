@@ -102,12 +102,12 @@ function getThemeColors(variant) {
 
         'inputOption.activeBorder': scheme.ui.panel.bg,
 
-        // 'inputValidation.infoBackground': '',
-        // 'inputValidation.infoBorder': '',
-        // 'inputValidation.warningBackground': '',
-        // 'inputValidation.warningBorder': '',
-        // 'inputValidation.errorBackground': '',
-        // 'inputValidation.errorBorder': '',
+        'inputValidation.infoBackground': scheme.common.bg,
+        'inputValidation.infoBorder': scheme.syntax.tag,
+        'inputValidation.warningBackground': scheme.common.bg,
+        'inputValidation.warningBorder': scheme.syntax.func,
+        'inputValidation.errorBackground': scheme.common.bg,
+        'inputValidation.errorBorder': scheme.syntax.error,
 
         'dropdown.background': scheme.ui.panel.bg,
         // 'dropdown.foreground': '',
