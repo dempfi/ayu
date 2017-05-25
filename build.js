@@ -243,8 +243,8 @@ function getThemeColors(variant) {
         'statusBar.debuggingForeground': scheme.ui.fg,
         'statusBarItem.activeBackground': scheme.ui.gridDivider,
         'statusBarItem.hoverBackground': scheme.ui.panel.rowBg,
-        // 'statusBarItem.prominentBackground': '',
-        // 'statusBarItem.prominentHoverBackground': '',
+        'statusBarItem.prominentBackground': scheme.ui.gridDivider,
+        'statusBarItem.prominentHoverBackground': scheme.ui.panel.rowBg,
 
         // ----- Workbench: activity bar -----
         'activityBar.background': scheme.ui.panel.bg,

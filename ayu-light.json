@@ -97,6 +97,8 @@
 		"statusBar.debuggingForeground": "#828c99",
 		"statusBarItem.activeBackground": "#e2e4e7",
 		"statusBarItem.hoverBackground": "#f5f5f5",
+		"statusBarItem.prominentBackground": "#e2e4e7",
+		"statusBarItem.prominentHoverBackground": "#f5f5f5",
 		"activityBar.background": "#ffffff",
 		"activityBar.foreground": "#828c99",
 		"activityBarBadge.background": "#b3b2b1",
