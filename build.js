@@ -179,13 +179,18 @@ function getThemeColors(variant) {
         // 'editorWarning.border': '',
         'editorWarning.foreground': scheme.common.accent,
 
+        // ----- Editor gutter -----
+        // 'editorGutter.background': '',
+        'editorGutter.modifiedBackground': scheme.syntax.tag,
+        'editorGutter.addedBackground': scheme.syntax.string,
+        'editorGutter.deletedBackground': scheme.syntax.error,
+
         // ----- Editor suggest -----
         'editorSuggestWidget.background': scheme.ui.panel.bg,
         'editorSuggestWidget.border': scheme.ui.gridDivider,
         // 'editorSuggestWidget.foreground': '',
         'editorSuggestWidget.selectedBackground': scheme.ui.panel.rowBg,
         'editorSuggestWidget.highlightForeground': scheme.common.accent,
-        // 'editorGutter.background': '',
 
         // ----- Peek view editor -----
         'peekView.border': scheme.ui.gridDivider,
