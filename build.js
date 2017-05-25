@@ -113,9 +113,9 @@ function getThemeColors(variant) {
         // 'dropdown.foreground': '',
         // 'dropdown.border': '',
 
-        'list.focusAndSelectionBackground': scheme.common.bg,
+        'list.focusAndSelectionBackground': scheme.ui.gridDivider,
         'list.focusAndSelectionForeground': scheme.common.fg,
-        'list.activeSelectionBackground': scheme.common.bg,
+        'list.activeSelectionBackground': scheme.ui.gridDivider,
         'list.activeSelectionForeground': scheme.common.fg,
         'list.inactiveSelectionBackground': scheme.common.bg,
         'list.inactiveSelectionForeground': scheme.common.fg,
