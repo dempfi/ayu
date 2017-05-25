@@ -214,6 +214,7 @@ function getThemeColors(variant) {
         // 'editorGroup.dropBackground': '',
         'editorGroupHeader.tabsBackground': scheme.common.bg,
         'editorGroupHeader.noTabsBackground': scheme.common.bg,
+        "editorGroupHeader.tabsBorder": scheme.ui.gridDivider,
 
         // ----- Workbench: tabs -----
         'tab.activeBackground': scheme.common.bg,
@@ -250,6 +251,7 @@ function getThemeColors(variant) {
         'sideBar.background': scheme.common.bg,
         'sideBarTitle.foreground': scheme.ui.fg,
         'sideBarSectionHeader.background': scheme.ui.panel.rowBg,
+        'sideBar.border': scheme.ui.gridDivider,
 
         // ----- Workbench: title bar -----
         'titleBar.activeForeground': scheme.ui.fg,
