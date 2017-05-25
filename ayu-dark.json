@@ -57,6 +57,8 @@
 		"editorBracketMatch.border": "#2d3640",
 		"editorOverviewRulerBorder": "#1d242c",
 		"editorRuler.foreground": "#1d242c",
+		"editorError.foreground": "#ff3333",
+		"editorWarning.foreground": "#f29718",
 		"editorSuggestWidget.background": "#14191f",
 		"editorSuggestWidget.border": "#1d242c",
 		"editorSuggestWidget.selectedBackground": "#191f26",

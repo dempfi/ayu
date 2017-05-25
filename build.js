@@ -172,6 +172,12 @@ function getThemeColors(variant) {
         'editorBracketMatch.border': scheme.syntax.gutterFg,
         'editorOverviewRulerBorder': scheme.ui.gridDivider,
         'editorRuler.foreground': scheme.ui.gridDivider,
+        
+        // ----- Editor error squiggles -----
+        // 'editorError.border': '',
+        'editorError.foreground': scheme.syntax.error,
+        // 'editorWarning.border': '',
+        'editorWarning.foreground': scheme.common.accent,
 
         // ----- Editor suggest -----
         'editorSuggestWidget.background': scheme.ui.panel.bg,
