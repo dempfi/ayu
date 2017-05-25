@@ -270,6 +270,11 @@ function getThemeColors(variant) {
         // 'notification.foreground': '',
         'notification.background': variant === 'light' ? scheme.common.fg : scheme.ui.gridDivider,
 
+        // ----- Workbench: extension buttons -----
+        'extensionButton.prominentBackground': `${scheme.common.accent}AA`,
+        'extensionButton.prominentHoverBackground': `${scheme.common.accent}BB`,
+        'extensionButton.prominentForeground': '#fff',
+
         // ----- Workbench: debug -----
         'debugExceptionWidget.border': scheme.ui.gridDivider,
         'debugExceptionWidget.background': scheme.ui.panel.bg,
