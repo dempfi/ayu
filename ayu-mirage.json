@@ -93,6 +93,8 @@
 		"tab.activeForeground": "#d9d7ce",
 		"tab.inactiveForeground": "#607080",
 		"tab.border": "#343d4a",
+		"tab.unfocusedActiveForeground": "#d9d7ceAA",
+		"tab.unfocusedInactiveForeground": "#607080",
 		"panel.background": "#212733",
 		"panel.border": "#343d4a",
 		"panelTitle.inactiveForeground": "#607080",

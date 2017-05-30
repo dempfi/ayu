@@ -227,6 +227,8 @@ function getThemeColors(variant) {
         'tab.activeForeground': scheme.common.fg,
         'tab.inactiveForeground': scheme.ui.fg,
         'tab.border': scheme.ui.gridDivider,
+        'tab.unfocusedActiveForeground': `${scheme.common.fg}AA`,
+        'tab.unfocusedInactiveForeground': scheme.ui.fg,
 
         // ----- Workbench: panel -----
         'panel.background': scheme.common.bg,
