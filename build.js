@@ -172,7 +172,7 @@ function getThemeColors(variant) {
         'editorBracketMatch.border': scheme.syntax.gutterFg,
         'editorOverviewRulerBorder': scheme.ui.gridDivider,
         'editorRuler.foreground': scheme.ui.gridDivider,
-        
+
         // ----- Editor error squiggles -----
         // 'editorError.border': '',
         'editorError.foreground': scheme.syntax.error,
@@ -274,6 +274,19 @@ function getThemeColors(variant) {
         'extensionButton.prominentBackground': `${scheme.common.accent}AA`,
         'extensionButton.prominentHoverBackground': `${scheme.common.accent}BB`,
         'extensionButton.prominentForeground': '#fff',
+
+        // ----- Workbench: welcome page / interactive playground -----
+        'welcomePage.quickLinkBackground': scheme.ui.panel.rowBg,
+        'welcomePage.quickLinkHoverBackground': scheme.ui.gridDivider,
+        'welcomeOverlay.foreground': scheme.common.fg,
+        // 'welcomeOverlay.background': '',
+        'walkThrough.embeddedEditorBackground': scheme.ui.panel.bg,
+        'textLink.foreground': scheme.common.accent,
+        'textLink.activeForeground': scheme.common.accent,
+        'textPreformat.foreground': scheme.common.fg,
+        'textBlockQuote.background': scheme.ui.panel.bg,
+        // 'textBlockQuote.border': '',
+        // 'textCodeBlock.background: '',
 
         // ----- Workbench: debug -----
         'debugExceptionWidget.border': scheme.ui.gridDivider,
