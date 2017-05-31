@@ -170,7 +170,7 @@ function getThemeColors(variant) {
         'editorHoverWidget.border': scheme.ui.gridDivider,
         // 'editorBracketMatch.background': '',
         'editorBracketMatch.border': scheme.syntax.gutterFg,
-        'editorOverviewRulerBorder': scheme.ui.gridDivider,
+        'editorOverviewRuler.border': scheme.ui.gridDivider,
         'editorRuler.foreground': scheme.ui.gridDivider,
 
         // ----- Editor error squiggles -----

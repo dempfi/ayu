@@ -61,7 +61,7 @@
 		"editorHoverWidget.background": "#14191f",
 		"editorHoverWidget.border": "#1d242c",
 		"editorBracketMatch.border": "#2d3640",
-		"editorOverviewRulerBorder": "#1d242c",
+		"editorOverviewRuler.border": "#1d242c",
 		"editorRuler.foreground": "#1d242c",
 		"editorError.foreground": "#ff3333",
 		"editorWarning.foreground": "#f29718",
