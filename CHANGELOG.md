@@ -30,3 +30,16 @@ Fixed: [Whitespace color is not right](https://github.com/jsenjoy/vscode-ayu/iss
 - Fixed:
     - [VSCode ayu light selection + find highlight = bad contrast](https://github.com/teabyii/vscode-ayu/issues/3)
     - [wrong icon filename for coffeescript](https://github.com/teabyii/vscode-ayu/issues/6)
+
+## 0.4.0
+
+`2017-06-21`
+
+- Theming for the VSCode 1.13 release
+- Added theming of welcome page and interactive playground
+- Fixed:
+    - [Tree selection inactive color not visible](https://github.com/teabyii/vscode-ayu/issues/12)
+    - [Change status bar highlight](https://github.com/teabyii/vscode-ayu/issues/13)
+    - [Use correct colors for input validation](https://github.com/teabyii/vscode-ayu/issues/14)
+    - [Add border between file manager and editor](https://github.com/teabyii/vscode-ayu/issues/15)
+    - [Change the color of warning/error squiggles](https://github.com/teabyii/vscode-ayu/issues/16)
