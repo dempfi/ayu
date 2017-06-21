@@ -102,20 +102,20 @@ function getThemeColors(variant) {
 
         'inputOption.activeBorder': scheme.ui.panel.bg,
 
-        // 'inputValidation.infoBackground': '',
-        // 'inputValidation.infoBorder': '',
-        // 'inputValidation.warningBackground': '',
-        // 'inputValidation.warningBorder': '',
-        // 'inputValidation.errorBackground': '',
-        // 'inputValidation.errorBorder': '',
+        'inputValidation.infoBackground': scheme.common.bg,
+        'inputValidation.infoBorder': scheme.syntax.tag,
+        'inputValidation.warningBackground': scheme.common.bg,
+        'inputValidation.warningBorder': scheme.syntax.func,
+        'inputValidation.errorBackground': scheme.common.bg,
+        'inputValidation.errorBorder': scheme.syntax.error,
 
         'dropdown.background': scheme.ui.panel.bg,
         // 'dropdown.foreground': '',
         // 'dropdown.border': '',
 
-        'list.focusAndSelectionBackground': scheme.common.bg,
+        'list.focusAndSelectionBackground': scheme.ui.gridDivider,
         'list.focusAndSelectionForeground': scheme.common.fg,
-        'list.activeSelectionBackground': scheme.common.bg,
+        'list.activeSelectionBackground': scheme.ui.gridDivider,
         'list.activeSelectionForeground': scheme.common.fg,
         'list.inactiveSelectionBackground': scheme.common.bg,
         'list.inactiveSelectionForeground': scheme.common.fg,
@@ -170,8 +170,20 @@ function getThemeColors(variant) {
         'editorHoverWidget.border': scheme.ui.gridDivider,
         // 'editorBracketMatch.background': '',
         'editorBracketMatch.border': scheme.syntax.gutterFg,
-        'editorOverviewRulerBorder': scheme.ui.gridDivider,
+        'editorOverviewRuler.border': scheme.ui.gridDivider,
         'editorRuler.foreground': scheme.ui.gridDivider,
+
+        // ----- Editor error squiggles -----
+        // 'editorError.border': '',
+        'editorError.foreground': scheme.syntax.error,
+        // 'editorWarning.border': '',
+        'editorWarning.foreground': scheme.common.accent,
+
+        // ----- Editor gutter -----
+        // 'editorGutter.background': '',
+        'editorGutter.modifiedBackground': scheme.syntax.tag,
+        'editorGutter.addedBackground': scheme.syntax.string,
+        'editorGutter.deletedBackground': scheme.syntax.error,
 
         // ----- Editor suggest -----
         'editorSuggestWidget.background': scheme.ui.panel.bg,
@@ -179,7 +191,6 @@ function getThemeColors(variant) {
         // 'editorSuggestWidget.foreground': '',
         'editorSuggestWidget.selectedBackground': scheme.ui.panel.rowBg,
         'editorSuggestWidget.highlightForeground': scheme.common.accent,
-        // 'editorGutter.background': '',
 
         // ----- Peek view editor -----
         'peekView.border': scheme.ui.gridDivider,
@@ -208,6 +219,7 @@ function getThemeColors(variant) {
         // 'editorGroup.dropBackground': '',
         'editorGroupHeader.tabsBackground': scheme.common.bg,
         'editorGroupHeader.noTabsBackground': scheme.common.bg,
+        "editorGroupHeader.tabsBorder": scheme.ui.gridDivider,
 
         // ----- Workbench: tabs -----
         'tab.activeBackground': scheme.common.bg,
@@ -215,6 +227,8 @@ function getThemeColors(variant) {
         'tab.activeForeground': scheme.common.fg,
         'tab.inactiveForeground': scheme.ui.fg,
         'tab.border': scheme.ui.gridDivider,
+        'tab.unfocusedActiveForeground': `${scheme.common.fg}AA`,
+        'tab.unfocusedInactiveForeground': scheme.ui.fg,
 
         // ----- Workbench: panel -----
         'panel.background': scheme.common.bg,
@@ -227,11 +241,12 @@ function getThemeColors(variant) {
         'statusBar.foreground': scheme.ui.fg,
         'statusBar.background': scheme.ui.panel.bg,
         'statusBar.noFolderBackground': scheme.ui.panel.bg,
-        'statusBar.debuggingBackground': scheme.syntax.error,
+        'statusBar.debuggingBackground': scheme.ui.panel.bg,
+        'statusBar.debuggingForeground': scheme.ui.fg,
         'statusBarItem.activeBackground': scheme.ui.gridDivider,
         'statusBarItem.hoverBackground': scheme.ui.panel.rowBg,
-        // 'statusBarItem.prominentBackground': '',
-        // 'statusBarItem.prominentHoverBackground': '',
+        'statusBarItem.prominentBackground': scheme.ui.gridDivider,
+        'statusBarItem.prominentHoverBackground': scheme.ui.panel.rowBg,
 
         // ----- Workbench: activity bar -----
         'activityBar.background': scheme.ui.panel.bg,
@@ -243,7 +258,9 @@ function getThemeColors(variant) {
         // ----- Workbench: side bar -----
         'sideBar.background': scheme.common.bg,
         'sideBarTitle.foreground': scheme.ui.fg,
-        'sideBarSectionHeader.background': scheme.ui.panel.rowBg,
+        'sideBarSectionHeader.background': scheme.syntax.lineHg,
+        'sideBarSectionHeader.foreground': scheme.ui.fg,
+        'sideBar.border': scheme.ui.gridDivider,
 
         // ----- Workbench: title bar -----
         'titleBar.activeForeground': scheme.ui.fg,
@@ -254,6 +271,24 @@ function getThemeColors(variant) {
         // ----- Workbench: notifications -----
         // 'notification.foreground': '',
         'notification.background': variant === 'light' ? scheme.common.fg : scheme.ui.gridDivider,
+
+        // ----- Workbench: extension buttons -----
+        'extensionButton.prominentBackground': `${scheme.common.accent}AA`,
+        'extensionButton.prominentHoverBackground': `${scheme.common.accent}BB`,
+        'extensionButton.prominentForeground': '#fff',
+
+        // ----- Workbench: welcome page / interactive playground -----
+        'welcomePage.quickLinkBackground': scheme.ui.panel.rowBg,
+        'welcomePage.quickLinkHoverBackground': scheme.ui.gridDivider,
+        'welcomeOverlay.foreground': scheme.common.fg,
+        // 'welcomeOverlay.background': '',
+        'walkThrough.embeddedEditorBackground': scheme.ui.panel.bg,
+        'textLink.foreground': scheme.common.accent,
+        'textLink.activeForeground': scheme.common.accent,
+        'textPreformat.foreground': scheme.common.fg,
+        'textBlockQuote.background': scheme.ui.panel.bg,
+        // 'textBlockQuote.border': '',
+        // 'textCodeBlock.background: '',
 
         // ----- Workbench: debug -----
         'debugExceptionWidget.border': scheme.ui.gridDivider,
