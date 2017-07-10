@@ -20,7 +20,7 @@ settings:
     findHighlight: &constant '#"{syntax.constant.hex}"'
     findHighlightForeground: *bg
     foreground: &fg '#"{common.fg.hex}"'
-    guide: &gutter '#"{syntax.gutterFg.hex}"'
+    guide: &gutter '#"{syntax.gutter.hex}"'
     gutter: *bg
     gutterForeground: *gutter
     invisibles: '#FF0000'

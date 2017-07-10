@@ -1,20 +1,20 @@
 theme: light
 
 common:
-  fg: 5C6773
-  bg: FAFAFA
-  accent: FF6A00
+  accent: 'FF6A00'
+  bg: 'FAFAFA'
+  fg: '5C6066'
 
 ui:
-  fg: '828C99'
+  fg: '85888C'
   panel:
     bg: FFFFFF
-    shadow: 'A0A0A0'
-    path_fg: B0BEC5
     row_bg: F5F5F5
+    shadow: '7E848C'
+    path_fg: 959CA6
 
   folder:
-    normal: '828C99'
+    normal: '878F99'
 
   scrollbar:
     puck: '000000'
@@ -26,7 +26,7 @@ ui:
 syntax:
   error: FF3333
   line_hg: F2F2F2
-  gutterFg: D9D8D7
+  gutter: D9D8D7
   selection: F0EEE4
   stack_guide: DEDDDC
   active_guide: B3B2B1

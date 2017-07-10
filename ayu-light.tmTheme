@@ -26,7 +26,7 @@
 				<key>findHighlightForeground</key>
 				<string>#FAFAFA</string>
 				<key>foreground</key>
-				<string>#5C6773</string>
+				<string>#5C6066</string>
 				<key>guide</key>
 				<string>#D9D8D7</string>
 				<key>gutter</key>
@@ -45,7 +45,7 @@
 				<string>html, body {
   background-color: #FFFFFF;
   font-size: 12px;
-  color: #5C6773;
+  color: #5C6066;
   padding: 0;
 }
 body {
@@ -105,7 +105,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5C6773</string>
+				<string>#5C6066</string>
 			</dict>
 		</dict>
 		<dict>
@@ -492,7 +492,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5C6773</string>
+				<string>#5C6066</string>
 			</dict>
 		</dict>
 		<dict>
@@ -564,7 +564,7 @@ a {
 				<key>background</key>
 				<string>#ffffff10</string>
 				<key>foreground</key>
-				<string>#5C6773</string>
+				<string>#5C6066</string>
 			</dict>
 		</dict>
 		<dict>

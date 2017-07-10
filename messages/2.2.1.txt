@@ -1,0 +1,8 @@
+ayu theme for Sublime Text
+https://github.com/dempfi/ayu/releases
+
+Version 2.2.1
+********************************************************************************
+
+
+🎨 💄 Improved color contrast
