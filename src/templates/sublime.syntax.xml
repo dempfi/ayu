@@ -28,11 +28,11 @@
 				<key>foreground</key>
 				<string>#"{common.fg.hex}"</string>
 				<key>guide</key>
-				<string>#"{syntax.gutterFg.hex}"</string>
+				<string>#"{syntax.gutter.hex}"</string>
 				<key>gutter</key>
 				<string>#"{common.bg.hex}"</string>
 				<key>gutterForeground</key>
-				<string>#"{syntax.gutterFg.hex}"</string>
+				<string>#"{syntax.gutter.hex}"</string>
 				<key>inactiveBackground</key>
 				<string>#"{common.bg.hex}"</string>
 				<key>inactiveSelection</key>

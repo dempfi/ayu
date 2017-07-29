@@ -6,11 +6,11 @@ common:
   accent: FFCC66
 
 ui:
-  fg: '607080'
+  fg: '738699'
   panel:
     bg: 272D38
     shadow: '11141A'
-    path_fg: '607080'
+    path_fg: '66737F'
     row_bg: '303540'
 
   folder:
@@ -19,13 +19,13 @@ ui:
   scrollbar:
     puck: 'FFFFFF'
 
-  opacity: '0.3'
   grid_divider: '343D4A' # {fg} at {opacity}
   minimap: '100, 100, 100'
+  opacity: '0.3'
 
 syntax:
   error: FF3333
-  gutterFg: 3D4752
+  gutter: 3D4752
   line_hg: '242B38'
   selection: '343F4C'
   stack_guide: '39434D'

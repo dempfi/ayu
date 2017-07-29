@@ -12,7 +12,7 @@
     "url": "https://github.com/dempfi/ayu/issues"
   },
   "scripts": {
-    "start": "gulp watch",
+    "watch": "gulp watch",
     "b": "gulp",
     "c": "gulp clean"
   },

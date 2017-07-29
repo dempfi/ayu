@@ -6,7 +6,7 @@ common:
   accent: F29718
 
 ui:
-  fg: '3E4B59'
+  fg: '515C66'
   panel:
     bg: 14191F
     shadow: '000000'
@@ -26,15 +26,15 @@ ui:
 syntax:
   error: FF3333
   line_hg: 151A1F
-  gutterFg: 2D3640
+  gutter: 35404C
   selection: '253340'
   stack_guide: 1A2633
   active_guide: '314559'
 
-  tag: 36A3D9
+  tag: 50B4E6
   func: FFB454
   regexp: 95E6CB
-  string: B8CC52
+  string: C2D94C
   sup_var: F07178
   keyword: FF7733
   es_spec: E6B673
