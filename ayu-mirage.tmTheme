@@ -42,38 +42,30 @@
 				<key>lineHighlight</key>
 				<string>#242B38</string>
 				<key>popupCss</key>
-				<string>html, body {
-  background-color: #272D38;
-  font-size: 12px;
-  color: #D9D7CE;
-  padding: 0;
-}
-body {
-  padding: 5px;
-}
-div {
-  padding-bottom: -3px;
-}
-b, strong {
-  font-weight: normal;
-}
-a {
-  color: rgba(92, 207, 230, .7);
-  line-height: 16px;
-}
-.type {
-  color: #F07178;
-}
-.name {
-  color: #FFC44C;
-}
-.param {
-  color: #FFD580;
-}
-.current {
-  text-decoration: underline;
-}
-</string>
+				<string>
+					html, body {
+						background-color: #3D4752;
+						color: #D9D7CE;
+					}
+					b, strong {
+						font-weight: normal;
+					}
+					a {
+						color: rgba(92, 207, 230, .7);
+					}
+					.type {
+						color: #F07178;
+					}
+					.name {
+						color: #FFC44C;
+					}
+					.param {
+						color: #FFD580;
+					}
+					.current {
+						text-decoration: underline;
+					}
+				</string>
 				<key>selection</key>
 				<string>#343F4C</string>
 				<key>selectionBorder</key>

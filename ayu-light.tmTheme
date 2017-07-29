@@ -59,7 +59,6 @@ b, strong {
 }
 a {
   color: rgba(65, 166, 217, .7);
-  line-height: 16px;
 }
 .type {
   color: #F07178;
