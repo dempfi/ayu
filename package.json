@@ -57,7 +57,7 @@
     "package": "vsce package"
   },
   "devDependencies": {
-    "ayu": "3.0.0",
+    "ayu": "4.0.0",
     "vsce": "1.22.0"
   }
 }
