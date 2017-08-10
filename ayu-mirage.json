@@ -97,9 +97,16 @@
 		"tab.unfocusedInactiveForeground": "#738699",
 		"panel.background": "#212733",
 		"panel.border": "#343d4a",
+<<<<<<< HEAD
 		"panelTitle.inactiveForeground": "#738699",
 		"statusBar.foreground": "#738699",
 		"statusBar.background": "#272d38",
+=======
+		"panelTitle.inactiveForeground": "#607080",
+		"statusBar.foreground": "#607080",
+		"statusBar.background": "#212733",
+		"statusBar.border": "#343d4a",
+>>>>>>> Improve colors
 		"statusBar.noFolderBackground": "#272d38",
 		"statusBar.debuggingBackground": "#272d38",
 		"statusBar.debuggingForeground": "#738699",
@@ -107,8 +114,14 @@
 		"statusBarItem.hoverBackground": "#303540",
 		"statusBarItem.prominentBackground": "#343d4a",
 		"statusBarItem.prominentHoverBackground": "#303540",
+<<<<<<< HEAD
 		"activityBar.background": "#272d38",
 		"activityBar.foreground": "#738699",
+=======
+		"activityBar.background": "#212733",
+		"activityBar.foreground": "#607080",
+		"activityBar.border": "#343d4a",
+>>>>>>> Improve colors
 		"activityBarBadge.background": "#606f80",
 		"activityBarBadge.foreground": "#fff",
 		"sideBar.background": "#212733",
@@ -116,10 +129,18 @@
 		"sideBarSectionHeader.background": "#242b38",
 		"sideBarSectionHeader.foreground": "#738699",
 		"sideBar.border": "#343d4a",
+<<<<<<< HEAD
 		"titleBar.activeForeground": "#738699",
 		"titleBar.inactiveForeground": "#738699",
 		"titleBar.activeBackground": "#272d38",
 		"titleBar.inactiveBackground": "#272d38",
+=======
+		"titleBar.activeForeground": "#607080",
+		"titleBar.inactiveForeground": "#607080",
+		"titleBar.activeBackground": "#212733",
+		"titleBar.inactiveBackground": "#212733",
+		"titleBar.border": "#343d4a",
+>>>>>>> Improve colors
 		"notification.background": "#343d4a",
 		"extensionButton.prominentBackground": "#ffcc66AA",
 		"extensionButton.prominentHoverBackground": "#ffcc66BB",

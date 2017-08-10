@@ -239,7 +239,8 @@ function getThemeColors(variant) {
 
         // ----- Workbench: status bar -----
         'statusBar.foreground': scheme.ui.fg,
-        'statusBar.background': scheme.ui.panel.bg,
+        'statusBar.background': scheme.common.bg,
+        'statusBar.border': scheme.ui.gridDivider,
         'statusBar.noFolderBackground': scheme.ui.panel.bg,
         'statusBar.debuggingBackground': scheme.ui.panel.bg,
         'statusBar.debuggingForeground': scheme.ui.fg,
@@ -249,8 +250,9 @@ function getThemeColors(variant) {
         'statusBarItem.prominentHoverBackground': scheme.ui.panel.rowBg,
 
         // ----- Workbench: activity bar -----
-        'activityBar.background': scheme.ui.panel.bg,
+        'activityBar.background': scheme.common.bg,
         'activityBar.foreground': scheme.ui.fg,
+        'activityBar.border': scheme.ui.gridDivider,
         // 'activityBar.dropBackground': '',
         'activityBarBadge.background': scheme.syntax.activeGuide,
         'activityBarBadge.foreground': '#fff',
@@ -265,8 +267,9 @@ function getThemeColors(variant) {
         // ----- Workbench: title bar -----
         'titleBar.activeForeground': scheme.ui.fg,
         'titleBar.inactiveForeground': scheme.ui.fg,
-        'titleBar.activeBackground': scheme.ui.panel.bg,
-        'titleBar.inactiveBackground': scheme.ui.panel.bg,
+        'titleBar.activeBackground': scheme.common.bg,
+        'titleBar.inactiveBackground': scheme.common.bg,
+        'titleBar.border': scheme.ui.gridDivider,
 
         // ----- Workbench: notifications -----
         // 'notification.foreground': '',
