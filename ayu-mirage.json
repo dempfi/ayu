@@ -1,16 +1,28 @@
 {
 	"type": "dark",
 	"colors": {
+<<<<<<< HEAD
 		"foreground": "#738699",
 		"focusBorder": "#343d4a",
 		"widget.shadow": "#11141a",
 		"badge.background": "#66737f",
+=======
+		"foreground": "#607080",
+		"focusBorder": "#ffcc66ff",
+		"widget.shadow": "#11141ab3",
+		"badge.background": "#607080",
+>>>>>>> Status bar
 		"badge.foreground": "#fff",
 		"progressBar.background": "#ffcc66",
 		"input.background": "#272d38",
 		"input.foreground": "#d9d7ce",
+<<<<<<< HEAD
 		"input.border": "#272d38",
 		"input.placeholderForeground": "#738699",
+=======
+		"input.border": "#6070804C",
+		"input.placeholderForeground": "#607080",
+>>>>>>> Status bar
 		"inputOption.activeBorder": "#ffcc66",
 		"inputValidation.infoBackground": "#212733",
 		"inputValidation.infoBorder": "#5ccfe6",
@@ -88,7 +100,7 @@
 		"editorGroupHeader.tabsBackground": "#212733",
 		"editorGroupHeader.noTabsBackground": "#212733",
 		"editorGroupHeader.tabsBorder": "#343d4a",
-		"tab.activeBackground": "#212733",
+		"tab.activeBackground": "#272d38",
 		"tab.inactiveBackground": "#212733",
 		"tab.activeForeground": "#d9d7ce",
 		"tab.inactiveForeground": "#738699",
@@ -103,8 +115,9 @@
 		"statusBar.background": "#272d38",
 =======
 		"panelTitle.inactiveForeground": "#607080",
+		"panelTitle.activeBorder": "#ffcc66",
 		"statusBar.foreground": "#607080",
-		"statusBar.background": "#212733",
+		"statusBar.background": "#272d38",
 		"statusBar.border": "#343d4a",
 >>>>>>> Improve colors
 		"statusBar.noFolderBackground": "#272d38",
@@ -120,8 +133,11 @@
 =======
 		"activityBar.background": "#212733",
 		"activityBar.foreground": "#607080",
+<<<<<<< HEAD
 		"activityBar.border": "#343d4a",
 >>>>>>> Improve colors
+=======
+>>>>>>> Status bar
 		"activityBarBadge.background": "#606f80",
 		"activityBarBadge.foreground": "#fff",
 		"sideBar.background": "#212733",
