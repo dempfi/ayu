@@ -18,13 +18,14 @@ If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`
 ## Screenshots
 
 #### Light
-![Light](https://user-images.githubusercontent.com/353888/26964150-83f70568-4cf0-11e7-841a-55325e392045.png)
+![Light](https://user-images.githubusercontent.com/353888/28989653-112e4330-7977-11e7-9d77-10e5aeb1093d.png)
 
 #### Dark
-![Dark](https://user-images.githubusercontent.com/353888/26964149-83f6427c-4cf0-11e7-8503-e2332604494a.png)
+![Dark](https://user-images.githubusercontent.com/353888/28989654-114a64b6-7977-11e7-9e4e-9190bc2fae5b.png)
+
 
 #### Mirage
-![Mirage](https://user-images.githubusercontent.com/353888/26964152-83fbe240-4cf0-11e7-985a-d5755caf0a50.png)
+![Mirage](https://user-images.githubusercontent.com/353888/28989655-114d577a-7977-11e7-8646-757b1e8541a2.png)
 
 ## Development
 
