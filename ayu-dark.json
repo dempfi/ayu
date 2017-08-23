@@ -11,7 +11,7 @@
 		"input.foreground": "#e6e1cf",
 		"input.border": "#14191f",
 		"input.placeholderForeground": "#515c66",
-		"inputOption.activeBorder": "#14191f",
+		"inputOption.activeBorder": "#f29718",
 		"inputValidation.infoBackground": "#0f1419",
 		"inputValidation.infoBorder": "#50b4e6",
 		"inputValidation.warningBackground": "#0f1419",

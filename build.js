@@ -100,7 +100,7 @@ function getThemeColors(variant) {
         'input.border': scheme.ui.panel.bg,
         'input.placeholderForeground': scheme.ui.fg,
 
-        'inputOption.activeBorder': scheme.ui.panel.bg,
+        'inputOption.activeBorder': scheme.common.accent,
 
         'inputValidation.infoBackground': scheme.common.bg,
         'inputValidation.infoBorder': scheme.syntax.tag,
