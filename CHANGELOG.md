@@ -2,6 +2,12 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.6.0
+
+`2017-08-24`
+
+-  Use border for active input option
+
 ## 0.5.0
 
 `2017-08-11`
