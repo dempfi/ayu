@@ -25,7 +25,7 @@
     "ayu"
   ],
   "homepage": "https://github.com/jsenjoy/vscode-ayu",
-  "icon": "logo.png",
+  "icon": "assets/logo.png",
   "contributes": {
     "themes": [
       {

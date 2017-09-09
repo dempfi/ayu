@@ -84,7 +84,7 @@ function getThemeColors(variant) {
     return {
         // ----- Base colors -----
         'foreground': scheme.ui.fg,
-        'focusBorder': scheme.common.accent,
+        'focusBorder': `${scheme.ui.fg}8A`,
         // 'contrastBorder': '',
         // 'contrastActiveBorder': '',
 
@@ -98,9 +98,9 @@ function getThemeColors(variant) {
         'input.background': scheme.ui.panel.bg,
         'input.foreground': scheme.common.fg,
         'input.border': `${scheme.ui.fg}4C`,
-        'input.placeholderForeground': scheme.ui.fg,
+        'input.placeholderForeground': `${scheme.ui.fg}8A`,
 
-        'inputOption.activeBorder': scheme.common.accent,
+        'inputOption.activeBorder': `${scheme.ui.fg}8A`,
 
         'inputValidation.infoBackground': scheme.common.bg,
         'inputValidation.infoBorder': scheme.syntax.tag,
@@ -233,7 +233,7 @@ function getThemeColors(variant) {
         // ----- Workbench: panel -----
         'panel.background': scheme.common.bg,
         'panel.border': scheme.ui.gridDivider,
-        // 'panelTitle.activeForeground': '',
+        'panelTitle.activeForeground': scheme.common.fg,
         'panelTitle.inactiveForeground': scheme.ui.fg,
         'panelTitle.activeBorder': scheme.common.accent,
 

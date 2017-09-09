@@ -1,4 +1,4 @@
-# vscode-ayu
+![vscode-ayu](assets/header.png)
 
 > Source from: https://github.com/dempfi/ayu
 
@@ -31,7 +31,7 @@ If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`
 
 Install dependencies
 ```shell
-npm install 
+npm install
 ```
 
 Update themes and build VSIX package
