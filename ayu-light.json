@@ -1,29 +1,16 @@
 {
 	"type": "light",
 	"colors": {
-<<<<<<< HEAD
 		"foreground": "#85888c",
-		"focusBorder": "#e2e4e7",
-		"widget.shadow": "#7e848c",
+		"focusBorder": "#ff6a00",
+		"widget.shadow": "#7e848cb3",
 		"badge.background": "#959ca6",
 		"badge.foreground": "#fff",
 		"progressBar.background": "#ff6a00",
 		"input.background": "#ffffff",
 		"input.foreground": "#5c6066",
-		"input.border": "#ffffff",
+		"input.border": "#85888c4C",
 		"input.placeholderForeground": "#85888c",
-=======
-		"foreground": "#828c99",
-		"focusBorder": "#ff6a00ff",
-		"widget.shadow": "#a0a0a0b3",
-		"badge.background": "#b0bec5",
-		"badge.foreground": "#fff",
-		"progressBar.background": "#ff6a00",
-		"input.background": "#ffffff",
-		"input.foreground": "#5c6773",
-		"input.border": "#828c994C",
-		"input.placeholderForeground": "#828c99",
->>>>>>> Status bar
 		"inputOption.activeBorder": "#ff6a00",
 		"inputValidation.infoBackground": "#fafafa",
 		"inputValidation.infoBorder": "#41a6d9",
@@ -110,17 +97,11 @@
 		"tab.unfocusedInactiveForeground": "#85888c",
 		"panel.background": "#fafafa",
 		"panel.border": "#e2e4e7",
-<<<<<<< HEAD
 		"panelTitle.inactiveForeground": "#85888c",
+		"panelTitle.activeBorder": "#ff6a00",
 		"statusBar.foreground": "#85888c",
 		"statusBar.background": "#ffffff",
-=======
-		"panelTitle.inactiveForeground": "#828c99",
-		"panelTitle.activeBorder": "#ff6a00",
-		"statusBar.foreground": "#828c99",
-		"statusBar.background": "#ffffff",
 		"statusBar.border": "#e2e4e7",
->>>>>>> Improve colors
 		"statusBar.noFolderBackground": "#ffffff",
 		"statusBar.debuggingBackground": "#ffffff",
 		"statusBar.debuggingForeground": "#85888c",
@@ -128,17 +109,8 @@
 		"statusBarItem.hoverBackground": "#f5f5f5",
 		"statusBarItem.prominentBackground": "#e2e4e7",
 		"statusBarItem.prominentHoverBackground": "#f5f5f5",
-<<<<<<< HEAD
-		"activityBar.background": "#ffffff",
-		"activityBar.foreground": "#85888c",
-=======
 		"activityBar.background": "#fafafa",
-		"activityBar.foreground": "#828c99",
-<<<<<<< HEAD
-		"activityBar.border": "#e2e4e7",
->>>>>>> Improve colors
-=======
->>>>>>> Status bar
+		"activityBar.foreground": "#85888c",
 		"activityBarBadge.background": "#b3b2b1",
 		"activityBarBadge.foreground": "#fff",
 		"sideBar.background": "#fafafa",
@@ -146,20 +118,12 @@
 		"sideBarSectionHeader.background": "#f2f2f2",
 		"sideBarSectionHeader.foreground": "#85888c",
 		"sideBar.border": "#e2e4e7",
-<<<<<<< HEAD
 		"titleBar.activeForeground": "#85888c",
 		"titleBar.inactiveForeground": "#85888c",
-		"titleBar.activeBackground": "#ffffff",
-		"titleBar.inactiveBackground": "#ffffff",
-		"notification.background": "#5c6066",
-=======
-		"titleBar.activeForeground": "#828c99",
-		"titleBar.inactiveForeground": "#828c99",
 		"titleBar.activeBackground": "#fafafa",
 		"titleBar.inactiveBackground": "#fafafa",
 		"titleBar.border": "#e2e4e7",
-		"notification.background": "#5c6773",
->>>>>>> Improve colors
+		"notification.background": "#5c6066",
 		"extensionButton.prominentBackground": "#ff6a00AA",
 		"extensionButton.prominentHoverBackground": "#ff6a00BB",
 		"extensionButton.prominentForeground": "#fff",
