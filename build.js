@@ -84,11 +84,11 @@ function getThemeColors(variant) {
     return {
         // ----- Base colors -----
         'foreground': scheme.ui.fg,
-        'focusBorder': scheme.ui.gridDivider,
+        'focusBorder': `${scheme.ui.fg}8A`,
         // 'contrastBorder': '',
         // 'contrastActiveBorder': '',
 
-        'widget.shadow': scheme.ui.panel.shadow,
+        'widget.shadow': `${scheme.ui.panel.shadow}b3`,
 
         'badge.background': scheme.ui.panel.pathFg,
         'badge.foreground': '#fff',
@@ -97,10 +97,10 @@ function getThemeColors(variant) {
 
         'input.background': scheme.ui.panel.bg,
         'input.foreground': scheme.common.fg,
-        'input.border': scheme.ui.panel.bg,
-        'input.placeholderForeground': scheme.ui.fg,
+        'input.border': `${scheme.ui.fg}4C`,
+        'input.placeholderForeground': `${scheme.ui.fg}8A`,
 
-        'inputOption.activeBorder': scheme.common.accent,
+        'inputOption.activeBorder': `${scheme.ui.fg}8A`,
 
         'inputValidation.infoBackground': scheme.common.bg,
         'inputValidation.infoBorder': scheme.syntax.tag,
@@ -222,7 +222,7 @@ function getThemeColors(variant) {
         "editorGroupHeader.tabsBorder": scheme.ui.gridDivider,
 
         // ----- Workbench: tabs -----
-        'tab.activeBackground': scheme.common.bg,
+        'tab.activeBackground': scheme.ui.panel.bg,
         'tab.inactiveBackground': scheme.common.bg,
         'tab.activeForeground': scheme.common.fg,
         'tab.inactiveForeground': scheme.ui.fg,
@@ -233,13 +233,14 @@ function getThemeColors(variant) {
         // ----- Workbench: panel -----
         'panel.background': scheme.common.bg,
         'panel.border': scheme.ui.gridDivider,
-        // 'panelTitle.activeForeground': '',
+        'panelTitle.activeForeground': scheme.common.fg,
         'panelTitle.inactiveForeground': scheme.ui.fg,
-        // 'panelTitle.activeBorder': '',
+        'panelTitle.activeBorder': scheme.common.accent,
 
         // ----- Workbench: status bar -----
         'statusBar.foreground': scheme.ui.fg,
         'statusBar.background': scheme.ui.panel.bg,
+        'statusBar.border': scheme.ui.gridDivider,
         'statusBar.noFolderBackground': scheme.ui.panel.bg,
         'statusBar.debuggingBackground': scheme.ui.panel.bg,
         'statusBar.debuggingForeground': scheme.ui.fg,
@@ -249,8 +250,9 @@ function getThemeColors(variant) {
         'statusBarItem.prominentHoverBackground': scheme.ui.panel.rowBg,
 
         // ----- Workbench: activity bar -----
-        'activityBar.background': scheme.ui.panel.bg,
+        'activityBar.background': scheme.common.bg,
         'activityBar.foreground': scheme.ui.fg,
+        // 'activityBar.border': scheme.ui.gridDivider,
         // 'activityBar.dropBackground': '',
         'activityBarBadge.background': scheme.syntax.activeGuide,
         'activityBarBadge.foreground': '#fff',
@@ -265,8 +267,9 @@ function getThemeColors(variant) {
         // ----- Workbench: title bar -----
         'titleBar.activeForeground': scheme.ui.fg,
         'titleBar.inactiveForeground': scheme.ui.fg,
-        'titleBar.activeBackground': scheme.ui.panel.bg,
-        'titleBar.inactiveBackground': scheme.ui.panel.bg,
+        'titleBar.activeBackground': scheme.common.bg,
+        'titleBar.inactiveBackground': scheme.common.bg,
+        'titleBar.border': scheme.ui.gridDivider,
 
         // ----- Workbench: notifications -----
         // 'notification.foreground': '',
