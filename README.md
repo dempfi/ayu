@@ -2,12 +2,13 @@
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
-
 ### Font
 
 `ayu` uses [__Roboto Mono__](https://www.google.com/fonts/specimen/Roboto+Mono) as main font and it's highly recommended to install it to get monospaced font in filetree. But if you don't have it then the UI theme will downgrade to standard UI font used in Sublime Text.
 
+### File Icons
 
+`ayu` from version `3.0.0` supports customization via [A File Icon](https://github.com/ihodev/a-file-icon) package. Please install it and restart Sublime for better expereince.
 
 ### Screenshots
 
@@ -31,6 +32,7 @@
 ### Settings
 
 ```json
+"ui_native_titlebar":       true, // use native titlebars on macOs
 "ui_separator":             true, // separators between panels
 "ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
 "ui_big_tabs":              true, // increased tab height

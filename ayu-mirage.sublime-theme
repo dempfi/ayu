@@ -1385,6 +1385,13 @@
     "bg": [33, 39, 51],
     "fg": [115, 134, 153]
   },
+  {
+    "class": "title_bar",
+    "settings": ["ui_native_titlebar"],
+    "bg": "",
+    "fg": ""
+  },
+
 
 
   /* Visual settings
