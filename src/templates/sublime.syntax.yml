@@ -21,6 +21,7 @@ settings:
     findHighlightForeground: *bg
     foreground: &fg '#"{common.fg.hex}"'
     guide: &gutter '#"{syntax.gutter.hex}"'
+    accent: '#"{common.accent.hex}"'
     gutter: *bg
     gutterForeground: *gutter
     invisibles: '#FF0000'
@@ -33,34 +34,13 @@ settings:
     popupCss: |
         html, body {
           background-color: #"{ui.panel.bg.hex}";
-          font-size: 12px;
           color: #"{common.fg.hex}";
-          padding: 0;
         }
         body {
-          padding: 5px;
-        }
-        div {
-          padding-bottom: -3px;
-        }
-        b, strong {
-          font-weight: normal;
+          padding: 1px 3px;
         }
         a {
           color: rgba("{syntax.tag.rgb}", .7);
-          line-height: 16px;
-        }
-        .type {
-          color: #"{syntax.sup_var.hex}";
-        }
-        .name {
-          color: #"{syntax.es_spec.hex}";
-        }
-        .param {
-          color: #"{syntax.func.hex}";
-        }
-        .current {
-          text-decoration: underline;
         }
 
 - name: Comments

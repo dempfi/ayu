@@ -1,4 +1,4 @@
-![ayu](http://i.imgur.com/b3etBQX.png)
+![ayu](https://i.imgur.com/M1JfmKF.png)
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
@@ -11,7 +11,7 @@
 Light with `ui_separator` option on
 ![Light with separators on](http://i.imgur.com/AJbChTB.png)
 
-🎉**NEW**🎉 Mirage with `ui_separator` option off
+Mirage with `ui_separator` option off
 ![Mirage with separators off](http://i.imgur.com/3kkWv8k.png)
 
 Dark with `ui_separator` option on
@@ -27,7 +27,6 @@ Dark with `ui_separator` option on
 "ui_font_source_code_pro":  true, // use [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) for UI
 "ui_font_default":          true, // use Sublime Text's default UI font
 "ui_wide_scrollbars":       true, // wider scrollbars
-"ui_sidebar_highlight_row": true  // to highlight whole row for current item in sidebar
 ```
 
 # Installation
