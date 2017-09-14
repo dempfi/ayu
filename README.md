@@ -77,18 +77,21 @@ Open command palette via `Tools > Command Palette` (or <kbd>cmd/ctrl</kbd> + <kb
 Add these lines to your user settings *Preferences > Setting - User*:
 
 For light theme:
+
 ```json
 "theme": "ayu-light.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
 ```
 
 For mirage theme:
+
 ```json
 "theme": "ayu-mirage.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 ```
 
 For dark theme:
+
 ```json
 "theme": "ayu-dark.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
@@ -101,18 +104,21 @@ _Sublime Text 2 version may have some glitches, if you notice something, please 
 Add this lines to your user settings *Preferences > Setting - User*:
 
 For light theme:
+
 ```json
 "theme": "ayu-light2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
 ```
 
 For mirage theme:
+
 ```json
 "theme": "ayu-mirage2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 ```
 
 For dark theme:
+
 ```json
 "theme": "ayu-dark2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
