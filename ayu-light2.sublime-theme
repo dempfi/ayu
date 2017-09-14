@@ -603,13 +603,6 @@
   },
 
   {
-    "class": "tree_row",
-    "attributes": ["selected"],
-    "settings": ["ui_sidebar_highlight_row"],
-    "layer0.opacity": 1
-  },
-
-  {
     "class": "sidebar_label",
     "color": [133, 136, 140],
     "shadow_color": [0, 0, 0],
