@@ -115,7 +115,7 @@ a {
 			<key>name</key>
 			<string>Tag</string>
 			<key>scope</key>
-			<string>entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter</string>
+			<string>entity.name.tag, meta.tag.sgml</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -159,7 +159,7 @@ a {
 			<key>name</key>
 			<string>String, Symbols, Inherited Class, Markup Heading</string>
 			<key>scope</key>
-			<string>string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<string>string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -172,7 +172,7 @@ a {
 			<key>name</key>
 			<string>Class, Support</string>
 			<key>scope</key>
-			<string>entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter</string>
+			<string>entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -771,6 +771,39 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#FF3333</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter Added</string>
+			<key>scope</key>
+			<string>markup.inserted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C2D94C</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter Changed</string>
+			<key>scope</key>
+			<string>markup.changed.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#50B4E6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter Deleted</string>
+			<key>scope</key>
+			<string>markup.deleted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF7733</string>
 			</dict>
 		</dict>
 		<dict>

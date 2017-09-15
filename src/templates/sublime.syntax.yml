@@ -16,12 +16,12 @@ settings:
     activeGuide: '#"{syntax.active_guide.hex}"'
     background: &bg '#"{common.bg.hex}"'
     inactiveBackground: *bg
-    caret: '#"{common.accent.hex}"'
+    caret: &accent '#"{common.accent.hex}"'
     findHighlight: &constant '#"{syntax.constant.hex}"'
     findHighlightForeground: *bg
     foreground: &fg '#"{common.fg.hex}"'
     guide: &gutter '#"{syntax.gutter.hex}"'
-    accent: '#"{common.accent.hex}"'
+    accent: *accent
     gutter: *bg
     gutterForeground: *gutter
     invisibles: '#FF0000'
@@ -65,7 +65,7 @@ settings:
     foreground: &operator '#"{syntax.operator.hex}"'
 
 - name: Tag
-  scope: entity.name.tag, meta.tag.sgml, markup.deleted.git_gutter
+  scope: entity.name.tag, meta.tag.sgml
   settings:
     foreground: &tag '#"{syntax.tag.hex}"'
 
@@ -85,13 +85,13 @@ settings:
     foreground: *constant
 
 - name: String, Symbols, Inherited Class, Markup Heading
-  scope: string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, markup.inserted.git_gutter, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
+  scope: string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, markup.heading, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
   settings:
     fontStyle: normal
     foreground: &string '#"{syntax.string.hex}"'
 
 - name: Class, Support
-  scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php, markup.changed.git_gutter
+  scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php
   settings:
     foreground: *tag
 
@@ -375,6 +375,21 @@ settings:
     foreground: *error
 
 # GitGutter
+- name: GitGutter Added
+  scope: markup.inserted.git_gutter
+  settings:
+    foreground: *string
+
+- name: GitGutter Changed
+  scope: markup.changed.git_gutter
+  settings:
+    foreground: *tag
+
+- name: GitGutter Deleted
+  scope: markup.deleted.git_gutter
+  settings:
+    foreground: *keyword
+
 - name: GitGutter Ignored
   scope: markup.ignored.git_gutter
   settings:
