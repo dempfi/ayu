@@ -135,4 +135,3 @@ For dark theme:
 <div align="right"><sup>
   made with ❤️ by <a href="https://github.com/dempfi">@dempfi</a>
 </sup></div>
-
