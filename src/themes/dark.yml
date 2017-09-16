@@ -24,8 +24,8 @@ ui:
   opacity: '0.3'
 
 syntax:
+  line: 151A1F
   error: FF3333
-  line_hg: 151A1F
   gutter: 35404C
   selection: '253340'
   stack_guide: 1A2633

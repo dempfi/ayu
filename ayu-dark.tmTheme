@@ -198,7 +198,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E6E1CFCC</string>
+				<string>#F29668</string>
 			</dict>
 		</dict>
 		<dict>
@@ -477,6 +477,19 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#FF3333</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Decorators</string>
+			<key>scope</key>
+			<string>tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#F07178</string>
 			</dict>
 		</dict>
 		<dict>
@@ -764,7 +777,7 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markup - Strike</string>
+			<string>Markup Strike</string>
 			<key>scope</key>
 			<string>markup.strike</string>
 			<key>settings</key>
@@ -775,7 +788,7 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markup - Table</string>
+			<string>Markup Table</string>
 			<key>scope</key>
 			<string>markup.table</string>
 			<key>settings</key>
@@ -788,13 +801,13 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown - Markup Raw Inline</string>
+			<string>Markup Raw Inline</string>
 			<key>scope</key>
 			<string>text.html.markdown markup.raw.inline</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#39BAE6</string>
+				<string>#F29668</string>
 			</dict>
 		</dict>
 		<dict>

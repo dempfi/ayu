@@ -24,12 +24,12 @@ ui:
   opacity: '0.3'
 
 syntax:
+  line: '242B38'
   error: FF3333
-  gutter: 3D4752
-  line_hg: '242B38'
+  gutter: '434E59'
   selection: '343F4C'
   stack_guide: '39434D'
-  active_guide: '606F80'
+  active_guide: '737D87'
 
   tag: 5CCFE6
   func: FFD580
@@ -37,7 +37,7 @@ syntax:
   string: BAE67E
   regexp: 95E6CB
   markup: F28779
-  keyword: FFAE57
+  keyword: FFA759
   special: FFC44C
   comment: 5C6773
   constant: D4BFFF

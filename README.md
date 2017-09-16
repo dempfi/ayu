@@ -1,4 +1,4 @@
-![ayu](https://i.imgur.com/M1JfmKF.png)
+![ayu](https://i.imgur.com/zDJHi5D.png)
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 

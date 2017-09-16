@@ -29,7 +29,7 @@
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
-        <string>#"{syntax.line_hg.hex}"</string>
+        <string>#"{syntax.line.hex}"</string>
         <key>selection</key>
         <string>#"{syntax.selection.hex}"</string>
         <key>selectionBorder</key>

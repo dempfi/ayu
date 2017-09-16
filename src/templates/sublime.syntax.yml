@@ -25,7 +25,7 @@ settings:
     gutter: *bg
     gutterForeground: *gutter
     invisibles: '#FF0000'
-    lineHighlight: '#"{syntax.line_hg.hex}"'
+    lineHighlight: '#"{syntax.line.hex}"'
     selection: &selection '#"{syntax.selection.hex}"'
     selectionBorder: *selection
     inactiveSelection: '#"{syntax.selection.hex}"88'
@@ -103,7 +103,7 @@ settings:
 - name: Accessor
   scope: punctuation.accessor
   settings:
-    foreground: '#"{common.fg.hex}"CC'
+    foreground: *operator
 
 - name: Annotation Punctuation
   scope: punctuation.definition.annotation
@@ -228,7 +228,6 @@ settings:
   scope: entity.name.filename.find-in-files
   settings:
     foreground: *string
-
 
 - scope: message.error
   settings:
@@ -365,21 +364,21 @@ settings:
   settings:
     foreground: *error
 
-- name: Markup - Strike
+- name: Markup Strike
   scope: markup.strike
   settings:
     foreground: *special
 
-- name: Markup - Table
+- name: Markup Table
   scope: markup.table
   settings:
     background: '#"{common.fg.hex}"10'
     foreground: *tag
 
-- name: Markdown - Markup Raw Inline
+- name: Markup Raw Inline
   scope: text.html.markdown markup.raw.inline
   settings:
-    foreground: *tag
+    foreground: *operator
 
 - name: Markdown - Line Break
   scope: text.html.markdown meta.dummy.line-break

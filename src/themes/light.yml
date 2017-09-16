@@ -24,8 +24,8 @@ ui:
   opacity: '0.2'
 
 syntax:
+  line: F2F2F2
   error: F51818
-  line_hg: F2F2F2
   gutter: D9D8D7
   selection: F0EEE4
   stack_guide: DEDDDC
