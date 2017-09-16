@@ -14,20 +14,20 @@
 
 <h6 align='center'>Light with <code>ui_separator</code> option on</h6>
 
-![Light with separators on](https://i.imgur.com/HP4EqoZ.png)
+![Light with separators on](https://i.imgur.com/xiiPGbC.png)
 
 ---
 
 
 <h6 align='center'>Mirage with <code>ui_separator</code> option off</h6>
 
-![Mirage with separators off](https://i.imgur.com/GJpZ2yT.png)
+![Mirage with separators off](https://i.imgur.com/IYmV8Wb.png)
 
 ---
 
 <h6 align='center'>Dark with <code>ui_separator</code> option on</h6>
 
-![Dark with separators on](https://i.imgur.com/ruMY2eJ.png)
+![Dark with separators on](https://i.imgur.com/YrNneOD.png)
 
 ### Settings
 
