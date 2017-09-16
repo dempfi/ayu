@@ -452,39 +452,6 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>diff.deleted</string>
-			<key>scope</key>
-			<string>markup.deleted</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FF3333</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>diff.inserted</string>
-			<key>scope</key>
-			<string>markup.inserted</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#99c794</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>diff.changed</string>
-			<key>scope</key>
-			<string>markup.changed</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#f9ae58</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>CSS Properties</string>
 			<key>scope</key>
 			<string>support.type.property-name</string>
@@ -782,6 +749,17 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#BAE67E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup Changed</string>
+			<key>scope</key>
+			<string>markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5CCFE6</string>
 			</dict>
 		</dict>
 		<dict>

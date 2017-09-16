@@ -220,21 +220,6 @@ settings:
   settings:
     foreground: '#c594c5'
 
-- name: diff.deleted
-  scope: markup.deleted
-  settings:
-    foreground: *error
-
-- name: diff.inserted
-  scope: markup.inserted
-  settings:
-    foreground: '#99c794'
-
-- name: diff.changed
-  scope: markup.changed
-  settings:
-    foreground: '#f9ae58'
-
 - name: CSS Properties
   scope: support.type.property-name
   settings:
@@ -373,6 +358,11 @@ settings:
   scope: markup.inserted
   settings:
     foreground: *string
+
+- name: Markup Changed
+  scope: markup.changed
+  settings:
+    foreground: *tag
 
 - name: Markup Deleted
   scope: markup.deleted
