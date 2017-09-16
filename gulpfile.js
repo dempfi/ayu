@@ -93,6 +93,4 @@ gulp.task('themes', () =>
 
 gulp.task('default', ['themes', 'widgets'])
 
-gulp.task('watch', () => {
-  gulp.watch('./src/**/*', ['themes', 'widgets'])
-})
+gulp.task('watch', () => gulp.watch('./src/**/*', ['themes', 'widgets']))

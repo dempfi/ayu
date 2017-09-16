@@ -24,20 +24,21 @@ ui:
   opacity: '0.3'
 
 syntax:
+  line: 151A1F
   error: FF3333
-  line_hg: 151A1F
   gutter: 35404C
   selection: '253340'
   stack_guide: 1A2633
   active_guide: '314559'
 
-  tag: 50B4E6
+  tag: 39BAE6
   func: FFB454
-  regexp: 95E6CB
+  entity: 59C2FF
   string: C2D94C
-  sup_var: F07178
+  regexp: 95E6CB
+  markup: F07178
   keyword: FF7733
-  es_spec: E6B673
+  special: E6B673
   comment: 5C6773
   constant: FFEE99
-  operator: E7C547
+  operator: F29668

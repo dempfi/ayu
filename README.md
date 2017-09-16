@@ -1,4 +1,4 @@
-![ayu](https://i.imgur.com/M1JfmKF.png)
+![ayu](https://i.imgur.com/zDJHi5D.png)
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
@@ -14,20 +14,20 @@
 
 <h6 align='center'>Light with <code>ui_separator</code> option on</h6>
 
-![Light with separators on](https://i.imgur.com/HP4EqoZ.png)
+![Light with separators on](https://i.imgur.com/xiiPGbC.png)
 
 ---
 
 
 <h6 align='center'>Mirage with <code>ui_separator</code> option off</h6>
 
-![Mirage with separators off](https://i.imgur.com/GJpZ2yT.png)
+![Mirage with separators off](https://i.imgur.com/IYmV8Wb.png)
 
 ---
 
 <h6 align='center'>Dark with <code>ui_separator</code> option on</h6>
 
-![Dark with separators on](https://i.imgur.com/ruMY2eJ.png)
+![Dark with separators on](https://i.imgur.com/YrNneOD.png)
 
 ### Settings
 
@@ -37,8 +37,8 @@
 "ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
 "ui_big_tabs":              true, // increased tab height
 "ui_fix_tab_labels":        true, // to fix tab labels if they look not right
-"ui_font_source_code_pro":  true, // use [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) for UI
-"ui_font_default":          true, // use Sublime Text's default UI font
+"ui_font_source_code_pro":  true, // use Source Code Pro (https://fonts.google.com/specimen/Source+Code+Pro) as UI font
+"ui_font_default":          true, // use Sublime's default UI font
 "ui_wide_scrollbars":       true, // wider scrollbars
 ```
 

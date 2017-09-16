@@ -42,7 +42,7 @@
 				<key>invisibles</key>
 				<string>#FF0000</string>
 				<key>lineHighlight</key>
-				<string>#"{syntax.line_hg.hex}"</string>
+				<string>#"{syntax.line.hex}"</string>
 				<key>popupCss</key>
 				<string>html, body {
   background-color: #"{ui.panel.bg.hex}";
@@ -67,7 +67,7 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Comments</string>
+			<string>Comment</string>
 			<key>scope</key>
 			<string>comment, punctuation.definition.comment</string>
 			<key>settings</key>
@@ -80,31 +80,77 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Separators, Comma and alike</string>
+			<string>String</string>
 			<key>scope</key>
-			<string>punctuation.separator, punctuation.terminator</string>
+			<string>string, constant.other.symbol</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{common.fg.hex}"dd</string>
+				<string>#"{syntax.string.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable</string>
+			<string>Number</string>
 			<key>scope</key>
-			<string>variable</string>
+			<string>constant.numeric</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{common.fg.hex}"</string>
+				<string>#"{syntax.constant.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Keyword, Storage</string>
+			<string>Regular Expressions and Escape Characters</string>
 			<key>scope</key>
-			<string>keyword, storage.type, storage.modifier</string>
+			<string>string.regexp, constant.character.escape</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.regexp.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Built-in constant</string>
+			<key>scope</key>
+			<string>constant.language</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#"{syntax.constant.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>User-defined constant</string>
+			<key>scope</key>
+			<string>constant.character, constant.other</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.constant.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Member Variable</string>
+			<key>scope</key>
+			<string>variable.member</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ec5f67</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Keyword</string>
+			<key>scope</key>
+			<string>keyword - keyword.operator, keyword.operator.word</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -113,13 +159,151 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Operator, Misc</string>
+			<string>Operators</string>
 			<key>scope</key>
-			<string>constant.other.color, meta.tag, punctuation.separator.inheritance.php, punctuation.section.embedded, keyword.other.substitution</string>
+			<string>keyword.operator</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#"{syntax.operator.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.separator, punctuation.terminator</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{common.fg.hex}"CC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.section</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{common.fg.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Accessor</string>
+			<key>scope</key>
+			<string>punctuation.accessor</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.operator.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Annotation Punctuation</string>
+			<key>scope</key>
+			<string>punctuation.definition.annotation</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{common.fg.hex}"CC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>JavaScript Dollar</string>
+			<key>scope</key>
+			<string>variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.special.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage</string>
+			<key>scope</key>
+			<string>storage</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.keyword.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage type</string>
+			<key>scope</key>
+			<string>storage.type</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#"{syntax.keyword.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Entity name</string>
+			<key>scope</key>
+			<string>entity.name.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.func.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Entity name</string>
+			<key>scope</key>
+			<string>entity.name - (entity.name.section | entity.name.tag | entity.name.label)</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.entity.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Inherited class</string>
+			<key>scope</key>
+			<string>entity.other.inherited-class</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>underline</string>
+				<key>foreground</key>
+				<string>#"{syntax.entity.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Function argument</string>
+			<key>scope</key>
+			<string>variable.parameter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.constant.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Language variable</string>
+			<key>scope</key>
+			<string>variable.language</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+				<key>foreground</key>
+				<string>#"{syntax.tag.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -129,15 +313,28 @@ a {
 			<string>entity.name.tag, meta.tag.sgml</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string></string>
 				<key>foreground</key>
 				<string>#"{syntax.tag.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Function, Special Method, Block Level</string>
+			<string>Tag start/end</string>
 			<key>scope</key>
-			<string>entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level</string>
+			<string>punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.tag.hex}"90</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag attribute</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -146,66 +343,46 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Other Variable, String Link</string>
+			<string>Function call</string>
 			<key>scope</key>
-			<string>support.other.variable, string.other.link</string>
+			<string>variable.function, variable.annotation</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.sup_var.hex}"</string>
+				<string>#"{syntax.func.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
+			<string>Library function</string>
 			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#"{syntax.constant.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>String, Symbols, Inherited Class</string>
-			<key>scope</key>
-			<string>string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js</string>
+			<string>support.function, support.macro</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
-				<string>normal</string>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#"{syntax.string.hex}"</string>
+				<string>#"{syntax.markup.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Class, Support</string>
+			<string>Library constant</string>
 			<key>scope</key>
-			<string>entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php</string>
+			<string>support.constant</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
 				<key>foreground</key>
-				<string>#"{syntax.tag.hex}"</string>
+				<string>#"{syntax.operator.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sub-methods</string>
+			<string>Library class/type</string>
 			<key>scope</key>
-			<string>entity.name.module.js, variable.import.parameter.js, variable.other.class.js</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#"{syntax.tag.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Language methods</string>
-			<key>scope</key>
-			<string>variable.language</string>
+			<string>support.type, support.class</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -227,7 +404,7 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Deprecated</string>
+			<string>Invalid deprecated</string>
 			<key>scope</key>
 			<string>invalid.deprecated</string>
 			<key>settings</key>
@@ -240,46 +417,24 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Html punctuations tags</string>
+			<string>diff.header</string>
 			<key>scope</key>
-			<string>punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag</string>
+			<string>meta.diff, meta.diff.header</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.tag.hex}"90</string>
+				<string>#c594c5</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Attributes</string>
+			<string>CSS Properties</string>
 			<key>scope</key>
-			<string>entity.other.attribute-name</string>
+			<string>support.type.property-name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.keyword.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Regular Expressions and Escape Characters</string>
-			<key>scope</key>
-			<string>string.regexp, constant.character.escape</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#"{syntax.regexp.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>URL</string>
-			<key>scope</key>
-			<string>*url*, *link*, *uri*</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
+				<string>#"{syntax.tag.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -295,6 +450,17 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Search Results Match Nums</string>
+			<key>scope</key>
+			<string>constant.numeric.line-number.match</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.keyword.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Search Results Lines</string>
 			<key>scope</key>
 			<string>entity.name.filename.find-in-files</string>
@@ -305,53 +471,12 @@ a {
 			</dict>
 		</dict>
 		<dict>
-			<key>name</key>
-			<string>Decorators</string>
 			<key>scope</key>
-			<string>tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#"{syntax.es_spec.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>ES7 Bind Operator</string>
-			<key>scope</key>
-			<string>source.js constant.other.object.key.js string.unquoted.label.js</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#"{syntax.tag.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>entity.name.method.js</string>
-			<key>scope</key>
-			<string>entity.name.method.js</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#"{syntax.es_spec.hex}"</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>meta.method.js</string>
-			<key>scope</key>
-			<string>meta.class-method.js entity.name.function.js, variable.function.constructor</string>
+			<string>message.error</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.es_spec.hex}"</string>
+				<string>#"{syntax.error.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -477,24 +602,26 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markup h1</string>
-			<key>scope</key>
-			<string>markup.heading.1 punctuation.definition.heading</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ec5f67</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Markup Links</string>
 			<key>scope</key>
 			<string>string.other.link, markup.underline.link</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic underline</string>
 				<key>foreground</key>
-				<string>#"{syntax.operator.hex}"</string>
+				<string>#"{syntax.regexp.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup image</string>
+			<key>scope</key>
+			<string>punctuation.definition.image</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.func.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -538,7 +665,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.sup_var.hex}"</string>
+				<string>#"{syntax.markup.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -615,48 +742,59 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Markup Changed</string>
+			<key>scope</key>
+			<string>markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.tag.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Markup Deleted</string>
 			<key>scope</key>
 			<string>markup.deleted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.keyword.hex}"</string>
+				<string>#"{syntax.error.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markup - Strike</string>
+			<string>Markup Strike</string>
 			<key>scope</key>
 			<string>markup.strike</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.es_spec.hex}"</string>
+				<string>#"{syntax.special.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markup - Table</string>
+			<string>Markup Table</string>
 			<key>scope</key>
 			<string>markup.table</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#3cadd71a</string>
+				<string>#"{common.fg.hex}"10</string>
 				<key>foreground</key>
 				<string>#"{syntax.tag.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown - Markup Raw Inline</string>
+			<string>Markup Raw Inline</string>
 			<key>scope</key>
 			<string>text.html.markdown markup.raw.inline</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.tag.hex}"</string>
+				<string>#"{syntax.operator.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -678,7 +816,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#ffffff10</string>
+				<string>#"{common.fg.hex}"10</string>
 				<key>foreground</key>
 				<string>#"{common.fg.hex}"</string>
 			</dict>
@@ -691,7 +829,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#ffffff10</string>
+				<string>#"{common.fg.hex}"10</string>
 				<key>foreground</key>
 				<string>#"{syntax.comment.hex}"</string>
 			</dict>
@@ -737,7 +875,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{syntax.keyword.hex}"</string>
+				<string>#"{syntax.error.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -820,7 +958,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#"{syntax.sup_var.hex}"</string>
+				<string>#"{syntax.markup.hex}"</string>
 				<key>foreground</key>
 				<string>#FFFFFF</string>
 			</dict>

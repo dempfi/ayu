@@ -23,7 +23,7 @@
         <key>caret</key>
         <string>#FF6A00</string>
         <key>foreground</key>
-        <string>#5C6066</string>
+        <string>#6E7580</string>
         <key>inactiveSelection</key>
         <string>#F0EEE488</string>
         <key>invisibles</key>
@@ -57,7 +57,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#F2590C</string>
+        <string>#FA6E32</string>
       </dict>
     </dict>
     <dict>
@@ -90,7 +90,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4DBF99</string>
+        <string>#4CBF99</string>
       </dict>
     </dict>
   </array>

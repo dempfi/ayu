@@ -1383,7 +1383,7 @@
   {
     "class": "title_bar",
     "bg": ["{common.bg.rgb}"],
-    "fg": ["{ui.fg.rgb}"]
+    "fg": ["{common.fg.rgb}"]
   },
   {
     "class": "title_bar",

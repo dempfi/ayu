@@ -3,7 +3,7 @@ theme: light
 common:
   accent: 'FF6A00'
   bg: 'FAFAFA'
-  fg: '5C6066'
+  fg: '6E7580'
 
 ui:
   fg: '85888C'
@@ -24,20 +24,21 @@ ui:
   opacity: '0.2'
 
 syntax:
-  error: FF3333
-  line_hg: F2F2F2
+  line: F2F2F2
+  error: F51818
   gutter: D9D8D7
   selection: F0EEE4
   stack_guide: DEDDDC
   active_guide: B3B2B1
 
-  tag: 41A6D9
+  tag: 55B4D4
   func: F29718
-  regexp: 4DBF99
+  entity: 399EE6
   string: 86B300
+  regexp: 4CBF99
+  markup: F07171
+  keyword: FA6E32
+  special: E6B673
   comment: ABB0B6
-  sup_var: F07178
-  es_spec: CCA37A
-  keyword: F2590C
-  operator: E7C547
   constant: A37ACC
+  operator: ED9366
