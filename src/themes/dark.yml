@@ -35,9 +35,9 @@ syntax:
   func: FFB454
   regexp: 95E6CB
   string: C2D94C
-  sup_var: F07178
+  markup: F07178
   keyword: FF7733
-  es_spec: E6B673
+  special: E6B673
   comment: 5C6773
   constant: FFEE99
   operator: E7C547

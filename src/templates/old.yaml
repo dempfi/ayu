@@ -43,211 +43,139 @@ settings:
           color: rgba("{syntax.tag.rgb}", .7);
         }
 
-- name: Comment
+- name: Comments
   scope: comment, punctuation.definition.comment
   settings:
     fontStyle: italic
     foreground: &comment '#"{syntax.comment.hex}"'
 
-- name: String
-  scope: string
+# Punctuation
+- name: Separators, Comma and alike
+  scope: punctuation.separator, punctuation.terminator
   settings:
-    foreground: &string '#"{syntax.string.hex}"'
+    foreground: '#"{common.fg.hex}"dd'
 
-- name: Punctuation
-  scope: punctuation.definition
+- name: Variable
+  scope: variable
   settings:
-    foreground: '#5fb3b3'
+    foreground: *fg
 
-- name: Number
-  scope: constant.numeric
-  settings:
-    foreground: *constant
-
-- name: Regular Expressions and Escape Characters
-  scope: string.regexp, constant.character.escape
-  settings:
-    foreground: &regexp '#"{syntax.regexp.hex}"'
-
-- name: Built-in constant
-  scope: constant.language
-  settings:
-    fontStyle: italic
-    foreground: *constant
-
-- name: User-defined constant
-  scope: constant.character, constant.other
-  settings:
-    foreground: *constant
-
-- name: Member Variable
-  scope: variable.member
-  settings:
-    foreground: '#ec5f67'
-
-- name: Keyword
-  scope: keyword - keyword.operator, keyword.operator.word
+- name: Keyword, Storage
+  scope: keyword, storage.type, storage.modifier
   settings:
     foreground: &keyword '#"{syntax.keyword.hex}"'
 
-- name: Operators
-  scope: keyword.operator
+- name: Operator, Misc
+  scope: constant.other.color, meta.tag, punctuation.separator.inheritance.php, punctuation.section.embedded, keyword.other.substitution
   settings:
     foreground: &operator '#"{syntax.operator.hex}"'
-
-- name: Punctuation
-  scope: punctuation.separator, punctuation.terminator
-  settings:
-    foreground: '#A7ADBA'
-
-- name: Punctuation
-  scope: punctuation.section
-  settings:
-    foreground: '#ffffff'
-
-- name: Accessor
-  scope: punctuation.accessor
-  settings:
-    foreground: '#A7ADBA'
-
-- name: Annotation Punctuation
-  scope: punctuation.definition.annotation
-  settings:
-    foreground: '#5fb3b3'
-
-- name: JavaScript Dollar
-  scope: variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js,
-    support.class.dollar.only.js
-  settings:
-    foreground: &special '#"{syntax.special.hex}"'
-
-- name: Storage
-  scope: storage
-  settings:
-    foreground: *keyword
-
-- name: Storage type
-  scope: storage.type
-  settings:
-    fontStyle: italic
-    foreground: *keyword
-
-- name: Entity name
-  scope: entity.name.function
-  settings:
-    foreground: &function '#"{syntax.func.hex}"'
-
-- name: Entity name
-  scope: entity.name - (entity.name.section | entity.name.tag | entity.name.label)
-  settings:
-    foreground: '#f9ae58'
-
-- name: Inherited class
-  scope: entity.other.inherited-class
-  settings:
-    fontStyle: italic underline
-    foreground: '#5fb3b3'
-
-- name: Function argument
-  scope: variable.parameter
-  settings:
-    fontStyle: ''
-    foreground: '#f9ae58'
-
-- name: Language variable
-  scope: variable.language
-  settings:
-    fontStyle: italic
-    foreground: '#ec5f67'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml
   settings:
-    fontStyle: ''
     foreground: &tag '#"{syntax.tag.hex}"'
 
-- name: Tag attribute
-  scope: entity.other.attribute-name
+- name: Function, Special Method, Block Level
+  scope: entity.name.function, meta.function-call, variable.function, support.function, keyword.other.special-method, meta.block-level
   settings:
-    foreground: '#c594c5'
+    foreground: &function '#"{syntax.func.hex}"'
 
-- name: Function call
-  scope: variable.function, variable.annotation
+- name: Other Variable, String Link
+  scope: support.other.variable, string.other.link
   settings:
-    fontStyle: ''
-    foreground: '#6699cc'
-
-- name: Library function
-  scope: support.function, support.macro
-  settings:
-    fontStyle: italic
     foreground: &markup '#"{syntax.markup.hex}"'
 
-- name: Library constant
-  scope: support.constant
+- name: Number, Constant, Function Argument, Tag Attribute, Embedded
+  scope: constant.numeric, constant.language, support.constant, constant.character, variable.parameter, keyword.other.unit
   settings:
-    fontStyle: italic
-    foreground: '#c594c5'
+    foreground: *constant
 
-- name: Library class/type
-  scope: support.type, support.class
+- name: String, Symbols, Inherited Class
+  scope: string, keyword.other.template, constant.other.symbol, constant.other.key, entity.other.inherited-class, meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js
+  settings:
+    fontStyle: normal
+    foreground: &string '#"{syntax.string.hex}"'
+
+- name: Class, Support
+  scope: entity.name.class, entity.name.type.class, support.type, support.class, support.orther.namespace.use.php, meta.use.php, support.other.namespace.php
+  settings:
+    foreground: *tag
+
+- name: Sub-methods
+  scope: entity.name.module.js, variable.import.parameter.js, variable.other.class.js
+  settings:
+    foreground: *tag
+
+- name: Language methods
+  scope: variable.language
   settings:
     fontStyle: italic
-    foreground: '#6699cc'
+    foreground: *tag
 
 - name: Invalid
   scope: invalid
   settings:
     foreground: &error '#"{syntax.error.hex}"'
 
-- name: Invalid deprecated
+- name: Deprecated
   scope: invalid.deprecated
   settings:
     background: *keyword
     foreground: &white '#FFFFFF'
 
-- name: YAML Key
-  scope: entity.name.tag.yaml
+- name: Html punctuations tags
+  scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
   settings:
-    foreground: '#5fb3b3'
+    foreground: '#"{syntax.tag.hex}"90' # opacity of tag verson of &tag_punctag
 
-- name: YAML String
-  scope: source.yaml string.unquoted
+- name: Attributes
+  scope: entity.other.attribute-name
   settings:
-    foreground: '#D8DEE9'
+    foreground: *keyword
 
-- name: diff.header
-  scope: meta.diff, meta.diff.header
+- name: Regular Expressions and Escape Characters
+  scope: string.regexp, constant.character.escape
   settings:
-    foreground: '#c594c5'
+    foreground: &regexp '#"{syntax.regexp.hex}"'
 
-- name: diff.deleted
-  scope: markup.deleted
+- name: URL
+  scope: '*url*, *link*, *uri*'
   settings:
-    foreground: *error
+    fontStyle: underline
 
-- name: diff.inserted
-  scope: markup.inserted
+- name: Search Results Nums
+  scope: constant.numeric.line-number.find-in-files - match
   settings:
-    foreground: '#99c794'
+    foreground: *comment
 
-- name: diff.changed
-  scope: markup.changed
+- name: Search Results Lines
+  scope: entity.name.filename.find-in-files
   settings:
-    foreground: '#f9ae58'
+    foreground: *string
 
-- name: CSS Properties
-  scope: support.type.property-name
+# ES6
+- name: Decorators
+  scope: tag.decorator.js entity.name.tag.js, tag.decorator.js punctuation.definition.tag.js
   settings:
-    foreground: '#D8DEE9'
+    fontStyle: italic
+    foreground: &special '#"{syntax.special.hex}"'
 
-- scope: constant.numeric.line-number.match
+- name: ES7 Bind Operator
+  scope: source.js constant.other.object.key.js string.unquoted.label.js
   settings:
-    foreground: '#ec5f67'
+    fontStyle: italic
+    foreground: *tag
 
-- scope: message.error
+- name: entity.name.method.js
+  scope: entity.name.method.js
   settings:
-    foreground: '#ec5f67'
+    fontStyle: italic
+    foreground: *special
+
+- name: meta.method.js
+  scope: meta.class-method.js entity.name.function.js, variable.function.constructor
+  settings:
+    foreground: *special
 
 # JSON
 - name: JSON Key - Level 8
@@ -372,7 +300,7 @@ settings:
 - name: Markup Deleted
   scope: markup.deleted
   settings:
-    foreground: *error
+    foreground: *keyword
 
 - name: Markup - Strike
   scope: markup.strike
@@ -382,7 +310,7 @@ settings:
 - name: Markup - Table
   scope: markup.table
   settings:
-    background: '#"{common.fg.hex}"10'
+    background: '#3cadd71a'
     foreground: *tag
 
 - name: Markdown - Markup Raw Inline
@@ -426,7 +354,7 @@ settings:
 - name: GitGutter Deleted
   scope: markup.deleted.git_gutter
   settings:
-    foreground: *error
+    foreground: *keyword
 
 - name: GitGutter Ignored
   scope: markup.ignored.git_gutter
