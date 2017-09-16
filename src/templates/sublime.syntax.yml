@@ -140,7 +140,7 @@ settings:
 - name: Inherited class
   scope: entity.other.inherited-class
   settings:
-    fontStyle: italic underline
+    fontStyle: underline
     foreground: *entity
 
 - name: Function argument
@@ -173,8 +173,7 @@ settings:
 - name: Function call
   scope: variable.function, variable.annotation
   settings:
-    fontStyle: ''
-    foreground: '#6699cc' # TODO
+    foreground: *function
 
 - name: Library function
   scope: support.function, support.macro
@@ -186,7 +185,7 @@ settings:
   scope: support.constant
   settings:
     fontStyle: italic
-    foreground: '#c594c5'
+    foreground: *operator
 
 - name: Library class/type
   scope: support.type, support.class
