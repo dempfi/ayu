@@ -54,11 +54,6 @@ settings:
   settings:
     foreground: &string '#"{syntax.string.hex}"'
 
-- name: Punctuation
-  scope: punctuation.definition
-  settings:
-    foreground: '#5fb3b3'
-
 - name: Number
   scope: constant.numeric
   settings:
@@ -164,6 +159,11 @@ settings:
   settings:
     fontStyle: ''
     foreground: *tag
+
+- name: Tag start/end
+  scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
+  settings:
+    foreground: '#"{syntax.tag.hex}"90' # opacity of tag verson of &tag_punctag
 
 - name: Tag attribute
   scope: entity.other.attribute-name
@@ -313,7 +313,13 @@ settings:
 - name: Markup Links
   scope: string.other.link, markup.underline.link
   settings:
-    foreground: *operator
+    fontStyle: italic underline
+    foreground: *regexp
+
+- name: Markup image
+  scope: punctuation.definition.image
+  settings:
+    foreground: *function
 
 - name: Markup Italic
   scope: markup.italic

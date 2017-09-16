@@ -91,17 +91,6 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Punctuation</string>
-			<key>scope</key>
-			<string>punctuation.definition</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5fb3b3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Number</string>
 			<key>scope</key>
 			<string>constant.numeric</string>
@@ -328,6 +317,17 @@ a {
 				<string></string>
 				<key>foreground</key>
 				<string>#39BAE6</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tag start/end</string>
+			<key>scope</key>
+			<string>punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#39BAE690</string>
 			</dict>
 		</dict>
 		<dict>
@@ -651,8 +651,21 @@ a {
 			<string>string.other.link, markup.underline.link</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>italic underline</string>
 				<key>foreground</key>
-				<string>#F29668</string>
+				<string>#95E6CB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup image</string>
+			<key>scope</key>
+			<string>punctuation.definition.image</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFB454</string>
 			</dict>
 		</dict>
 		<dict>
