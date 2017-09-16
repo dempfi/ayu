@@ -198,7 +198,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#D9D7CE</string>
 			</dict>
 		</dict>
 		<dict>
@@ -300,10 +300,8 @@ a {
 			<string>variable.parameter</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#f9ae58</string>
+				<string>#D4BFFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -316,7 +314,7 @@ a {
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#ec5f67</string>
+				<string>#5CCFE6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -392,7 +390,7 @@ a {
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#6699cc</string>
+				<string>#5CCFE6</string>
 			</dict>
 		</dict>
 		<dict>

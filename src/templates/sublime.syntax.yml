@@ -103,7 +103,7 @@ settings:
 - name: Punctuation
   scope: punctuation.section
   settings:
-    foreground: '#ffffff'
+    foreground: *fg
 
 - name: Accessor
   scope: punctuation.accessor
@@ -151,20 +151,19 @@ settings:
 - name: Function argument
   scope: variable.parameter
   settings:
-    fontStyle: ''
-    foreground: '#f9ae58'
+    foreground: *constant
 
 - name: Language variable
   scope: variable.language
   settings:
     fontStyle: italic
-    foreground: '#ec5f67'
+    foreground: &tag '#"{syntax.tag.hex}"'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml
   settings:
     fontStyle: ''
-    foreground: &tag '#"{syntax.tag.hex}"'
+    foreground: *tag
 
 - name: Tag attribute
   scope: entity.other.attribute-name
@@ -193,7 +192,7 @@ settings:
   scope: support.type, support.class
   settings:
     fontStyle: italic
-    foreground: '#6699cc'
+    foreground: *tag
 
 - name: Invalid
   scope: invalid
