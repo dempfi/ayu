@@ -50,7 +50,7 @@ settings:
     foreground: &comment '#"{syntax.comment.hex}"'
 
 - name: String
-  scope: string
+  scope: string, constant.other.symbol
   settings:
     foreground: &string '#"{syntax.string.hex}"'
 
@@ -214,9 +214,21 @@ settings:
   settings:
     foreground: *tag
 
-- scope: constant.numeric.line-number.match
+- name: Search Results Nums
+  scope: constant.numeric.line-number.find-in-files - match
   settings:
-    foreground: '#ec5f67'
+    foreground: *comment
+
+- name: Search Results Match Nums
+  scope: constant.numeric.line-number.match
+  settings:
+    foreground: *keyword
+
+- name: Search Results Lines
+  scope: entity.name.filename.find-in-files
+  settings:
+    foreground: *string
+
 
 - scope: message.error
   settings:

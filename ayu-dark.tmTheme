@@ -82,7 +82,7 @@ a {
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, constant.other.symbol</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -438,12 +438,36 @@ a {
 			</dict>
 		</dict>
 		<dict>
+			<key>name</key>
+			<string>Search Results Nums</string>
+			<key>scope</key>
+			<string>constant.numeric.line-number.find-in-files - match</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5C6773</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Search Results Match Nums</string>
 			<key>scope</key>
 			<string>constant.numeric.line-number.match</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ec5f67</string>
+				<string>#FF7733</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Search Results Lines</string>
+			<key>scope</key>
+			<string>entity.name.filename.find-in-files</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C2D94C</string>
 			</dict>
 		</dict>
 		<dict>
