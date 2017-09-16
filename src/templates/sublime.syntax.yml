@@ -93,7 +93,7 @@ settings:
 - name: Punctuation
   scope: punctuation.separator, punctuation.terminator
   settings:
-    foreground: '#A7ADBA'
+    foreground: '#"{common.fg.hex}"AA'
 
 - name: Punctuation
   scope: punctuation.section
@@ -103,12 +103,12 @@ settings:
 - name: Accessor
   scope: punctuation.accessor
   settings:
-    foreground: '#A7ADBA'
+    foreground: '#"{common.fg.hex}"CC'
 
 - name: Annotation Punctuation
   scope: punctuation.definition.annotation
   settings:
-    foreground: '#5fb3b3'
+    foreground: '#"{common.fg.hex}"CC'
 
 - name: JavaScript Dollar
   scope: variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js,
@@ -135,13 +135,13 @@ settings:
 - name: Entity name
   scope: entity.name - (entity.name.section | entity.name.tag | entity.name.label)
   settings:
-    foreground: '#f9ae58'
+    foreground: &entity '#"{syntax.entity.hex}"'
 
 - name: Inherited class
   scope: entity.other.inherited-class
   settings:
     fontStyle: italic underline
-    foreground: '#5fb3b3'
+    foreground: *entity
 
 - name: Function argument
   scope: variable.parameter
@@ -168,13 +168,13 @@ settings:
 - name: Tag attribute
   scope: entity.other.attribute-name
   settings:
-    foreground: '#c594c5'
+    foreground: *function
 
 - name: Function call
   scope: variable.function, variable.annotation
   settings:
     fontStyle: ''
-    foreground: '#6699cc'
+    foreground: '#6699cc' # TODO
 
 - name: Library function
   scope: support.function, support.macro
@@ -205,16 +205,6 @@ settings:
     background: *keyword
     foreground: &white '#FFFFFF'
 
-- name: YAML Key
-  scope: entity.name.tag.yaml
-  settings:
-    foreground: '#5fb3b3'
-
-- name: YAML String
-  scope: source.yaml string.unquoted
-  settings:
-    foreground: '#D8DEE9'
-
 - name: diff.header
   scope: meta.diff, meta.diff.header
   settings:
@@ -223,7 +213,7 @@ settings:
 - name: CSS Properties
   scope: support.type.property-name
   settings:
-    foreground: '#D8DEE9'
+    foreground: *tag
 
 - scope: constant.numeric.line-number.match
   settings:
@@ -231,7 +221,7 @@ settings:
 
 - scope: message.error
   settings:
-    foreground: '#ec5f67'
+    foreground: *error
 
 # JSON
 - name: JSON Key - Level 8
@@ -289,11 +279,6 @@ settings:
   scope: markup.heading punctuation.definition.heading
   settings:
     foreground: *keyword
-
-- name: Markup h1
-  scope: markup.heading.1 punctuation.definition.heading
-  settings:
-    foreground: '#ec5f67'
 
 - name: Markup Links
   scope: string.other.link, markup.underline.link

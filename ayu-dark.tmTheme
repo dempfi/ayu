@@ -176,7 +176,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A7ADBA</string>
+				<string>#E6E1CFAA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,7 +198,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A7ADBA</string>
+				<string>#E6E1CFCC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -209,7 +209,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#5fb3b3</string>
+				<string>#E6E1CFCC</string>
 			</dict>
 		</dict>
 		<dict>
@@ -266,7 +266,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f9ae58</string>
+				<string>#59C2FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -279,7 +279,7 @@ a {
 				<key>fontStyle</key>
 				<string>italic underline</string>
 				<key>foreground</key>
-				<string>#5fb3b3</string>
+				<string>#59C2FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -338,7 +338,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#c594c5</string>
+				<string>#FFB454</string>
 			</dict>
 		</dict>
 		<dict>
@@ -419,28 +419,6 @@ a {
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>YAML Key</string>
-			<key>scope</key>
-			<string>entity.name.tag.yaml</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#5fb3b3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>YAML String</string>
-			<key>scope</key>
-			<string>source.yaml string.unquoted</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#D8DEE9</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>diff.header</string>
 			<key>scope</key>
 			<string>meta.diff, meta.diff.header</string>
@@ -458,7 +436,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D8DEE9</string>
+				<string>#39BAE6</string>
 			</dict>
 		</dict>
 		<dict>
@@ -476,7 +454,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ec5f67</string>
+				<string>#FF3333</string>
 			</dict>
 		</dict>
 		<dict>
@@ -598,17 +576,6 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#FF7733</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup h1</string>
-			<key>scope</key>
-			<string>markup.heading.1 punctuation.definition.heading</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ec5f67</string>
 			</dict>
 		</dict>
 		<dict>
