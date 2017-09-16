@@ -93,7 +93,7 @@ settings:
 - name: Punctuation
   scope: punctuation.separator, punctuation.terminator
   settings:
-    foreground: '#"{common.fg.hex}"AA'
+    foreground: '#"{common.fg.hex}"CC'
 
 - name: Punctuation
   scope: punctuation.section

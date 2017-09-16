@@ -176,7 +176,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#"{common.fg.hex}"AA</string>
+				<string>#"{common.fg.hex}"CC</string>
 			</dict>
 		</dict>
 		<dict>
