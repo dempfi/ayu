@@ -3,7 +3,7 @@ theme: light
 common:
   accent: 'FF6A00'
   bg: 'FAFAFA'
-  fg: '5C6066'
+  fg: '6E7580'
 
 ui:
   fg: '85888C'
@@ -39,5 +39,5 @@ syntax:
   markup: F07178
   special: E6B673
   keyword: FA6E32
-  operator: ED996F
+  operator: ED9366
   constant: A37ACC
