@@ -31,7 +31,7 @@
 
 ### Settings
 
-```json
+```js
 "ui_native_titlebar":       true, // use native titlebars on macOs
 "ui_separator":             true, // separators between panels
 "ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
@@ -78,21 +78,21 @@ Add these lines to your user settings *Preferences > Setting - User*:
 
 For light theme:
 
-```json
+```js
 "theme": "ayu-light.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
 ```
 
 For mirage theme:
 
-```json
+```js
 "theme": "ayu-mirage.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 ```
 
 For dark theme:
 
-```json
+```js
 "theme": "ayu-dark.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 ```
@@ -105,21 +105,21 @@ Add this lines to your user settings *Preferences > Setting - User*:
 
 For light theme:
 
-```json
+```js
 "theme": "ayu-light2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-light.tmTheme",
 ```
 
 For mirage theme:
 
-```json
+```js
 "theme": "ayu-mirage2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
 ```
 
 For dark theme:
 
-```json
+```js
 "theme": "ayu-dark2.sublime-theme",
 "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
 ```
