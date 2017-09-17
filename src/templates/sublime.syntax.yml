@@ -67,7 +67,6 @@ settings:
 - name: Built-in constant
   scope: constant.language
   settings:
-    fontStyle: italic
     foreground: *constant
 
 - name: User-defined constant
@@ -124,10 +123,9 @@ settings:
 - name: Storage type
   scope: storage.type
   settings:
-    fontStyle: italic
     foreground: *keyword
 
-- name: Entity name
+- name: Function name
   scope: entity.name.function
   settings:
     foreground: &function '#"{syntax.func.hex}"'
@@ -157,7 +155,6 @@ settings:
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml
   settings:
-    fontStyle: ''
     foreground: *tag
 
 - name: Tag start/end
@@ -178,7 +175,6 @@ settings:
 - name: Library function
   scope: support.function, support.macro
   settings:
-    fontStyle: italic
     foreground: &markup '#"{syntax.markup.hex}"'
 
 - name: Library constant
@@ -209,11 +205,23 @@ settings:
   settings:
     foreground: '#c594c5'
 
+# CSS
+- name: CSS tag names
+  scope: source.css entity.name.tag, source.sass entity.name.tag, source.scss entity.name.tag, source.less entity.name.tag, source.stylus entity.name.tag
+  settings:
+    foreground: *entity
+
+- name: CSS browser prefix
+  scope: source.css support.type, source.sass support.type, source.scss support.type, source.less support.type, source.stylus support.type
+  settings:
+    foreground: *comment
+
 - name: CSS Properties
   scope: support.type.property-name
   settings:
     foreground: *tag
 
+# Search results
 - name: Search Results Nums
   scope: constant.numeric.line-number.find-in-files - match
   settings:

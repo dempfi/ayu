@@ -118,8 +118,6 @@ a {
 			<string>constant.language</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
 				<key>foreground</key>
 				<string>#"{syntax.constant.hex}"</string>
 			</dict>
@@ -241,15 +239,13 @@ a {
 			<string>storage.type</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
 				<key>foreground</key>
 				<string>#"{syntax.keyword.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Entity name</string>
+			<string>Function name</string>
 			<key>scope</key>
 			<string>entity.name.function</string>
 			<key>settings</key>
@@ -313,8 +309,6 @@ a {
 			<string>entity.name.tag, meta.tag.sgml</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#"{syntax.tag.hex}"</string>
 			</dict>
@@ -359,8 +353,6 @@ a {
 			<string>support.function, support.macro</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
 				<key>foreground</key>
 				<string>#"{syntax.markup.hex}"</string>
 			</dict>
@@ -424,6 +416,28 @@ a {
 			<dict>
 				<key>foreground</key>
 				<string>#c594c5</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS tag names</string>
+			<key>scope</key>
+			<string>source.css entity.name.tag, source.sass entity.name.tag, source.scss entity.name.tag, source.less entity.name.tag, source.stylus entity.name.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.entity.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS browser prefix</string>
+			<key>scope</key>
+			<string>source.css support.type, source.sass support.type, source.scss support.type, source.less support.type, source.stylus support.type</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#"{syntax.comment.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
