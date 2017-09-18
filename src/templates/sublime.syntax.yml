@@ -210,6 +210,12 @@ settings:
   settings:
     foreground: '#c594c5'
 
+# Ruby
+- name: Ruby class methods
+  scope: variable.other.readwrite
+  settings:
+    foreground: *function
+
 # CSS
 - name: CSS tag names
   scope: source.css entity.name.tag, source.sass entity.name.tag, source.scss entity.name.tag, source.less entity.name.tag, source.stylus entity.name.tag
