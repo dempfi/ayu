@@ -49,6 +49,11 @@ settings:
     fontStyle: italic
     foreground: &comment '#"{syntax.comment.hex}"'
 
+- name: Variable
+  scope: variable
+  settings:
+    foreground: *fg
+
 - name: String
   scope: string, constant.other.symbol
   settings:
