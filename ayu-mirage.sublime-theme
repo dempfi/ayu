@@ -351,6 +351,7 @@
 
   {
     "class": "tab_control", "attributes": ["selected"],
+    "layer0.tint": [115, 134, 153, 15],
     "layer2.opacity": 1.0,
     "layer3.opacity": 0.0
   },
@@ -359,6 +360,7 @@
 
   {
     "class": "tab_control", "attributes": ["hover"],
+    "layer0.tint": [115, 134, 153, 6],
     "layer2.opacity": 0.3
   },
 
@@ -366,6 +368,7 @@
 
   {
     "class": "tab_control", "attributes": ["selected","hover"],
+    "layer0.tint": [115, 134, 153, 15],
     "layer2.opacity": 1.0
   },
 
@@ -578,7 +581,7 @@
   {
     "class": "sidebar_tree",
     "indent_top_level": false,
-    "row_padding": [16, 6],
+    "row_padding": [20, 6],
     "dark_content": false,
     "spacer_rows": true,
     "indent_offset": 0,
@@ -609,6 +612,12 @@
     "layer1.tint": [115, 134, 153, 50],
     "layer1.inner_margin": [8, 4, 8, 4],
     "layer1.opacity": 0
+  },
+
+  {
+    "class": "tree_row",
+    "layer1.texture": "ayu/assets/tree-highlight-separators.png",
+    "settings": ["ui_separator"]
   },
 
   {
