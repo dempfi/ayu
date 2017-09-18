@@ -458,6 +458,21 @@ a {
 			<string>support.type.property-name</string>
 			<key>settings</key>
 			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
+				<key>foreground</key>
+				<string>#"{syntax.tag.hex}"</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>CSS Properties</string>
+			<key>scope</key>
+			<string>entity.other.attribute-name.id.css</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>normal</string>
 				<key>foreground</key>
 				<string>#"{syntax.tag.hex}"</string>
 			</dict>

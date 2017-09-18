@@ -224,6 +224,7 @@ settings:
 - name: CSS Properties
   scope: support.type.property-name
   settings:
+    fontStyle: normal
     foreground: *tag
 
 # Search results
