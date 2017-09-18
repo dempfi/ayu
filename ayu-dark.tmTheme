@@ -433,7 +433,7 @@ a {
 			<key>name</key>
 			<string>Ruby class methods</string>
 			<key>scope</key>
-			<string>variable.other.readwrite</string>
+			<string>source.ruby variable.other.readwrite</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

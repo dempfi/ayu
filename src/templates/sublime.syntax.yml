@@ -212,7 +212,7 @@ settings:
 
 # Ruby
 - name: Ruby class methods
-  scope: variable.other.readwrite
+  scope: source.ruby variable.other.readwrite
   settings:
     foreground: *function
 
