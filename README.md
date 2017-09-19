@@ -1,4 +1,4 @@
-![ayu](https://i.imgur.com/zDJHi5D.png)
+![ayu](https://i.imgur.com/lt4pIAI.png)
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
@@ -12,22 +12,22 @@
 
 ### Screenshots
 
-<h6 align='center'>Light with <code>ui_separator</code> option on</h6>
+<h6 align='center'>Light with <code>ui_separator</code> option off</h6>
 
-![Light with separators on](https://i.imgur.com/xiiPGbC.png)
-
----
-
-
-<h6 align='center'>Mirage with <code>ui_separator</code> option off</h6>
-
-![Mirage with separators off](https://i.imgur.com/IYmV8Wb.png)
+![Light](https://i.imgur.com/DbWFq76.png)
 
 ---
 
-<h6 align='center'>Dark with <code>ui_separator</code> option on</h6>
 
-![Dark with separators on](https://i.imgur.com/YrNneOD.png)
+<h6 align='center'>Mirage with <code>ui_separator</code> option on</h6>
+
+![Mirage](https://i.imgur.com/BOYGmHf.png)
+
+---
+
+<h6 align='center'>Dark with <code>ui_separator</code> option off</h6>
+
+![Dark](https://i.imgur.com/pmkHtQJ.png)
 
 ### Settings
 
