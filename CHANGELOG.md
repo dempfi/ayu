@@ -2,6 +2,15 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.7.0
+
+`2017-09-19`
+- Thanks to [dempfi](https://github.com/dempfi) for the changes in this release
+- Updated logo that is shown in vs market
+- Changed background for active tab
+- Added border to titlebar and statusbar
+- Other small improvements for inputs and such
+
 ## 0.6.0
 
 `2017-08-24`
