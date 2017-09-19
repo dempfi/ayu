@@ -99,7 +99,8 @@
     "fg": [115, 134, 153],
     "match_fg": [255, 204, 102],
     "selected_fg": [217, 215, 206],
-    "selected_match_fg": [255, 204, 102]
+    "selected_match_fg": [255, 204, 102],
+    "fg_blend": true
   },
 
   {
@@ -304,6 +305,16 @@
   },
   {
     "class": "tabset_control",
+    "platforms": ["osx"],
+    "settings": ["ui_separator", "!ui_native_titlebar"],
+    "layer2.opacity": 0.3,
+    "layer2.texture": "ayu/assets/separator-top.png",
+    "layer2.tint": [115, 134, 153],
+    "layer2.inner_margin": [1, 2, 1, 0]
+  },
+
+  {
+    "class": "tabset_control",
     "settings": ["ui_big_tabs"],
     "tab_height": 40
   },
@@ -312,7 +323,7 @@
   {
     "class": "tab_control",
 
-    "layer0.tint": [33, 39, 51],
+    "layer0.tint": [33, 39, 51, 0],
     "layer0.opacity": 1.0,
 
     "layer1.texture": "",
@@ -351,25 +362,37 @@
 
   {
     "class": "tab_control", "attributes": ["selected"],
-    "layer0.tint": [115, 134, 153, 15],
     "layer2.opacity": 1.0,
     "layer3.opacity": 0.0
+  },
+  {
+    "class": "tab_control", "attributes": ["selected"],
+    "settings": ["ui_separator"],
+    "layer0.tint": [115, 134, 153, 15]
   },
 
   // Hovered current tab
 
   {
     "class": "tab_control", "attributes": ["hover"],
-    "layer0.tint": [115, 134, 153, 6],
     "layer2.opacity": 0.3
+  },
+  {
+    "class": "tab_control", "attributes": ["hover"],
+    "settings": ["ui_separator"],
+    "layer0.tint": [115, 134, 153, 6],
   },
 
   // Selected current tab
 
   {
-    "class": "tab_control", "attributes": ["selected","hover"],
-    "layer0.tint": [115, 134, 153, 15],
+    "class": "tab_control", "attributes": ["selected", "hover"],
     "layer2.opacity": 1.0
+  },
+  {
+    "class": "tab_control", "attributes": ["selected", "hover"],
+    "settings": ["ui_separator"],
+    "layer0.tint": [115, 134, 153, 15]
   },
 
   // Tab Labels
@@ -577,7 +600,15 @@
     "layer1.opacity": 0.3,
     "layer1.tint": [115, 134, 153]
   },
-
+  {
+    "class": "sidebar_container",
+    "platforms": ["osx"],
+    "settings": ["ui_separator", "!ui_native_titlebar"],
+    "layer2.opacity": 0.3,
+    "layer2.texture": "ayu/assets/separator-top.png",
+    "layer2.tint": [115, 134, 153],
+    "layer2.inner_margin": [1, 2, 1, 0]
+  },
   {
     "class": "sidebar_tree",
     "indent_top_level": false,
