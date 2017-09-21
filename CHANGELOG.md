@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.8.0
+
+`2017-09-21`
+- Show border on activity bar
+
 ## 0.7.0
 
 `2017-09-19`
