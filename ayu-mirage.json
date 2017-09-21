@@ -112,6 +112,7 @@
 		"statusBarItem.prominentHoverBackground": "#303540",
 		"activityBar.background": "#212733",
 		"activityBar.foreground": "#738699",
+		"activityBar.border": "#343d4a",
 		"activityBarBadge.background": "#606f80",
 		"activityBarBadge.foreground": "#fff",
 		"sideBar.background": "#212733",

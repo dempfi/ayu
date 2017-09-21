@@ -252,7 +252,7 @@ function getThemeColors(variant) {
         // ----- Workbench: activity bar -----
         'activityBar.background': scheme.common.bg,
         'activityBar.foreground': scheme.ui.fg,
-        // 'activityBar.border': scheme.ui.gridDivider,
+        'activityBar.border': scheme.ui.gridDivider,
         // 'activityBar.dropBackground': '',
         'activityBarBadge.background': scheme.syntax.activeGuide,
         'activityBarBadge.foreground': '#fff',
