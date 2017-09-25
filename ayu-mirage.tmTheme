@@ -625,15 +625,6 @@ a {
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup headings</string>
-			<key>scope</key>
-			<string>markup.heading punctuation.definition.heading</string>
-			<key>settings</key>
-			<dict>
 				<key>foreground</key>
 				<string>#FFA759</string>
 			</dict>
@@ -671,6 +662,8 @@ a {
 			<dict>
 				<key>fontStyle</key>
 				<string>italic</string>
+				<key>foreground</key>
+				<string>#F28779</string>
 			</dict>
 		</dict>
 		<dict>
@@ -682,6 +675,8 @@ a {
 			<dict>
 				<key>fontStyle</key>
 				<string>bold</string>
+				<key>foreground</key>
+				<string>#F28779</string>
 			</dict>
 		</dict>
 		<dict>
@@ -693,17 +688,6 @@ a {
 			<dict>
 				<key>fontStyle</key>
 				<string>bold italic</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markup punctuation</string>
-			<key>scope</key>
-			<string>(text punctuation.definition.italic | text punctuation.definition.bold)</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#F28779</string>
 			</dict>
 		</dict>
 		<dict>

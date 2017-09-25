@@ -304,10 +304,6 @@ settings:
   scope: markup.heading
   settings:
     fontStyle: bold
-
-- name: Markup headings
-  scope: markup.heading punctuation.definition.heading
-  settings:
     foreground: *keyword
 
 - name: Markup Links
@@ -325,21 +321,18 @@ settings:
   scope: markup.italic
   settings:
     fontStyle: italic
+    foreground: *markup
 
 - name: Markup Bold
   scope: markup.bold
   settings:
     fontStyle: bold
+    foreground: *markup
 
 - name: Markup Bold/italic
   scope: markup.italic markup.bold | markup.bold markup.italic
   settings:
     fontStyle: bold italic
-
-- name: Markup punctuation
-  scope: (text punctuation.definition.italic | text punctuation.definition.bold)
-  settings:
-    foreground: *markup
 
 - name: Markup Code
   scope: markup.raw
