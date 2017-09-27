@@ -130,7 +130,6 @@
   {
     "class": "tool_tip_label_control",
     "color": ["{ui.fg.rgb}"],
-    "font.face": "Roboto mono",
     "font.size": 13
   },
   {
@@ -140,8 +139,8 @@
   },
   {
     "class": "tool_tip_label_control",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   /* OVERLAY PANELS
@@ -282,7 +281,7 @@
     "mouse_wheel_switch": false,
     "tab_min_width": 50,
     "tab_overlap": 0,
-    "tab_height": 30,
+    "tab_height": 32,
     "tab_width": 50,
 
     "layer0.tint": ["{common.bg.rgb}"],
@@ -335,7 +334,7 @@
 
     "layer3.texture": "",
 
-    "content_margin": [10, -2, 10, 0],
+    "content_margin": [10, 0, 10, 0],
     "max_margin_trim": 12
   },
   {
@@ -399,13 +398,10 @@
 
   {
     "class": "tab_label",
-    "fg": ["{common.bg.rgb}", 0],
-    "shadow_color": ["{ui.fg.rgb}"],
-    "shadow_offset": [0, -1],
+    "fg": ["{ui.fg.rgb}"],
     "font.italic": false,
     "font.bold": false,
-    "font.size": 12,
-    "font.face": "Roboto mono"
+    "font.size": 12
   },
   {
     "class": "tab_label",
@@ -414,28 +410,15 @@
   },
   {
     "class": "tab_label",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
   {
     "class": "tab_label",
     "settings": ["highlight_modified_tabs"],
     "font.italic": true,
     "attributes": ["dirty"],
-    "shadow_color": ["{common.accent.rgb}"]
-  },
-  {
-    "class": "tab_label",
-    "fg": ["{ui.fg.rgb}"],
-    "settings": ["ui_fix_tab_labels"],
-    "shadow_color": ["{common.bg.rgb}", 0],
-    "shadow_offset": [0, 0]
-  },
-  {
-    "class": "tab_label",
-    "fg": ["{common.accent.rgb}"],
-    "attributes": ["dirty"],
-    "settings": ["ui_fix_tab_labels", "highlight_modified_tabs"]
+    "fg": ["{common.accent.rgb}"]
   },
 
   // Tab selected label color
@@ -443,17 +426,7 @@
   {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": ["{common.bg.rgb}", 0],
-    "shadow_color": ["{common.fg.rgb}"],
-    "shadow_offset": [0, -1],
-  },
-  {
-    "class": "tab_label",
-    "settings": ["ui_fix_tab_labels"],
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": ["{common.fg.rgb}"],
-    "shadow_color": ["{common.bg.rgb}", 0],
-    "shadow_offset": [0, 0]
+    "fg": ["{common.fg.rgb}"]
   },
 
   {
@@ -621,10 +594,9 @@
 
   {
     "class": "sidebar_heading",
-    "color": ["{ui.fg.rgb}"],
-    "font.face": "Roboto mono",
-    "font.bold": true,
-    "font.size": 11
+    "color": ["{ui.fg.rgb}", 160],
+    "font.bold": false,
+    "font.size": 12
   },
   {
     "class": "sidebar_heading",
@@ -633,8 +605,8 @@
   },
   {
     "class": "sidebar_heading",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   {
@@ -660,7 +632,6 @@
   {
     "class": "sidebar_label",
     "color": ["{ui.fg.rgb}"],
-    "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -670,8 +641,8 @@
   },
   {
     "class": "sidebar_label",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   {
@@ -1048,7 +1019,6 @@
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
-    "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -1058,8 +1028,8 @@
   },
   {
     "class": "label_control",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   // Status bar labels
@@ -1080,7 +1050,7 @@
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.inner_margin": [1, 2, 1, 0],
-    "content_margin": [10, 0]
+    "content_margin": [16, 3]
   },
   {
     "class": "status_bar",

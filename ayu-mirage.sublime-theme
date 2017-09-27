@@ -130,7 +130,6 @@
   {
     "class": "tool_tip_label_control",
     "color": [115, 134, 153],
-    "font.face": "Roboto mono",
     "font.size": 13
   },
   {
@@ -140,8 +139,8 @@
   },
   {
     "class": "tool_tip_label_control",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   /* OVERLAY PANELS
@@ -282,7 +281,7 @@
     "mouse_wheel_switch": false,
     "tab_min_width": 50,
     "tab_overlap": 0,
-    "tab_height": 30,
+    "tab_height": 32,
     "tab_width": 50,
 
     "layer0.tint": [33, 39, 51],
@@ -335,7 +334,7 @@
 
     "layer3.texture": "",
 
-    "content_margin": [10, -2, 10, 0],
+    "content_margin": [10, 0, 10, 0],
     "max_margin_trim": 12
   },
   {
@@ -399,13 +398,10 @@
 
   {
     "class": "tab_label",
-    "fg": [33, 39, 51, 0],
-    "shadow_color": [115, 134, 153],
-    "shadow_offset": [0, -1],
+    "fg": [115, 134, 153],
     "font.italic": false,
     "font.bold": false,
-    "font.size": 12,
-    "font.face": "Roboto mono"
+    "font.size": 12
   },
   {
     "class": "tab_label",
@@ -414,28 +410,15 @@
   },
   {
     "class": "tab_label",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
   {
     "class": "tab_label",
     "settings": ["highlight_modified_tabs"],
     "font.italic": true,
     "attributes": ["dirty"],
-    "shadow_color": [255, 204, 102]
-  },
-  {
-    "class": "tab_label",
-    "fg": [115, 134, 153],
-    "settings": ["ui_fix_tab_labels"],
-    "shadow_color": [33, 39, 51, 0],
-    "shadow_offset": [0, 0]
-  },
-  {
-    "class": "tab_label",
-    "fg": [255, 204, 102],
-    "attributes": ["dirty"],
-    "settings": ["ui_fix_tab_labels", "highlight_modified_tabs"]
+    "fg": [255, 204, 102]
   },
 
   // Tab selected label color
@@ -443,17 +426,7 @@
   {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": [33, 39, 51, 0],
-    "shadow_color": [217, 215, 206],
-    "shadow_offset": [0, -1],
-  },
-  {
-    "class": "tab_label",
-    "settings": ["ui_fix_tab_labels"],
-    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": [217, 215, 206],
-    "shadow_color": [33, 39, 51, 0],
-    "shadow_offset": [0, 0]
+    "fg": [217, 215, 206]
   },
 
   {
@@ -621,10 +594,9 @@
 
   {
     "class": "sidebar_heading",
-    "color": [115, 134, 153],
-    "font.face": "Roboto mono",
-    "font.bold": true,
-    "font.size": 11
+    "color": [115, 134, 153, 160],
+    "font.bold": false,
+    "font.size": 12
   },
   {
     "class": "sidebar_heading",
@@ -633,8 +605,8 @@
   },
   {
     "class": "sidebar_heading",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   {
@@ -660,7 +632,6 @@
   {
     "class": "sidebar_label",
     "color": [115, 134, 153],
-    "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -670,8 +641,8 @@
   },
   {
     "class": "sidebar_label",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   {
@@ -1048,7 +1019,6 @@
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
-    "font.face": "Roboto mono",
     "font.size": 12
   },
   {
@@ -1058,8 +1028,8 @@
   },
   {
     "class": "label_control",
-    "settings": ["ui_font_default"],
-    "font.face": ""
+    "settings": ["ui_font_roboto_mono"],
+    "font.face": "Roboto mono"
   },
 
   // Status bar labels
@@ -1080,7 +1050,7 @@
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.inner_margin": [1, 2, 1, 0],
-    "content_margin": [10, 0]
+    "content_margin": [16, 3]
   },
   {
     "class": "status_bar",

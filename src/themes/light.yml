@@ -6,7 +6,7 @@ common:
   fg: '6E7580'
 
 ui:
-  fg: '85888C'
+  fg: '949AA1'
   panel:
     bg: FFFFFF
     row_bg: F5F5F5
@@ -14,7 +14,7 @@ ui:
     path_fg: 959CA6
 
   folder:
-    normal: '878F99'
+    normal: '9DA4AB'
 
   scrollbar:
     puck: '000000'
