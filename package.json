@@ -13,7 +13,7 @@
   },
   "scripts": {
     "watch": "gulp watch",
-    "b": "gulp",
+    "build": "gulp",
     "c": "gulp clean"
   },
   "homepage": "https://github.com/dempfi/ayu#readme",
@@ -25,5 +25,9 @@
     "through2": "^2.0.1",
     "vinyl": "^2.0.0",
     "yamljs": "^0.2.8"
+  },
+  "dependencies": {
+    "clear-require": "^2.0.0",
+    "color": "^2.0.0"
   }
 }
