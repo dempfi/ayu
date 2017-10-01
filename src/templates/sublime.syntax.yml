@@ -375,7 +375,7 @@ settings:
 - name: Markup Deleted
   scope: markup.deleted
   settings:
-    foreground: *error
+    foreground: *markup
 
 - name: Markup Strike
   scope: markup.strike
@@ -434,12 +434,12 @@ settings:
 - name: GitGutter Ignored
   scope: markup.ignored.git_gutter
   settings:
-    foreground: '"{ui.fg.fade30.hex}"'
+    foreground: '"{common.ui.fade30.hex}"'
 
 - name: GitGutter Untracked
   scope: markup.untracked.git_gutter
   settings:
-    foreground: '"{ui.fg.fade30.hex}"'
+    foreground: '"{common.ui.fade30.hex}"'
 
 - name: GutterColor
   scope: gutter_color

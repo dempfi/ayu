@@ -254,10 +254,10 @@
 
   {
     "class": "quick_panel_path_label",
-    "fg": [102,115,127],
-    "match_fg": [204,201,194],
-    "selected_fg": [102,115,128],
-    "selected_match_fg": [204,201,194]
+    "fg": [81.3,92.2,104.89999999999999],
+    "match_fg": [169.8,168.60000000000002,165.4],
+    "selected_fg": [81.3,92.2,104.89999999999999],
+    "selected_match_fg": [169.8,168.60000000000002,165.4]
   },
 
   // Panels data / score
@@ -570,8 +570,8 @@
 
   {
     "class": "sidebar_heading",
-    "color": [33,39,51],
-    "font.face": "Roboto mono",
+    "color": [67.5,77,89.5],
+    "font.face": "Roboto Mono",
     "font.bold": true,
     "font.size": 11
   },

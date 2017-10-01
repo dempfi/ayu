@@ -23,18 +23,16 @@ const syntax = {
 }
 
 const ui = {
-  fg: common.ui,
   panel: {
     bg: $`FFFFFF`,
-    shadow: $`949AA1`,
-    row: { bg: common.bg.darken1 },
-    path: { fg: $`959CA6` }
+    shadow: common.bg.darken10,
+    row: { bg: common.bg.darken1 }
   },
   icon: common.ui.fade70,
   scrollbar: { puck: $`000000` },
-  separator: $`E2E4E7`,
-  minimap: $`828282`,
-  opacity: 0.2
+  separator: common.bg.darken3,
+  minimap: common.bg.darken10,
+  opacity: 1
 }
 
 const editor = {

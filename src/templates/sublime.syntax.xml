@@ -781,7 +781,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>"{syntax.error.hex}"</string>
+				<string>"{syntax.markup.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -908,7 +908,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>"{ui.fg.fade30.hex}"</string>
+				<string>"{common.ui.fade30.hex}"</string>
 			</dict>
 		</dict>
 		<dict>
@@ -919,7 +919,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>"{ui.fg.fade30.hex}"</string>
+				<string>"{common.ui.fade30.hex}"</string>
 			</dict>
 		</dict>
 		<dict>

@@ -19,21 +19,19 @@ const syntax = {
   comment: $`5C6773`,
   constant: $`FFEE99`,
   operator: $`F29668`,
-  error: $`F51818`
+  error: $`FF3333`
 }
 
 const ui = {
-  fg: common.ui,
   panel: {
     bg: common.ui.fade7,
     shadow: common.bg.darken30,
-    row: { bg: common.bg.darken1 },
-    path: { fg: $`66737F` }
+    row: { bg: common.bg.darken1 }
   },
   icon: common.ui.fade60,
   scrollbar: { puck: $`FFFFFF` },
-  separator: common.bg.darken10,
-  minimap: $`828282`,
+  separator: common.ui.fade9,
+  minimap: common.bg.darken70,
   opacity: 1.0
 }
 

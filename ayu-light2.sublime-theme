@@ -21,7 +21,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": [226,228,231]
+    "border_color": [242.5,242.5,242.5]
   },
   {
     "class": "grid_layout_control",
@@ -156,7 +156,7 @@
     "layer0.texture": "ayu/assets/overlay-shadow.png",
     "layer0.inner_margin": [25, 45, 25, 35],
     "layer0.opacity": 1.0,
-    "layer0.tint": [148,154,161],
+    "layer0.tint": [224.99999999999997,224.99999999999997,224.99999999999997],
 
     "layer1.texture": "ayu/assets/overlay-bg.png",
     "layer1.inner_margin": [25, 45, 25, 35],
@@ -254,10 +254,10 @@
 
   {
     "class": "quick_panel_path_label",
-    "fg": [149,156,166],
-    "match_fg": [129,135,140],
-    "selected_fg": [157,162,166],
-    "selected_match_fg": [129,135,140]
+    "fg": [184.9,188.4,191.2],
+    "match_fg": [153.2,158,162],
+    "selected_fg": [184.9,188.4,191.2],
+    "selected_match_fg": [153.2,158,162]
   },
 
   // Panels data / score
@@ -295,7 +295,7 @@
     "class": "tabset_control",
     "settings": ["ui_separator"],
     "content_margin": [0, 0, 0, 0],
-    "layer1.opacity": 0.2,
+    "layer1.opacity": 1,
     "layer1.texture": "ayu/assets/separator-bottom.png",
     "layer1.tint": [157,162,166],
     "layer1.inner_margin": [1, 0, 1, 2]
@@ -332,12 +332,12 @@
     "layer1.texture": "ayu/assets/separator-right.png",
     "layer1.tint": [157,162,166],
     "layer1.inner_margin": [0, 1, 2, 1],
-    "layer1.opacity": 0.2,
+    "layer1.opacity": 1,
 
     "layer3.texture": "ayu/assets/separator-bottom.png",
     "layer3.tint": [157,162,166],
     "layer3.inner_margin": [1, 0, 1, 2],
-    "layer3.opacity": 0.2
+    "layer3.opacity": 1
   },
   {
     "class": "tab_control",
@@ -514,7 +514,7 @@
     "settings": ["ui_separator"],
     "layer2.texture": "ayu/assets/separator-right.png",
     "layer2.tint": [157,162,166],
-    "layer2.opacity": 0.2,
+    "layer2.opacity": 1,
     "layer2.inner_margin" : [0, 1, 2, 1]
   },
 
@@ -556,7 +556,7 @@
     "layer1.texture": "ayu/assets/separator-right.png",
     "layer1.tint": [157,162,166],
     "layer1.inner_margin": [0, 1, 2, 1],
-    "layer1.opacity": 0.2
+    "layer1.opacity": 1
   },
 
   {
@@ -570,8 +570,8 @@
 
   {
     "class": "sidebar_heading",
-    "color": [250,250,250],
-    "font.face": "Roboto mono",
+    "color": [203.5,206,208],
+    "font.face": "Roboto Mono",
     "font.bold": true,
     "font.size": 11
   },
@@ -943,7 +943,7 @@
     "class": "status_bar",
     "settings": ["ui_separator"],
     "layer0.tint": [255,255,255]
-    // "layer1.opacity": 0.2
+    // "layer1.opacity": 1
   },
 
   {
@@ -976,7 +976,7 @@
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": [157,162,166],
     "layer1.inner_margin": [1, 2, 1, 0],
-    "layer1.opacity": 0.2
+    "layer1.opacity": 1
   },
 
   // Status bar panel close icon
@@ -1005,7 +1005,7 @@
     "layer0.tint": [255,255,255],
 
     "layer1.texture": "ayu/assets/input-border.png",
-    "layer1.opacity": 0.2,
+    "layer1.opacity": 1,
     "layer1.inner_margin": [10, 8],
     "layer1.tint": [157,162,166],
     "content_margin": [10, 7, 10, 5]

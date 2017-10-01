@@ -21,7 +21,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": [13.500000000000002,17.999999999999996,22.499999999999996]
+    "border_color": [20.939999999999998,26.479999999999997,31.929999999999996]
   },
   {
     "class": "grid_layout_control",
@@ -254,10 +254,10 @@
 
   {
     "class": "quick_panel_path_label",
-    "fg": [102,115,127],
-    "match_fg": [204,201,194],
-    "selected_fg": [81,92,102],
-    "selected_match_fg": [204,201,194]
+    "fg": [61.199999999999996,70.39999999999999,78.89999999999999],
+    "match_fg": [166.20000000000002,164.8,160.20000000000002],
+    "selected_fg": [61.199999999999996,70.39999999999999,78.89999999999999],
+    "selected_match_fg": [166.20000000000002,164.8,160.20000000000002]
   },
 
   // Panels data / score
@@ -570,8 +570,8 @@
 
   {
     "class": "sidebar_heading",
-    "color": [15,20,25],
-    "font.face": "Roboto mono",
+    "color": [48,56,63.5],
+    "font.face": "Roboto Mono",
     "font.bold": true,
     "font.size": 11
   },

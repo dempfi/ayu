@@ -60,7 +60,7 @@
     "layer0.texture": "ayu/assets/unfold.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": 0,
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "content_margin": [8, 6, 8, 6]
   },
 
@@ -96,7 +96,7 @@
 
   {
     "class": "auto_complete_label",
-    "fg": ["{ui.fg.rgb}"],
+    "fg": ["{common.ui.rgb}"],
     "match_fg": ["{common.accent.rgb}"],
     "selected_fg": ["{common.fg.rgb}"],
     "selected_match_fg": ["{common.accent.rgb}"],
@@ -129,7 +129,7 @@
 
   {
     "class": "tool_tip_label_control",
-    "color": ["{ui.fg.rgb}"],
+    "color": ["{common.ui.rgb}"],
     "font.size": 13
   },
   {
@@ -232,7 +232,7 @@
   // Panel labels
   {
     "class": "quick_panel_label",
-    "fg": ["{ui.fg.rgb}"],
+    "fg": ["{common.ui.rgb}"],
     "font.bold": false,
     "match_fg": ["{common.accent.rgb}"],
     "selected_fg": ["{common.fg.rgb}"],
@@ -243,7 +243,7 @@
   {
     "class": "quick_panel_label",
     "parents": [{"class": "overlay_control"}],
-    "fg": ["{ui.fg.rgb}"],
+    "fg": ["{common.ui.rgb}"],
     "match_fg": ["{common.accent.rgb}"],
     "selected_fg": ["{common.fg.rgb}"],
     "selected_match_fg": ["{common.accent.rgb}"]
@@ -252,17 +252,17 @@
   // Panels sublabels
   {
     "class": "quick_panel_path_label",
-    "fg": ["{ui.panel.path.fg.rgb}"],
-    "match_fg": ["{common.fg.rgb}"],
-    "selected_fg": ["{ui.fg.rgb}"],
-    "selected_match_fg": ["{common.fg.rgb}"]
+    "fg": ["{common.ui.fade70.rgb}"],
+    "match_fg": ["{common.fg.fade80.rgb}"],
+    "selected_fg": ["{common.ui.fade70.rgb}"],
+    "selected_match_fg": ["{common.fg.fade80.rgb}"]
   },
 
   // Panels data / score
   {
     "class": "quick_panel_score_label",
-    "fg": ["{ui.fg.rgb}"],
-    "selected_fg": ["{ui.fg.rgb}"]
+    "fg": ["{common.ui.rgb}"],
+    "selected_fg": ["{common.accent.rgb}"]
   },
 
 
@@ -279,7 +279,7 @@
 
     "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1.0,
-    "content_margin": [0, 0] // <<<<<<<<<<<<<
+    "content_margin": [0, 0]
   },
   {
     "class": "tabset_control",
@@ -360,7 +360,7 @@
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.fg.rgb}", 15]
+    "layer0.tint": ["{common.ui.rgb}", 15]
   },
 
   // Hovered current tab
@@ -372,7 +372,7 @@
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.fg.rgb}", 6],
+    "layer0.tint": ["{common.ui.rgb}", 6],
   },
 
   // Selected current tab
@@ -384,14 +384,14 @@
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.fg.rgb}", 15]
+    "layer0.tint": ["{common.ui.rgb}", 15]
   },
 
   // Tab Labels
 
   {
     "class": "tab_label",
-    "fg": ["{ui.fg.rgb}"],
+    "fg": ["{common.ui.rgb}"],
     "font.italic": false,
     "font.bold": false,
     "font.size": 12
@@ -435,12 +435,12 @@
 
   // Close Icon
     "layer0.texture": "ayu/assets/close.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
 
   // Dirty Icon
     "layer1.texture": "ayu/assets/dirty.png",
-    "layer1.tint": ["{ui.fg.rgb}"],
+    "layer1.tint": ["{common.ui.rgb}"],
     "layer1.opacity": 0,
   },
 
@@ -587,9 +587,9 @@
 
   {
     "class": "sidebar_heading",
-    "color": ["{ui.fg.rgb}", 160],
-    "font.bold": false,
-    "font.size": 12
+    "color": ["{common.ui.fade50.rgb}"],
+    "font.bold": true,
+    "font.size": 11
   },
   {
     "class": "sidebar_heading",
@@ -605,7 +605,7 @@
   {
     "class": "tree_row",
     "layer1.texture": "ayu/assets/tree-highlight.png",
-    "layer1.tint": ["{ui.fg.fade12.rgb}"],
+    "layer1.tint": ["{ui.separator.rgb}"],
     "layer1.inner_margin": [8, 4, 8, 4],
     "layer1.opacity": 0
   },
@@ -624,7 +624,7 @@
 
   {
     "class": "sidebar_label",
-    "color": ["{ui.fg.rgb}"],
+    "color": ["{common.ui.rgb}"],
     "font.size": 12
   },
   {
@@ -653,7 +653,7 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["expandable"]}],
-    "color": ["{ui.fg.rgb}"],
+    "color": ["{common.ui.rgb}"],
     "font.bold": false
   },
 
@@ -797,7 +797,7 @@
     "layer0.opacity": 1.0,
 
     "layer1.texture": "ayu/assets/folder-symlink.png",
-    "layer1.tint": ["{ui.fg.rgb}"],
+    "layer1.tint": ["{common.ui.rgb}"],
     "layer1.opacity": 0.3
   },
 
@@ -829,7 +829,7 @@
     "layer0.texture": "ayu/assets/close.png",
     "layer0.opacity": 0,
     "layer0.inner_margin": [0, 0],
-    "layer0.tint": ["{ui.fg.rgb}"]
+    "layer0.tint": ["{common.ui.rgb}"]
   },
 
 
@@ -846,7 +846,7 @@
     "class": "close_button",
     "attributes": ["dirty"],
     "layer0.texture": "ayu/assets/dirty.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0
   },
 
@@ -867,7 +867,7 @@
     "layer0.opacity": 1.0,
 
     "layer1.texture": "ayu/assets/scrollbar-vertical-wide.png",
-    "layer1.tint": ["{ui.fg.rgb}"],
+    "layer1.tint": ["{common.ui.rgb}"],
     "layer1.opacity": 0.1,
     "layer1.inner_margin": [0, 10],
     "blur": false
@@ -893,7 +893,7 @@
   {
     "class": "puck_control",
     "layer0.texture": "ayu/assets/scrollbar-vertical-wide.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 0.3,
     "layer0.inner_margin": [0, 10],
     "content_margin": [6, 12],
@@ -982,7 +982,7 @@
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
     "viewport_color": ["{ui.minimap.rgb}"],
-    "viewport_opacity": "{ui.opacity}"
+    "viewport_opacity": 0.2
   },
 
   {
@@ -1008,7 +1008,7 @@
 
   {
     "class": "label_control",
-    "color": ["{ui.fg.rgb}"],
+    "color": ["{common.ui.rgb}"],
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
@@ -1030,7 +1030,7 @@
   {
     "class": "label_control",
     "parents": [{"class": "status_bar"}],
-    "color": ["{ui.fg.rgb}"],
+    "color": ["{common.ui.rgb}"],
     "font.bold": false
   },
 
@@ -1042,14 +1042,15 @@
     "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/separator-top.png",
+    "layer1.tint": ["{ui.separator.rgb}"],
     "layer1.inner_margin": [1, 2, 1, 0],
     "content_margin": [16, 3]
   },
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.panel.bg.rgb}"]
-    // "layer1.opacity": "{ui.opacity}"
+    // "layer0.tint": ["{ui.panel.bg.rgb}"],
+    "layer1.opacity": "{ui.opacity}"
   },
 
   {
@@ -1065,7 +1066,7 @@
   {
     "class": "panel_button_control",
     "layer0.texture": "ayu/assets/switch-panel.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0
   },
 
@@ -1103,7 +1104,7 @@
     "class": "panel_close_button",
     "layer0.texture": "ayu/assets/close.png",
     "layer0.opacity": 1.0,
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "content_margin": [0, 0] // 8,8 to show
   },
   {
@@ -1138,7 +1139,7 @@
     "layer0.opacity": 0,
     "layer1.texture": "ayu/assets/input-search.png",
     "layer1.opacity": 1,
-    "layer1.tint": ["{ui.fg.rgb}", 100],
+    "layer1.tint": ["{common.ui.rgb}", 100],
     "layer1.inner_margin": [60, 0, 0, 0],
     "content_margin": [50, 7, 10, 4]
   },
@@ -1183,7 +1184,7 @@
   {
     "class": "label_control",
     "parents": [{"class": "button_control"}],
-    "color":  ["{ui.fg.rgb}"]
+    "color":  ["{common.ui.rgb}"]
   },
 
   {
@@ -1210,7 +1211,7 @@
   {
     "class": "icon_regex",
     "layer0.texture": "ayu/assets/regex.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1226,7 +1227,7 @@
   {
     "class": "icon_case",
     "layer0.texture": "ayu/assets/matchcase.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1242,7 +1243,7 @@
   {
     "class": "icon_whole_word",
     "layer0.texture": "ayu/assets/word.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1258,7 +1259,7 @@
   {
     "class": "icon_wrap",
     "layer0.texture": "ayu/assets/wrap.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1274,7 +1275,7 @@
   {
     "class": "icon_in_selection",
     "layer0.texture": "ayu/assets/inselection.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1290,7 +1291,7 @@
   {
     "class": "icon_highlight",
     "layer0.texture": "ayu/assets/highlight.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1306,7 +1307,7 @@
   {
     "class": "icon_preserve_case",
     "layer0.texture": "ayu/assets/replace-preserve-case.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1322,7 +1323,7 @@
   {
     "class": "icon_context",
     "layer0.texture": "ayu/assets/context.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1339,7 +1340,7 @@
   {
     "class": "icon_use_buffer",
     "layer0.texture": "ayu/assets/buffer.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1355,7 +1356,7 @@
   {
     "class": "icon_reverse",
     "layer0.texture": "ayu/assets/reverse.png",
-    "layer0.tint": ["{ui.fg.rgb}"],
+    "layer0.tint": ["{common.ui.rgb}"],
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1371,7 +1372,7 @@
   {
     "class": "title_bar",
     "bg": ["{common.bg.rgb}"],
-    "fg": ["{ui.fg.rgb}"]
+    "fg": ["{common.ui.rgb}"]
   },
   {
     "class": "title_bar",

@@ -252,17 +252,17 @@
   // Panels sublabels
   {
     "class": "quick_panel_path_label",
-    "fg": [102,115,127],
-    "match_fg": [204,201,194],
-    "selected_fg": [102,115,128],
-    "selected_match_fg": [204,201,194]
+    "fg": [81.3,92.2,104.89999999999999],
+    "match_fg": [169.8,168.60000000000002,165.4],
+    "selected_fg": [81.3,92.2,104.89999999999999],
+    "selected_match_fg": [169.8,168.60000000000002,165.4]
   },
 
   // Panels data / score
   {
     "class": "quick_panel_score_label",
     "fg": [102,115,128],
-    "selected_fg": [102,115,128]
+    "selected_fg": [255,204,102]
   },
 
 
@@ -279,7 +279,7 @@
 
     "layer0.tint": [33,39,51],
     "layer0.opacity": 1.0,
-    "content_margin": [0, 0] // <<<<<<<<<<<<<
+    "content_margin": [0, 0]
   },
   {
     "class": "tabset_control",
@@ -587,9 +587,9 @@
 
   {
     "class": "sidebar_heading",
-    "color": [102,115,128, 160],
-    "font.bold": false,
-    "font.size": 12
+    "color": [67.5,77,89.5],
+    "font.bold": true,
+    "font.size": 11
   },
   {
     "class": "sidebar_heading",
@@ -605,7 +605,7 @@
   {
     "class": "tree_row",
     "layer1.texture": "ayu/assets/tree-highlight.png",
-    "layer1.tint": [41.28,48.12,60.24],
+    "layer1.tint": [29.70000000000001,35.099999999999994,45.9],
     "layer1.inner_margin": [8, 4, 8, 4],
     "layer1.opacity": 0
   },
@@ -981,14 +981,14 @@
   {
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
-    "viewport_color": [130,130,130],
-    "viewport_opacity": 1
+    "viewport_color": [19.800000000000004,23.4,30.599999999999998],
+    "viewport_opacity": 0.2
   },
 
   {
     "class": "minimap_control",
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_color": [130,130,130],
+    "viewport_color": [19.800000000000004,23.4,30.599999999999998],
     "viewport_opacity": { "target": 0, "speed": 4.0, "interpolation": "smoothstep" }
   },
 
@@ -1042,14 +1042,15 @@
     "layer0.tint": [33,39,51],
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/separator-top.png",
+    "layer1.tint": [29.70000000000001,35.099999999999994,45.9],
     "layer1.inner_margin": [1, 2, 1, 0],
     "content_margin": [16, 3]
   },
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
-    "layer0.tint": [37.830000000000005,44.32000000000001,56.39000000000001]
-    // "layer1.opacity": 1
+    // "layer0.tint": [37.830000000000005,44.32000000000001,56.39000000000001],
+    "layer1.opacity": 1
   },
 
   {
