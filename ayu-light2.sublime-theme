@@ -21,7 +21,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": [240, 240, 240]
+    "border_color": [235, 235, 235]
   },
   {
     "class": "grid_layout_control",
@@ -106,7 +106,7 @@
 
   {
     "class": "table_row",
-    "layer0.tint": [247, 247, 247],
+    "layer0.tint": [245, 245, 245],
     "layer0.opacity": 0.0
   },
 
@@ -180,7 +180,7 @@
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [247, 247, 247]
+    "layer0.tint": [245, 245, 245]
   },
 
   // Quick panel project setting (project manager) (cmd + ctrl + p)
@@ -226,7 +226,7 @@
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": [247, 247, 247]
+    "layer0.tint": [245, 245, 245]
   },
 
   // Panel labels
@@ -492,7 +492,7 @@
     "class": "scroll_tabs_left_button",
     "content_margin": [12, 15],
     "layer0.texture": "ayu/assets/arrow-left.png",
-    "layer0.tint": [185, 188, 191],
+    "layer0.tint": [194, 197, 200],
     "layer0.opacity": 1.0
   },
 
@@ -506,7 +506,7 @@
     "class": "scroll_tabs_right_button",
     "content_margin": [12, 15],
     "layer0.texture": "ayu/assets/arrow-right.png",
-    "layer0.tint": [185, 188, 191],
+    "layer0.tint": [194, 197, 200],
     "layer0.opacity": 1.0
   },
   {
@@ -528,7 +528,7 @@
     "class": "show_tabs_dropdown_button",
     "content_margin": [12, 12],
     "layer0.texture": "ayu/assets/overflow-menu.png",
-    "layer0.tint": [185, 188, 191],
+    "layer0.tint": [194, 197, 200],
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 0]
   },
@@ -592,7 +592,7 @@
     "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
     "layer1.tint": [255, 143, 64],
     "layer1.inner_margin": [5, 0, 0, 3],
-    "layer0.tint": [247, 247, 247],
+    "layer0.tint": [245, 245, 245],
     "layer0.opacity": 0
   },
 
@@ -685,7 +685,7 @@
   {
     "class": "disclosure_button_control",
     "layer0.texture": "ayu/assets/arrow-right.png",
-    "layer0.tint": [185, 188, 191],
+    "layer0.tint": [194, 197, 200],
     "layer0.opacity": 1,
     "layer0.inner_margin": 0,
     "content_margin": [12, 15]
@@ -1031,7 +1031,7 @@
     "class": "dropdown_button_control",
     "content_margin": [12, 12],
     "layer0.texture": "ayu/assets/overflow-menu.png",
-    "layer0.tint": [185, 188, 191],
+    "layer0.tint": [194, 197, 200],
     "layer0.opacity": 1.0
   },
   {

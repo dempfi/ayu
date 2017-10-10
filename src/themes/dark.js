@@ -27,18 +27,18 @@ const ui = {
     bg: common.ui.fade7,
     shadow: common.bg.darken30,
     border: common.bg.darken80,
-    row: common.bg.darken1
+    row: common.bg.darken20
   },
-  icon: common.ui.fade60,
+  icon: common.ui.fade55,
   scrollbar: { puck: $`FFFFFF` },
-  separator: common.bg.darken35,
+  separator: common.bg.darken45,
   minimap: common.bg.darken70,
   opacity: 1.0
 }
 
 const editor = {
-  line: common.bg.darken30,
-  gutter: common.ui.fade35,
+  line: common.bg.darken40,
+  gutter: common.ui.fade40,
   selection: {
     bg: syntax.entity.fade6,
     inactive: syntax.entity.fade4,

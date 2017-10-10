@@ -40,7 +40,7 @@
 				<key>inactiveSelection</key>
 				<string>"{editor.selection.inactive.hex}"</string>
 				<key>invisibles</key>
-				<string>#"{syntax.gutter.hex}"</string>
+				<string>"{editor.gutter.hex}"</string>
 				<key>lineHighlight</key>
 				<string>"{editor.line.hex}"</string>
 				<key>popupCss</key>

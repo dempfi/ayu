@@ -360,7 +360,7 @@
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{common.ui.rgb}", 15]
+    "layer0.tint": ["{ui.separator.rgb}", 120]
   },
 
   // Hovered current tab
@@ -372,7 +372,7 @@
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{common.ui.rgb}", 6],
+    "layer0.tint": ["{ui.separator.rgb}", 70],
   },
 
   // Selected current tab
@@ -384,7 +384,7 @@
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{common.ui.rgb}", 15]
+    "layer0.tint": ["{ui.separator.rgb}", 120]
   },
 
   // Tab Labels
@@ -580,8 +580,8 @@
     "indent_top_level": false,
     "row_padding": [20, 6],
     "dark_content": false,
-    "spacer_rows": true,
-    "indent_offset": 0,
+    "spacer_rows": false,
+    "indent_offset": 3,
     "indent": 12
   },
 
@@ -838,8 +838,7 @@
   {
     "class": "close_button",
     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-  // Default Close icon
-    "layer0.opacity": 0.6
+    "layer0.opacity": 1
   },
 
   {

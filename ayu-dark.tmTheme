@@ -34,15 +34,15 @@
 				<key>gutter</key>
 				<string>#0F1419</string>
 				<key>gutterForeground</key>
-				<string>#232A2F</string>
+				<string>#252D33</string>
 				<key>inactiveBackground</key>
 				<string>#0F1419</string>
 				<key>inactiveSelection</key>
 				<string>#121B22</string>
 				<key>invisibles</key>
-				<string>#35404C</string>
+				<string>#252D33</string>
 				<key>lineHighlight</key>
-				<string>#0A0E12</string>
+				<string>#090C0F</string>
 				<key>popupCss</key>
 				<string>html, body {
   background-color: #13181D;
