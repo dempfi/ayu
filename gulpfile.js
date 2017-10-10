@@ -10,7 +10,7 @@ const clearRequire = require('clear-require')
 
 const hexRx = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i
 
-_.templateSettings.interpolate = /"{([\s\S]+?)}"/g;
+_.templateSettings.interpolate = /"{([\s\S]+?)}"/g
 
 function colors(path) {
   clearRequire(`./src/themes/${path}`)

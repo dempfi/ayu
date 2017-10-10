@@ -105,7 +105,7 @@
 
   {
     "class": "table_row",
-    "layer0.tint": ["{ui.panel.row.bg.rgb}"],
+    "layer0.tint": ["{ui.panel.row.rgb}"],
     "layer0.opacity": 0.0
   },
 
@@ -158,7 +158,7 @@
     "layer1.texture": "ayu/assets/overlay-border.png",
     "layer1.inner_margin": [15, 35, 15, 25],
     "layer1.opacity": 1.0,
-    "layer1.tint": ["{ui.separator.rgb}"],
+    "layer1.tint": ["{ui.panel.border.rgb}"],
 
     "layer2.texture": "ayu/assets/overlay-bg.png",
     "layer2.inner_margin": [15, 35, 15, 25],
@@ -182,7 +182,7 @@
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": ["{ui.panel.row.bg.rgb}"]
+    "layer0.tint": ["{ui.panel.row.rgb}"]
   },
 
   // Quick panel project setting (project manager) (cmd + ctrl + p)
@@ -226,7 +226,7 @@
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": ["{ui.panel.row.bg.rgb}"]
+    "layer0.tint": ["{ui.panel.row.rgb}"]
   },
 
   // Panel labels

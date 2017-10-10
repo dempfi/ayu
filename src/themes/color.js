@@ -4,7 +4,7 @@ let BASE
 class Color {
   constructor(a) { this.color = a }
   static from(hex) { return new Color(C('#' + hex)) }
-  get rgb() { return this.color.rgb().array().join() }
+  get rgb() { return this.color.rgb().array().map(Math.round).join(', ') }
   get hex() { return this.color.hex() }
 }
 

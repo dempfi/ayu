@@ -26,11 +26,12 @@ const ui = {
   panel: {
     bg: common.ui.fade7,
     shadow: common.bg.darken30,
-    row: { bg: common.bg.darken1 }
+    border: common.bg.darken40,
+    row: common.bg.darken1
   },
   icon: common.ui.fade60,
   scrollbar: { puck: $`FFFFFF` },
-  separator: common.bg.darken10,
+  separator: common.bg.darken14,
   minimap: common.bg.darken40,
   opacity: 1.0
 }

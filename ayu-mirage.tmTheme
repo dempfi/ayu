@@ -52,7 +52,7 @@ body {
   padding: 1px 3px;
 }
 a {
-  color: rgba(92,207,230, .7);
+  color: rgba(92, 207, 230, .7);
 }
 </string>
 				<key>selection</key>

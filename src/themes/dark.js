@@ -3,8 +3,8 @@ const $ = require('./color')
 const common = {
   accent: $`F29718`,
   bg: $.base`0F1419`,
-  fg: $`CCC9C2`,
-  ui: $`515C66`
+  fg: $`BFBAB0`,
+  ui: $`475259`
 }
 
 const syntax = {
@@ -26,17 +26,18 @@ const ui = {
   panel: {
     bg: common.ui.fade7,
     shadow: common.bg.darken30,
-    row: { bg: common.bg.darken1 }
+    border: common.bg.darken80,
+    row: common.bg.darken1
   },
   icon: common.ui.fade60,
   scrollbar: { puck: $`FFFFFF` },
-  separator: common.ui.fade9,
+  separator: common.bg.darken35,
   minimap: common.bg.darken70,
   opacity: 1.0
 }
 
 const editor = {
-  line: common.bg.darken10,
+  line: common.bg.darken30,
   gutter: common.ui.fade35,
   selection: {
     bg: syntax.entity.fade6,

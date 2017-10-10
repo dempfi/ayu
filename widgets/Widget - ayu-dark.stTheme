@@ -19,15 +19,15 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#14191E</string>
+        <string>#13181D</string>
         <key>caret</key>
         <string>#F29718</string>
         <key>foreground</key>
-        <string>#CCC9C2</string>
+        <string>#BFBAB0</string>
         <key>invisibles</key>
         <string>#343434</string>
         <key>lineHighlight</key>
-        <string>#0E1216</string>
+        <string>#0A0E12</string>
         <key>inactiveSelection</key>
         <string>#121B22</string>
         <key>selection</key>

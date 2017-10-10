@@ -25,12 +25,13 @@ const syntax = {
 const ui = {
   panel: {
     bg: $`FFFFFF`,
-    shadow: common.bg.darken10,
-    row: { bg: common.bg.darken1 }
+    shadow: common.bg.darken20,
+    border: common.bg.darken20,
+    row: common.bg.darken1
   },
   icon: common.ui.fade70,
   scrollbar: { puck: $`000000` },
-  separator: common.bg.darken3,
+  separator: common.bg.darken4,
   minimap: common.bg.darken10,
   opacity: 1
 }
