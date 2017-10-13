@@ -24,7 +24,7 @@ settings:
     accent: *accent
     gutter: *bg
     gutterForeground: *gutter
-    invisibles: '#FF0000'
+    invisibles: *gutter
     lineHighlight: '#"{syntax.line.hex}"'
     selection: &selection '#"{syntax.selection.hex}"'
     selectionBorder: *selection

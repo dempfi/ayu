@@ -40,7 +40,7 @@
 				<key>inactiveSelection</key>
 				<string>#"{syntax.selection.hex}"88</string>
 				<key>invisibles</key>
-				<string>#FF0000</string>
+				<string>#"{syntax.gutter.hex}"</string>
 				<key>lineHighlight</key>
 				<string>#"{syntax.line.hex}"</string>
 				<key>popupCss</key>
