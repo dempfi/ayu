@@ -31,13 +31,13 @@ const ui = {
   },
   icon: common.ui.fade55,
   scrollbar: { puck: $`FFFFFF` },
-  separator: common.bg.darken18,
+  separator: common.bg.darken15,
   minimap: common.bg.darken40,
   opacity: 1.0
 }
 
 const editor = {
-  line: common.bg.darken15,
+  line: common.bg.darken14,
   gutter: common.ui.fade35,
   selection: {
     bg: syntax.entity.fade6,

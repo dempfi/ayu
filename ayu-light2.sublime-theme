@@ -21,7 +21,7 @@
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": [235, 235, 235]
+    "border_color": [240, 240, 240]
   },
   {
     "class": "grid_layout_control",
@@ -100,7 +100,7 @@
     "class": "auto_complete_label",
     "fg": [157, 162, 166],
     "match_fg": [255, 143, 64],
-    "selected_fg": [129, 135, 140],
+    "selected_fg": [97, 103, 108],
     "selected_match_fg": [255, 143, 64]
   },
 
@@ -235,7 +235,7 @@
     "class": "quick_panel_label",
     "fg": [157, 162, 166],
     "match_fg": [255, 143, 64],
-    "selected_fg": [129, 135, 140],
+    "selected_fg": [97, 103, 108],
     "selected_match_fg": [255, 143, 64]
   },
 
@@ -246,7 +246,7 @@
     "parents": [{"class": "overlay_control"}],
     "fg": [157, 162, 166],
     "match_fg": [255, 143, 64],
-    "selected_fg": [129, 135, 140],
+    "selected_fg": [97, 103, 108],
     "selected_match_fg": [255, 143, 64]
   },
 
@@ -255,9 +255,9 @@
   {
     "class": "quick_panel_path_label",
     "fg": [185, 188, 191],
-    "match_fg": [153, 158, 162],
+    "match_fg": [128, 132, 136],
     "selected_fg": [185, 188, 191],
-    "selected_match_fg": [153, 158, 162]
+    "selected_match_fg": [128, 132, 136]
   },
 
   // Panels data / score
@@ -279,7 +279,7 @@
     "tab_overlap": 0,
     "tab_width": 50,
     "tab_min_width": 50,
-    "tab_height": 30,
+    "tab_height": 36,
     "mouse_wheel_switch": false,
 
     "layer0.opacity": 1.0,
@@ -403,14 +403,14 @@
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
     "fg": [250, 250, 250, 0],
-    "shadow_color": [129, 135, 140],
+    "shadow_color": [97, 103, 108],
     "shadow_offset": [0, -1]
   },
   {
     "class": "tab_label",
     "settings": ["ui_fix_tab_labels"],
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": [129, 135, 140],
+    "fg": [97, 103, 108],
     "shadow_color": [250, 250, 250, 0],
     "shadow_offset": [0, 0]
   },
@@ -624,13 +624,13 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["hover"]}],
-    "color": [129, 135, 140]
+    "color": [97, 103, 108]
   },
 
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "color": [129, 135, 140],
+    "color": [97, 103, 108],
     "shadow_color": [0, 0, 0],
     "shadow_offset": [0, 0]
   },
@@ -652,13 +652,13 @@
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-    "color": [129, 135, 140]
+    "color": [97, 103, 108]
   },
 
   {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
-    "color": [129, 135, 140]
+    "color": [97, 103, 108]
   },
 
   {
@@ -671,7 +671,7 @@
   // {
   //  "class": "sidebar_label",
   //  "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
-  //  "color": [129, 135, 140]
+  //  "color": [97, 103, 108]
   // },
 
   {
@@ -1081,7 +1081,7 @@
     "class": "icon_button_control",
     "layer0.tint": [0, 0, 0],
     "layer0.opacity": 0,
-    "layer2.tint": [129, 135, 140],
+    "layer2.tint": [97, 103, 108],
     "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
     "content_margin": [10, 5]
   },

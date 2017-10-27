@@ -42,7 +42,7 @@
 				<key>invisibles</key>
 				<string>#39424E</string>
 				<key>lineHighlight</key>
-				<string>#1C212B</string>
+				<string>#1C222C</string>
 				<key>popupCss</key>
 				<string>html, body {
   background-color: #262C38;

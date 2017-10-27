@@ -3,7 +3,7 @@ const $ = require('./color')
 const common = {
   accent: $`FF8F40`,
   bg: $.base`FAFAFA`,
-  fg: $`81878C`,
+  fg: $`61676C`,
   ui: $`9DA2A6`
 }
 
@@ -31,7 +31,7 @@ const ui = {
   },
   icon: common.ui.fade60,
   scrollbar: { puck: $`000000` },
-  separator: common.bg.darken6,
+  separator: common.bg.darken4,
   minimap: common.bg.darken10,
   opacity: 1
 }
