@@ -550,41 +550,33 @@
 
   {
     "class": "sidebar_container",
-    "content_margin": [0, 32, 0, 0],
+    "content_margin": [0, 6, 0, 0],
     "layer0.opacity": 1,
-    "layer0.tint": ["{common.bg.rgb}"],
-
-    "layer1.texture": "ayu/assets/sidebar.png",
-    "layer1.inner_margin": [0, 40, 0, 0],
-    "layer1.opacity": 0,
-    "layer1.tint": ["{ui.separator.rgb}"],
-
-    "layer2.texture": "ayu/assets/sidebar-title.png",
-    "layer2.inner_margin": [85, 40, 0, 0],
-    "layer2.tint": ["{common.ui.rgb}"],
-    "layer2.opacity": 1.0
+    "layer0.tint": ["{common.bg.rgb}"]
   },
   {
     "class": "sidebar_container",
     "settings": ["ui_separator"],
-    "layer3.texture": "ayu/assets/separator-right.png",
-    "layer3.inner_margin": [0, 1, 2, 1],
-    "layer3.opacity": "{ui.opacity}",
-    "layer3.tint": ["{ui.separator.rgb}"],
+    "layer1.texture": "ayu/assets/separator-right.png",
+    "layer1.inner_margin": [0, 1, 2, 1],
+    "layer1.opacity": "{ui.opacity}",
+    "layer1.tint": ["{ui.separator.rgb}"],
   },
+
   {
     "class": "sidebar_tree",
     "indent_top_level": false,
     "row_padding": [20, 6],
     "dark_content": false,
-    "spacer_rows": false,
+    "spacer_rows": true,
     "indent_offset": 2,
     "indent": 10
   },
 
   {
     "class": "sidebar_heading",
-    "color": ["{common.ui.fade50.rgb}"],
+    "color": ["{common.ui.fade60.rgb}"],
+    "font.bold": true,
     "font.size": 11
   },
   {
