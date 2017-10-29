@@ -308,18 +308,27 @@
   // Tabs
   {
     "class": "tab_control",
-
+    // Background
     "layer0.tint": ["{common.bg.rgb}"],
     "layer0.opacity": 1.0,
 
-    "layer1.texture": "",
+    // Top
+    "layer1.texture": "ayu/assets/separator-top.png",
+    "layer1.tint": ["{ui.separator.rgb}"],
+    "layer1.inner_margin": [0, 1, 0, 0],
+    "layer1.opacity": 0.0,
 
-    "layer2.texture": "ayu/assets/separator-bottom.png",
-    "layer2.tint": ["{common.accent.rgb}"],
-    "layer2.inner_margin": [1, 0, 1, 2],
+    // Right
+    "layer2.texture": "ayu/assets/separator-right.png",
+    "layer2.tint": ["{ui.separator.rgb}"],
+    "layer2.inner_margin": [0, 0, 1, 0],
     "layer2.opacity": 0.0,
 
-    "layer3.texture": "",
+    // Bottom
+    "layer3.texture": "ayu/assets/separator-bottom.png",
+    "layer3.tint": ["{ui.separator.rgb}"],
+    "layer3.inner_margin": [0, 0, 0, 1],
+    "layer3.opacity": 0.0,
 
     "content_margin": [15, -2, 15, 0],
     "max_margin_trim": 12
@@ -328,35 +337,33 @@
     "class": "tab_control",
     "settings": ["ui_separator"],
 
-    "layer1.texture": "ayu/assets/separator-right.png",
-    "layer1.tint": ["{ui.separator.rgb}"],
-    "layer1.inner_margin": [0, 1, 2, 1],
-    "layer1.opacity": "{ui.opacity}",
+    "layer1.opacity": 1.0,
 
-    "layer3.texture": "ayu/assets/separator-bottom.png",
-    "layer3.tint": ["{ui.separator.rgb}"],
-    "layer3.inner_margin": [1, 0, 1, 2],
-    "layer3.opacity": "{ui.opacity}"
+    "layer2.opacity": 1.0,
+
+    "layer3.opacity": 1.0
   },
 
   // Selected current tab
-
   {
     "class": "tab_control", "attributes": ["selected"],
-    "layer2.opacity": 1.0,
-    "layer3.opacity": 0.0
+    "settings": ["!ui_separator"],
+    "layer3.tint": ["{common.accent.rgb}"],
+    "layer3.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.separator.rgb}", 120]
+    "layer1.tint": ["{common.accent.rgb}"],
+    "layer3.opacity": 0.0
   },
 
   // Hovered current tab
-
   {
     "class": "tab_control", "attributes": ["hover"],
-    "layer2.opacity": 0.3
+    "settings": ["!ui_separator"],
+    "layer3.tint": ["{common.accent.rgb}"],
+    "layer3.opacity": 0.3
   },
   {
     "class": "tab_control", "attributes": ["hover"],
@@ -365,15 +372,15 @@
   },
 
   // Selected current tab
-
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
-    "layer2.opacity": 1.0
+    "settings": ["!ui_separator"],
+    "layer3.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": ["{ui.separator.rgb}", 120]
+    "layer0.tint": ["{common.bg.rgb}"]
   },
 
   // Tab Labels
