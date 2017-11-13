@@ -202,6 +202,13 @@
 			}
 		},
 		{
+			"name": "JSX Tag",
+			"scope": "meta.tag.jsx",
+			"settings": {
+				"foreground": "#E6E1CF"
+			}
+		},
+		{
 			"name": "Function, Special Method, Block Level",
 			"scope": "entity.name.function, keyword.other.special-method, variable.function, meta.block-level",
 			"settings": {
