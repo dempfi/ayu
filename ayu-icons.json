@@ -464,7 +464,8 @@
     "bzip2": "_f_archive",
     "xz": "_f_archive",
     "bz2": "_f_archive",
-    "blade.php": "_f_blade"
+    "blade.php": "_f_blade",
+    "qtpl": "_f_source"
   },
   "fileNames": {
     "bower.json": "_f_bower",
@@ -496,5 +497,6 @@
     ".travis.yml": "_f_settings",
     "vagrantfile": "_f_settings"
   },
+  "hidesExplorerArrows":true ,
   "languageIds": {}
 }
