@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.9.0
+
+`2017-11-13`
+- Hide explorer arrows in file icon theme
+
 ## 0.8.0
 
 `2017-09-21`
