@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.10.0
+
+`2017-11-13`
+- Use correct colors for JSX tags
+
 ## 0.9.0
 
 `2017-11-13`
