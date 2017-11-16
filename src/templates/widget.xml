@@ -25,7 +25,7 @@
         <key>foreground</key>
         <string>"{common.fg.hex}"</string>
         <key>invisibles</key>
-        <string>#343434</string>
+        <string>"{editor.gutter.hex}"</string>
         <key>lineHighlight</key>
         <string>"{editor.line.hex}"</string>
         <key>inactiveSelection</key>
