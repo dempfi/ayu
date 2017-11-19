@@ -24,7 +24,7 @@
 				<key>caret</key>
 				<string>#FFCC66</string>
 				<key>findHighlight</key>
-				<string>#D4BFFF</string>
+				<string>#FFCC66</string>
 				<key>findHighlightForeground</key>
 				<string>#212733</string>
 				<key>foreground</key>
@@ -38,7 +38,7 @@
 				<key>inactiveBackground</key>
 				<string>#212733</string>
 				<key>inactiveSelection</key>
-				<string>#242E3B</string>
+				<string>#283543</string>
 				<key>invisibles</key>
 				<string>#39424E</string>
 				<key>lineHighlight</key>
@@ -56,9 +56,9 @@ a {
 }
 </string>
 				<key>selection</key>
-				<string>#26313F</string>
+				<string>#293847</string>
 				<key>selectionBorder</key>
-				<string>#2B3B4B</string>
+				<string>#2C3D4E</string>
 				<key>shadow</key>
 				<string>#00000010</string>
 				<key>stackGuide</key>
@@ -108,7 +108,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D4BFFF</string>
+				<string>#FFCC66</string>
 			</dict>
 		</dict>
 		<dict>
@@ -130,7 +130,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D4BFFF</string>
+				<string>#FFCC66</string>
 			</dict>
 		</dict>
 		<dict>
@@ -141,7 +141,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D4BFFF</string>
+				<string>#FFCC66</string>
 			</dict>
 		</dict>
 		<dict>
@@ -297,7 +297,7 @@ a {
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D4BFFF</string>
+				<string>#FFCC66</string>
 			</dict>
 		</dict>
 		<dict>
@@ -737,7 +737,7 @@ a {
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#D4BFFF</string>
+				<string>#FFCC66</string>
 			</dict>
 		</dict>
 		<dict>

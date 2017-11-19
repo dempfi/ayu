@@ -40,9 +40,9 @@ const editor = {
   line: common.bg.darken30,
   gutter: common.ui.fade40,
   selection: {
-    bg: syntax.entity.fade6,
-    inactive: syntax.entity.fade4,
-    border: syntax.entity.fade12
+    bg: syntax.entity.fade9,
+    inactive: syntax.entity.fade6,
+    border: syntax.entity.fade13
   },
   guide: {
     stack: common.ui.fade30,

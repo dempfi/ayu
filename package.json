@@ -24,10 +24,10 @@
     "lodash": "^4.16.4",
     "through2": "^2.0.1",
     "vinyl": "^2.0.0",
-    "yamljs": "^0.2.8"
-  },
-  "dependencies": {
+    "yamljs": "^0.2.8",
     "clear-require": "^2.0.0",
     "color": "^2.0.0"
+  },
+  "dependencies": {
   }
 }

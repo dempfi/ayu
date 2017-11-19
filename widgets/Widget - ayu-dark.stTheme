@@ -29,11 +29,11 @@
         <key>lineHighlight</key>
         <string>#0A0E12</string>
         <key>inactiveSelection</key>
-        <string>#121B22</string>
-        <key>selection</key>
         <string>#131E27</string>
+        <key>selection</key>
+        <string>#16242E</string>
         <key>selectionBorder</key>
-        <string>#182935</string>
+        <string>#192B37</string>
       </dict>
     </dict>
     <dict>

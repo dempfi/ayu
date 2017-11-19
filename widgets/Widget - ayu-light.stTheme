@@ -29,9 +29,9 @@
         <key>lineHighlight</key>
         <string>#F3F3F3</string>
         <key>inactiveSelection</key>
-        <string>#F2F6F9</string>
+        <string>#ECF4F9</string>
         <key>selection</key>
-        <string>#EEF4F9</string>
+        <string>#E9F2F8</string>
         <key>selectionBorder</key>
         <string>#E3EFF8</string>
       </dict>

@@ -16,7 +16,7 @@ settings:
     background: &bg '"{common.bg.hex}"'
     inactiveBackground: *bg
     caret: &accent '"{common.accent.hex}"'
-    findHighlight: &constant '"{syntax.constant.hex}"'
+    findHighlight: &constant '"{common.accent.hex}"'
     findHighlightForeground: *bg
     foreground: &fg '"{common.fg.hex}"'
     accent: *accent
