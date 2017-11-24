@@ -69,13 +69,14 @@ gulp.task('widgets', () =>
     .pipe(gulp.dest('./widgets'))
 )
 
-gulp.task('themes', () => {
+gulp.task('themes', () =>
   gulp.src('./src/themes/!(color).js')
     .pipe(through.obj(themes))
     .pipe(gulp.dest('./'))
-}
+)
+
+gulp.task('watch', () =>
+  gulp.watch('./src/**/*', ['themes', 'widgets'])
 )
 
 gulp.task('default', ['themes', 'widgets'])
-
-gulp.task('watch', () => gulp.watch('./src/**/*', ['themes', 'widgets']))

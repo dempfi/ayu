@@ -31,7 +31,7 @@ const ui = {
   },
   icon: common.ui.fade55,
   scrollbar: { puck: $`FFFFFF` },
-  separator: common.bg.darken15,
+  separator: common.bg.darken20,
   minimap: common.bg.darken40,
   opacity: 1.0
 }
