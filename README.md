@@ -23,7 +23,6 @@ If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`
 #### Dark
 ![Dark](assets/dark.png)
 
-
 #### Mirage
 ![Mirage](assets/mirage.png)
 

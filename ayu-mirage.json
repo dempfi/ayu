@@ -409,7 +409,7 @@
 		},
 		{
 			"name": "Markup - Raw Block",
-			"scope": "markup.raw.block",
+			"scope": "markup.fenced_code.block.markdown",
 			"settings": {
 				"foreground": "#FFAE57"
 			}
@@ -431,7 +431,7 @@
 		},
 		{
 			"name": "Markdown - Markup Raw Inline",
-			"scope": "text.html.markdown markup.raw.inline",
+			"scope": "text.html.markdown markup.inline.raw.string.markdown",
 			"settings": {
 				"foreground": "#5CCFE6"
 			}
