@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-Material Theme Activation
-"""
-
 import sublime
 import sublime_plugin
 import functools
@@ -66,7 +62,7 @@ class AyuActivateCommand(sublime_plugin.WindowCommand):
     self.initial_color_scheme = get_color_scheme()
     self.initial_ui_theme = get_ui_theme()
 
-    quick_list = [theme for theme in self.themes]
+    quick_list = [theme.replace("-", " ") for theme in self.themes]
     self.quick_list = quick_list
 
     self.window.show_quick_panel(quick_list, self.on_done, on_highlight=self.on_highlighted)
@@ -88,10 +84,10 @@ class AyuActivateCommand(sublime_plugin.WindowCommand):
     activate_ui_theme(ui_theme)
 
   def _quick_list_to_scheme(self, index):
-    return 'Packages/ayu/%s.tmTheme' % self.quick_list[index]
+    return 'Packages/ayu/%s.tmTheme' % THEMES[index]
 
   def _quick_list_to_theme(self, index):
-    return '%s.sublime-theme' % self.quick_list[index]
+    return '%s.sublime-theme' % THEMES[index]
 
   def run(self):
     self.display_list(THEMES)

@@ -13,28 +13,28 @@ semanticClass: ayu."{theme}"
 settings:
 
 - settings:
-    activeGuide: '#"{syntax.active_guide.hex}"'
-    background: &bg '#"{common.bg.hex}"'
+    background: &bg '"{common.bg.hex}"'
     inactiveBackground: *bg
-    caret: &accent '#"{common.accent.hex}"'
-    findHighlight: &constant '#"{syntax.constant.hex}"'
+    caret: &accent '"{common.accent.hex}"'
+    findHighlight: &constant '"{common.accent.hex}"'
     findHighlightForeground: *bg
-    foreground: &fg '#"{common.fg.hex}"'
-    guide: &gutter '#"{syntax.gutter.hex}"'
+    foreground: &fg '"{common.fg.hex}"'
     accent: *accent
     gutter: *bg
-    gutterForeground: *gutter
+    gutterForeground: &gutter '"{editor.gutter.hex}"'
     invisibles: *gutter
-    lineHighlight: '#"{syntax.line.hex}"'
-    selection: &selection '#"{syntax.selection.hex}"'
-    selectionBorder: *selection
-    inactiveSelection: '#"{syntax.selection.hex}"88'
+    lineHighlight: '"{editor.line.hex}"'
     shadow: '#00000010'
-    stackGuide: '#"{syntax.stack_guide.hex}"'
+    selection: '"{editor.selection.bg.hex}"'
+    selectionBorder: '"{editor.selection.border.hex}"'
+    inactiveSelection: '"{editor.selection.inactive.hex}"'
+    guide: '"{editor.guide.normal.hex}"'
+    activeGuide: '"{editor.guide.active.hex}"'
+    stackGuide: '"{editor.guide.stack.hex}"'
     popupCss: |
         html, body {
-          background-color: #"{ui.panel.bg.hex}";
-          color: #"{common.fg.hex}";
+          background-color: "{ui.panel.bg.hex}";
+          color: "{common.fg.hex}";
         }
         body {
           padding: 1px 3px;
@@ -47,7 +47,7 @@ settings:
   scope: comment, punctuation.definition.comment
   settings:
     fontStyle: italic
-    foreground: &comment '#"{syntax.comment.hex}"'
+    foreground: &comment '"{syntax.comment.hex}"'
 
 - name: Variable
   scope: variable
@@ -57,7 +57,7 @@ settings:
 - name: String
   scope: string, constant.other.symbol
   settings:
-    foreground: &string '#"{syntax.string.hex}"'
+    foreground: &string '"{syntax.string.hex}"'
 
 - name: Number
   scope: constant.numeric
@@ -67,7 +67,7 @@ settings:
 - name: Regular Expressions and Escape Characters
   scope: string.regexp, constant.character.escape
   settings:
-    foreground: &regexp '#"{syntax.regexp.hex}"'
+    foreground: &regexp '"{syntax.regexp.hex}"'
 
 - name: Built-in constant
   scope: constant.language
@@ -87,17 +87,17 @@ settings:
 - name: Keyword
   scope: keyword - keyword.operator, keyword.operator.word
   settings:
-    foreground: &keyword '#"{syntax.keyword.hex}"'
+    foreground: &keyword '"{syntax.keyword.hex}"'
 
 - name: Operators
   scope: keyword.operator
   settings:
-    foreground: &operator '#"{syntax.operator.hex}"'
+    foreground: &operator '"{syntax.operator.hex}"'
 
 - name: Punctuation
   scope: punctuation.separator, punctuation.terminator
   settings:
-    foreground: '#"{common.fg.hex}"CC'
+    foreground: '"{common.fg.hex}"CC'
 
 - name: Punctuation
   scope: punctuation.section
@@ -112,13 +112,13 @@ settings:
 - name: Annotation Punctuation
   scope: punctuation.definition.annotation
   settings:
-    foreground: '#"{common.fg.hex}"CC'
+    foreground: '"{common.fg.hex}"CC'
 
 - name: JavaScript Dollar
   scope: variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js,
     support.class.dollar.only.js
   settings:
-    foreground: &special '#"{syntax.special.hex}"'
+    foreground: &special '"{syntax.special.hex}"'
 
 - name: Storage
   scope: storage
@@ -133,12 +133,12 @@ settings:
 - name: Function name
   scope: entity.name.function
   settings:
-    foreground: &function '#"{syntax.func.hex}"'
+    foreground: &function '"{syntax.func.hex}"'
 
 - name: Entity name
   scope: entity.name - (entity.name.section | entity.name.tag | entity.name.label)
   settings:
-    foreground: &entity '#"{syntax.entity.hex}"'
+    foreground: &entity '"{syntax.entity.hex}"'
 
 - name: Inherited class
   scope: entity.other.inherited-class
@@ -155,7 +155,7 @@ settings:
   scope: variable.language
   settings:
     fontStyle: italic
-    foreground: &tag '#"{syntax.tag.hex}"'
+    foreground: &tag '"{syntax.tag.hex}"'
 
 - name: Tag
   scope: entity.name.tag, meta.tag.sgml
@@ -165,7 +165,7 @@ settings:
 - name: Tag start/end
   scope: punctuation.definition.tag.end, punctuation.definition.tag.begin, punctuation.definition.tag
   settings:
-    foreground: '#"{syntax.tag.hex}"90' # opacity of tag verson of &tag_punctag
+    foreground: '"{syntax.tag.hex}"90' # opacity of tag verson of &tag_punctag
 
 - name: Tag attribute
   scope: entity.other.attribute-name
@@ -180,7 +180,7 @@ settings:
 - name: Library function
   scope: support.function, support.macro
   settings:
-    foreground: &markup '#"{syntax.markup.hex}"'
+    foreground: &markup '"{syntax.markup.hex}"'
 
 - name: Library constant
   scope: support.constant
@@ -197,7 +197,7 @@ settings:
 - name: Invalid
   scope: invalid
   settings:
-    foreground: &error '#"{syntax.error.hex}"'
+    foreground: &error '"{syntax.error.hex}"'
 
 - name: Invalid deprecated
   scope: invalid.deprecated
@@ -337,17 +337,17 @@ settings:
 - name: Markup Code
   scope: markup.raw
   settings:
-    background: '#"{common.fg.hex}"07'
+    background: '"{common.fg.hex}"07'
 
 - name: Markup Code Inline
   scope: markup.raw.inline
   settings:
-    background: '#"{common.fg.hex}"10'
+    background: '"{common.fg.hex}"10'
 
 - name: Markdown Separator
   scope: meta.separator
   settings:
-    background: '#"{common.fg.hex}"10'
+    background: '"{common.fg.hex}"10'
     fontStyle: bold
     foreground: *comment
 
@@ -375,7 +375,7 @@ settings:
 - name: Markup Deleted
   scope: markup.deleted
   settings:
-    foreground: *error
+    foreground: *markup
 
 - name: Markup Strike
   scope: markup.strike
@@ -385,7 +385,7 @@ settings:
 - name: Markup Table
   scope: markup.table
   settings:
-    background: '#"{common.fg.hex}"10'
+    background: '"{common.fg.hex}"10'
     foreground: *tag
 
 - name: Markup Raw Inline
@@ -401,13 +401,13 @@ settings:
 - name: Markdown - Raw Block Fenced
   scope: markup.raw.block.fenced.markdown
   settings:
-    background: '#"{common.fg.hex}"10'
+    background: '"{common.fg.hex}"10'
     foreground: *fg
 
 - name: Markdown - Fenced Bode Block
   scope: punctuation.definition.fenced.markdown, variable.language.fenced.markdown
   settings:
-    background: '#"{common.fg.hex}"10'
+    background: '"{common.fg.hex}"10'
     foreground: *comment
 
 - name: Markdown - Fenced Language
@@ -434,12 +434,12 @@ settings:
 - name: GitGutter Ignored
   scope: markup.ignored.git_gutter
   settings:
-    foreground: *comment
+    foreground: '"{common.ui.fade30.hex}"'
 
 - name: GitGutter Untracked
   scope: markup.untracked.git_gutter
   settings:
-    foreground: *comment
+    foreground: '"{common.ui.fade30.hex}"'
 
 - name: GutterColor
   scope: gutter_color

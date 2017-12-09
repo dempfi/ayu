@@ -1,4 +1,4 @@
-![ayu](https://i.imgur.com/lt4pIAI.png)
+![ayu](https://i.imgur.com/akLUOXg.png)
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
@@ -12,22 +12,22 @@
 
 ### Screenshots
 
-<h6 align='center'>Light with <code>ui_separator</code> option off</h6>
+<h6 align='center'>Light with <code>ui_separator</code> option on</h6>
 
-![Light](https://i.imgur.com/DbWFq76.png)
-
----
-
-
-<h6 align='center'>Mirage with <code>ui_separator</code> option on</h6>
-
-![Mirage](https://i.imgur.com/BOYGmHf.png)
+![Light](https://i.imgur.com/pQQfIio.png)
 
 ---
 
-<h6 align='center'>Dark with <code>ui_separator</code> option off</h6>
 
-![Dark](https://i.imgur.com/pmkHtQJ.png)
+<h6 align='center'>Mirage with <code>ui_separator</code> option off</h6>
+
+![Mirage](https://i.imgur.com/KYXJbBu.png)
+
+---
+
+<h6 align='center'>Dark with <code>ui_separator</code> option on</h6>
+
+![Dark](https://i.imgur.com/lo8XBTr.png)
 
 ### Settings
 
@@ -35,10 +35,8 @@
 "ui_native_titlebar":       true, // use native titlebars on macOs
 "ui_separator":             true, // separators between panels
 "ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
-"ui_big_tabs":              true, // increased tab height
-"ui_fix_tab_labels":        true, // to fix tab labels if they look not right
 "ui_font_source_code_pro":  true, // use Source Code Pro (https://fonts.google.com/specimen/Source+Code+Pro) as UI font
-"ui_font_default":          true, // use Sublime's default UI font
+"ui_font_roboto_mono":      true, // use Roboto Mono (https://fonts.google.com/specimen/Roboto+Mono) as UI font
 "ui_wide_scrollbars":       true, // wider scrollbars
 ```
 
@@ -99,32 +97,8 @@ For dark theme:
 
 ### Sublime Text 2
 
-_Sublime Text 2 version may have some glitches, if you notice something, please file an issue._
-
-Add this lines to your user settings *Preferences > Setting - User*:
-
-For light theme:
-
-```js
-"theme": "ayu-light2.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-light.tmTheme",
-```
-
-For mirage theme:
-
-```js
-"theme": "ayu-mirage2.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
-```
-
-For dark theme:
-
-```js
-"theme": "ayu-dark2.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
-```
-
-**NOTE:** Restart Sublime Text after activation of the theme to avoid any glitches.
+ayu no longer supports Sublime Text 2. But you still can download
+and install manually [previous version](https://github.com/dempfi/ayu/releases/tag/3.2.2).
 
 ### Related projects and ports
 

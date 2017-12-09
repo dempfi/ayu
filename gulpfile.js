@@ -6,10 +6,16 @@ const yaml = require('yamljs')
 const fs = require('fs-jetpack')
 const exec = require('gulp-exec')
 const through = require('through2')
+const clearRequire = require('clear-require')
 
 const hexRx = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i
 
-_.templateSettings.interpolate = /"{([\s\S]+?)}"/g;
+_.templateSettings.interpolate = /"{([\s\S]+?)}"/g
+
+function colors(path) {
+  clearRequire(`./src/themes/${path}`)
+  return require(`./src/themes/${path}`)
+}
 
 function templates (type) {
   return fs.find('./src/templates', { matching: '*' + type })
@@ -30,26 +36,6 @@ function fileNmae (str, theme) {
   return path.join(process.cwd(), name)
 }
 
-function tryRbg (hex) {
-  const n16 = (c) => parseInt(c, 16)
-  const isRgb = hexRx.test(hex)
-  const cs = isRgb ? hexRx.exec(hex) : []
-  const rgb = `${n16(cs[1])}, ${n16(cs[2])}, ${n16(cs[3])}`
-  return isRgb ? { hex, rgb } : hex
-}
-
-function convertColors (obj) {
-  return _.mapValues(obj, col => {
-    return _.isString(col) ? tryRbg(col) : convertColors(col)
-  })
-}
-
-function colors (file) {
-  const content = file.contents.toString('ascii')
-  const defs = yaml.parse(content)
-  return convertColors(defs)
-}
-
 function build (types, defs) {
   const base = process.cwd()
   const themes = _.concat([], types).map(templates)
@@ -61,15 +47,13 @@ function build (types, defs) {
 }
 
 function widgets (file, enc, next) {
-  const defs = colors(file)
-  build(['widget.xml', 'widget.json'],  defs)
+  build(['widget.xml', 'widget.json'], colors(file.relative))
     .map(this.push.bind(this))
   next()
 }
 
 function themes (file, enc, next) {
-  const defs = colors(file)
-  build(['syntax.xml', 'ui.json'], defs)
+  build(['syntax.xml', 'ui.json'], colors(file.relative))
     .map(this.push.bind(this))
   next()
 }
@@ -80,17 +64,19 @@ gulp.task('clean', () => {
 })
 
 gulp.task('widgets', () =>
-  gulp.src('./src/themes/*.yml')
+  gulp.src('./src/themes/!(color).js')
     .pipe(through.obj(widgets))
     .pipe(gulp.dest('./widgets'))
 )
 
 gulp.task('themes', () =>
-  gulp.src('./src/themes/*.yml')
+  gulp.src('./src/themes/!(color).js')
     .pipe(through.obj(themes))
     .pipe(gulp.dest('./'))
 )
 
-gulp.task('default', ['themes', 'widgets'])
+gulp.task('watch', () =>
+  gulp.watch('./src/**/*', ['themes', 'widgets'])
+)
 
-gulp.task('watch', () => gulp.watch('./src/**/*', ['themes', 'widgets']))
+gulp.task('default', ['themes', 'widgets'])
