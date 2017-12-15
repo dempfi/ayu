@@ -225,10 +225,12 @@ function getThemeColors(variant) {
         'tab.activeBackground': scheme.ui.panel.bg,
         'tab.inactiveBackground': scheme.common.bg,
         'tab.activeForeground': scheme.common.fg,
+        'tab.activeBorder': scheme.common.accent,
         'tab.inactiveForeground': scheme.ui.fg,
         'tab.border': scheme.ui.gridDivider,
         'tab.unfocusedActiveForeground': `${scheme.common.fg}AA`,
         'tab.unfocusedInactiveForeground': scheme.ui.fg,
+        'tab.unfocusedActiveBorder': scheme.common.accent,
 
         // ----- Workbench: panel -----
         'panel.background': scheme.common.bg,
