@@ -171,6 +171,8 @@ function getThemeColors(variant) {
         // 'editorBracketMatch.background': '',
         'editorBracketMatch.border': scheme.syntax.gutter,
         'editorOverviewRuler.border': scheme.ui.gridDivider,
+        'editorOverviewRuler.errorForeground': scheme.syntax.error,
+        'editorOverviewRuler.warningForeground': scheme.common.accent,
         'editorRuler.foreground': scheme.ui.gridDivider,
 
         // ----- Editor error squiggles -----
