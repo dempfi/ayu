@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.11.1
+
+`2017-12-22`
+- Fix issue with error colors to scrollbar
+
 ## 0.11.0
 
 `2017-12-22`
