@@ -2,6 +2,13 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.11.0
+
+`2017-12-22`
+- Adding warning and error colors to scrollbar
+- Colors for markdown inline and block code
+- Add accent color to active tab border
+
 ## 0.10.0
 
 `2017-11-13`
