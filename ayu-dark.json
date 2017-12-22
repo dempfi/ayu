@@ -65,6 +65,8 @@
 		"editorRuler.foreground": "#1d242c",
 		"editorError.foreground": "#ff3333",
 		"editorWarning.foreground": "#f29718",
+		"editorOverviewRuler.errorForeground": "#ff3333",
+		"editorOverviewRuler.warningForeground": "#f29718",
 		"editorGutter.modifiedBackground": "#50b4e6",
 		"editorGutter.addedBackground": "#c2d94c",
 		"editorGutter.deletedBackground": "#ff3333",
