@@ -233,7 +233,6 @@
   {
     "class": "quick_panel_label",
     "fg": ["{common.ui.rgb}"],
-    "font.bold": false,
     "match_fg": ["{common.accent.rgb}"],
     "selected_fg": ["{common.fg.rgb}"],
     "selected_match_fg": ["{common.accent.rgb}"]

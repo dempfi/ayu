@@ -233,7 +233,6 @@
   {
     "class": "quick_panel_label",
     "fg": [157, 162, 166],
-    "font.bold": false,
     "match_fg": [255, 143, 64],
     "selected_fg": [97, 103, 108],
     "selected_match_fg": [255, 143, 64]
