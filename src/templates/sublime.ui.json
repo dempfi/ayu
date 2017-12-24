@@ -969,7 +969,7 @@
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
     "viewport_color": ["{ui.minimap.rgb}"],
-    "viewport_opacity": 0.2
+    "viewport_opacity": 0.3
   },
 
   {
@@ -983,7 +983,7 @@
     "class": "minimap_control",
     "attributes": ["hover"],
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" }
+    "viewport_opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" }
   },
 
 

@@ -968,14 +968,14 @@
   {
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
-    "viewport_color": [5, 6, 8],
-    "viewport_opacity": 0.2
+    "viewport_color": [101, 95, 82],
+    "viewport_opacity": 0.3
   },
 
   {
     "class": "minimap_control",
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_color": [5, 6, 8],
+    "viewport_color": [101, 95, 82],
     "viewport_opacity": { "target": 0, "speed": 4.0, "interpolation": "smoothstep" }
   },
 
@@ -983,7 +983,7 @@
     "class": "minimap_control",
     "attributes": ["hover"],
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" }
+    "viewport_opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" }
   },
 
 
