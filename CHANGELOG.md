@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.11.2
+
+`2018-01-04`
+- Fix syntax on functions with "support.function" scope
+
 ## 0.11.1
 
 `2017-12-22`
