@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.12.0
+
+`2018-01-11`
+- Add JSDoc instance support
+
 ## 0.11.2
 
 `2018-01-04`
