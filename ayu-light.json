@@ -249,8 +249,8 @@
 			}
 		},
 		{
-			"name": "Sub-methods",
-			"scope": "entity.name.module.js, variable.import.parameter.js, variable.other.class.js",
+			"name": "Sub-methods, Module",
+			"scope": "entity.name.module, entity.name.type.module, variable.import.parameter.js, variable.other.class.js",
 			"settings": {
 				"foreground": "#41A6D9"
 			}
