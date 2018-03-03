@@ -2,6 +2,12 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.13.0
+
+`2018-03-03`
+- Improve Elixir and Ruby highlighting for modules
+- Update icons to match new ayu icons
+
 ## 0.12.0
 
 `2018-01-11`
