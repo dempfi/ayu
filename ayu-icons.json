@@ -159,6 +159,9 @@
     "_f_mustache": {
       "iconPath": "./icons/file_type_mustache@2x.png"
     },
+    "_f_json": {
+      "iconPath": "./icons/file_type_json@2x.png"
+    },
     "_f_node": {
       "iconPath": "./icons/file_type_node@2x.png"
     },
@@ -272,6 +275,12 @@
     },
     "_f_zip": {
       "iconPath": "./icons/file_type_archive@2x.png"
+    },
+    "_f_eslint": {
+      "iconPath": "./icons/file_type_eslint@2x.png"
+    },
+    "_f_yarn": {
+      "iconPath": "./icons/file_type_yarn@2x.png"
     }
   },
   "file": "_file",
@@ -365,9 +374,9 @@
     "png": "_f_image",
     "bmp": "_f_image",
     "ico": "_f_image",
-    "jade": "_f_jade",
+    "jade": "_f_pug",
     "pug": "_f_pug",
-    "jade-lintrc": "_f_jade",
+    "jade-lintrc": "_f_pug",
     "pug-lintrc": "_f_pug",
     "java": "_f_java",
     "julia": "_f_julia",
@@ -398,7 +407,7 @@
     "xvc": "_f_matlab",
     "mustache": "_f_mustache",
     "mst": "_f_mustache",
-    "json": "_f_node",
+    "json": "_f_json",
     "webmanifest": "_f_node",
     "nvmrc": "_f_node",
     "npmignore": "_f_npm",
@@ -475,10 +484,11 @@
     "dockerfile": "_f_docker",
     "dockerignore": "_f_docker",
     "docker-compose.yml": "_f_docker",
-    ".eslintrc.js": "_f_settings",
-    ".eslintrc.json": "_f_settings",
-    ".eslintrc.yaml": "_f_settings",
-    ".eslintrc.yml": "_f_settings",
+    ".eslintrc": "_f_eslint",
+    ".eslintrc.js": "_f_eslint",
+    ".eslintrc.json": "_f_eslint",
+    ".eslintrc.yaml": "_f_eslint",
+    ".eslintrc.yml": "_f_eslint",
     "favicon.ico": "_f_favicon",
     "gruntfile.js": "_f_gruntfile",
     "gulpfile.js": "_f_gulpfile",
@@ -486,17 +496,17 @@
     "checkstyle.json": "_f_haxe",
     "ionic.project": "_f_settings",
     "ionic.config.json": "_f_settings",
-    ".jade-lint.json": "_f_jade",
-    ".pug-lintrc.js": "_f_jade",
-    ".pug-lintrc.json": "_f_jade",
+    ".jade-lint.json": "_f_pug",
+    ".pug-lintrc.js": "_f_pug",
+    ".pug-lintrc.json": "_f_pug",
     "license": "_f_license",
-    "licence": "_f_license",
     "license.md": "_f_license",
-    "licence.md": "_f_license",
     "package.json": "_f_npm",
     ".travis.yml": "_f_settings",
-    "vagrantfile": "_f_settings"
+    "vagrantfile": "_f_settings",
+    "yarn.lock": "_f_yarn",
+    "Procfile": "_f_procfile"
   },
-  "hidesExplorerArrows":true ,
+  "hidesExplorerArrows": true,
   "languageIds": {}
 }
