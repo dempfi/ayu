@@ -30,6 +30,9 @@
     "_f_applescript": {
       "iconPath": "./icons/file_type_applescript@2x.png"
     },
+    "_f_babel": {
+      "iconPath": "./icons/file_type_babel@2x.png"
+    },
     "_f_binary": {
       "iconPath": "./icons/file_type_binary@2x.png"
     },
@@ -125,6 +128,9 @@
     },
     "_f_jsp": {
       "iconPath": "./icons/file_type_jsp@2x.png"
+    },
+    "_f_jsx": {
+      "iconPath": "./icons/file_type_jsx@2x.png"
     },
     "_f_julia": {
       "iconPath": "./icons/file_type_julia@2x.png"
@@ -436,7 +442,7 @@
     "py": "_f_python",
     "pyw": "_f_python",
     "r": "_f_R",
-    "jsx": "_f_react",
+    "jsx": "_f_jsx",
     "rt": "_f_react",
     "tsx": "_f_react",
     "rb": "_f_ruby",
@@ -477,6 +483,7 @@
     "qtpl": "_f_source"
   },
   "fileNames": {
+    ".babelrc": "_f_babel",
     "bower.json": "_f_bower",
     "gemfile": "_f_settings",
     "gemfile.lock": "_f_bundler",
@@ -503,6 +510,7 @@
     "license.md": "_f_license",
     "package.json": "_f_npm",
     ".travis.yml": "_f_settings",
+    ".nvmrc": "_f_settings",
     "vagrantfile": "_f_settings",
     "yarn.lock": "_f_yarn",
     "Procfile": "_f_procfile"
