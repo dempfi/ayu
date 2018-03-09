@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.14.0
+
+`2018-03-09`
+- Updated missing ayu icons
+
 ## 0.13.0
 
 `2018-03-03`
