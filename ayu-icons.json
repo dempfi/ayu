@@ -66,6 +66,9 @@
     "_f_css": {
       "iconPath": "./icons/file_type_css@2x.png"
     },
+    "_f_dart": {
+      "iconPath": "./icons/file_type_dart@2x.png"
+    },
     "_f_dlang": {
       "iconPath": "./icons/file_type_dlang@2x.png"
     },
@@ -343,6 +346,7 @@
     "edn": "_f_clojure",
     "coffee": "_f_coffeescript",
     "css": "_f_css",
+    "dart": "_f_dart",
     "pas": "_f_delphi",
     "dfm": "_f_delphi",
     "dpr": "_f_delphi",
