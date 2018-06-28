@@ -165,6 +165,9 @@
     "_f_mustache": {
       "iconPath": "./icons/file_type_mustache@2x.png"
     },
+    "_f_jest": {
+      "iconPath": "./icons/file_type_jest@2x.png"
+    },
     "_f_json": {
       "iconPath": "./icons/file_type_json@2x.png"
     },
@@ -385,6 +388,7 @@
     "jade-lintrc": "_f_pug",
     "pug-lintrc": "_f_pug",
     "java": "_f_java",
+    "snap": "_f_jest",
     "julia": "_f_julia",
     "js": "_f_js",
     "jsp": "_f_jsp",
