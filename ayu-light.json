@@ -440,7 +440,9 @@
 			"name": "Function call",
 			"scope": [
 				"variable.function",
-				"variable.annotation"
+				"variable.annotation",
+				"meta.function-call.generic",
+				"support.function.go"
 			],
 			"settings": {
 				"foreground": "#f29718"
@@ -470,7 +472,8 @@
 			"name": "Library class/type",
 			"scope": [
 				"support.type",
-				"support.class"
+				"support.class",
+				"source.go storage.type"
 			],
 			"settings": {
 				"fontStyle": "italic",

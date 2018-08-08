@@ -517,7 +517,7 @@ export default (variant: SchemeName) => {
       },
       {
         'name': 'Function call',
-        'scope': ['variable.function', 'variable.annotation'],
+        'scope': ['variable.function', 'variable.annotation', 'meta.function-call.generic', 'support.function.go'],
         'settings': {
           'foreground': scheme.syntax.func.hex
         }
@@ -539,7 +539,7 @@ export default (variant: SchemeName) => {
       },
       {
         'name': 'Library class/type',
-        'scope': ['support.type', 'support.class'],
+        'scope': ['support.type', 'support.class', 'source.go storage.type'],
         'settings': {
           'fontStyle': 'italic',
           'foreground': scheme.syntax.tag.hex
