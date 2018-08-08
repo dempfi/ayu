@@ -4,6 +4,10 @@ const Button = props => {
   return <button className={className} {...other} />;
 };
 
+class X {
+
+}
+
 // TODO: some comment
 const App = () => {
   return (

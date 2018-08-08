@@ -371,7 +371,7 @@
 		{
 			"name": "Entity name",
 			"scope": [
-				"entity.name - markup.heading"
+				"entity.name"
 			],
 			"settings": {
 				"foreground": "#399ee6"
@@ -670,7 +670,8 @@
 		{
 			"name": "Markup Heading",
 			"scope": [
-				"markup.heading"
+				"markup.heading",
+				"markup.heading entity.name"
 			],
 			"settings": {
 				"fontStyle": "bold",

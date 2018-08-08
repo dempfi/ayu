@@ -466,7 +466,7 @@ export default (variant: SchemeName) => {
       },
       {
         'name': 'Entity name',
-        'scope': ['entity.name - markup.heading'],
+        'scope': ['entity.name'],
         'settings': {
           'foreground': scheme.syntax.entity.hex
         }
@@ -688,7 +688,7 @@ export default (variant: SchemeName) => {
       },
       {
         'name': 'Markup Heading',
-        'scope': ['markup.heading'],
+        'scope': ['markup.heading', 'markup.heading entity.name'],
         'settings': {
           'fontStyle': 'bold',
           'foreground': scheme.syntax.keyword.hex
