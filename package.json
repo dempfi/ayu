@@ -53,11 +53,13 @@
     ]
   },
   "scripts": {
-    "build": "node ./build.js",
+    "build": "ts-node ./src/build.ts",
     "package": "vsce package"
   },
   "devDependencies": {
-    "ayu": "4.0.0",
-    "vsce": "1.22.0"
+    "ayu": "^6.0.1",
+    "ts-node": "^7.0.0",
+    "typescript": "^3.0.1",
+    "vsce": "^1.45.1"
   }
 }
