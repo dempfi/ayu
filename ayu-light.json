@@ -487,16 +487,6 @@
 			}
 		},
 		{
-			"name": "Invalid deprecated",
-			"scope": [
-				"invalid.deprecated"
-			],
-			"settings": {
-				"background": "#fa6e32",
-				"foreground": "#FFFFFF"
-			}
-		},
-		{
 			"name": "diff.header",
 			"scope": [
 				"meta.diff",

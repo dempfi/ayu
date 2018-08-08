@@ -553,14 +553,6 @@ export default (variant: SchemeName) => {
         }
       },
       {
-        'name': 'Invalid deprecated',
-        'scope': ['invalid.deprecated'],
-        'settings': {
-          'background': scheme.syntax.keyword.hex,
-          'foreground': '#FFFFFF'
-        }
-      },
-      {
         'name': 'diff.header',
         'scope': ['meta.diff', 'meta.diff.header'],
         'settings': {
