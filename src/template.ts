@@ -475,7 +475,6 @@ export default (variant: SchemeName) => {
         'name': 'Inherited class',
         'scope': ['entity.other.inherited-class'],
         'settings': {
-          'fontStyle': 'underline',
           'foreground': scheme.syntax.entity.hex
         }
       },
