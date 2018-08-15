@@ -257,7 +257,7 @@ export default (variant: SchemeName) => {
       'sideBarSectionHeader.background': scheme.common.bg.hex,
 
       // ----- Workbench: title bar -----
-      'titleBar.activeForeground': scheme.common.ui.hex,
+      'titleBar.activeForeground': scheme.common.fg.hex,
       'titleBar.inactiveForeground': scheme.common.ui.hex,
       'titleBar.activeBackground': scheme.common.bg.hex,
       'titleBar.inactiveBackground': scheme.common.bg.hex,
@@ -540,7 +540,6 @@ export default (variant: SchemeName) => {
         'name': 'Library class/type',
         'scope': ['support.type', 'support.class', 'source.go storage.type'],
         'settings': {
-          'fontStyle': 'italic',
           'foreground': scheme.syntax.tag.hex
         }
       },

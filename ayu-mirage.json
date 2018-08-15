@@ -137,7 +137,7 @@
 		"sideBarTitle.foreground": "#667380",
 		"sideBarSectionHeader.foreground": "#667380",
 		"sideBarSectionHeader.background": "#212733",
-		"titleBar.activeForeground": "#667380",
+		"titleBar.activeForeground": "#ccc9c2",
 		"titleBar.inactiveForeground": "#667380",
 		"titleBar.activeBackground": "#212733",
 		"titleBar.inactiveBackground": "#212733",
@@ -383,7 +383,6 @@
 				"entity.other.inherited-class"
 			],
 			"settings": {
-				"fontStyle": "underline",
 				"foreground": "#73d0ff"
 			}
 		},
@@ -476,7 +475,6 @@
 				"source.go storage.type"
 			],
 			"settings": {
-				"fontStyle": "italic",
 				"foreground": "#5ccfe6"
 			}
 		},
