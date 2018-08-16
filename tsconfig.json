@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "inlineSourceMap": true,
+    "declaration": true,
+    "module": "commonjs",
+    "baseUrl": "src",
+    "target": "ES5",
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
