@@ -2,6 +2,14 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.15.0
+
+`2018-08-17`
+- Thanks to [dempfi](https://github.com/dempfi)'s [PR](https://github.com/teabyii/vscode-ayu/pull/60) for the changes in this release
+- Use ayu colors from delicated package
+- Update color schemes to match those of recent versions in sublime theme
+- Update UI colors to reduce contrast, and improve focus on editor
+
 ## 0.14.0
 
 `2018-03-09`
