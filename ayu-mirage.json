@@ -389,10 +389,11 @@
 		{
 			"name": "Function argument",
 			"scope": [
-				"variable.parameter"
+				"variable.parameter",
+				"meta.parameter"
 			],
 			"settings": {
-				"foreground": "#ffcc66"
+				"foreground": "#d4bfff"
 			}
 		},
 		{
