@@ -4,8 +4,27 @@ const Button = props => {
   return <button className={className} {...other} />;
 };
 
+/**
+ * Multiline comment
+ */
 class X {
+  static props = {
+    foo: 1
+  };
 
+  state = {
+    bar: false
+  };
+
+  constructor(a, b) {
+    console.log({a, b});
+  }
+
+  test(a, b) {
+		console.log({a, b});
+	}
+
+  foo = () => this.test;
 }
 
 // TODO: some comment
