@@ -2,6 +2,11 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.16.0
+
+`2018-08-30`
+- Fix functions' arguments colours (thanks to [dempfi](https://github.com/dempfi))
+
 ## 0.15.0
 
 `2018-08-17`
