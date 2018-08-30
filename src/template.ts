@@ -480,9 +480,9 @@ export default (variant: SchemeName) => {
       },
       {
         'name': 'Function argument',
-        'scope': ['variable.parameter'],
+        'scope': ['variable.parameter', 'meta.parameter'],
         'settings': {
-          'foreground': scheme.common.accent.hex
+          'foreground': scheme.syntax.constant.hex
         }
       },
       {

@@ -444,7 +444,7 @@
     "r": "_f_R",
     "jsx": "_f_jsx",
     "rt": "_f_react",
-    "tsx": "_f_react",
+    "tsx": "_f_typescript",
     "rb": "_f_ruby",
     "gemspec": "_f_ruby",
     "rs": "_f_rust",
