@@ -7,7 +7,7 @@ const terminalColors = {
     black: '#000000',
     white: '#c7c7c7',
     brightBlack: '#686868',
-    brightWhite: '#ffffff'
+    brightWhite: '#d1d1d1'
   },
   dark: {
     black: ayu.dark.ui.line.hex(),
