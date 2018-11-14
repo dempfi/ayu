@@ -34,14 +34,29 @@
         "path": "./ayu-dark.json"
       },
       {
+        "label": "Ayu Dark Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-dark-bordered.json"
+      },
+      {
         "label": "Ayu Light",
         "uiTheme": "vs",
         "path": "./ayu-light.json"
       },
       {
+        "label": "Ayu Light Bordered",
+        "uiTheme": "vs",
+        "path": "./ayu-light-bordered.json"
+      },
+      {
         "label": "Ayu Mirage",
         "uiTheme": "vs-dark",
         "path": "./ayu-mirage.json"
+      },
+      {
+        "label": "Ayu Mirage Bordered",
+        "uiTheme": "vs-dark",
+        "path": "./ayu-mirage-bordered.json"
       }
     ],
     "iconThemes": [
@@ -54,12 +69,18 @@
   },
   "scripts": {
     "build": "ts-node ./src/build.ts",
-    "package": "vsce package"
+    "package": "vsce package",
+    "start": "npm run build; npm run package"
   },
   "devDependencies": {
-    "ayu": "^6.0.1",
+    "ayu": "^7.0.2",
     "ts-node": "^7.0.0",
     "typescript": "^3.0.1",
-    "vsce": "^1.45.1"
+    "vsce": "^1.51.0"
+  },
+  "__metadata": {
+    "id": "5178733e-4b02-4829-95c5-1ce970847c23",
+    "publisherDisplayName": "teabyii",
+    "publisherId": "8a0aaf7f-34ab-48b1-9384-c15c80413d57"
   }
 }
