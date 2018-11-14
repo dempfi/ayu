@@ -2,6 +2,18 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.17.0
+
+`2018-11-14`
+
+- Add bordered versions of all 3 themes with improved focus on editing;
+- Fix Java, Python, Haskell and Go highlighting issues;
+- Improve contrast in Dark theme;
+- Balance Light theme's colours for better balance both on P3 and sRGB displays;
+- Unify terminal colours
+
+**(All by [dempfi](https://github.com/dempfi)'s [PR](https://github.com/teabyii/vscode-ayu/pull/70))**
+
 ## 0.16.0
 
 `2018-08-30`
