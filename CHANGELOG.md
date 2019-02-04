@@ -2,10 +2,15 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.18.0
+
+`2019-02-04`
+- Fix unreadable ansi brightWhite in light terminal theme
+- Adds jest & dart icon
+
 ## 0.17.0
 
 `2018-11-14`
-
 - Add bordered versions of all 3 themes with improved focus on editing;
 - Fix Java, Python, Haskell and Go highlighting issues;
 - Improve contrast in Dark theme;
