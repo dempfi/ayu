@@ -18,16 +18,15 @@
   },
   "homepage": "https://github.com/dempfi/ayu#readme",
   "devDependencies": {
-    "fs-jetpack": "^0.10.0",
-    "gulp": "^3.9.1",
-    "gulp-exec": "^2.1.2",
+    "clear-require": "^3.0.0",
+    "color": "^3.1.0",
+    "fs-jetpack": "^2.2.2",
+    "gulp": "^4.0.0",
+    "gulp-exec": "^3.0.2",
     "lodash": "^4.16.4",
-    "through2": "^2.0.1",
-    "vinyl": "^2.0.0",
-    "yamljs": "^0.2.8",
-    "clear-require": "^2.0.0",
-    "color": "^2.0.0"
+    "through2": "^3.0.1",
+    "vinyl": "^2.2.0",
+    "yamljs": "^0.2.8"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

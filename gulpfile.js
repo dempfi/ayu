@@ -46,37 +46,35 @@ function build (types, defs) {
     .map(([path, contents]) => new File({ path, base, contents }))
 }
 
-function widgets (file, enc, next) {
+function buildWidgets (file, enc, next) {
   build(['widget.xml', 'widget.json'], colors(file.relative))
     .map(this.push.bind(this))
   next()
 }
 
-function themes (file, enc, next) {
+function buildThemes (file, enc, next) {
   build(['syntax.xml', 'ui.json'], colors(file.relative))
     .map(this.push.bind(this))
   next()
 }
 
-gulp.task('clean', () => {
+const clean = () => {
   fs.find({ recursive: false, matching: '*.sublime-theme' }).forEach(fs.remove)
   fs.find({ recursive: false, matching: '*.tmTheme' }).forEach(fs.remove)
-})
+}
 
-gulp.task('widgets', () =>
+const widgets = () =>
   gulp.src('./src/themes/!(color).js')
-    .pipe(through.obj(widgets))
+    .pipe(through.obj(buildWidgets))
     .pipe(gulp.dest('./widgets'))
-)
 
-gulp.task('themes', () =>
+const themes = () =>
   gulp.src('./src/themes/!(color).js')
-    .pipe(through.obj(themes))
+    .pipe(through.obj(buildThemes))
     .pipe(gulp.dest('./'))
-)
 
-gulp.task('watch', () =>
-  gulp.watch('./src/**/*', ['themes', 'widgets'])
-)
+const watch = () =>
+  gulp.watch('./src/**/*', gulp.parallel(themes, widgets))
 
-gulp.task('default', ['themes', 'widgets'])
+exports.watch = watch
+exports.default = gulp.parallel(themes, widgets)
