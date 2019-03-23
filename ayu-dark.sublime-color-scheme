@@ -56,6 +56,11 @@
 			"foreground": "#e6b450"
 		},
 		{
+			"name": "Constants",
+			"scope": "meta.constant, entity.name.constant",
+			"foreground": "#ffee99"
+		},
+		{
 			"name": "Variable",
 			"scope": "variable",
 			"foreground": "#b3b1ad"
@@ -73,12 +78,17 @@
 		},
 		{
 			"name": "Storage",
-			"scope": "storage",
+			"scope": "storage, storage.type.keyword",
 			"foreground": "#ff8f40"
 		},
 		{
 			"name": "Keyword",
 			"scope": "keyword",
+			"foreground": "#ff8f40"
+		},
+		{
+			"name": "Java keyword fixes",
+			"scope": "source.java meta.class.java meta.class.identifier.java storage.type.java",
 			"foreground": "#ff8f40"
 		},
 		{
@@ -148,7 +158,7 @@
 		},
 		{
 			"name": "Entity name",
-			"scope": "entity.name",
+			"scope": "entity.name, source.js meta.function-call.constructor variable.type",
 			"foreground": "#59c2ff"
 		},
 		{
@@ -179,7 +189,7 @@
 		},
 		{
 			"name": "Decorators/annotation",
-			"scope": "meta.decorator variable.other, meta.decorator punctuation.decorator, storage.type.annotation",
+			"scope": "meta.decorator variable.other, meta.decorator punctuation.decorator, storage.type.annotation, variable.annotation, punctuation.definition.annotation",
 			"foreground": "#e6b673"
 		},
 		{

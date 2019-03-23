@@ -85,6 +85,11 @@ export default (scheme: Scheme) => ({
       scope: 'constant.language',
       foreground: scheme.common.accent.hex()
     },
+    {
+      name: 'Constants',
+      scope: 'meta.constant, entity.name.constant',
+      foreground: scheme.syntax.constant.hex()
+    },
 
 
     {
@@ -109,12 +114,17 @@ export default (scheme: Scheme) => ({
     // Keywords
     {
       name: 'Storage',
-      scope: 'storage',
+      scope: 'storage, storage.type.keyword',
       foreground: scheme.syntax.keyword.hex()
     },
     {
       name: 'Keyword',
       scope: 'keyword',
+      foreground: scheme.syntax.keyword.hex()
+    },
+    {
+      name: 'Java keyword fixes',
+      scope: 'source.java meta.class.java meta.class.identifier.java storage.type.java',
       foreground: scheme.syntax.keyword.hex()
     },
 
@@ -197,18 +207,19 @@ export default (scheme: Scheme) => ({
     },
 
 
-    // ------
-    // Import/export paths
     {
       name: 'Imports and packages',
       scope: 'entity.name.import, entity.name.package',
       foreground: scheme.syntax.string.hex()
     },
+
+
     {
       name: 'Entity name',
-      scope: 'entity.name',
+      scope: 'entity.name, source.js meta.function-call.constructor variable.type',
       foreground: scheme.syntax.entity.hex()
     },
+
 
     // Tag and their attributes
     {
@@ -239,11 +250,14 @@ export default (scheme: Scheme) => ({
       scope: 'support.type, support.class, source.go storage.type',
       foreground: scheme.syntax.tag.hex()
     },
+
+
     {
       name: 'Decorators/annotation',
-      scope: 'meta.decorator variable.other, meta.decorator punctuation.decorator, storage.type.annotation',
+      scope: 'meta.decorator variable.other, meta.decorator punctuation.decorator, storage.type.annotation, variable.annotation, punctuation.definition.annotation',
       foreground: scheme.syntax.special.hex()
     },
+
     {
       name: 'Invalid',
       scope: 'invalid',

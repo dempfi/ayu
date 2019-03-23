@@ -815,7 +815,7 @@ export default (scheme: Scheme) => [
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
     "layer1.inner_margin": [1, 2, 1, 0],
-    "content_margin": [16, 3]
+    "content_margin": [16, 2]
   },
   {
     "class": "status_bar",
