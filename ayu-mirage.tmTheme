@@ -63,6 +63,8 @@ a {
 				<string>#00000010</string>
 				<key>stackGuide</key>
 				<string>#363E4A</string>
+				<key>lineDiffModified</key>
+				<string>#FEAF62</string>
 			</dict>
 		</dict>
 		<dict>
