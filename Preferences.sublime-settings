@@ -5,15 +5,6 @@
     // ayu theme: Show separators between panels
     "ui_separator": false,
 
-    // ayu theme: Use smaller font size for UI
-    "ui_font_size_small": false,
-
-    // ayu theme: Use Source Code Pro as UI font
-    "ui_font_source_code_pro": false,
-
-    // ayu theme: Use Roboto Mono as UI font
-    "ui_font_roboto_mono": false,
-
     // ayu theme: Display wider scrollbars
     "ui_wide_scrollbars": false
 }

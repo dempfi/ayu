@@ -1,6 +1,3 @@
-// prefix="Widget - "
-// sublime=""
-// ext="sublime-settings"
 {
   "color_scheme": "Packages/ayu/widgets/Widget - ayu-dark.stTheme",
   "draw_shadows": false,

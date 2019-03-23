@@ -1,7 +1,6 @@
-<!-- prefix="Widget - " -->
-<!-- sublime="" -->
-<!-- ext="stTheme" -->
-<?xml version="1.0" encoding="UTF-8"?>
+import { Scheme } from 'ayu'
+
+export default (scheme: Scheme, name: string) => `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -12,28 +11,28 @@
   <key>name</key>
   <string>ayu</string>
   <key>semanticClass</key>
-  <string>ayu."{theme}"</string>
+  <string>ayu.${name}</string>
   <key>settings</key>
   <array>
     <dict>
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>"{ui.panel.bg.hex}"</string>
+        <string>${scheme.ui.panel.bg.hex()}</string>
         <key>caret</key>
-        <string>"{common.accent.hex}"</string>
+        <string>${scheme.common.accent.hex()}</string>
         <key>foreground</key>
-        <string>"{common.fg.hex}"</string>
+        <string>${scheme.common.fg.hex()}</string>
         <key>invisibles</key>
-        <string>"{editor.gutter.hex}"</string>
+        <string>${scheme.ui.gutter.normal.hex()}</string>
         <key>lineHighlight</key>
-        <string>"{editor.line.hex}"</string>
+        <string>${scheme.ui.line.hex()}</string>
         <key>inactiveSelection</key>
-        <string>"{editor.selection.inactive.hex}"</string>
+        <string>${scheme.ui.selection.inactive.hex()}</string>
         <key>selection</key>
-        <string>"{editor.selection.bg.hex}"</string>
+        <string>${scheme.ui.selection.bg.hex()}</string>
         <key>selectionBorder</key>
-        <string>"{editor.selection.border.hex}"</string>
+        <string>${scheme.ui.selection.border.hex()}</string>
       </dict>
     </dict>
     <dict>
@@ -46,7 +45,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>"{syntax.comment.hex}"</string>
+        <string>${scheme.syntax.comment.hex()}</string>
       </dict>
     </dict>
     <dict>
@@ -57,7 +56,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>"{syntax.keyword.hex}"</string>
+        <string>${scheme.syntax.keyword.hex()}</string>
       </dict>
     </dict>
     <dict>
@@ -68,7 +67,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>"{syntax.constant.hex}"</string>
+        <string>${scheme.syntax.constant.hex()}</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +78,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>"{syntax.string.hex}"</string>
+        <string>${scheme.syntax.string.hex()}</string>
       </dict>
     </dict>
     <dict>
@@ -90,9 +89,9 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>"{syntax.regexp.hex}"</string>
+        <string>${scheme.syntax.regexp.hex()}</string>
       </dict>
     </dict>
   </array>
 </dict>
-</plist>
+</plist>`

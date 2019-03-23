@@ -1,6 +1,3 @@
-<!-- prefix="Widget - " -->
-<!-- sublime="" -->
-<!-- ext="stTheme" -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -19,21 +16,21 @@
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>#13181D</string>
+        <string>#0d1016</string>
         <key>caret</key>
-        <string>#F29718</string>
+        <string>#e6b450</string>
         <key>foreground</key>
-        <string>#BFBAB0</string>
+        <string>#b3b1ad</string>
         <key>invisibles</key>
-        <string>#252D33</string>
+        <string>#3d424d99</string>
         <key>lineHighlight</key>
-        <string>#0A0E12</string>
+        <string>#01060e</string>
         <key>inactiveSelection</key>
-        <string>#131E27</string>
+        <string>#1f2c39</string>
         <key>selection</key>
-        <string>#16242E</string>
+        <string>#273747</string>
         <key>selectionBorder</key>
-        <string>#192B37</string>
+        <string>#304357</string>
       </dict>
     </dict>
     <dict>
@@ -46,7 +43,7 @@
         <key>fontStyle</key>
         <string>italic</string>
         <key>foreground</key>
-        <string>#5C6773</string>
+        <string>#626a73</string>
       </dict>
     </dict>
     <dict>
@@ -57,7 +54,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FF7733</string>
+        <string>#ff8f40</string>
       </dict>
     </dict>
     <dict>
@@ -68,7 +65,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#FFEE99</string>
+        <string>#ffee99</string>
       </dict>
     </dict>
     <dict>
@@ -79,7 +76,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#C2D94C</string>
+        <string>#c2d94c</string>
       </dict>
     </dict>
     <dict>
@@ -90,7 +87,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#95E6CB</string>
+        <string>#95e6cb</string>
       </dict>
     </dict>
   </array>
