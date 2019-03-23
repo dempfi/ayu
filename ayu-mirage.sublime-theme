@@ -217,18 +217,6 @@
 		"fg": "#707a8c80"
 	},
 	{
-		"class": "sidebar_label",
-		"parents": [
-			{
-				"class": "file_system_entry",
-				"attributes": [
-					"missing"
-				]
-			}
-		],
-		"fg": "#ff3333b3"
-	},
-	{
 		"class": "disclosure_button_control",
 		"content_margin": [
 			0,
@@ -971,11 +959,6 @@
 		"selected_match_fg": "#b6b7b2"
 	},
 	{
-		"class": "quick_panel_score_label",
-		"fg": "#707a8c",
-		"selected_fg": "#ffcc66"
-	},
-	{
 		"class": "grid_layout_control",
 		"border_size": 0,
 		"border_color": "#191e2a"
@@ -1488,99 +1471,6 @@
 		"layer0.opacity": 1
 	},
 	{
-		"class": "tool_tip_control",
-		"layer0.tint": "#1f2430",
-		"layer0.inner_margin": [
-			0,
-			0
-		],
-		"layer0.opacity": 1,
-		"content_margin": [
-			10,
-			6
-		]
-	},
-	{
-		"class": "tool_tip_label_control",
-		"color": "#707a8c",
-		"font.size": 13
-	},
-	{
-		"class": "tool_tip_label_control",
-		"settings": [
-			"ui_font_source_code_pro"
-		],
-		"font.face": "Source Code Pro"
-	},
-	{
-		"class": "tool_tip_label_control",
-		"settings": [
-			"ui_font_roboto_mono"
-		],
-		"font.face": "Roboto mono"
-	},
-	{
-		"class": "label_control",
-		"color": "#707a8c",
-		"shadow_color": [
-			0,
-			0,
-			0,
-			0
-		],
-		"shadow_offset": [
-			0,
-			0
-		],
-		"font.bold": false,
-		"font.size": 12
-	},
-	{
-		"class": "label_control",
-		"settings": [
-			"ui_font_source_code_pro"
-		],
-		"font.face": "Source Code Pro"
-	},
-	{
-		"class": "label_control",
-		"settings": [
-			"ui_font_roboto_mono"
-		],
-		"font.face": "Roboto mono"
-	},
-	{
-		"class": "label_control",
-		"parents": [
-			{
-				"class": "status_bar"
-			}
-		],
-		"color": "#707a8c",
-		"font.bold": false
-	},
-	{
-		"class": "label_control",
-		"parents": [
-			{
-				"class": "button_control"
-			}
-		],
-		"color": "#707a8c"
-	},
-	{
-		"class": "label_control",
-		"parents": [
-			{
-				"class": "button_control",
-				"attributes": [
-					"hover"
-				]
-			}
-		],
-		"color": "#ffcc66"
-	},
-	{
 		"class": "icon_button_control",
 		"layer0.tint": [
 			0,
@@ -1798,25 +1688,68 @@
 		"layer0.tint": "#ffcc66"
 	},
 	{
-		"class": "icon_reverse",
-		"layer0.texture": "ayu/assets/reverse.png",
-		"layer0.tint": "#707a8c",
-		"layer0.opacity": 1,
-		"content_margin": [
-			12,
-			12
-		]
+		"class": "label_control",
+		"color": "#707a8c",
+		"shadow_color": [
+			0,
+			0,
+			0,
+			0
+		],
+		"shadow_offset": [
+			0,
+			0
+		],
+		"font.bold": false,
+		"font.size": 12
 	},
 	{
-		"class": "icon_reverse",
+		"class": "label_control",
 		"parents": [
 			{
-				"class": "icon_button_control",
+				"class": "status_bar"
+			}
+		],
+		"color": "#707a8c",
+		"font.bold": false
+	},
+	{
+		"class": "label_control",
+		"parents": [
+			{
+				"class": "button_control"
+			}
+		],
+		"color": "#707a8c"
+	},
+	{
+		"class": "label_control",
+		"parents": [
+			{
+				"class": "button_control",
 				"attributes": [
-					"selected"
+					"hover"
 				]
 			}
 		],
-		"layer0.tint": "#ffcc66"
+		"color": "#ffcc66"
+	},
+	{
+		"class": "tool_tip_control",
+		"layer0.tint": "#1f2430",
+		"layer0.inner_margin": [
+			0,
+			0
+		],
+		"layer0.opacity": 1,
+		"content_margin": [
+			10,
+			6
+		]
+	},
+	{
+		"class": "tool_tip_label_control",
+		"color": "#707a8c",
+		"font.size": 13
 	}
 ]

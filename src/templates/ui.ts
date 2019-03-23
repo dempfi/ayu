@@ -139,11 +139,6 @@ export default (scheme: Scheme) => [
     "parents": [{ "class": "file_system_entry", "attributes": ["ignored"] }],
     "fg": scheme.common.ui.alpha(.5).hex()
   },
-  {
-    "class": "sidebar_label",
-    "parents": [{ "class": "file_system_entry", "attributes": ["missing"] }],
-    "fg": scheme.syntax.error.alpha(.7).hex()
-  },
 
 
   {

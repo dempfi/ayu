@@ -1,9 +1,0 @@
-// prefix="Widget - "
-// sublime="2"
-// ext="sublime-settings"
-{
-  "color_scheme": "Packages/ayu/widgets/Widget - ayu-mirage.stTheme",
-  "draw_shadows": false,
-  "font_options": ["subpixel_antialias"],
-  "line_padding_top": 3
-}

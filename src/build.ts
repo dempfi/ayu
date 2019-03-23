@@ -18,7 +18,13 @@ const syntax = (kind: SchemeName) => fs.writeFileSync(
   JSON.stringify(templates.syntax(ayu[kind]), null, '\t')
 )
 
+const widget = (kind: SchemeName) => fs.writeFileSync(
+  path.join(process.cwd(), `/widgets/Widget - ayu-${kind}.stTheme`),
+  templates.widget(ayu[kind], kind)
+)
+
 Object.keys(ayu).map((kind: SchemeName) => {
+  widget(kind)
   syntax(kind)
   ui(kind)
 })
