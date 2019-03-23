@@ -1,10 +1,6 @@
-![ayu](https://i.imgur.com/akLUOXg.png)
+![ayu](./images/hero.png)
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
-
-### Font
-
-`ayu` uses [__Roboto Mono__](https://www.google.com/fonts/specimen/Roboto+Mono) as main font and it's highly recommended to install it to get monospaced font in filetree. But if you don't have it then the UI theme will downgrade to standard UI font used in Sublime Text.
 
 ### File Icons
 
@@ -34,9 +30,6 @@
 ```js
 "ui_native_titlebar":       true, // use native titlebars on macOs
 "ui_separator":             true, // separators between panels
-"ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
-"ui_font_source_code_pro":  true, // use Source Code Pro (https://fonts.google.com/specimen/Source+Code+Pro) as UI font
-"ui_font_roboto_mono":      true, // use Roboto Mono (https://fonts.google.com/specimen/Roboto+Mono) as UI font
 "ui_wide_scrollbars":       true, // wider scrollbars
 ```
 
@@ -78,21 +71,21 @@ For light theme:
 
 ```js
 "theme": "ayu-light.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-light.tmTheme",
+"color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
 ```
 
 For mirage theme:
 
 ```js
 "theme": "ayu-mirage.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
 ```
 
 For dark theme:
 
 ```js
 "theme": "ayu-dark.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 ```
 
 ### Sublime Text 2

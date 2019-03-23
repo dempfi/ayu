@@ -1,21 +1,21 @@
 {
   "ayu light": {
     "Preferences": {
-      "color_scheme": "Packages/ayu/ayu-light.tmTheme",
+      "color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
       "theme": "ayu-light.sublime-theme",
     }
   },
 
   "ayu mirage": {
     "Preferences": {
-      "color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+      "color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
       "theme": "ayu-mirage.sublime-theme",
     }
   },
 
   "ayu dark": {
     "Preferences": {
-      "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+      "color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
       "theme": "ayu-dark.sublime-theme",
     }
   }
