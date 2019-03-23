@@ -13,6 +13,11 @@ export default (scheme: Scheme) => [
     "bg": "",
     "fg": ""
   },
+  {
+    "class": "title_bar",
+    "settings": ["ui_separator"],
+    "bg": scheme.common.bg.darken(0.05).hex()
+  },
 
 
 
@@ -26,6 +31,7 @@ export default (scheme: Scheme) => [
   {
     "class": "sidebar_container",
     "settings": ["ui_separator"],
+    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
     "layer1.texture": "ayu/assets/separator-right.png",
     "layer1.inner_margin": [0, 1, 2, 1],
     "layer1.opacity": 1,
@@ -333,6 +339,7 @@ export default (scheme: Scheme) => [
     "class": "tabset_control",
     "settings": ["ui_separator"],
     "content_margin": [0, 0, 0, 0],
+    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
     "layer1.opacity": 1,
     "layer1.texture": "ayu/assets/separator-bottom.png",
     "layer1.tint": scheme.ui.line.hex(),
@@ -380,6 +387,8 @@ export default (scheme: Scheme) => [
     "class": "tab_control",
     "settings": ["ui_separator"],
 
+    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
+
     "layer1.opacity": 1.0,
 
     "layer2.opacity": 1.0,
@@ -396,6 +405,7 @@ export default (scheme: Scheme) => [
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["ui_separator"],
+    "layer0.tint": scheme.common.bg.hex(),
     "layer1.tint": scheme.common.accent.hex(),
     "layer3.opacity": 0.0
   },
@@ -409,7 +419,7 @@ export default (scheme: Scheme) => [
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.ui.line.rgb,
+    "layer0.tint": scheme.common.bg.hex(),
   },
   // Selected current tab
   {
@@ -442,6 +452,11 @@ export default (scheme: Scheme) => [
   {
     "class": "tab_label",
     "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
+    "fg": scheme.common.fg.hex()
+  },
+  {
+    "class": "tab_label",
+    "parents": [{ "class": "tab_control", "attributes": ["hover"] }],
     "fg": scheme.common.fg.hex()
   },
   {
@@ -763,7 +778,7 @@ export default (scheme: Scheme) => [
   {
     "class": "panel_control",
     "settings": ["ui_separator"],
-    // "layer0.tint": scheme.ui.panel.bg.hex(),
+    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
     "layer1.inner_margin": [1, 2, 1, 0],
@@ -805,6 +820,7 @@ export default (scheme: Scheme) => [
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
+    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
     "layer1.opacity": 1
   },
 

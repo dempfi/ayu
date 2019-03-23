@@ -13,6 +13,13 @@
 		"fg": ""
 	},
 	{
+		"class": "title_bar",
+		"settings": [
+			"ui_separator"
+		],
+		"bg": "#070b12"
+	},
+	{
 		"class": "sidebar_container",
 		"content_margin": [
 			0,
@@ -28,6 +35,7 @@
 		"settings": [
 			"ui_separator"
 		],
+		"layer0.tint": "#070b12",
 		"layer1.texture": "ayu/assets/separator-right.png",
 		"layer1.inner_margin": [
 			0,
@@ -484,6 +492,7 @@
 			0,
 			0
 		],
+		"layer0.tint": "#070b12",
 		"layer1.opacity": 1,
 		"layer1.texture": "ayu/assets/separator-bottom.png",
 		"layer1.tint": "#01060e",
@@ -557,6 +566,7 @@
 		"settings": [
 			"ui_separator"
 		],
+		"layer0.tint": "#070b12",
 		"layer1.opacity": 1,
 		"layer2.opacity": 1,
 		"layer3.opacity": 1
@@ -580,6 +590,7 @@
 		"settings": [
 			"ui_separator"
 		],
+		"layer0.tint": "#0a0e14",
 		"layer1.tint": "#e6b450",
 		"layer3.opacity": 0
 	},
@@ -601,7 +612,8 @@
 		],
 		"settings": [
 			"ui_separator"
-		]
+		],
+		"layer0.tint": "#0a0e14"
 	},
 	{
 		"class": "tab_control",
@@ -650,6 +662,18 @@
 				"class": "tab_control",
 				"attributes": [
 					"selected"
+				]
+			}
+		],
+		"fg": "#b3b1ad"
+	},
+	{
+		"class": "tab_label",
+		"parents": [
+			{
+				"class": "tab_control",
+				"attributes": [
+					"hover"
 				]
 			}
 		],
@@ -1083,6 +1107,7 @@
 		"settings": [
 			"ui_separator"
 		],
+		"layer0.tint": "#070b12",
 		"layer1.texture": "ayu/assets/separator-top.png",
 		"layer1.tint": "#01060e",
 		"layer1.inner_margin": [
@@ -1136,6 +1161,7 @@
 		"settings": [
 			"ui_separator"
 		],
+		"layer0.tint": "#070b12",
 		"layer1.opacity": 1
 	},
 	{
