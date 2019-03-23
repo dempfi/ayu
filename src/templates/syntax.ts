@@ -6,7 +6,7 @@ export default (scheme: Scheme) => ({
   globals: {
     background: scheme.common.bg.hex(),
     foreground: scheme.common.fg.hex(),
-    invisibles: scheme.ui.gutter.normal.hex(),
+    invisibles: scheme.common.fg.alpha(.3).hex(),
     caret: scheme.common.accent.hex(),
     // block_caret: scheme.common.accent.hex(),
     line_highlight: scheme.ui.line.hex(),
@@ -37,7 +37,22 @@ export default (scheme: Scheme) => ({
     line_diff_modified: scheme.vcs.modified.hex(),
     line_diff_deleted: scheme.vcs.removed.hex(),
 
+    selection: scheme.ui.selection.bg.hex(),
+    // selection_foreground: scheme.ui.selection.bg.hex(),
+    selection_border: scheme.ui.selection.border.hex(),
+    selection_border_width: "1",
+    inactive_selection: scheme.ui.selection.inactive.hex(),
+    inactive_selection_foreground: scheme.common.fg.alpha(.3).hex(),
+    selection_corner_style: "round",
+    selection_corner_radius: "3",
 
+    highlight: scheme.common.accent.alpha(.4).hex(),
+    find_highlight: scheme.common.accent.hex(),
+    find_highlight_foreground: scheme.common.bg.hex(),
+
+    guide: scheme.ui.guide.normal.hex(),
+    active_guide: scheme.ui.guide.active.hex(),
+    stack_guide: scheme.ui.guide.normal.alpha(.4).hex(),
   },
 
   rules: [

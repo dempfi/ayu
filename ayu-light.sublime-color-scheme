@@ -3,7 +3,7 @@
 	"globals": {
 		"background": "#fafafa",
 		"foreground": "#6c7680",
-		"invisibles": "#959da666",
+		"invisibles": "#6c76804d",
 		"caret": "#ff9940",
 		"line_highlight": "#959da61a",
 		"accent": "#ff9940",
@@ -13,7 +13,20 @@
 		"line_diff_width": "2",
 		"line_diff_added": "#99bf4d",
 		"line_diff_modified": "#709ecc",
-		"line_diff_deleted": "#f27983"
+		"line_diff_deleted": "#f27983",
+		"selection": "#edf0f5",
+		"selection_border": "#e5ebf2",
+		"selection_border_width": "1",
+		"inactive_selection": "#f2f4f7",
+		"inactive_selection_foreground": "#6c76804d",
+		"selection_corner_style": "round",
+		"selection_corner_radius": "3",
+		"highlight": "#ff994066",
+		"find_highlight": "#ff9940",
+		"find_highlight_foreground": "#fafafa",
+		"guide": "#959da64d",
+		"active_guide": "#959da6b3",
+		"stack_guide": "#959da666"
 	},
 	"rules": [
 		{
