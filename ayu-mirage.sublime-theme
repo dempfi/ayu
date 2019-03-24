@@ -1315,6 +1315,11 @@
 		"layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png"
 	},
 	{
+		"class": "scroll_track_control",
+		"layer0.tint": "#1f2430",
+		"layer0.opacity": 1
+	},
+	{
 		"class": "scroll_corner_control",
 		"layer0.tint": "#1f2430",
 		"layer0.opacity": 1
@@ -1758,6 +1763,10 @@
 				]
 			}
 		],
+		"color": "#ffcc66"
+	},
+	{
+		"class": "title_label_control",
 		"color": "#ffcc66"
 	},
 	{

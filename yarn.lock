@@ -17,10 +17,10 @@ arg@^4.1.0:
   resolved "https://registry.yarnpkg.com/arg/-/arg-4.1.0.tgz#583c518199419e0037abb74062c37f8519e575f0"
   integrity sha512-ZWc51jO3qegGkVh8Hwpv636EkbesNV5ZNQPCtRa+0qytRYPEs9IYT9qITY9buezqUH5uqyzlWLcufrzU2rffdg==
 
-ayu@^7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/ayu/-/ayu-7.1.0.tgz#d07286085575edb00faf9f6699c4ac4714eb4d47"
-  integrity sha512-NBIl3Vitibzvk21+XyDLfco7xqhSnpLMnnP4x7JKi3nQFu5zu4UeT2eqGjz2TqNPyioDrOia3x0pwlDmMEeUiA==
+ayu@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/ayu/-/ayu-7.2.1.tgz#81ce8dabcba153708c9a4089fbdc4ad7bcfca95e"
+  integrity sha512-igs4HOihUE/n80rIXrM5YiD2H9rGx7Xl4VgGH7+Tps/nUHHwqNx3gLnCEEE9pwgHSFDaC4rNqi+bPvCXRzhYEg==
   dependencies:
     "@types/chroma-js" "^1.4.1"
     chroma-js "^2.0.3"

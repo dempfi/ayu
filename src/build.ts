@@ -10,7 +10,7 @@ const filePath = (kind: SchemeName, extension: string) =>
 
 const ui = (kind: SchemeName) => fs.writeFileSync(
   filePath(kind, 'sublime-theme'),
-  JSON.stringify(templates.ui(ayu[kind]), null, '\t')
+  JSON.stringify(templates.ui(ayu[kind], kind), null, '\t')
 )
 
 const syntax = (kind: SchemeName) => fs.writeFileSync(

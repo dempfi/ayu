@@ -53,6 +53,9 @@ export default (scheme: Scheme) => ({
     guide: scheme.ui.guide.normal.hex(),
     active_guide: scheme.ui.guide.active.hex(),
     stack_guide: scheme.ui.guide.normal.alpha(.4).hex(),
+
+    shadow: scheme.common.bg.alpha(0.3).hex(),
+    shadow_width: "0",
   },
 
   rules: [

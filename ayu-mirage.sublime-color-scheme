@@ -26,7 +26,9 @@
 		"find_highlight_foreground": "#1f2430",
 		"guide": "#707a8c4d",
 		"active_guide": "#707a8cb3",
-		"stack_guide": "#707a8c66"
+		"stack_guide": "#707a8c66",
+		"shadow": "#1f24304d",
+		"shadow_width": "0"
 	},
 	"rules": [
 		{

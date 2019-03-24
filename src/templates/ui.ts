@@ -1,6 +1,6 @@
 import { Scheme } from 'ayu'
 
-export default (scheme: Scheme) => [
+export default (scheme: Scheme, kind: string) => [
   // WINDOWS
   {
     "class": "title_bar",
@@ -35,7 +35,7 @@ export default (scheme: Scheme) => [
     "layer1.texture": "ayu/assets/separator-right.png",
     "layer1.inner_margin": [0, 1, 2, 1],
     "layer1.opacity": 1,
-    "layer1.tint": scheme.ui.line.hex(),
+    "layer1.tint": scheme.ui.line.hex()
   },
 
 
@@ -680,7 +680,7 @@ export default (scheme: Scheme) => [
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": scheme.ui.line.hex()
+    "border_color": scheme.ui.line.hex('blend')
   },
   {
     "class": "grid_layout_control",
@@ -946,6 +946,13 @@ export default (scheme: Scheme) => [
     "attributes": ["horizontal"],
     "settings": ["overlay_scroll_bars", "ui_wide_scrollbars"],
     "layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png"
+  },
+
+
+  {
+    "class": "scroll_track_control",
+    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.opacity": 1.0
   },
 
 
@@ -1217,12 +1224,18 @@ export default (scheme: Scheme) => [
     "parents": [{ "class": "button_control" }],
     "color": scheme.common.ui.hex()
   },
-
   {
     "class": "label_control",
     "parents": [{ "class": "button_control", "attributes": ["hover"] }],
     "color": scheme.common.accent.hex()
   },
+
+
+  {
+    "class": "title_label_control",
+    "color": scheme.common.accent.hex()
+  },
+
 
 
   // TOOL TIPS
