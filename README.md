@@ -6,6 +6,50 @@
 
 `ayu` from version `3.0.0` supports customization via [A File Icon](https://github.com/ihodev/a-file-icon) package. Please install it and restart Sublime for better experience.
 
+### Custom UI fonts
+
+Since verion `5.0.0` monospaced fonts options were removered. But it's still possible to use your favourite font in the
+user interface of the theme, just follow through these simple steps:
+
+![ayu mono](./images/mono.png)
+
+1. Pull up command pallete via <kbd>cmd/ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>
+2. Type in `Browse packages`
+3. Navigate to the `/User` folder
+4. Create a file named `ayu-mirage.sublime-theme` to modify mirage or `ayu-light.sublime-theme` and `ayu-dark.sublime-theme`
+5. Open that file in Sublime
+6. Copy and paste following content:
+   ```json
+   [
+     {
+       "class": "sidebar_label",
+       "font.face": "PragmataPro Mono Liga"
+     },
+     {
+       "class": "sidebar_heading",
+       "font.face": "PragmataPro Mono Liga"
+     },
+     {
+       "class": "tab_label",
+       "font.face": "PragmataPro Mono Liga"
+     },
+     {
+       "class": "label_control",
+       "font.face": "PragmataPro Mono Liga"
+     },
+     {
+       "class": "quick_panel_label",
+       "font.face": "PragmataPro Mono Liga"
+     },
+     {
+       "class": "quick_panel_path_label",
+       "font.face": "PragmataPro Mono Liga"
+     }
+   ]
+   ```
+7. Replace `PragmataPro Mono Liga` with the font of your choice
+8. Save and enjoy :)
+
 ### Screenshots
 
 <h6 align='center'>Light with <code>ui_separator</code> option on</h6>
