@@ -8,7 +8,7 @@ export default (scheme: Scheme) => ({
     foreground: scheme.common.fg.hex(),
     invisibles: scheme.common.fg.alpha(.3).hex(),
     caret: scheme.common.accent.hex(),
-    // block_caret: scheme.common.accent.hex(),
+    block_caret: scheme.common.accent.alpha(.3).hex(),
     line_highlight: scheme.ui.line.hex(),
 
     // misspelling: ,

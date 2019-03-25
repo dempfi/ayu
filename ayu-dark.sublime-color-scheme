@@ -5,6 +5,7 @@
 		"foreground": "#b3b1ad",
 		"invisibles": "#b3b1ad4d",
 		"caret": "#e6b450",
+		"block_caret": "#e6b4504d",
 		"line_highlight": "#01060e",
 		"accent": "#e6b450",
 		"popup_css": "\n      html, body {\n        background-color: #0d1016;\n        color: #b3b1ad;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(57,186,230, .7);\n      }\n    ",
