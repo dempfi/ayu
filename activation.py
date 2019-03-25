@@ -84,7 +84,7 @@ class AyuActivateCommand(sublime_plugin.WindowCommand):
     activate_ui_theme(ui_theme)
 
   def _quick_list_to_scheme(self, index):
-    return 'Packages/ayu/%s.tmTheme' % THEMES[index]
+    return 'Packages/ayu/%s.sublime-color-scheme' % THEMES[index]
 
   def _quick_list_to_theme(self, index):
     return '%s.sublime-theme' % THEMES[index]

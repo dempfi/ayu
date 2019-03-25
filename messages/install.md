@@ -15,19 +15,19 @@ settings (Preferences > Settings - User):
 Light:
 ```json
 "theme": "ayu-light.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-light.tmTheme",
+"color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
 ```
 
 Mirage:
 ```json
 "theme": "ayu-mirage.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-mirage.tmTheme",
+"color_scheme": "Packages/ayu/ayu-mirage.sublime-color-scheme",
 ```
 
 Dark:
 ```json
 "theme": "ayu-dark.sublime-theme",
-"color_scheme": "Packages/ayu/ayu-dark.tmTheme",
+"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 ```
 
 ================================================================================
@@ -35,11 +35,7 @@ Dark:
 Ayu provides following options to customize the theme
 
 ```json
+"ui_native_titlebar":       true, // native titlebar on macOs
 "ui_separator":             true, // separators between panels
-"ui_font_size_small":       true, // smaller UI font size(sidebar, statusbar etc)
-"ui_big_tabs":              true, // increased tab height
-"ui_fix_tab_labels":        true, // to fix tab labels if they look not right
-"ui_font_source_code_pro":  true, // use [Source Code Pro](https://fonts.google.com/specimen/Source+Code+Pro) for UI
-"ui_font_default":          true, // use Sublime Text's default UI font
 "ui_wide_scrollbars":       true, // wider scrollbars
 ```
