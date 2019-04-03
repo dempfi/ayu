@@ -142,6 +142,7 @@ and install manually [previous version](https://github.com/dempfi/ayu/releases/t
 - `ayu` for Ace: https://github.com/ayu-theme/ayu-ace
 - `ayu` colors as NPM package: https://github.com/ayu-theme/ayu-colors
 - `ayu` for VSCode: https://github.com/teabyii/vscode-ayu
+- `ayu` for XCode: https://github.com/vburojevic/ayu-xcode-theme
 
 <div align="right"><sup>
   made with ❤️ by <a href="https://github.com/dempfi">@dempfi</a>
