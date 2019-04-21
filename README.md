@@ -19,12 +19,15 @@ If you want to setup File Icon, then go to `Preferences > File Icon Theme > Ayu`
 
 #### Light
 ![Light](assets/light.png)
-
-#### Dark
-![Dark](assets/dark.png)
+![Light Bordered](assets/light-bordered.png)
 
 #### Mirage
 ![Mirage](assets/mirage.png)
+![Mirage Bordered](assets/mirage-bordered.png)
+
+#### Dark
+![Dark](assets/dark.png)
+![Dark Bordered](assets/dark-bordered.png)
 
 ## Development
 

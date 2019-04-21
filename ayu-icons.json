@@ -66,6 +66,9 @@
     "_f_css": {
       "iconPath": "./icons/file_type_css@2x.png"
     },
+    "_f_dart": {
+      "iconPath": "./icons/file_type_dart@2x.png"
+    },
     "_f_dlang": {
       "iconPath": "./icons/file_type_dlang@2x.png"
     },
@@ -164,6 +167,9 @@
     },
     "_f_mustache": {
       "iconPath": "./icons/file_type_mustache@2x.png"
+    },
+    "_f_jest": {
+      "iconPath": "./icons/file_type_jest@2x.png"
     },
     "_f_json": {
       "iconPath": "./icons/file_type_json@2x.png"
@@ -343,6 +349,7 @@
     "edn": "_f_clojure",
     "coffee": "_f_coffeescript",
     "css": "_f_css",
+    "dart": "_f_dart",
     "pas": "_f_delphi",
     "dfm": "_f_delphi",
     "dpr": "_f_delphi",
@@ -388,6 +395,7 @@
     "jade-lintrc": "_f_pug",
     "pug-lintrc": "_f_pug",
     "java": "_f_java",
+    "snap": "_f_jest",
     "julia": "_f_julia",
     "js": "_f_js",
     "jsp": "_f_jsp",
@@ -448,7 +456,7 @@
     "jsx": "_f_jsx",
     "rt": "_f_react",
     "re": "_f_reasonml",
-    "tsx": "_f_react",
+    "tsx": "_f_typescript",
     "rb": "_f_ruby",
     "gemspec": "_f_ruby",
     "rs": "_f_rust",

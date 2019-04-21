@@ -2,6 +2,36 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.18.0
+
+`2019-02-04`
+- Fix unreadable ansi brightWhite in light terminal theme
+- Adds jest & dart icon
+
+## 0.17.0
+
+`2018-11-14`
+- Add bordered versions of all 3 themes with improved focus on editing;
+- Fix Java, Python, Haskell and Go highlighting issues;
+- Improve contrast in Dark theme;
+- Balance Light theme's colours for better balance both on P3 and sRGB displays;
+- Unify terminal colours
+
+**(All by [dempfi](https://github.com/dempfi)'s [PR](https://github.com/teabyii/vscode-ayu/pull/70))**
+
+## 0.16.0
+
+`2018-08-30`
+- Fix functions' arguments colours (thanks to [dempfi](https://github.com/dempfi))
+
+## 0.15.0
+
+`2018-08-17`
+- Thanks to [dempfi](https://github.com/dempfi)'s [PR](https://github.com/teabyii/vscode-ayu/pull/60) for the changes in this release
+- Use ayu colors from delicated package
+- Update color schemes to match those of recent versions in sublime theme
+- Update UI colors to reduce contrast, and improve focus on editor
+
 ## 0.14.0
 
 `2018-03-09`
