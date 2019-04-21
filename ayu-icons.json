@@ -210,6 +210,9 @@
     "_f_react": {
       "iconPath": "./icons/file_type_react@2x.png"
     },
+    "_f_reasonml": {
+      "iconPath": "./icons/file_type_jest@2x.png"
+    },
     "_f_ruby": {
       "iconPath": "./icons/file_type_ruby@2x.png"
     },
@@ -444,6 +447,7 @@
     "r": "_f_R",
     "jsx": "_f_jsx",
     "rt": "_f_react",
+    "re": "_f_reasonml",
     "tsx": "_f_react",
     "rb": "_f_ruby",
     "gemspec": "_f_ruby",
