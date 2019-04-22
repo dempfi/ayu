@@ -488,7 +488,8 @@
     "xz": "_f_archive",
     "bz2": "_f_archive",
     "blade.php": "_f_blade",
-    "qtpl": "_f_source"
+    "qtpl": "_f_source",
+    "pdf": "_f_pdf"
   },
   "fileNames": {
     ".babelrc": "_f_babel",
