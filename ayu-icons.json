@@ -78,6 +78,9 @@
     "_f_docker": {
       "iconPath": "./icons/file_type_docker@2x.png"
     },
+    "_f_elm": {
+      "iconPath": "./icons/file_type_elm@2x.png"
+    },
     "_f_erlang": {
       "iconPath": "./icons/file_type_erlang@2x.png"
     },
@@ -364,6 +367,7 @@
     "ttf": "_f_font",
     "otf": "_f_font",
     "eot": "_f_font",
+    "elm": "_f_elm",
     "pfa": "_f_font",
     "pfb": "_f_font",
     "sfd": "_f_font",
