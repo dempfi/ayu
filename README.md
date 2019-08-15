@@ -8,7 +8,7 @@
 
 ### Custom UI fonts
 
-Since verion `5.0.0` monospaced fonts options were removered. But it's still possible to use your favourite font in the
+Since verion `5.0.0` monospaced fonts options were removed. But it's still possible to use your favourite font in the
 user interface of the theme, just follow through these simple steps:
 
 ![ayu mono](./images/mono.png)
