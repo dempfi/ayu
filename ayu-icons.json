@@ -63,6 +63,9 @@
     "_f_coffeescript": {
       "iconPath": "./icons/file_type_coffeescript@2x.png"
     },
+    "_f_csharp": {
+      "iconPath": "./icons/file_type_csharp@2x.png"
+    },
     "_f_css": {
       "iconPath": "./icons/file_type_css@2x.png"
     },
@@ -345,6 +348,7 @@
     "cljc": "_f_clojure",
     "edn": "_f_clojure",
     "coffee": "_f_coffeescript",
+    "cs": "_f_csharp",
     "css": "_f_css",
     "dart": "_f_dart",
     "pas": "_f_delphi",
