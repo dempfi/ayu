@@ -2,6 +2,13 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.19.0
+
+`2020-06-11`
+- Fix selection and word highlight, more details: [PR](https://github.com/ayu-theme/vscode-ayu/pull/98)
+- Fix jest icon
+- Add Reasonml & Elm & C# icon
+
 ## 0.18.0
 
 `2019-02-04`
