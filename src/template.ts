@@ -116,7 +116,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'tab.activeBackground': bordered ? scheme.ui.panel.bg.hex() : scheme.common.bg.hex(),
       'tab.activeForeground': scheme.common.fg.hex(),
       'tab.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
-      'tab.activeBorder': bordered ? undefined : scheme.common.accent.hex(),
+      'tab.activeBorder': bordered ? scheme.ui.panel.bg.hex() : scheme.common.accent.hex(),
       'tab.activeBorderTop': bordered ? scheme.common.accent.hex() : undefined,
       'tab.unfocusedActiveBorder': bordered ? undefined : scheme.common.ui.hex(),
       'tab.unfocusedActiveBorderTop': bordered ? scheme.common.ui.hex() : undefined,
