@@ -56,7 +56,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'dropdown.border': scheme.common.ui.fade(.7).hex(),
 
       // INPUT CONTROL
-      'input.background': scheme.ui.panel.bg.hex(),
+      'input.background': scheme.ui.panel.bg.darken(.15).hex(),
       'input.border': scheme.common.ui.fade(.7).hex(),
       'input.foreground': scheme.common.fg.hex(),
       'input.placeholderForeground': scheme.common.ui.fade(.3).hex(),
@@ -112,7 +112,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editorGroup.background': scheme.ui.panel.bg.hex(),
       'editorGroupHeader.noTabsBackground': scheme.common.bg.hex(),
       'editorGroupHeader.tabsBackground': scheme.common.bg.hex(),
-      'editorGroupHeader.tabsBorder': bordered ?  scheme.ui.line.hex() : scheme.common.bg.hex(),
+      'editorGroupHeader.tabsBorder': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
       'tab.activeBackground': bordered ? scheme.ui.panel.bg.hex() : scheme.common.bg.hex(),
       'tab.activeForeground': scheme.common.fg.hex(),
       'tab.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
@@ -137,8 +137,10 @@ export default (variant: SchemeName, bordered: boolean) => {
       'editor.selectionHighlightBackground': scheme.ui.selection.inactive.hex(),
       'editor.selectionHighlightBorder': scheme.ui.selection.border.hex(),
 
-      'editor.wordHighlightBackground': scheme.ui.selection.inactive.hex(),
-      'editor.wordHighlightStrongBackground': scheme.common.accent.alpha(.2).hex(),
+      'editor.wordHighlightBackground': scheme.vcs.modified.alpha(.07).hex(),
+      'editor.wordHighlightBorder': scheme.vcs.modified.alpha(.5).hex(),
+      'editor.wordHighlightStrongBackground': scheme.vcs.added.alpha(.07).hex(),
+      'editor.wordHighlightStrongBorder': scheme.vcs.added.alpha(.5).hex(),
 
       'editor.findMatchBackground': scheme.common.accent.alpha(.05).hex(),
       'editor.findMatchBorder': scheme.common.accent.hex(),
