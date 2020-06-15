@@ -17,7 +17,7 @@
   "homepage": "https://github.com/dempfi/ayu#readme",
   "dependencies": {
     "@types/node": "^11.11.6",
-    "ayu": "^7.2.1",
+    "ayu": "^7.3.0",
     "ts-node": "^8.0.3",
     "typescript": "^3.3.4000"
   }

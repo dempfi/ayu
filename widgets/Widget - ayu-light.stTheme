@@ -20,17 +20,17 @@
         <key>caret</key>
         <string>#ff9940</string>
         <key>foreground</key>
-        <string>#6c7680</string>
+        <string>#575f66</string>
         <key>invisibles</key>
-        <string>#959da666</string>
+        <string>#8a919966</string>
         <key>lineHighlight</key>
-        <string>#959da61a</string>
+        <string>#8a91991a</string>
         <key>inactiveSelection</key>
-        <string>#f2f4f7</string>
+        <string>#e7e8e9</string>
         <key>selection</key>
-        <string>#edf0f5</string>
+        <string>#d1e4f4</string>
         <key>selectionBorder</key>
-        <string>#e5ebf2</string>
+        <string>#e1e1e2</string>
       </dict>
     </dict>
     <dict>

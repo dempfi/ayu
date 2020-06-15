@@ -22,11 +22,11 @@
         <key>foreground</key>
         <string>#b3b1ad</string>
         <key>invisibles</key>
-        <string>#3d424d99</string>
+        <string>#4d556699</string>
         <key>lineHighlight</key>
-        <string>#01060e</string>
+        <string>#00010a</string>
         <key>inactiveSelection</key>
-        <string>#1f2c39</string>
+        <string>#1b2733</string>
         <key>selection</key>
         <string>#273747</string>
         <key>selectionBorder</key>
