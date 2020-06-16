@@ -2,6 +2,23 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 0.20.0
+
+`2020-06-11`
+- Add webpack, rollup, c header and graphql icons, more details: [PR](https://github.com/ayu-theme/vscode-ayu/pull/100)
+- Contrast improvements:
+    - Dark theme got more prominent UI colors
+    - Light theme got darker foreground color
+    - Errors in explorer have highlight color matching the themes
+    - Search in explorer is fixed
+    - Ident guides in light theme got a bit fainter
+    - Ident guides in the explorer match those in the editor
+    - Active tab in bordered version lost bottom border
+    - Hover/Selection in status bar matches the themes
+    - Sidebar group titles got borders
+    - Icons throughout the editor have consistent colors
+    - Some other tweaks I can't recall...
+
 ## 0.19.0
 
 `2020-06-11`
