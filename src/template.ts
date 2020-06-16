@@ -37,7 +37,10 @@ export default (variant: SchemeName, bordered: boolean) => {
       'focusBorder': scheme.common.ui.fade(.4).hex(),
       'foreground': scheme.common.ui.hex(),
       'widget.shadow': scheme.ui.panel.shadow.hex(),
-      'selection.background': scheme.ui.selection.bg.alpha(.992).hex(),
+      'selection.background': scheme.ui.selection.bg.hex(),
+      'icon.foreground': scheme.common.ui.hex(),
+      'errorForeground': scheme.syntax.error.hex(),
+      'descriptionForeground': scheme.syntax.error.hex(),
 
       // TEXT COLOURS
       'textBlockQuote.background': scheme.ui.panel.bg.hex(),
@@ -92,6 +95,14 @@ export default (variant: SchemeName, bordered: boolean) => {
       'list.inactiveSelectionBackground': scheme.ui.line.hex(),
       'list.inactiveSelectionForeground': scheme.common.ui.hex(),
       'list.invalidItemForeground': scheme.common.ui.fade(.3).hex(),
+      'list.errorForeground': scheme.vcs.removed.hex(),
+      'tree.indentGuidesStroke': scheme.ui.guide.active.hex(),
+
+      'listFilterWidget.background': scheme.ui.panel.bg.hex(),
+      'listFilterWidget.outline': scheme.common.accent.hex(),
+      'listFilterWidget.noMatchesOutline': scheme.syntax.error.hex(),
+      'list.filterMatchBorder': scheme.common.accent.hex(),
+      'list.filterMatchBackground': scheme.common.accent.alpha(.05).hex(),
 
       // ACTIVITY BAR
       'activityBar.background': scheme.common.bg.hex(),
@@ -106,6 +117,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'sideBarTitle.foreground': scheme.common.ui.hex(),
       'sideBarSectionHeader.background': scheme.common.bg.hex(),
       'sideBarSectionHeader.foreground': scheme.common.ui.hex(),
+      'sideBarSectionHeader.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
 
       // EDITOR GROUPS & TABS
       'editorGroup.border': scheme.ui.line.hex(),
@@ -116,7 +128,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'tab.activeBackground': bordered ? scheme.ui.panel.bg.hex() : scheme.common.bg.hex(),
       'tab.activeForeground': scheme.common.fg.hex(),
       'tab.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
-      'tab.activeBorder': bordered ? undefined : scheme.common.accent.hex(),
+      'tab.activeBorder': bordered ? scheme.ui.panel.bg.hex() : scheme.common.accent.hex(),
       'tab.activeBorderTop': bordered ? scheme.common.accent.hex() : undefined,
       'tab.unfocusedActiveBorder': bordered ? undefined : scheme.common.ui.hex(),
       'tab.unfocusedActiveBorderTop': bordered ? scheme.common.ui.hex() : undefined,
@@ -243,8 +255,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       'statusBar.debuggingBackground': scheme.syntax.operator.hex(),
       'statusBar.debuggingForeground': scheme.common.bg.fade(.5).hex(),
       'statusBar.noFolderBackground': scheme.ui.panel.bg.hex(),
-      'statusBarItem.activeBackground': '#00000050',
-      'statusBarItem.hoverBackground': '#00000030',
+      'statusBarItem.activeBackground': scheme.ui.line.hex(),
+      'statusBarItem.hoverBackground': scheme.ui.line.hex(),
       'statusBarItem.prominentBackground': scheme.ui.line.hex(),
       'statusBarItem.prominentHoverBackground': '#00000030',
 
