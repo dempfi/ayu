@@ -37,10 +37,10 @@ export default (variant: SchemeName, bordered: boolean) => {
       'focusBorder': scheme.common.ui.fade(.4).hex(),
       'foreground': scheme.common.ui.hex(),
       'widget.shadow': scheme.ui.panel.shadow.hex(),
-      'selection.background': scheme.ui.selection.bg.hex(),
+      'selection.background': scheme.ui.selection.bg.alpha(0.992).hex(),
       'icon.foreground': scheme.common.ui.hex(),
       'errorForeground': scheme.syntax.error.hex(),
-      'descriptionForeground': scheme.syntax.error.hex(),
+      'descriptionForeground': scheme.common.ui.hex(),
 
       // TEXT COLOURS
       'textBlockQuote.background': scheme.ui.panel.bg.hex(),
@@ -78,8 +78,8 @@ export default (variant: SchemeName, bordered: boolean) => {
       'scrollbarSlider.activeBackground': scheme.common.ui.alpha(.7).hex(),
 
       // BADGE
-      'badge.background': scheme.common.accent.hex(),
-      'badge.foreground': scheme.common.bg.hex(),
+      'badge.background': scheme.common.accent.alpha(0.2).hex(),
+      'badge.foreground': variant == 'light' ? scheme.common.accent.darken(.2).hex() : scheme.common.accent.hex(),
 
       // PROGRESS BAR
       'progressBar.background': scheme.common.accent.hex(),
@@ -107,7 +107,9 @@ export default (variant: SchemeName, bordered: boolean) => {
       // ACTIVITY BAR
       'activityBar.background': scheme.common.bg.hex(),
       'activityBar.foreground': scheme.common.ui.alpha(.8).hex(),
+      'activityBar.inactiveForeground': scheme.common.ui.alpha(.6).hex(),
       'activityBar.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
+      // 'activityBar.activeBorder': scheme.common.accent.alpha(.8).hex(),
       'activityBarBadge.background': scheme.common.accent.hex(),
       'activityBarBadge.foreground': scheme.common.bg.hex(),
 

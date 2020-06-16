@@ -4,7 +4,12 @@ Source from: https://github.com/dempfi/ayu
 
 ## 0.20.0
 
-`2020-06-11`
+`2020-06-16`
+- Fix for [Issue 101](https://github.com/ayu-theme/vscode-ayu/issues/101)
+
+## 0.20.0
+
+`2020-06-16`
 - Add webpack, rollup, c header and graphql icons, more details: [PR](https://github.com/ayu-theme/vscode-ayu/pull/100)
 - Contrast improvements:
     - Dark theme got more prominent UI colors
