@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_type_yaml</title>
+    <g id="file_type_yaml" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M13.482,15 L2.518,15 C1.67986033,14.9994484 1.00055159,14.3201397 1,13.482 L1,2.518 C1.00055159,1.67986033 1.67986033,1.00055159 2.518,1 L13.482,1 C14.3201397,1.00055159 14.9994484,1.67986033 15,2.518 L15,13.482 C14.9994484,14.3201397 14.3201397,14.9994484 13.482,15 Z M2.77490071,2 C2.34715259,2.00052517 2.00052517,2.34715259 2,2.77490071 L2,13.2250993 C2.00052517,13.6528474 2.34715259,13.9994748 2.77490071,14 L13.2250993,14 C13.6528474,13.9994748 13.9994748,13.6528474 14,13.2250993 L14,2.77490071 C13.9994748,2.34715259 13.6528474,2.00052517 13.2250993,2 L2.77490071,2 Z" id="Combined-Shape" fill="#E6B045"></path>
+        <text id="Y" font-family="PragmataProMonoLiga-Regular, PragmataPro Mono Liga" font-size="13" font-weight="normal" letter-spacing="-3.0999999" fill="#E6B045">
+            <tspan x="4.79999995" y="13">Y</tspan>
+        </text>
+    </g>
+</svg>
