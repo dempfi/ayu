@@ -1,6 +1,7 @@
 import React from 'react'
 
 const template = `${JSON.stringify({ something: 'else'})}`
+const original = JSON.stringify({ something: 'else'})
 
 const Component = () => 
   <>
@@ -15,3 +16,11 @@ export const Main = () =>
       {template}
     <Component />
   </div>
+
+const f = true
+
+const s = [
+  's',
+  's'
+
+]

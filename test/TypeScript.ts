@@ -48,7 +48,7 @@ export abstract class Bot<BotMessage = any> extends OtherClass {
 
     const channel = this._channelFor(message.channel)
     const hasActions = channel.hasFor(message.user)
-    if (hasActions) return channel.processMessage(message)
+    if (hasActions) return channel.processMessage(`message ${message}`)
 
     const dialog = this._dialogHandlers.find(c => c.match(message))
     if (dialog) {
