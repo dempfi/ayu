@@ -1786,5 +1786,9 @@
 		"class": "tool_tip_label_control",
 		"color": "#707a8c",
 		"font.size": 13
-	}
+	},
+	{
+		"class": "quick_panel_detail_label",
+		"link_color": "var(--bluish)",
+	},
 ]
