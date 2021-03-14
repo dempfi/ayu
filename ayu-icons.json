@@ -232,7 +232,7 @@
       "iconPath": "./icons/file_type_react@2x.png"
     },
     "reasonml": {
-      "iconPath": "./icons/file_type_jest@2x.png"
+      "iconPath": "./icons/file_type_reasonml@2x.png"
     },
     "ruby": {
       "iconPath": "./icons/file_type_ruby.svg"
