@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16"
+   height="16"
+   version="1.1"
+   viewBox="0 0 4.2333333 4.2333333"
+   id="svg841"
+   sodipodi:docname="file_type_psm.svg"
+   inkscape:version="1.0.2 (394de47547, 2021-03-26)">
+  <defs
+     id="defs845" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     id="namedview843"
+     showgrid="false"
+     inkscape:zoom="20.458333"
+     inkscape:cx="12"
+     inkscape:cy="12"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg841" />
+  <metadata
+     id="metadata833">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g851"
+     transform="matrix(1.0821046,0,0,1.0858567,-0.16073583,-0.25011457)"
+     style="stroke-width:0.922527">
+    <path
+       d="M 0.45340433,0.88355893 2.1369961,2.1796441 0.45340433,3.4757294"
+       stroke="#4b8bbe"
+       stroke-width="0.952498"
+       id="path835"
+       style="fill:none;stroke-width:0.609724;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+    <path
+       d="M 2.0722332,0.88355893 3.7558248,2.1796441 2.0722332,3.4757294"
+       stroke="#ffd43b"
+       stroke-width="0.952498"
+       id="path837"
+       style="fill:none;stroke-width:0.609724;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+</svg>

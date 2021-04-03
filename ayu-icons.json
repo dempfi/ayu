@@ -210,6 +210,9 @@
     "psd": {
       "iconPath": "./icons/file_type_psd@2x.png"
     },
+    "psm": {
+      "iconPath": "./icons/file_type_psm.svg"
+    },
     "pug": {
       "iconPath": "./icons/file_type_pug@2x.png"
     },
