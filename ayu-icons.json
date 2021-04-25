@@ -273,6 +273,9 @@
     "stylus": {
       "iconPath": "./icons/file_type_stylus@2x.png"
     },
+    "svelte": {
+      "iconPath": "./icons/file_type_svelte.svg"
+    },
     "swift": {
       "iconPath": "./icons/file_type_swift.svg"
     },
@@ -505,6 +508,7 @@
     "sqlite": "sql",
     "styl": "stylus",
     "svg": "image",
+    "svelte": "svelte",
     "swift": "swift",
     "tcl": "tcl",
     "texi": "tex",
