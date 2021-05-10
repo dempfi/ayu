@@ -138,6 +138,9 @@
     "js": {
       "iconPath": "./icons/file_type_js.svg"
     },
+    "mjs": {
+      "iconPath": "./icons/file_type_js.svg"
+    },
     "jsp": {
       "iconPath": "./icons/file_type_jsp@2x.png"
     },
@@ -230,6 +233,9 @@
     },
     "ruby": {
       "iconPath": "./icons/file_type_ruby.svg"
+    },
+    "erb": {
+      "iconPath": "./icons/file_type_html@2x.png"
     },
     "rust": {
       "iconPath": "./icons/file_type_rust.svg"
@@ -421,6 +427,7 @@
     "snap": "jest",
     "julia": "julia",
     "js": "js",
+    "mjs": "mjs",
     "jsp": "jsp",
     "less": "less",
     "enc": "license",
@@ -481,6 +488,7 @@
     "re": "reasonml",
     "tsx": "typescript",
     "rb": "ruby",
+    "erb": "html",
     "gemspec": "ruby",
     "rs": "rust",
     "sass": "sass",
