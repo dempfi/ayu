@@ -326,6 +326,12 @@
     },
     "rollup": {
       "iconPath": "./icons/file_type_rollup.svg"
+    },
+    "jupyter": {
+      "iconPath": "./icons/file_type_jupyter.svg"
+    },
+    "csv": {
+      "iconPath": "./icons/file_type_csv.svg"
     }
   },
   "file": "_file",
@@ -432,6 +438,7 @@
     "java": "java",
     "snap": "jest",
     "julia": "julia",
+    "jl": "julia",
     "js": "js",
     "mjs": "mjs",
     "jsp": "jsp",
@@ -532,7 +539,9 @@
     "bz2": "archive",
     "blade.php": "blade",
     "qtpl": "source",
-    "pdf": "pdf"
+    "pdf": "pdf",
+    "ipynb": "jupyter",
+    "csv": "csv"
   },
   "fileNames": {
     ".babelrc": "babel",
