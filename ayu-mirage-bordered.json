@@ -443,6 +443,15 @@
 			}
 		},
 		{
+			"name": "JSX Component",
+			"scope": [
+				"support.class.component"
+			],
+			"settings": {
+				"foreground": "#73d0ff"
+			}
+		},
+		{
 			"name": "Tag start/end",
 			"scope": [
 				"punctuation.definition.tag.end",

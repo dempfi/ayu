@@ -568,6 +568,13 @@ export default (variant: SchemeName, bordered: boolean) => {
         }
       },
       {
+        'name': 'JSX Component',
+        'scope': ['support.class.component'],
+        'settings': {
+          'foreground': scheme.syntax.entity.hex()
+        }
+      },
+      {
         'name': 'Tag start/end',
         'scope': [
           'punctuation.definition.tag.end',
