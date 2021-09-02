@@ -51,11 +51,10 @@ export default (variant: SchemeName, bordered: boolean) => {
       // BUTTON CONTROL
       'button.background': scheme.common.accent.hex(),
       'button.foreground': scheme.ui.bg.hex(),
-      'button.border': scheme.common.accent.hex(),
       'button.hoverBackground': scheme.common.accent.darken(.1).hex(),
-      'button.secondaryBackground': scheme.ui.fg.alpha(.7).hex(),
+      'button.secondaryBackground': scheme.ui.fg.alpha(.2).hex(),
       'button.secondaryForeground': scheme.editor.fg.hex(),
-      'button.secondaryHoverBackground': scheme.ui.fg.hex(),
+      'button.secondaryHoverBackground': scheme.ui.fg.alpha(.5).hex(),
 
       // DROPDOWN CONTROL
       'dropdown.background': scheme.editor.bg.hex(),
