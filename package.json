@@ -75,7 +75,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.6.0",
-    "ayu": "^7.3.0",
+    "ayu": "^8.0.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.3",
     "vsce": "^1.96.1"

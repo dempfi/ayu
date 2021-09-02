@@ -1,1 +1,5 @@
 node_modules
+assets
+!assets/logo.png
+test
+yarn.lock

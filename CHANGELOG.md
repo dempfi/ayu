@@ -2,6 +2,15 @@
 
 Source from: https://github.com/dempfi/ayu
 
+## 1.0.0
+
+`2021-07-2`
+- Semantic highlighting
+- Improved color contrast
+- Revised dark theme
+- Updated/added file icons
+- Revised UI colors
+
 ## 0.20.0
 
 `2020-06-16`
