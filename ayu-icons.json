@@ -3,26 +3,26 @@
     "_file": {
       "iconPath": "./icons/file_type_default.svg"
     },
-    "_folder_light": {
-      "iconPath": "./icons/folder_light@2x.png"
-    },
-    "_folder_open_light": {
-      "iconPath": "./icons/folder_opened_light@2x.png"
-    },
     "_folder_dark": {
       "iconPath": "./icons/folder_dark@2x.png"
+    },
+    "_folder_light": {
+      "iconPath": "./icons/folder_light@2x.png"
     },
     "_folder_open_dark": {
       "iconPath": "./icons/folder_opened_dark@2x.png"
     },
+    "_folder_open_light": {
+      "iconPath": "./icons/folder_opened_light@2x.png"
+    },
     "actionscript": {
       "iconPath": "./icons/file_type_actionscript@2x.png"
     },
-    "angular": {
-      "iconPath": "./icons/file_type_angular.svg"
-    },
     "ai": {
       "iconPath": "./icons/file_type_ai@2x.png"
+    },
+    "angular": {
+      "iconPath": "./icons/file_type_angular.svg"
     },
     "apache": {
       "iconPath": "./icons/file_type_apache@2x.png"
@@ -45,9 +45,6 @@
     "bower": {
       "iconPath": "./icons/file_type_bower@2x.png"
     },
-    "cpp": {
-      "iconPath": "./icons/file_type_cpp.svg"
-    },
     "c": {
       "iconPath": "./icons/file_type_c.svg"
     },
@@ -63,11 +60,17 @@
     "coffeescript": {
       "iconPath": "./icons/file_type_coffeescript@2x.png"
     },
+    "cpp": {
+      "iconPath": "./icons/file_type_cpp.svg"
+    },
     "csharp": {
       "iconPath": "./icons/file_type_csharp.svg"
     },
     "css": {
       "iconPath": "./icons/file_type_css.svg"
+    },
+    "csv": {
+      "iconPath": "./icons/file_type_csv.svg"
     },
     "dart": {
       "iconPath": "./icons/file_type_dart@2x.png"
@@ -81,8 +84,14 @@
     "elm": {
       "iconPath": "./icons/file_type_elm@2x.png"
     },
+    "erb": {
+      "iconPath": "./icons/file_type_html@2x.png"
+    },
     "erlang": {
       "iconPath": "./icons/file_type_erlang@2x.png"
+    },
+    "eslint": {
+      "iconPath": "./icons/file_type_eslint@2x.png"
     },
     "ex": {
       "iconPath": "./icons/file_type_ex@2x.png"
@@ -135,11 +144,14 @@
     "java": {
       "iconPath": "./icons/file_type_java@2x.png"
     },
+    "jest": {
+      "iconPath": "./icons/file_type_jest@2x.png"
+    },
     "js": {
       "iconPath": "./icons/file_type_js.svg"
     },
-    "mjs": {
-      "iconPath": "./icons/file_type_js.svg"
+    "json": {
+      "iconPath": "./icons/file_type_json.svg"
     },
     "jsp": {
       "iconPath": "./icons/file_type_jsp@2x.png"
@@ -149,6 +161,9 @@
     },
     "julia": {
       "iconPath": "./icons/file_type_julia@2x.png"
+    },
+    "jupyter": {
+      "iconPath": "./icons/file_type_jupyter.svg"
     },
     "less": {
       "iconPath": "./icons/file_type_less@2x.png"
@@ -177,14 +192,11 @@
     "matlab": {
       "iconPath": "./icons/file_type_matlab@2x.png"
     },
+    "mjs": {
+      "iconPath": "./icons/file_type_js.svg"
+    },
     "mustache": {
       "iconPath": "./icons/file_type_mustache@2x.png"
-    },
-    "jest": {
-      "iconPath": "./icons/file_type_jest@2x.png"
-    },
-    "json": {
-      "iconPath": "./icons/file_type_json.svg"
     },
     "node": {
       "iconPath": "./icons/file_type_node@2x.png"
@@ -234,11 +246,11 @@
     "reasonml": {
       "iconPath": "./icons/file_type_reasonml@2x.png"
     },
+    "rollup": {
+      "iconPath": "./icons/file_type_rollup.svg"
+    },
     "ruby": {
       "iconPath": "./icons/file_type_ruby.svg"
-    },
-    "erb": {
-      "iconPath": "./icons/file_type_html@2x.png"
     },
     "rust": {
       "iconPath": "./icons/file_type_rust.svg"
@@ -258,6 +270,9 @@
     "shell": {
       "iconPath": "./icons/file_type_shell.svg"
     },
+    "sketch": {
+      "iconPath": "./icons/file_type_sketch.svg"
+    },
     "slim": {
       "iconPath": "./icons/file_type_slim@2x.png"
     },
@@ -266,9 +281,6 @@
     },
     "source": {
       "iconPath": "./icons/file_type_source.svg"
-    },
-    "sketch": {
-      "iconPath": "./icons/file_type_sketch.svg"
     },
     "sql": {
       "iconPath": "./icons/file_type_sql@2x.png"
@@ -309,32 +321,20 @@
     "vue": {
       "iconPath": "./icons/file_type_vue.svg"
     },
-    "yaml": {
-      "iconPath": "./icons/file_type_yaml.svg"
-    },
-    "zip": {
-      "iconPath": "./icons/file_type_archive@2x.png"
-    },
-    "eslint": {
-      "iconPath": "./icons/file_type_eslint@2x.png"
-    },
-    "yarn": {
-      "iconPath": "./icons/file_type_yarn@2x.png"
-    },
     "wasm": {
-     "iconPath": "./icons/file_type_wasm.svg"
+      "iconPath": "./icons/file_type_wasm.svg"
     },
     "webpack": {
       "iconPath": "./icons/file_type_webpack@2x.png"
     },
-    "rollup": {
-      "iconPath": "./icons/file_type_rollup.svg"
+    "yaml": {
+      "iconPath": "./icons/file_type_yaml.svg"
     },
-    "jupyter": {
-      "iconPath": "./icons/file_type_jupyter.svg"
+    "yarn": {
+      "iconPath": "./icons/file_type_yarn@2x.png"
     },
-    "csv": {
-      "iconPath": "./icons/file_type_csv.svg"
+    "zip": {
+      "iconPath": "./icons/file_type_archive@2x.png"
     }
   },
   "file": "_file",
@@ -345,143 +345,140 @@
     "folder": "_folder_light"
   },
   "fileExtensions": {
-    "as": "actionscript",
+    "7z": "archive",
+    "a": "binary",
     "ai": "ai",
     "angular": "angular",
-    "htaccess": "apache",
-    "htpasswd": "apache",
     "app": "applescript",
-    "bin": "binary",
-    "o": "binary",
-    "a": "binary",
-    "exe": "binary",
-    "obj": "binary",
-    "lib": "binary",
-    "dll": "binary",
-    "so": "binary",
-    "pyc": "binary",
-    "pyd": "binary",
-    "pyo": "binary",
-    "n": "binary",
-    "ndll": "binary",
-    "pdb": "binary",
-    "cmo": "binary",
-    "cmx": "binary",
-    "cma": "binary",
-    "cmxa": "binary",
-    "cmi": "binary",
+    "as": "actionscript",
     "bak": "bookmark",
+    "bash": "shell",
+    "bat": "shell",
+    "bil": "lisp",
+    "bin": "binary",
+    "blade.php": "blade",
+    "bmp": "image",
     "bowerrc": "bower",
-    "cpp": "cpp",
-    "hpp": "cpp",
-    "cc": "cpp",
-    "cxx": "cpp",
+    "bz2": "archive",
+    "bzip2": "archive",
     "c": "c",
-    "h": "c",
-    "cfm": "cfm",
+    "cc": "cpp",
     "cfc": "cfc",
-    "lucee": "cfm",
-    "clojure": "clojure",
+    "cfm": "cfm",
     "cjm": "clojure",
     "clj": "clojure",
-    "cljs": "clojure",
     "cljc": "clojure",
-    "edn": "clojure",
+    "cljs": "clojure",
+    "clojure": "clojure",
+    "cma": "binary",
+    "cmd": "shell",
+    "cmi": "binary",
+    "cmo": "binary",
+    "cmx": "binary",
+    "cmxa": "binary",
     "coffee": "coffeescript",
+    "cpp": "cpp",
     "cs": "csharp",
     "css": "css",
-    "dart": "dart",
-    "pas": "delphi",
-    "dfm": "delphi",
-    "dpr": "delphi",
+    "csv": "csv",
+    "cxx": "cpp",
     "d": "dlang",
+    "dart": "dart",
+    "dfm": "delphi",
+    "dll": "binary",
     "dockerignore": "docker",
-    "ex": "ex",
-    "exs": "ex",
+    "dpr": "delphi",
+    "edn": "clojure",
     "eex": "ex",
-    "woff": "font",
-    "woff2": "font",
-    "ttf": "font",
-    "otf": "font",
-    "eot": "font",
     "elm": "elm",
-    "pfa": "font",
-    "pfb": "font",
-    "sfd": "font",
+    "enc": "license",
+    "eot": "font",
+    "epp": "puppet",
+    "erb": "html",
+    "ex": "ex",
+    "exe": "binary",
+    "exs": "ex",
+    "fig": "matlab",
+    "fish": "fish",
+    "gemspec": "ruby",
+    "gf": "haskell",
+    "gif": "image",
     "gitattributes": "git",
     "gitignore": "git",
-    "gitmodules": "git",
     "gitkeep": "git",
+    "gitmodules": "git",
     "go": "go",
-    "gradle": "gradle",
-    "groovy": "groovy",
     "gql": "gql",
+    "gradle": "gradle",
     "graphql": "gql",
+    "groovy": "groovy",
+    "gz": "archive",
+    "h": "c",
     "haml": "haml",
     "has": "haskell",
+    "hpp": "cpp",
     "hs": "haskell",
-    "lhs": "haskell",
-    "lit": "haskell",
-    "gf": "haskell",
+    "htaccess": "apache",
+    "htm": "html",
+    "html": "html",
+    "htpasswd": "apache",
     "hx": "haxe",
     "hxml": "haxe",
     "hxproj": "haxe",
-    "htm": "html",
-    "html": "html",
+    "ico": "image",
+    "ipynb": "jupyter",
+    "jade": "pug",
+    "jade-lintrc": "pug",
+    "java": "java",
+    "jl": "julia",
     "jpeg": "image",
     "jpg": "image",
-    "gif": "image",
-    "png": "image",
-    "bmp": "image",
-    "ico": "image",
-    "jade": "pug",
-    "pug": "pug",
-    "jade-lintrc": "pug",
-    "pug-lintrc": "pug",
-    "java": "java",
-    "snap": "jest",
-    "julia": "julia",
-    "jl": "julia",
     "js": "js",
-    "mjs": "mjs",
+    "json": "json",
     "jsp": "jsp",
+    "jsx": "jsx",
+    "julia": "julia",
     "less": "less",
-    "enc": "license",
-    "bil": "lisp",
+    "lhs": "haskell",
+    "lib": "binary",
     "list": "list",
+    "lit": "haskell",
     "lsl": "lsl",
     "lua": "lua",
-    "md": "markdown",
+    "lucee": "cfm",
     "markdown": "markdown",
-    "fig": "matlab",
     "mat": "matlab",
+    "md": "markdown",
+    "merlin": "ocaml",
     "mex": "matlab",
     "mexn": "matlab",
     "mexrs6": "matlab",
+    "mjs": "mjs",
+    "ml": "ocaml",
+    "mli": "ocaml",
+    "mll": "ocaml",
+    "mly": "ocaml",
     "mn": "matlab",
+    "mst": "mustache",
     "mum": "matlab",
+    "mustache": "mustache",
     "mx": "matlab",
     "mx3": "matlab",
-    "rwd": "matlab",
-    "slx": "matlab",
-    "slddc": "matlab",
-    "smv": "matlab",
-    "tikz": "matlab",
-    "xvc": "matlab",
-    "mustache": "mustache",
-    "mst": "mustache",
-    "json": "json",
-    "webmanifest": "node",
-    "nvmrc": "node",
+    "n": "binary",
+    "ndll": "binary",
     "npmignore": "npm",
-    "ml": "ocaml",
-    "mll": "ocaml",
-    "mli": "ocaml",
-    "mly": "ocaml",
+    "nvmrc": "node",
+    "o": "binary",
+    "obj": "binary",
     "ocamlmakefile": "ocaml",
-    "merlin": "ocaml",
+    "otf": "font",
+    "pas": "delphi",
+    "pdb": "binary",
+    "pdf": "pdf",
     "perl": "perl",
-    "psd": "psd",
+    "pfa": "font",
+    "pfb": "font",
+    "phar": "php",
     "php": "php",
     "php1": "php",
     "php2": "php",
@@ -493,96 +490,99 @@
     "phpsa": "php",
     "phpt": "php",
     "phtml": "php",
-    "phar": "php",
+    "png": "image",
     "procfile": "procfile",
-    "epp": "puppet",
+    "psd": "psd",
+    "pug": "pug",
+    "pug-lintrc": "pug",
     "py": "python",
+    "pyc": "binary",
+    "pyd": "binary",
+    "pyo": "binary",
     "pyw": "python",
+    "qtpl": "source",
     "r": "R",
-    "jsx": "jsx",
-    "rt": "react",
-    "re": "reasonml",
-    "tsx": "typescript",
+    "rar": "archive",
     "rb": "ruby",
-    "erb": "html",
-    "gemspec": "ruby",
+    "re": "reasonml",
     "rs": "rust",
+    "rt": "react",
+    "rwd": "matlab",
     "sass": "sass",
     "scala": "scala",
     "scss": "scss",
-    "bat": "shell",
+    "sfd": "font",
     "sh": "shell",
     "sketch": "sketch",
-    "cmd": "shell",
-    "bash": "shell",
-    "zsh": "shell",
-    "fish": "fish",
+    "slddc": "matlab",
+    "slx": "matlab",
+    "smv": "matlab",
+    "snap": "jest",
+    "so": "binary",
     "sql": "sql",
     "sqlite": "sql",
     "styl": "stylus",
-    "svg": "image",
     "svelte": "svelte",
+    "svg": "image",
     "swift": "swift",
-    "tcl": "tcl",
-    "texi": "tex",
-    "tex": "tex",
-    "txt": "text",
-    "twig": "twig",
-    "ts": "typescript",
-    "vue": "vue",
-    "yml": "yaml",
-    "yaml": "yaml",
-    "zip": "archive",
-    "rar": "archive",
-    "7z": "archive",
     "tar": "archive",
-    "gz": "archive",
-    "bzip2": "archive",
-    "xz": "archive",
-    "bz2": "archive",
-    "blade.php": "blade",
-    "qtpl": "source",
-    "pdf": "pdf",
-    "ipynb": "jupyter",
-    "csv": "csv",
+    "tcl": "tcl",
+    "tex": "tex",
+    "texi": "tex",
+    "tikz": "matlab",
+    "ts": "typescript",
+    "tsx": "typescript",
+    "ttf": "font",
+    "twig": "twig",
+    "txt": "text",
+    "vue": "vue",
+    "wasm": "wasm",
     "wat": "wasm",
-    "wasm": "wasm"
+    "webmanifest": "node",
+    "woff": "font",
+    "woff2": "font",
+    "xvc": "matlab",
+    "xz": "archive",
+    "yaml": "yaml",
+    "yml": "yaml",
+    "zip": "archive",
+    "zsh": "shell"
   },
   "fileNames": {
     ".babelrc": "babel",
-    "bower.json": "bower",
-    "gemfile": "settings",
-    "gemfile.lock": "bundler",
-    "makefile": "settings",
-    "dockerfile": "docker",
-    "dockerignore": "docker",
-    "docker-compose.yml": "docker",
     ".eslintrc": "eslint",
     ".eslintrc.js": "eslint",
     ".eslintrc.json": "eslint",
     ".eslintrc.yaml": "eslint",
     ".eslintrc.yml": "eslint",
+    ".jade-lint.json": "pug",
+    ".nvmrc": "settings",
+    ".pug-lintrc.js": "pug",
+    ".pug-lintrc.json": "pug",
+    ".travis.yml": "settings",
+    "bower.json": "bower",
+    "checkstyle.json": "haxe",
+    "docker-compose.yml": "docker",
+    "dockerfile": "docker",
+    "dockerignore": "docker",
     "favicon.ico": "favicon",
+    "gemfile": "settings",
+    "gemfile.lock": "bundler",
     "gruntfile.js": "gruntfile",
     "gulpfile.js": "gulpfile",
     "haxelib.json": "haxe",
-    "checkstyle.json": "haxe",
-    "ionic.project": "settings",
     "ionic.config.json": "settings",
-    ".jade-lint.json": "pug",
-    ".pug-lintrc.js": "pug",
-    ".pug-lintrc.json": "pug",
+    "ionic.project": "settings",
     "license": "license",
     "license.md": "license",
+    "makefile": "settings",
     "package.json": "npm",
-    ".travis.yml": "settings",
-    ".nvmrc": "settings",
-    "vagrantfile": "settings",
-    "yarn.lock": "yarn",
     "Procfile": "procfile",
-    "webpack.config.js": "webpack",
+    "rollup.config.js": "rollup",
+    "vagrantfile": "settings",
     "webpack.config.babel.js": "webpack",
-    "rollup.config.js": "rollup"
+    "webpack.config.js": "webpack",
+    "yarn.lock": "yarn"
   },
   "hidesExplorerArrows": true,
   "languageIds": {}
