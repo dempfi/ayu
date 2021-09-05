@@ -1,6 +1,6 @@
 import * as ayu from 'ayu'
 
-export type SchemeName = keyof typeof ayu
+export type SchemeName = 'light' | 'dark' | 'mirage'
 
 const terminalColors = {
   light: {
@@ -66,10 +66,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       'input.border': scheme.ui.fg.alpha(0.27).hex(),
       'input.foreground': scheme.editor.fg.hex(),
       'input.placeholderForeground': scheme.ui.fg.alpha(0.5).hex(),
-      'inputOption.activeBorder': (variant == 'light'
-        ? scheme.common.accent.darken(0.2)
-        : scheme.common.accent
-      )
+      'inputOption.activeBorder': (variant == 'light' ? scheme.common.accent.darken(0.2) : scheme.common.accent)
         .alpha(0.3)
         .hex(),
       'inputOption.activeBackground': scheme.common.accent.alpha(0.2).hex(),
@@ -90,8 +87,7 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       // BADGE
       'badge.background': scheme.common.accent.alpha(0.2).hex(),
-      'badge.foreground':
-        variant == 'light' ? scheme.common.accent.darken(0.2).hex() : scheme.common.accent.hex(),
+      'badge.foreground': variant == 'light' ? scheme.common.accent.darken(0.2).hex() : scheme.common.accent.hex(),
 
       // PROGRESS BAR
       'progressBar.background': scheme.common.accent.hex(),
@@ -443,7 +439,7 @@ export default (variant: SchemeName, bordered: boolean) => {
 
       {
         name: 'Variable',
-        scope: ['variable'],
+        scope: ['variable', 'variable.parameter.function-call'],
         settings: {
           foreground: scheme.editor.fg.hex()
         }
@@ -587,12 +583,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       },
       {
         name: 'Function call',
-        scope: [
-          'variable.function',
-          'variable.annotation',
-          'meta.function-call.generic',
-          'support.function.go'
-        ],
+        scope: ['variable.function', 'variable.annotation', 'meta.function-call.generic', 'support.function.go'],
         settings: {
           foreground: scheme.syntax.func.hex()
         }
@@ -639,11 +630,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       },
       {
         name: 'Tag start/end',
-        scope: [
-          'punctuation.definition.tag.end',
-          'punctuation.definition.tag.begin',
-          'punctuation.definition.tag'
-        ],
+        scope: ['punctuation.definition.tag.end', 'punctuation.definition.tag.begin', 'punctuation.definition.tag'],
         settings: {
           foreground: scheme.syntax.tag.alpha(0.5).hex()
         }
@@ -673,11 +660,7 @@ export default (variant: SchemeName, bordered: boolean) => {
       },
       {
         name: 'Decorators/annotation',
-        scope: [
-          'meta.decorator variable.other',
-          'meta.decorator punctuation.decorator',
-          'storage.type.annotation'
-        ],
+        scope: ['meta.decorator variable.other', 'meta.decorator punctuation.decorator', 'storage.type.annotation'],
         settings: {
           foreground: scheme.syntax.special.hex()
         }
@@ -901,6 +884,9 @@ export default (variant: SchemeName, bordered: boolean) => {
       }
     ],
 
-    semanticHighlighting: true
+    semanticHighlighting: true,
+    semanticTokenColors: {
+      'parameter.label': scheme.editor.fg.hex()
+    }
   }
 }

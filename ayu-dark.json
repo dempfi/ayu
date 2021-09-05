@@ -204,7 +204,7 @@
 		"gitDecoration.untrackedResourceForeground": "#7fd962b3",
 		"gitDecoration.ignoredResourceForeground": "#565b6680",
 		"gitDecoration.conflictingResourceForeground": "",
-		"gitDecoration.submoduleResourceForeground": "#c3a6ffb3",
+		"gitDecoration.submoduleResourceForeground": "#d2a6ffb3",
 		"settings.headerForeground": "#bfbdb6",
 		"settings.modifiedItemIndicator": "#73b8ff",
 		"keybindingLabel.background": "#565b661a",
@@ -218,7 +218,7 @@
 		"terminal.ansiGreen": "#7fd962",
 		"terminal.ansiYellow": "#f9af4f",
 		"terminal.ansiBlue": "#53bdfa",
-		"terminal.ansiMagenta": "#bea1fa",
+		"terminal.ansiMagenta": "#cda1fa",
 		"terminal.ansiCyan": "#90e1c6",
 		"terminal.ansiWhite": "#c7c7c7",
 		"terminal.ansiBrightBlack": "#686868",
@@ -226,7 +226,7 @@
 		"terminal.ansiBrightGreen": "#aad94c",
 		"terminal.ansiBrightYellow": "#ffb454",
 		"terminal.ansiBrightBlue": "#59c2ff",
-		"terminal.ansiBrightMagenta": "#c3a6ff",
+		"terminal.ansiBrightMagenta": "#d2a6ff",
 		"terminal.ansiBrightCyan": "#95e6cb",
 		"terminal.ansiBrightWhite": "#ffffff"
 	},
@@ -274,7 +274,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#c3a6ff"
+				"foreground": "#d2a6ff"
 			}
 		},
 		{
@@ -283,13 +283,14 @@
 				"constant.language"
 			],
 			"settings": {
-				"foreground": "#c3a6ff"
+				"foreground": "#d2a6ff"
 			}
 		},
 		{
 			"name": "Variable",
 			"scope": [
-				"variable"
+				"variable",
+				"variable.parameter.function-call"
 			],
 			"settings": {
 				"foreground": "#bfbdb6"
@@ -450,7 +451,7 @@
 				"meta.parameter"
 			],
 			"settings": {
-				"foreground": "#c3a6ff"
+				"foreground": "#d2a6ff"
 			}
 		},
 		{
@@ -839,5 +840,8 @@
 			}
 		}
 	],
-	"semanticHighlighting": true
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"parameter.label": "#bfbdb6"
+	}
 }

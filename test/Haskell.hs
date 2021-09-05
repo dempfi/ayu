@@ -58,7 +58,7 @@ normalizeDouble d
   | d > 0        = "+" ++ stringified d
   where
     stringified n =
-      (show $ exponent n) ++ ":" ++ significandString (significand n)
+      show (exponent n) ++ ":" ++ significandString (significand n)
 
 hashScientific :: Sci.Scientific -> B.ByteString
 hashScientific sci =

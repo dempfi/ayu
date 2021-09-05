@@ -204,7 +204,7 @@
 		"gitDecoration.untrackedResourceForeground": "#87d96cb3",
 		"gitDecoration.ignoredResourceForeground": "#707a8c80",
 		"gitDecoration.conflictingResourceForeground": "",
-		"gitDecoration.submoduleResourceForeground": "#d4bfffb3",
+		"gitDecoration.submoduleResourceForeground": "#dfbfffb3",
 		"settings.headerForeground": "#cccac2",
 		"settings.modifiedItemIndicator": "#80bfff",
 		"keybindingLabel.background": "#707a8c1a",
@@ -218,7 +218,7 @@
 		"terminal.ansiGreen": "#87d96c",
 		"terminal.ansiYellow": "#facc6e",
 		"terminal.ansiBlue": "#6dcbfa",
-		"terminal.ansiMagenta": "#cfbafa",
+		"terminal.ansiMagenta": "#dabafa",
 		"terminal.ansiCyan": "#90e1c6",
 		"terminal.ansiWhite": "#c7c7c7",
 		"terminal.ansiBrightBlack": "#686868",
@@ -226,7 +226,7 @@
 		"terminal.ansiBrightGreen": "#d5ff80",
 		"terminal.ansiBrightYellow": "#ffd173",
 		"terminal.ansiBrightBlue": "#73d0ff",
-		"terminal.ansiBrightMagenta": "#d4bfff",
+		"terminal.ansiBrightMagenta": "#dfbfff",
 		"terminal.ansiBrightCyan": "#95e6cb",
 		"terminal.ansiBrightWhite": "#ffffff"
 	},
@@ -274,7 +274,7 @@
 				"constant.numeric"
 			],
 			"settings": {
-				"foreground": "#d4bfff"
+				"foreground": "#dfbfff"
 			}
 		},
 		{
@@ -283,13 +283,14 @@
 				"constant.language"
 			],
 			"settings": {
-				"foreground": "#d4bfff"
+				"foreground": "#dfbfff"
 			}
 		},
 		{
 			"name": "Variable",
 			"scope": [
-				"variable"
+				"variable",
+				"variable.parameter.function-call"
 			],
 			"settings": {
 				"foreground": "#cccac2"
@@ -450,7 +451,7 @@
 				"meta.parameter"
 			],
 			"settings": {
-				"foreground": "#d4bfff"
+				"foreground": "#dfbfff"
 			}
 		},
 		{
@@ -562,7 +563,7 @@
 				"storage.type.annotation"
 			],
 			"settings": {
-				"foreground": "#ffe6b3"
+				"foreground": "#ffdfb3"
 			}
 		},
 		{
@@ -796,7 +797,7 @@
 				"markup.strike"
 			],
 			"settings": {
-				"foreground": "#ffe6b3"
+				"foreground": "#ffdfb3"
 			}
 		},
 		{
@@ -839,5 +840,8 @@
 			}
 		}
 	],
-	"semanticHighlighting": true
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"parameter.label": "#cccac2"
+	}
 }

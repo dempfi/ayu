@@ -31,10 +31,10 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-ayu@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/ayu/-/ayu-8.0.0.tgz#41585bbd3df51992a8b8781876b1db9e028e008a"
-  integrity sha512-Yy6Q0Fi0YH6jWAAKYeGlAunJVlvQ5gVS3RA7++6URvWytTh8qR6Nno9DLwwetxEFtFYcZOcSzv05fBQThHt4WQ==
+ayu@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/ayu/-/ayu-8.0.1.tgz#77da3b554d3f264fa1e8ef2054c41e6ec4f58220"
+  integrity sha512-yuPZ2kZYQoYaPRQ/78F9rXDVx1rVGCJ1neBYithBoSprD6zPdIJdAKizUXG0jtTBu7nTFyAnVFFYuLnCS3cpDw==
   dependencies:
     "@types/chroma-js" "^2.0.0"
     chroma-js "^2.1.0"

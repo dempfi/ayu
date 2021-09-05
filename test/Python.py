@@ -232,3 +232,16 @@ def unicode_normalize_entity(e):
     return _unicode_normalize(unicode(e))
 
 unicode_normalize = ApplyToLeaves(unicode_normalize_entity, (str, unicode))
+
+setup(
+    name = "django-stubs",
+    version = "1.8.0",
+    description = "Mypy stubs for Django",
+    long_description = readme,
+    long_description_content_type = "text/markdown",
+    license = "MIT",
+    url = "https://github.com/typeddjango/django-stubs",
+    py_modules = [],
+    python_requires = ">=3.6",
+    install_requires = dependencies,
+)
