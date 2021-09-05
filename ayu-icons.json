@@ -321,6 +321,9 @@
     "yarn": {
       "iconPath": "./icons/file_type_yarn@2x.png"
     },
+    "wasm": {
+     "iconPath": "./icons/file_type_wasm.svg"
+    },
     "webpack": {
       "iconPath": "./icons/file_type_webpack@2x.png"
     },
@@ -541,7 +544,9 @@
     "qtpl": "source",
     "pdf": "pdf",
     "ipynb": "jupyter",
-    "csv": "csv"
+    "csv": "csv",
+    "wat": "wasm",
+    "wasm": "wasm"
   },
   "fileNames": {
     ".babelrc": "babel",
