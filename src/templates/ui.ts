@@ -61,24 +61,30 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tree_row",
     "layer0.texture": "ayu/assets/tree-highlight.png",
-    "layer0.tint": scheme.ui.line.hex(),
+    "layer0.tint": scheme.ui.selection.active.alpha(0).hex(),
     "layer0.inner_margin": [8, 4],
-    "layer0.opacity": 0
+    "layer0.opacity": 1,
+
+    "layer1.texture": "ayu/assets/tree-highlight-border.png",
+    "layer1.tint": scheme.ui.selection.active.hex(),
+    "layer1.inner_margin": [8, 4],
+    "layer1.opacity": 0
   },
   {
     "class": "tree_row",
     "attributes": ["selectable", "hover"],
-    "layer0.opacity": 0.5
+    "layer0.tint": scheme.ui.selection.active.hex(),
+    "layer1.opacity": 1
   },
   {
     "class": "tree_row",
     "attributes": ["selectable", "selected"],
-    "layer0.opacity": 1
+    "layer0.tint": scheme.ui.selection.normal.hex(),
   },
   {
     "class": "tree_row",
     "attributes": ["selectable", "selected", "hover"],
-    "layer0.opacity": 1
+    "layer0.tint": scheme.ui.selection.active.hex(),
   },
 
 
@@ -288,7 +294,6 @@ export default (scheme: Scheme, kind: string) => [
     "content_margin": [8, 8]
   },
 
-
   {
     "class": "vcs_status_badge",
     "attributes": ["ignored"],
@@ -297,17 +302,17 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "vcs_status_badge",
     "attributes": ["added"],
-    "layer0.tint": scheme.vcs.added.hex(),
+    "layer0.tint": scheme.vcs.added.alpha(.4).hex(),
   },
   {
     "class": "vcs_status_badge",
     "attributes": ["modified"],
-    "layer0.tint": scheme.vcs.modified.hex(),
+    "layer0.tint": scheme.vcs.modified.alpha(.4).hex(),
   },
   {
     "class": "vcs_status_badge",
     "attributes": ["deleted"],
-    "layer0.tint": scheme.vcs.removed.hex(),
+    "layer0.tint": scheme.vcs.removed.alpha(.4).hex(),
   },
 
 
@@ -569,6 +574,20 @@ export default (scheme: Scheme, kind: string) => [
 // <<<<<
 
 
+  // Sheets
+  {
+    "class": "sheet_contents",
+    "background_modifier": ""
+  },
+  {
+    "class": "sheet_contents",
+    "settings": {
+      "inactive_sheet_dimming": true,
+    },
+    "attributes": ["!highlighted"],
+    "background_modifier": `blend(${scheme.ui.bg.hex()} 0%)`
+  },
+
   // TABS
   {
     "class": "tabset_control",
@@ -605,8 +624,9 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_connector",
     "layer0.texture": "",
     "layer0.opacity": 1.0,
-    "layer0.tint": scheme.editor.bg.hex(),
+    "tint_index": 0,
   },
+
   // {
   //   "class": "tab_connector",
   //   "settings": { "file_tab_style": ["", "rounded"] },
@@ -654,22 +674,23 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_control",
     "settings": ["ui_separator"],
 
-    "layer0.texture": "Theme - Default/common/tab_rounded_inverse.png",
+    "layer0.texture": "ayu/assets/tab-shadow.png",
     "layer0.inner_margin": [8, 0, 8, 0],
+    "layer0.tint": scheme.ui.panel.shadow.hex(),
     "layer0.opacity": 0,
 
     "layer1.texture": "ayu/assets/tab.png",
     "layer1.inner_margin": [8, 0, 8, 0],
-    "layer1.tint": scheme.ui.line.hex(),
     "layer1.opacity": 0,
 
     "layer2.texture": "ayu/assets/tab-border.png",
     "layer2.inner_margin": [8, 0, 8, 0],
+    "layer2.tint": scheme.ui.line.hex(),
     "layer2.opacity": 0,
 
     "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
     "layer3.inner_margin": [7, 0, 7, 0],
-    "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
+    "layer3.opacity": { "target": 0.0, "speed": 1.0, "interpolation": "smoothstep" },
 
     "content_margin": [16, 5, 11, 4],
     "hit_test_level": 0
@@ -685,10 +706,17 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["ui_separator"],
+    "layer0.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
+    "layer1.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
     "layer1.tint": scheme.editor.bg.hex(),
+    "layer2.opacity": 1,
+  },
+  {
+    "class": "tab_control", "attributes": ["selected", "!highlighted"],
+    "settings": ["ui_separator"],
+    "layer0.opacity": 0,
     "layer1.opacity": 1,
-
-    "layer2.tint": scheme.ui.line.hex(),
+    "layer1.tint": scheme.ui.bg.hex(),
     "layer2.opacity": 1,
   },
 
@@ -1477,6 +1505,31 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.tint": scheme.common.accent.hex()
   },
 
+  {
+    "class": "icon_use_gitignore",
+    "layer0.texture": "ayu/assets/gitignore.png",
+    "layer0.tint": scheme.ui.fg.hex(),
+    "layer0.opacity": 1.0,
+    "content_margin": [12, 12]
+  },
+  {
+    "class": "icon_use_gitignore",
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
+    "layer0.tint": scheme.common.accent.hex()
+  },
+
+  {
+    "class": "sidebar_button_control",
+    "layer0.texture": "ayu/assets/sidebar.png",
+    "layer0.tint": scheme.ui.fg.hex(),
+    "layer0.opacity": 1.0,
+    "content_margin": [12, 12]
+  },
+  {
+    "class": "sidebar_button_control",
+    "attributes": ["hover"],
+    "layer0.tint": scheme.common.accent.hex(),
+  },
 
 
   // LABELS

@@ -9,7 +9,7 @@ export default (scheme: Scheme) => ({
     invisibles: scheme.editor.fg.alpha(.3).hex(),
     caret: scheme.common.accent.hex(),
     block_caret: scheme.common.accent.alpha(.3).hex(),
-    line_highlight: scheme.ui.line.hex(),
+    line_highlight: scheme.editor.line.hex(),
 
     // misspelling: ,
     // fold_marker: ,
@@ -33,17 +33,17 @@ export default (scheme: Scheme) => ({
     gutter_foreground: scheme.editor.gutter.normal.hex(),
 
     line_diff_width: "2",
-    line_diff_added: scheme.vcs.added.hex(),
-    line_diff_modified: scheme.vcs.modified.hex(),
-    line_diff_deleted: scheme.vcs.removed.hex(),
+    line_diff_added: scheme.vcs.added.alpha(.7).hex(),
+    line_diff_modified: scheme.vcs.modified.alpha(.7).hex(),
+    line_diff_deleted: scheme.vcs.removed.alpha(.7).hex(),
 
     selection: scheme.editor.selection.active.hex(),
     // selection_foreground: scheme.ui.selection.bg.hex(),
-    selection_border: scheme.ui.selection.active.hex(),
+    selection_border: scheme.editor.selection.active.hex(),
     selection_border_width: "1",
     inactive_selection: scheme.editor.selection.inactive.hex(),
     selection_corner_style: "round",
-    selection_corner_radius: "3",
+    selection_corner_radius: "4",
 
     highlight: scheme.common.accent.alpha(.4).hex(),
     find_highlight: scheme.common.accent.hex(),
@@ -54,7 +54,7 @@ export default (scheme: Scheme) => ({
     stack_guide: scheme.editor.indentGuide.normal.alpha(.4).hex(),
 
     shadow: scheme.editor.bg.alpha(0.3).hex(),
-    shadow_width: "0",
+    shadow_width: "3",
   },
 
   rules: [

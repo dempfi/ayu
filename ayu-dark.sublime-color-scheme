@@ -6,21 +6,21 @@
 		"invisibles": "#bfbdb64d",
 		"caret": "#e6b450",
 		"block_caret": "#e6b4504d",
-		"line_highlight": "#11151c",
+		"line_highlight": "#1b1f26",
 		"accent": "#e6b450",
 		"popup_css": "\n      html, body {\n        background-color: #0f131a;\n        color: #bfbdb6;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(57,186,230, .7);\n      }\n    ",
 		"gutter": "#0d1017",
 		"gutter_foreground": "#6c738099",
 		"line_diff_width": "2",
-		"line_diff_added": "#7fd962",
-		"line_diff_modified": "#73b8ff",
-		"line_diff_deleted": "#f26d78",
+		"line_diff_added": "#70bf56b3",
+		"line_diff_modified": "#73b8ffb3",
+		"line_diff_deleted": "#f26d78b3",
 		"selection": "#409fff4d",
-		"selection_border": "#47526640",
+		"selection_border": "#409fff4d",
 		"selection_border_width": "1",
 		"inactive_selection": "#409fff21",
 		"selection_corner_style": "round",
-		"selection_corner_radius": "3",
+		"selection_corner_radius": "4",
 		"highlight": "#e6b45066",
 		"find_highlight": "#e6b450",
 		"find_highlight_foreground": "#0d1017",
@@ -28,7 +28,7 @@
 		"active_guide": "#6c738080",
 		"stack_guide": "#6c738066",
 		"shadow": "#0d10174d",
-		"shadow_width": "0"
+		"shadow_width": "3"
 	},
 	"rules": [
 		{
@@ -303,7 +303,7 @@
 		{
 			"name": "Markup added",
 			"scope": "markup.inserted",
-			"foreground": "#7fd962"
+			"foreground": "#70bf56"
 		},
 		{
 			"name": "Markup modified",
