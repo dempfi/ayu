@@ -19,7 +19,6 @@
 		"selection_border": "#56728f1f",
 		"selection_border_width": "1",
 		"inactive_selection": "#035bd612",
-		"inactive_selection_foreground": "#5c61664d",
 		"selection_corner_style": "round",
 		"selection_corner_radius": "3",
 		"highlight": "#ffaa3366",

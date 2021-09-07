@@ -42,7 +42,6 @@ export default (scheme: Scheme) => ({
     selection_border: scheme.ui.selection.active.hex(),
     selection_border_width: "1",
     inactive_selection: scheme.editor.selection.inactive.hex(),
-    inactive_selection_foreground: scheme.editor.fg.alpha(.3).hex(),
     selection_corner_style: "round",
     selection_corner_radius: "3",
 

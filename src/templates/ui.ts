@@ -576,7 +576,7 @@ export default (scheme: Scheme, kind: string) => [
     "tab_min_width": 50,
     "tab_overlap": 0,
     "tab_height": 34,
-    "tab_width": 50,
+    "tab_width": 100,
 
     "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0,
@@ -591,17 +591,41 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tabset_control",
     "settings": ["ui_separator"],
     "tab_overlap": 6,
+    "connector_height": 2,
     "content_margin": [0, 0, 0, 0],
     "layer0.tint": scheme.ui.bg.hex(),
-    "layer1.opacity": 1,
-    "layer1.texture": "ayu/assets/separator-bottom.png",
+
+    "layer1.texture": "ayu/assets/tabset-border.png",
     "layer1.tint": scheme.ui.line.hex(),
-    "layer1.inner_margin": [1, 0, 1, 2]
+    "layer1.inner_margin": [1, 1, 1, 6],
+    "layer1.opacity": 1,
   },
 
   {
+    "class": "tab_connector",
+    "layer0.texture": "",
+    "layer0.opacity": 1.0,
+    "layer0.tint": scheme.editor.bg.hex(),
+  },
+  // {
+  //   "class": "tab_connector",
+  //   "settings": { "file_tab_style": ["", "rounded"] },
+  //   "attributes": ["left_overhang"],
+  //   "layer0.texture": "Theme - Default/common/tab_connector_rounded_left_overhang.png",
+  //   "layer0.inner_margin": [12, 0, 0, 0],
+  // },
+  // {
+  //   "class": "tab_connector",
+  //   "settings": { "file_tab_style": ["", "rounded"] },
+  //   "attributes": ["right_overhang"],
+  //   "layer0.texture": "Theme - Default/common/tab_connector_rounded_right_overhang.png",
+  //   "layer0.inner_margin": [0, 0, 12, 0],
+  // },
+
+  {
     "class": "tab_control",
-    // Background
+    "settings": ["!ui_separator"],
+
     "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0,
 
@@ -630,14 +654,27 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_control",
     "settings": ["ui_separator"],
 
-    "layer0.tint": scheme.ui.bg.hex(),
+    "layer0.texture": "Theme - Default/common/tab_rounded_inverse.png",
+    "layer0.inner_margin": [8, 0, 8, 0],
+    "layer0.opacity": 0,
 
-    "layer1.opacity": 1.0,
+    "layer1.texture": "ayu/assets/tab.png",
+    "layer1.inner_margin": [8, 0, 8, 0],
+    "layer1.tint": scheme.ui.line.hex(),
+    "layer1.opacity": 0,
 
-    "layer2.opacity": 1.0,
+    "layer2.texture": "ayu/assets/tab-border.png",
+    "layer2.inner_margin": [8, 0, 8, 0],
+    "layer2.opacity": 0,
 
-    "layer3.opacity": 1.0
+    "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
+    "layer3.inner_margin": [7, 0, 7, 0],
+    "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
+
+    "content_margin": [16, 5, 11, 4],
+    "hit_test_level": 0
   },
+
   // Selected current tab
   {
     "class": "tab_control", "attributes": ["selected"],
@@ -648,10 +685,13 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.editor.bg.hex(),
-    "layer1.tint": scheme.common.accent.hex(),
-    "layer3.opacity": 0.0
+    "layer1.tint": scheme.editor.bg.hex(),
+    "layer1.opacity": 1,
+
+    "layer2.tint": scheme.ui.line.hex(),
+    "layer2.opacity": 1,
   },
+
   // Hovered current tab
   {
     "class": "tab_control", "attributes": ["hover"],
@@ -662,8 +702,9 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.ui.bg.hex(),
+    // "layer0.tint": scheme.ui.bg.hex(),
   },
+
   // Selected current tab
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
@@ -673,7 +714,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.ui.bg.hex()
+    // "layer0.tint": scheme.ui.bg.hex()
   },
 
 
@@ -796,15 +837,6 @@ export default (scheme: Scheme, kind: string) => [
     "attributes": ["hover"],
     "layer0.tint": scheme.common.accent.hex()
   },
-  {
-    "class": "scroll_tabs_right_button",
-    "settings": ["ui_separator"],
-    "layer2.texture": "ayu/assets/separator-right.png",
-    "layer2.tint": scheme.ui.line.hex(),
-    "layer2.opacity": 1,
-    "layer2.inner_margin": [0, 1, 2, 1]
-  },
-
 
   {
     "class": "show_tabs_dropdown_button",
