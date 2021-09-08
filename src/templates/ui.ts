@@ -33,7 +33,7 @@ export default (scheme: Scheme, kind: string) => [
     "settings": ["ui_separator"],
     "layer0.tint": scheme.ui.bg.hex(),
     "layer1.texture": "ayu/assets/separator-sidebar.png",
-    "layer1.inner_margin": [0, 34, 2, 1],
+    "layer1.inner_margin": [0, 38, 2, 1],
     "layer1.opacity": 1,
     "layer1.tint": scheme.ui.line.hex()
   },
@@ -581,9 +581,7 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "sheet_contents",
-    "settings": {
-      "inactive_sheet_dimming": true,
-    },
+    "settings": { "inactive_sheet_dimming": true, },
     "attributes": ["!highlighted"],
     "background_modifier": `blend(${scheme.ui.bg.hex()} 0%)`
   },
@@ -594,7 +592,7 @@ export default (scheme: Scheme, kind: string) => [
     "mouse_wheel_switch": false,
     "tab_min_width": 50,
     "tab_overlap": 0,
-    "tab_height": 34,
+    "tab_height": 38,
     "tab_width": 100,
 
     "layer0.tint": scheme.ui.bg.hex(),
@@ -609,7 +607,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tabset_control",
     "settings": ["ui_separator"],
-    "tab_overlap": 6,
+    "tab_overlap": 8,
     "connector_height": 2,
     "content_margin": [0, 0, 0, 0],
     "layer0.tint": scheme.ui.bg.hex(),
@@ -674,23 +672,14 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_control",
     "settings": ["ui_separator"],
 
-    "layer0.texture": "ayu/assets/tab-shadow.png",
-    "layer0.inner_margin": [8, 0, 8, 0],
-    "layer0.tint": scheme.ui.panel.shadow.hex(),
-    "layer0.opacity": 0,
-
     "layer1.texture": "ayu/assets/tab.png",
-    "layer1.inner_margin": [8, 0, 8, 0],
+    "layer1.inner_margin": [9, 0, 9, 0],
     "layer1.opacity": 0,
 
     "layer2.texture": "ayu/assets/tab-border.png",
-    "layer2.inner_margin": [8, 0, 8, 0],
+    "layer2.inner_margin": [9, 0, 9, 0],
     "layer2.tint": scheme.ui.line.hex(),
     "layer2.opacity": 0,
-
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-    "layer3.inner_margin": [7, 0, 7, 0],
-    "layer3.opacity": { "target": 0.0, "speed": 1.0, "interpolation": "smoothstep" },
 
     "content_margin": [16, 5, 11, 4],
     "hit_test_level": 0
@@ -704,9 +693,8 @@ export default (scheme: Scheme, kind: string) => [
     "layer3.opacity": 1.0
   },
   {
-    "class": "tab_control", "attributes": ["selected"],
+    "class": "tab_control", "attributes": ["selected", "highlighted"],
     "settings": ["ui_separator"],
-    "layer0.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
     "layer1.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
     "layer1.tint": scheme.editor.bg.hex(),
     "layer2.opacity": 1,
@@ -714,7 +702,6 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected", "!highlighted"],
     "settings": ["ui_separator"],
-    "layer0.opacity": 0,
     "layer1.opacity": 1,
     "layer1.tint": scheme.ui.bg.hex(),
     "layer2.opacity": 1,
@@ -763,7 +750,7 @@ export default (scheme: Scheme, kind: string) => [
   // Tab selected label color
   {
     "class": "tab_label",
-    "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
+    "parents": [{ "class": "tab_control", "attributes": ["selected", "highlighted"] }],
     "fg": scheme.editor.fg.hex()
   },
   {
@@ -928,7 +915,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": scheme.ui.line.hex()
+    "layer0.tint": scheme.ui.selection.active.hex()
   },
 
 
@@ -948,7 +935,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": scheme.ui.line.hex()
+    "layer0.tint": scheme.ui.selection.active.hex()
   },
 
 
@@ -971,10 +958,10 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "quick_panel_path_label",
-    "fg": scheme.ui.fg.fade(0.3).hex(),
-    "match_fg": scheme.editor.fg.fade(0.2).hex(),
-    "selected_fg": scheme.ui.fg.fade(0.3).hex(),
-    "selected_match_fg": scheme.editor.fg.fade(0.2).hex()
+    "fg": scheme.ui.fg.hex(),
+    "match_fg": scheme.editor.fg.hex(),
+    "selected_fg": scheme.ui.fg.hex(),
+    "selected_match_fg": scheme.editor.fg.hex()
   },
 
 
@@ -988,7 +975,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "grid_layout_control",
     "settings": ["ui_separator"],
-    "border_size": 1
+    "border_size": 0
   },
 
 
@@ -1081,7 +1068,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "panel_control",
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.ui.bg.darken(0.05).hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
     "layer1.inner_margin": [1, 2, 1, 0],
@@ -1118,12 +1105,12 @@ export default (scheme: Scheme, kind: string) => [
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
     "layer1.inner_margin": [1, 2, 1, 0],
-    "content_margin": [16, 2]
+    "content_margin": [10, 2]
   },
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.ui.bg.darken(0.05).hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer1.opacity": 1
   },
 
@@ -1155,7 +1142,7 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "vcs_branch_icon",
-    "layer0.tint": scheme.ui.fg.alpha(0.7).hex()
+    "layer0.tint": scheme.ui.fg.hex()
   },
 
 
@@ -1358,7 +1345,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "button_control",
     "content_margin": [15, 9, 15, 10],
     "min_size": [60, 0],
-    "layer0.tint": scheme.common.accent.alpha(0.1).hex(),
+    "layer0.tint": scheme.common.accent.hex(),
     "layer0.texture": "ayu/assets/input-bg.png",
     "layer0.inner_margin": [10, 8],
     "layer0.opacity": 0
@@ -1555,7 +1542,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "label_control",
     "parents": [{ "class": "button_control", "attributes": ["hover"] }],
-    "color": scheme.common.accent.hex()
+    "color": scheme.common.accentFg.hex()
   },
 
 
@@ -1569,16 +1556,16 @@ export default (scheme: Scheme, kind: string) => [
   // TOOL TIPS
   {
     "class": "tool_tip_control",
-    "layer0.tint": scheme.ui.bg.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.inner_margin": [0, 0],
     "layer0.opacity": 1.0,
-    "content_margin": [10, 6]
+    "content_margin": [6, 3]
   },
 
 
   {
     "class": "tool_tip_label_control",
-    "color": scheme.ui.fg.hex(),
-    "font.size": 13
+    "color": scheme.ui.bg.hex(),
+    "font.size": 12
   },
 ]

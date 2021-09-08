@@ -39,7 +39,7 @@
 		"layer1.texture": "ayu/assets/separator-sidebar.png",
 		"layer1.inner_margin": [
 			0,
-			34,
+			38,
 			2,
 			1
 		],
@@ -478,7 +478,7 @@
 		"mouse_wheel_switch": false,
 		"tab_min_width": 50,
 		"tab_overlap": 0,
-		"tab_height": 34,
+		"tab_height": 38,
 		"tab_width": 100,
 		"layer0.tint": "#f8f9fa",
 		"layer0.opacity": 1,
@@ -500,7 +500,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"tab_overlap": 6,
+		"tab_overlap": 8,
 		"connector_height": 2,
 		"content_margin": [
 			0,
@@ -572,44 +572,23 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.texture": "ayu/assets/tab-shadow.png",
-		"layer0.inner_margin": [
-			8,
-			0,
-			8,
-			0
-		],
-		"layer0.tint": "#00000026",
-		"layer0.opacity": 0,
 		"layer1.texture": "ayu/assets/tab.png",
 		"layer1.inner_margin": [
-			8,
+			9,
 			0,
-			8,
+			9,
 			0
 		],
 		"layer1.opacity": 0,
 		"layer2.texture": "ayu/assets/tab-border.png",
 		"layer2.inner_margin": [
-			8,
+			9,
 			0,
-			8,
+			9,
 			0
 		],
 		"layer2.tint": "#6b7d8f1f",
 		"layer2.opacity": 0,
-		"layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-		"layer3.inner_margin": [
-			7,
-			0,
-			7,
-			0
-		],
-		"layer3.opacity": {
-			"target": 0,
-			"speed": 1,
-			"interpolation": "smoothstep"
-		},
 		"content_margin": [
 			16,
 			5,
@@ -632,16 +611,12 @@
 	{
 		"class": "tab_control",
 		"attributes": [
-			"selected"
+			"selected",
+			"highlighted"
 		],
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.opacity": {
-			"target": 1,
-			"speed": 1,
-			"interpolation": "smoothstep"
-		},
 		"layer1.opacity": {
 			"target": 1,
 			"speed": 1,
@@ -659,7 +634,6 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.opacity": 0,
 		"layer1.opacity": 1,
 		"layer1.tint": "#f8f9fa",
 		"layer2.opacity": 1
@@ -729,7 +703,8 @@
 			{
 				"class": "tab_control",
 				"attributes": [
-					"selected"
+					"selected",
+					"highlighted"
 				]
 			}
 		],
@@ -983,7 +958,7 @@
 		"attributes": [
 			"selected"
 		],
-		"layer0.tint": "#6b7d8f1f"
+		"layer0.tint": "#56728f1f"
 	},
 	{
 		"class": "quick_panel_row",
@@ -1007,7 +982,7 @@
 		"attributes": [
 			"selected"
 		],
-		"layer0.tint": "#6b7d8f1f"
+		"layer0.tint": "#56728f1f"
 	},
 	{
 		"class": "quick_panel_label",
@@ -1030,10 +1005,10 @@
 	},
 	{
 		"class": "quick_panel_path_label",
-		"fg": "#d7dadd",
-		"match_fg": "#dcddde",
-		"selected_fg": "#d7dadd",
-		"selected_match_fg": "#dcddde"
+		"fg": "#8a9199",
+		"match_fg": "#5c6166",
+		"selected_fg": "#8a9199",
+		"selected_match_fg": "#5c6166"
 	},
 	{
 		"class": "grid_layout_control",
@@ -1045,7 +1020,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"border_size": 1
+		"border_size": 0
 	},
 	{
 		"class": "minimap_control",
@@ -1160,7 +1135,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#f5f6f7",
+		"layer0.tint": "#f8f9fa",
 		"layer1.texture": "ayu/assets/separator-top.png",
 		"layer1.tint": "#6b7d8f1f",
 		"layer1.inner_margin": [
@@ -1205,7 +1180,7 @@
 			0
 		],
 		"content_margin": [
-			16,
+			10,
 			2
 		]
 	},
@@ -1214,7 +1189,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#f5f6f7",
+		"layer0.tint": "#f8f9fa",
 		"layer1.opacity": 1
 	},
 	{
@@ -1246,7 +1221,7 @@
 	},
 	{
 		"class": "vcs_branch_icon",
-		"layer0.tint": "#8a9199b3"
+		"layer0.tint": "#8a9199"
 	},
 	{
 		"class": "vcs_changes_annotation",
@@ -1539,7 +1514,7 @@
 			60,
 			0
 		],
-		"layer0.tint": "#ffaa331a",
+		"layer0.tint": "#ffaa33",
 		"layer0.texture": "ayu/assets/input-bg.png",
 		"layer0.inner_margin": [
 			10,
@@ -1855,7 +1830,7 @@
 				]
 			}
 		],
-		"color": "#ffaa33"
+		"color": "#804a00"
 	},
 	{
 		"class": "title_label_control",
@@ -1863,20 +1838,20 @@
 	},
 	{
 		"class": "tool_tip_control",
-		"layer0.tint": "#f8f9fa",
+		"layer0.tint": "#8a9199",
 		"layer0.inner_margin": [
 			0,
 			0
 		],
 		"layer0.opacity": 1,
 		"content_margin": [
-			10,
-			6
+			6,
+			3
 		]
 	},
 	{
 		"class": "tool_tip_label_control",
-		"color": "#8a9199",
-		"font.size": 13
+		"color": "#f8f9fa",
+		"font.size": 12
 	}
 ]

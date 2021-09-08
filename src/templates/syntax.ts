@@ -38,7 +38,6 @@ export default (scheme: Scheme) => ({
     line_diff_deleted: scheme.vcs.removed.alpha(.7).hex(),
 
     selection: scheme.editor.selection.active.hex(),
-    // selection_foreground: scheme.ui.selection.bg.hex(),
     selection_border: scheme.editor.selection.active.hex(),
     selection_border_width: "1",
     inactive_selection: scheme.editor.selection.inactive.hex(),

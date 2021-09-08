@@ -39,7 +39,7 @@
 		"layer1.texture": "ayu/assets/separator-sidebar.png",
 		"layer1.inner_margin": [
 			0,
-			34,
+			38,
 			2,
 			1
 		],
@@ -478,7 +478,7 @@
 		"mouse_wheel_switch": false,
 		"tab_min_width": 50,
 		"tab_overlap": 0,
-		"tab_height": 34,
+		"tab_height": 38,
 		"tab_width": 100,
 		"layer0.tint": "#0b0e14",
 		"layer0.opacity": 1,
@@ -500,7 +500,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"tab_overlap": 6,
+		"tab_overlap": 8,
 		"connector_height": 2,
 		"content_margin": [
 			0,
@@ -572,44 +572,23 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.texture": "ayu/assets/tab-shadow.png",
-		"layer0.inner_margin": [
-			8,
-			0,
-			8,
-			0
-		],
-		"layer0.tint": "#00000080",
-		"layer0.opacity": 0,
 		"layer1.texture": "ayu/assets/tab.png",
 		"layer1.inner_margin": [
-			8,
+			9,
 			0,
-			8,
+			9,
 			0
 		],
 		"layer1.opacity": 0,
 		"layer2.texture": "ayu/assets/tab-border.png",
 		"layer2.inner_margin": [
-			8,
+			9,
 			0,
-			8,
+			9,
 			0
 		],
 		"layer2.tint": "#1e232b",
 		"layer2.opacity": 0,
-		"layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-		"layer3.inner_margin": [
-			7,
-			0,
-			7,
-			0
-		],
-		"layer3.opacity": {
-			"target": 0,
-			"speed": 1,
-			"interpolation": "smoothstep"
-		},
 		"content_margin": [
 			16,
 			5,
@@ -632,16 +611,12 @@
 	{
 		"class": "tab_control",
 		"attributes": [
-			"selected"
+			"selected",
+			"highlighted"
 		],
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.opacity": {
-			"target": 1,
-			"speed": 1,
-			"interpolation": "smoothstep"
-		},
 		"layer1.opacity": {
 			"target": 1,
 			"speed": 1,
@@ -659,7 +634,6 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.opacity": 0,
 		"layer1.opacity": 1,
 		"layer1.tint": "#0b0e14",
 		"layer2.opacity": 1
@@ -729,7 +703,8 @@
 			{
 				"class": "tab_control",
 				"attributes": [
-					"selected"
+					"selected",
+					"highlighted"
 				]
 			}
 		],
@@ -983,7 +958,7 @@
 		"attributes": [
 			"selected"
 		],
-		"layer0.tint": "#1e232b"
+		"layer0.tint": "#47526640"
 	},
 	{
 		"class": "quick_panel_row",
@@ -1007,7 +982,7 @@
 		"attributes": [
 			"selected"
 		],
-		"layer0.tint": "#1e232b"
+		"layer0.tint": "#47526640"
 	},
 	{
 		"class": "quick_panel_label",
@@ -1030,10 +1005,10 @@
 	},
 	{
 		"class": "quick_panel_path_label",
-		"fg": "#22252d",
-		"match_fg": "#313337",
-		"selected_fg": "#22252d",
-		"selected_match_fg": "#313337"
+		"fg": "#565b66",
+		"match_fg": "#bfbdb6",
+		"selected_fg": "#565b66",
+		"selected_match_fg": "#bfbdb6"
 	},
 	{
 		"class": "grid_layout_control",
@@ -1045,7 +1020,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"border_size": 1
+		"border_size": 0
 	},
 	{
 		"class": "minimap_control",
@@ -1160,7 +1135,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#080b12",
+		"layer0.tint": "#0b0e14",
 		"layer1.texture": "ayu/assets/separator-top.png",
 		"layer1.tint": "#1e232b",
 		"layer1.inner_margin": [
@@ -1205,7 +1180,7 @@
 			0
 		],
 		"content_margin": [
-			16,
+			10,
 			2
 		]
 	},
@@ -1214,7 +1189,7 @@
 		"settings": [
 			"ui_separator"
 		],
-		"layer0.tint": "#080b12",
+		"layer0.tint": "#0b0e14",
 		"layer1.opacity": 1
 	},
 	{
@@ -1246,7 +1221,7 @@
 	},
 	{
 		"class": "vcs_branch_icon",
-		"layer0.tint": "#565b66b3"
+		"layer0.tint": "#565b66"
 	},
 	{
 		"class": "vcs_changes_annotation",
@@ -1539,7 +1514,7 @@
 			60,
 			0
 		],
-		"layer0.tint": "#e6b4501a",
+		"layer0.tint": "#e6b450",
 		"layer0.texture": "ayu/assets/input-bg.png",
 		"layer0.inner_margin": [
 			10,
@@ -1855,7 +1830,7 @@
 				]
 			}
 		],
-		"color": "#e6b450"
+		"color": "#734d00"
 	},
 	{
 		"class": "title_label_control",
@@ -1863,20 +1838,20 @@
 	},
 	{
 		"class": "tool_tip_control",
-		"layer0.tint": "#0b0e14",
+		"layer0.tint": "#565b66",
 		"layer0.inner_margin": [
 			0,
 			0
 		],
 		"layer0.opacity": 1,
 		"content_margin": [
-			10,
-			6
+			6,
+			3
 		]
 	},
 	{
 		"class": "tool_tip_label_control",
-		"color": "#565b66",
-		"font.size": 13
+		"color": "#0b0e14",
+		"font.size": 12
 	}
 ]
