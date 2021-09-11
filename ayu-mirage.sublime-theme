@@ -1,7 +1,7 @@
 [
 	{
 		"class": "title_bar",
-		"bg": "#1f2430",
+		"bg": "#242936",
 		"fg": "#707a8c"
 	},
 	{
@@ -28,7 +28,7 @@
 			0
 		],
 		"layer0.opacity": 1,
-		"layer0.tint": "#1f2430"
+		"layer0.tint": "#242936"
 	},
 	{
 		"class": "sidebar_container",
@@ -480,7 +480,7 @@
 		"tab_overlap": 0,
 		"tab_height": 38,
 		"tab_width": 100,
-		"layer0.tint": "#1f2430",
+		"layer0.tint": "#242936",
 		"layer0.opacity": 1,
 		"content_margin": [
 			10,
@@ -530,35 +530,15 @@
 		"settings": [
 			"!ui_separator"
 		],
-		"layer0.tint": "#1f2430",
-		"layer0.opacity": 1,
-		"layer1.texture": "ayu/assets/separator-top.png",
-		"layer1.tint": "#171b24",
-		"layer1.inner_margin": [
+		"layer0.texture": "ayu/assets/separator-bottom.png",
+		"layer0.tint": "#171b24",
+		"layer0.inner_margin": [
 			0,
-			1,
 			0,
-			0
+			0,
+			2
 		],
-		"layer1.opacity": 0,
-		"layer2.texture": "ayu/assets/separator-right.png",
-		"layer2.tint": "#171b24",
-		"layer2.inner_margin": [
-			0,
-			0,
-			1,
-			0
-		],
-		"layer2.opacity": 0,
-		"layer3.texture": "ayu/assets/separator-bottom.png",
-		"layer3.tint": "#171b24",
-		"layer3.inner_margin": [
-			0,
-			0,
-			0,
-			1
-		],
-		"layer3.opacity": 0,
+		"layer0.opacity": 0,
 		"content_margin": [
 			15,
 			-2,
@@ -605,8 +585,8 @@
 		"settings": [
 			"!ui_separator"
 		],
-		"layer3.tint": "#ffcc66",
-		"layer3.opacity": 1
+		"layer0.tint": "#ffcc66",
+		"layer0.opacity": 1
 	},
 	{
 		"class": "tab_control",
@@ -646,8 +626,8 @@
 		"settings": [
 			"!ui_separator"
 		],
-		"layer3.tint": "#ffcc66",
-		"layer3.opacity": 0.3
+		"layer0.tint": "#ffcc66",
+		"layer0.opacity": 1
 	},
 	{
 		"class": "tab_control",
@@ -667,7 +647,7 @@
 		"settings": [
 			"!ui_separator"
 		],
-		"layer3.opacity": 1
+		"layer0.opacity": 1
 	},
 	{
 		"class": "tab_control",
@@ -1123,7 +1103,7 @@
 	},
 	{
 		"class": "panel_control",
-		"layer0.tint": "#1f2430",
+		"layer0.tint": "#242936",
 		"layer0.opacity": 1,
 		"content_margin": [
 			0,
@@ -1169,7 +1149,7 @@
 	{
 		"class": "status_bar",
 		"layer0.texture": "",
-		"layer0.tint": "#1f2430",
+		"layer0.tint": "#242936",
 		"layer0.opacity": 1,
 		"layer1.texture": "ayu/assets/separator-top.png",
 		"layer1.tint": "#171b24",

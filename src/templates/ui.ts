@@ -4,7 +4,7 @@ export default (scheme: Scheme, kind: string) => [
   // WINDOWS
   {
     "class": "title_bar",
-    "bg": scheme.ui.bg.hex(),
+    "bg": scheme.editor.bg.hex(),
     "fg": scheme.ui.fg.hex()
   },
   {
@@ -26,7 +26,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "sidebar_container",
     "content_margin": [0, 6, 0, 0],
     "layer0.opacity": 1,
-    "layer0.tint": scheme.ui.bg.hex()
+    "layer0.tint": scheme.editor.bg.hex()
   },
   {
     "class": "sidebar_container",
@@ -315,265 +315,6 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.tint": scheme.vcs.removed.alpha(.4).hex(),
   },
 
-
-// >>>>>
-/*
-  // Tabset
-  {
-    "class": "tabset_control",
-    "layer0.opacity": 1.0,
-    "content_margin": [0, 0, 0, 0],
-    "tab_height": 34,
-  },
-  {
-    "class": "tabset_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "tab_overlap": 10,
-    "tab_height": 32,
-    "connector_height": 2,
-  },
-  {
-    "class": "tabset_control",
-    "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
-    "mouse_wheel_switch": true
-  },
-  {
-    "class": "tabset_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_dark"] }],
-    "layer0.tint": "var(tabset_dark_bg)"
-  },
-  {
-    "class": "tabset_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_medium_dark"] }],
-    "layer0.tint": "var(tabset_medium_dark_bg)"
-  },
-  {
-    "class": "tabset_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_medium"] }],
-    "layer0.tint": "var(tabset_medium_bg)"
-  },
-  {
-    "class": "tabset_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_light"] }],
-    "layer0.tint": "var(tabset_light_bg)"
-  },
-  {
-    "class": "tab_connector",
-    "layer0.texture": "",
-    "layer0.opacity": 1.0,
-    "tint_index": 0,
-  },
-  {
-    "class": "tab_connector",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["left_overhang"],
-    "layer0.texture": "Theme - Default/common/tab_connector_rounded_left_overhang.png",
-    "layer0.inner_margin": [12, 0, 0, 0],
-  },
-  {
-    "class": "tab_connector",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["right_overhang"],
-    "layer0.texture": "Theme - Default/common/tab_connector_rounded_right_overhang.png",
-    "layer0.inner_margin": [0, 0, 12, 0],
-  },
-  // Tabs
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "layer0.texture": "Theme - Default/common/tab_rounded_inverse.png",
-    "layer0.inner_margin": [12, 0, 12, 0],
-    "layer0.opacity": 1.0,
-    "layer1.texture": "Theme - Default/common/tab_rounded.png",
-    "layer1.inner_margin": [12, 0, 12, 0],
-    "layer1.opacity": 1.0,
-    "layer2.texture": "Theme - Default/common/tab_rounded_highlight.png",
-    "layer2.inner_margin": [12, 0, 12, 0],
-    "layer2.opacity": 0.0,
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider.png",
-    "layer3.inner_margin": [7, 0, 7, 0],
-    "layer3.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-    "tint_index": 1,
-    "tint_modifier": "transparent",
-    "accent_tint_index": 2,
-    "content_margin": [16, 5, 11, 4],
-    "hit_test_level": 0.3
-  },
-  // Tabs - background
-
-  // These rules prevent the opacity of un-highlighted sheets from
-  // stacking, which results in the rounded corners being dark
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_dark"] }],
-    "layer0.tint": "var(tabset_dark_bg)",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_medium_dark"] }],
-    "layer0.tint": "var(tabset_medium_dark_bg)",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_medium"] }],
-    "layer0.tint": "var(tabset_medium_bg)",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_light"] }],
-    "layer0.tint": "var(tabset_light_bg)",
-  },
-  // The following rules prevent aliasing in the tab corner between two
-  // selected tabs
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["selected"],
-    "layer0.opacity": 0,
-  },
-  // We don't use animation for the selected tab opacity changed due
-  // to the hover state syncing with the hover state of the
-  // sheet_contents, which has the background_modifier that can not
-  // be animated
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "attributes": ["selected"],
-    "layer1.opacity": 1.0,
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "attributes": ["!selected"],
-    "layer1.opacity": { "target": 0.0, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "attributes": ["!selected", "hover"],
-    "layer1.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "attributes": ["!selected", "hover", "file_light"],
-    "layer1.opacity": { "target": 0.7, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["selected", "left_overhang"],
-    "layer0.texture": "Theme - Default/common/tab_rounded_left_overhang.png",
-    "layer1.texture": "Theme - Default/common/tab_rounded_left_overhang.png",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["selected", "right_overhang"],
-    "layer0.texture": "Theme - Default/common/tab_rounded_right_overhang.png",
-    "layer1.texture": "Theme - Default/common/tab_rounded_right_overhang.png",
-  },
-  // Tabs - modified highlight
-  {
-    "class": "tab_control",
-    "attributes": ["dirty"],
-    "settings": {
-      "file_tab_style": ["", "rounded", "square"],
-      "highlight_modified_tabs": true
-    },
-    "layer2.opacity": 0.8
-  },
-  {
-    "class": "tab_control",
-    "attributes": ["dirty", "selected"],
-    "settings": ["highlight_modified_tabs"],
-    "layer2.opacity": 1.0
-  },
-  {
-    "class": "tab_control",
-    "attributes": ["dirty", "!selected"],
-    "settings": {
-      "file_tab_style": ["", "rounded"],
-      "highlight_modified_tabs": true
-    },
-    "layer2.texture": "Theme - Default/common/tab_rounded_pinstripe.png",
-    "layer2.inner_margin": [12, 0, 12, 0],
-  },
-  {
-    "class": "tab_control",
-    "attributes": ["added"],
-    "layer2.tint": "var(--greenish)",
-  },
-  {
-    "class": "tab_control",
-    "attributes": ["deleted"],
-    "layer2.tint": "var(--redish)",
-  },
-  // Tabs - dividers
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded", "square"] },
-    "parents": [{ "class": "edit_window", "attributes": ["file_light"] }],
-    "layer3.tint": "var(file_tab_unselected_light_label_color)",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["right", "!left"],
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider_right.png",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["left_of_selected", "!left", "!right_of_selected", "!right_of_hover", "!selected", "!hover"],
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider_right.png",
-    "layer3.opacity": { "target": 0.3, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["left_of_hover", "!left", "!right_of_selected", "!right_of_hover", "!selected", "!hover"],
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider_right.png",
-    "layer3.opacity": { "target": 0.3, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["left", "!right"],
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider_left.png",
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["right_of_selected", "!right", "!left_of_selected", "!left_of_hover", "!selected", "!hover"],
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider_left.png",
-    "layer3.opacity": { "target": 0.3, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["right_of_hover", "!right", "!left_of_selected", "!left_of_hover", "!selected", "!hover"],
-    "layer3.texture": "Theme - Default/common/tab_rounded_divider_left.png",
-    "layer3.opacity": { "target": 0.3, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  {
-    "class": "tab_control",
-    "settings": { "file_tab_style": ["", "rounded"] },
-    "attributes": ["!highlighted", "!selected", "!hover", "!left_of_selected", "!right_of_selected", "!left_of_hover", "!right_of_hover"],
-    "layer3.opacity": { "target": 0.3, "speed": 5.0, "interpolation": "smoothstep" },
-  },
-  */
-// <<<<<
-
-
   // Sheets
   {
     "class": "sheet_contents",
@@ -595,7 +336,7 @@ export default (scheme: Scheme, kind: string) => [
     "tab_height": 38,
     "tab_width": 100,
 
-    "layer0.tint": scheme.ui.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [10, 0]
   },
@@ -644,26 +385,10 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_control",
     "settings": ["!ui_separator"],
 
-    "layer0.tint": scheme.ui.bg.hex(),
-    "layer0.opacity": 1.0,
-
-    // Top
-    "layer1.texture": "ayu/assets/separator-top.png",
-    "layer1.tint": scheme.ui.line.hex(),
-    "layer1.inner_margin": [0, 1, 0, 0],
-    "layer1.opacity": 0.0,
-
-    // Right
-    "layer2.texture": "ayu/assets/separator-right.png",
-    "layer2.tint": scheme.ui.line.hex(),
-    "layer2.inner_margin": [0, 0, 1, 0],
-    "layer2.opacity": 0.0,
-
-    // Bottom
-    "layer3.texture": "ayu/assets/separator-bottom.png",
-    "layer3.tint": scheme.ui.line.hex(),
-    "layer3.inner_margin": [0, 0, 0, 1],
-    "layer3.opacity": 0.0,
+    "layer0.texture": "ayu/assets/separator-bottom.png",
+    "layer0.tint": scheme.ui.line.hex(),
+    "layer0.inner_margin": [0, 0, 0, 2],
+    "layer0.opacity": 0.0,
 
     "content_margin": [15, -2, 15, 0],
     "max_margin_trim": 12
@@ -689,8 +414,8 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["!ui_separator"],
-    "layer3.tint": scheme.common.accent.hex(),
-    "layer3.opacity": 1.0
+    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["selected", "highlighted"],
@@ -711,8 +436,8 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["!ui_separator"],
-    "layer3.tint": scheme.common.accent.hex(),
-    "layer3.opacity": 0.3
+    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["hover"],
@@ -724,7 +449,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["!ui_separator"],
-    "layer3.opacity": 1.0
+    "layer0.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
@@ -1061,7 +786,7 @@ export default (scheme: Scheme, kind: string) => [
   // PANELS
   {
     "class": "panel_control",
-    "layer0.tint": scheme.ui.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [0, 5]
   },
@@ -1100,7 +825,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "status_bar",
     "layer0.texture": "",
-    "layer0.tint": scheme.ui.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
