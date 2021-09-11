@@ -6,7 +6,7 @@
 
 ### File Icons
 
-`ayu` from version `3.0.0` supports customization via [A File Icon](https://github.com/ihodev/a-file-icon) package. Please install it and restart Sublime for better experience.
+`ayu` from version `3.0.0` supports customization via [A File Icon](https://github.com/SublimeText/AFileIcon) package. Please install it and restart Sublime for better experience.
 
 ### Custom UI fonts
 
