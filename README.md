@@ -2,6 +2,8 @@
 
 `ayu` is a simple theme with bright colors and comes in three versions — *dark*, *mirage* and *light* for all day long comfortable work.
 
+> All screenshots use wonderful [Pragmata Pro](https://fsd.it/shop/fonts/pragmatapro/) font
+
 ### File Icons
 
 `ayu` from version `3.0.0` supports customization via [A File Icon](https://github.com/ihodev/a-file-icon) package. Please install it and restart Sublime for better experience.
@@ -11,7 +13,7 @@
 Since verion `5.0.0` monospaced fonts options were removed. But it's still possible to use your favourite font in the
 user interface of the theme, just follow through these simple steps:
 
-![ayu mono](./images/mono.png)
+![ayu mono](./images/browse.png)
 
 1. Pull up command pallete via <kbd>cmd/ctrl</kbd> + <kbd>shift</kbd> + <kbd>p</kbd>
 2. Type in `Browse packages`
@@ -54,20 +56,20 @@ user interface of the theme, just follow through these simple steps:
 
 <h6 align='center'>Light with <code>ui_separator</code> option on</h6>
 
-![Light](https://i.imgur.com/pQQfIio.png)
+![Light](images/light-separator.png)
 
 ---
 
 
 <h6 align='center'>Mirage with <code>ui_separator</code> option off</h6>
 
-![Mirage](https://i.imgur.com/KYXJbBu.png)
+![Mirage](images/mirage-no-separator.png)
 
 ---
 
 <h6 align='center'>Dark with <code>ui_separator</code> option on</h6>
 
-![Dark](https://i.imgur.com/lo8XBTr.png)
+![Dark](images/dark-separator.png)
 
 ### Settings
 
@@ -132,10 +134,14 @@ For dark theme:
 "color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
 ```
 
+### Sublime Text 3
+ayu no longer supports Sublime Text 3. But you still can download
+and install manually [latest supported version](https://github.com/dempfi/ayu/releases/tag/v5.1.0).
+
 ### Sublime Text 2
 
 ayu no longer supports Sublime Text 2. But you still can download
-and install manually [previous version](https://github.com/dempfi/ayu/releases/tag/3.2.2).
+and install manually [latest supported version](https://github.com/dempfi/ayu/releases/tag/3.2.2).
 
 ### Related projects and ports
 
