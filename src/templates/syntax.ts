@@ -4,12 +4,12 @@ export default (scheme: Scheme) => ({
   name: "ayu",
 
   globals: {
-    background: scheme.common.bg.hex(),
-    foreground: scheme.common.fg.hex(),
-    invisibles: scheme.common.fg.alpha(.3).hex(),
+    background: scheme.editor.bg.hex(),
+    foreground: scheme.editor.fg.hex(),
+    invisibles: scheme.editor.fg.alpha(.3).hex(),
     caret: scheme.common.accent.hex(),
     block_caret: scheme.common.accent.alpha(.3).hex(),
-    line_highlight: scheme.ui.line.hex(),
+    line_highlight: scheme.editor.line.hex(),
 
     // misspelling: ,
     // fold_marker: ,
@@ -19,7 +19,7 @@ export default (scheme: Scheme) => ({
     popup_css: `
       html, body {
         background-color: ${scheme.ui.panel.bg.hex()};
-        color: ${scheme.common.fg.hex()};
+        color: ${scheme.editor.fg.hex()};
       }
       body {
         padding: 1px 3px;
@@ -29,33 +29,31 @@ export default (scheme: Scheme) => ({
       }
     `,
 
-    gutter: scheme.common.bg.hex(),
-    gutter_foreground: scheme.ui.gutter.normal.hex(),
+    gutter: scheme.editor.bg.hex(),
+    gutter_foreground: scheme.editor.gutter.normal.hex(),
 
     line_diff_width: "2",
-    line_diff_added: scheme.vcs.added.hex(),
-    line_diff_modified: scheme.vcs.modified.hex(),
-    line_diff_deleted: scheme.vcs.removed.hex(),
+    line_diff_added: scheme.vcs.added.alpha(.7).hex(),
+    line_diff_modified: scheme.vcs.modified.alpha(.7).hex(),
+    line_diff_deleted: scheme.vcs.removed.alpha(.7).hex(),
 
-    selection: scheme.ui.selection.bg.hex(),
-    // selection_foreground: scheme.ui.selection.bg.hex(),
-    selection_border: scheme.ui.selection.border.hex(),
+    selection: scheme.editor.selection.active.hex(),
+    selection_border: scheme.editor.selection.active.hex(),
     selection_border_width: "1",
-    inactive_selection: scheme.ui.selection.inactive.hex(),
-    inactive_selection_foreground: scheme.common.fg.alpha(.3).hex(),
+    inactive_selection: scheme.editor.selection.inactive.hex(),
     selection_corner_style: "round",
-    selection_corner_radius: "3",
+    selection_corner_radius: "4",
 
     highlight: scheme.common.accent.alpha(.4).hex(),
     find_highlight: scheme.common.accent.hex(),
-    find_highlight_foreground: scheme.common.bg.hex(),
+    find_highlight_foreground: scheme.editor.bg.hex(),
 
-    guide: scheme.ui.guide.normal.hex(),
-    active_guide: scheme.ui.guide.active.hex(),
-    stack_guide: scheme.ui.guide.normal.alpha(.4).hex(),
+    guide: scheme.editor.indentGuide.normal.hex(),
+    active_guide: scheme.editor.indentGuide.active.hex(),
+    stack_guide: scheme.editor.indentGuide.normal.alpha(.4).hex(),
 
-    shadow: scheme.common.bg.alpha(0.3).hex(),
-    shadow_width: "0",
+    shadow: scheme.editor.bg.alpha(0.3).hex(),
+    shadow_width: "3",
   },
 
   rules: [
@@ -98,7 +96,7 @@ export default (scheme: Scheme) => ({
     {
       name: 'Variable',
       scope: 'variable',
-      foreground: scheme.common.fg.hex()
+      foreground: scheme.editor.fg.hex()
     },
     {
       name: 'Member Variable',
@@ -146,12 +144,12 @@ export default (scheme: Scheme) => ({
     {
       name: 'Separators like ; or ,',
       scope: 'punctuation.separator, punctuation.terminator',
-      foreground: scheme.common.fg.alpha(.7).hex()
+      foreground: scheme.editor.fg.alpha(.7).hex()
     },
     {
       name: 'Punctuation',
       scope: 'punctuation.section',
-      foreground: scheme.common.fg.hex()
+      foreground: scheme.editor.fg.hex()
     },
     {
       name: 'Accessor',
@@ -264,7 +262,7 @@ export default (scheme: Scheme) => ({
     {
       name: 'Invalid',
       scope: 'invalid',
-      foreground: scheme.syntax.error.hex()
+      foreground: scheme.common.error.hex()
     },
     {
       name: 'diff.header',
@@ -309,7 +307,7 @@ export default (scheme: Scheme) => ({
     },
     {
       scope: 'message.error',
-      foreground: scheme.syntax.error.hex()
+      foreground: scheme.common.error.hex()
     },
     {
       name: 'Markup heading',
@@ -342,18 +340,18 @@ export default (scheme: Scheme) => ({
     {
       name: 'Markup Code',
       scope: 'markup.raw',
-      background: scheme.common.fg.alpha(.02).hex()
+      background: scheme.editor.fg.alpha(.02).hex()
     },
     {
       name: 'Markup Code Inline',
       scope: 'markup.raw.inline',
-      background: scheme.common.fg.alpha(.06).hex()
+      background: scheme.editor.fg.alpha(.06).hex()
     },
     {
       name: 'Markdown Separator',
       scope: 'meta.separator',
       font_style: 'bold',
-      background: scheme.common.fg.alpha(.06).hex(),
+      background: scheme.editor.fg.alpha(.06).hex(),
       foreground: scheme.syntax.comment.hex()
     },
     {
@@ -390,7 +388,7 @@ export default (scheme: Scheme) => ({
     {
       name: 'Markup Table',
       scope: 'markup.table',
-      background: scheme.common.fg.alpha(.06).hex(),
+      background: scheme.editor.fg.alpha(.06).hex(),
       foreground: scheme.syntax.tag.hex()
     },
     {
@@ -407,7 +405,7 @@ export default (scheme: Scheme) => ({
     {
       name: 'Markdown - Raw Block Fenced',
       scope: 'punctuation.definition.markdown',
-      background: scheme.common.fg.hex(),
+      background: scheme.editor.fg.hex(),
       foreground: scheme.syntax.comment.hex()
     }
   ]

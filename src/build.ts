@@ -3,7 +3,7 @@ import * as ayu from 'ayu'
 import * as path from 'path'
 import * as templates from './templates'
 
-type SchemeName = keyof typeof ayu
+type SchemeName = 'light' | 'dark' | 'mirage'
 
 const filePath = (kind: SchemeName, extension: string) =>
   path.join(process.cwd(), `/ayu-${kind}.${extension}`)
@@ -23,7 +23,7 @@ const widget = (kind: SchemeName) => fs.writeFileSync(
   templates.widget(ayu[kind], kind)
 )
 
-Object.keys(ayu).map((kind: SchemeName) => {
+;['light', 'dark', 'mirage'].map((kind: SchemeName) => {
   widget(kind)
   syntax(kind)
   ui(kind)

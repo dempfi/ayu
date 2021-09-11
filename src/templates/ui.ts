@@ -4,8 +4,8 @@ export default (scheme: Scheme, kind: string) => [
   // WINDOWS
   {
     "class": "title_bar",
-    "bg": scheme.common.bg.hex(),
-    "fg": scheme.common.fg.hex()
+    "bg": scheme.editor.bg.hex(),
+    "fg": scheme.ui.fg.hex()
   },
   {
     "class": "title_bar",
@@ -16,7 +16,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "title_bar",
     "settings": ["ui_separator"],
-    "bg": scheme.common.bg.darken(0.05).hex()
+    "bg": scheme.ui.bg.hex()
   },
 
 
@@ -26,14 +26,14 @@ export default (scheme: Scheme, kind: string) => [
     "class": "sidebar_container",
     "content_margin": [0, 6, 0, 0],
     "layer0.opacity": 1,
-    "layer0.tint": scheme.common.bg.hex()
+    "layer0.tint": scheme.editor.bg.hex()
   },
   {
     "class": "sidebar_container",
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
-    "layer1.texture": "ayu/assets/separator-right.png",
-    "layer1.inner_margin": [0, 1, 2, 1],
+    "layer0.tint": scheme.ui.bg.hex(),
+    "layer1.texture": "ayu/assets/separator-sidebar.png",
+    "layer1.inner_margin": [0, 38, 2, 1],
     "layer1.opacity": 1,
     "layer1.tint": scheme.ui.line.hex()
   },
@@ -42,17 +42,17 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "sidebar_tree",
     "indent_top_level": false,
-    "row_padding": [20, 6],
+    "row_padding": [20, 5],
     "dark_content": false,
     "spacer_rows": true,
     "indent_offset": 2,
-    "indent": 10
+    "indent": 8
   },
 
 
   {
     "class": "sidebar_heading",
-    "color": scheme.common.ui.fade(0.4).hex(),
+    "color": scheme.ui.fg.hex(),
     "font.bold": true,
     "font.size": 11,
   },
@@ -61,51 +61,52 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tree_row",
     "layer0.texture": "ayu/assets/tree-highlight.png",
-    "layer0.tint": scheme.ui.line.hex(),
-    "layer0.inner_margin": [8, 4, 8, 4],
-    "layer0.opacity": 0
-  },
-  {
-    "class": "tree_row",
-    "layer0.texture": "ayu/assets/tree-highlight-separators.png",
-    "settings": ["ui_separator"]
+    "layer0.tint": scheme.ui.selection.active.alpha(0).hex(),
+    "layer0.inner_margin": [8, 4],
+    "layer0.opacity": 1,
+
+    "layer1.texture": "ayu/assets/tree-highlight-border.png",
+    "layer1.tint": scheme.ui.selection.active.hex(),
+    "layer1.inner_margin": [8, 4],
+    "layer1.opacity": 0
   },
   {
     "class": "tree_row",
     "attributes": ["selectable", "hover"],
-    "layer0.opacity": 0.5
+    "layer0.tint": scheme.ui.selection.active.hex(),
+    "layer1.opacity": 1
   },
   {
     "class": "tree_row",
     "attributes": ["selectable", "selected"],
-    "layer0.opacity": 1
+    "layer0.tint": scheme.ui.selection.normal.hex(),
   },
   {
     "class": "tree_row",
     "attributes": ["selectable", "selected", "hover"],
-    "layer0.opacity": 1
+    "layer0.tint": scheme.ui.selection.active.hex(),
   },
 
 
   {
     "class": "sidebar_label",
-    "fg": scheme.common.ui.hex(),
+    "fg": scheme.ui.fg.hex(),
     "font.size": 12
   },
   {
     "class": "sidebar_label",
     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-    "fg": scheme.common.fg.hex()
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "sidebar_label",
     "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-    "fg": scheme.common.fg.hex()
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "sidebar_label",
     "parents": [{ "class": "tree_row", "attributes": ["expandable"] }],
-    "fg": scheme.common.ui.hex(),
+    "fg": scheme.ui.fg.hex(),
     "font.bold": false
   },
   {
@@ -117,12 +118,12 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "sidebar_label",
     "parents": [{ "class": "tree_row", "attributes": ["expandable", "hover"] }],
-    "fg": scheme.common.fg.hex()
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "sidebar_label",
     "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-    "fg": scheme.common.fg.hex()
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "sidebar_label",
@@ -138,12 +139,12 @@ export default (scheme: Scheme, kind: string) => [
   // {
   //  "class": "sidebar_label",
   //  "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
-  //  "color": scheme.common.fg.hex()
+  //  "color": scheme.editor.fg.hex()
   // },
   {
     "class": "sidebar_label",
     "parents": [{ "class": "file_system_entry", "attributes": ["ignored"] }],
-    "fg": scheme.common.ui.alpha(.5).hex()
+    "fg": scheme.ui.fg.alpha(.5).hex()
   },
 
 
@@ -159,7 +160,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/close.png",
     "layer0.opacity": 0,
     "layer0.inner_margin": [0, 0],
-    "layer0.tint": scheme.common.ui.hex()
+    "layer0.tint": scheme.ui.fg.hex()
   },
   {
     "class": "close_button",
@@ -170,7 +171,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "close_button",
     "attributes": ["dirty"],
     "layer0.texture": "ayu/assets/dirty.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -184,11 +185,11 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_folder",
     "content_margin": [9, 9],
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 0,
 
     "layer1.texture": "ayu/assets/folder.png",
-    "layer1.tint": scheme.common.ui.alpha(.75).hex(),
+    "layer1.tint": scheme.ui.fg.alpha(.75).hex(),
     "layer1.opacity": 1,
 
     "layer2.texture": "ayu/assets/folder-open.png",
@@ -269,11 +270,11 @@ export default (scheme: Scheme, kind: string) => [
     "class": "icon_folder_dup",
     "content_margin": [9, 9],
     "layer0.texture": "ayu/assets/folder.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
 
     "layer1.texture": "ayu/assets/folder-symlink.png",
-    "layer1.tint": scheme.common.ui.hex(),
+    "layer1.tint": scheme.ui.fg.hex(),
     "layer1.opacity": 0.3
   },
   {
@@ -293,29 +294,38 @@ export default (scheme: Scheme, kind: string) => [
     "content_margin": [8, 8]
   },
 
-
   {
     "class": "vcs_status_badge",
     "attributes": ["ignored"],
-    "layer0.tint": scheme.common.ui.alpha(.3).hex(),
+    "layer0.tint": scheme.ui.fg.alpha(.3).hex(),
   },
   {
     "class": "vcs_status_badge",
     "attributes": ["added"],
-    "layer0.tint": scheme.vcs.added.hex(),
+    "layer0.tint": scheme.vcs.added.alpha(.4).hex(),
   },
   {
     "class": "vcs_status_badge",
     "attributes": ["modified"],
-    "layer0.tint": scheme.vcs.modified.hex(),
+    "layer0.tint": scheme.vcs.modified.alpha(.4).hex(),
   },
   {
     "class": "vcs_status_badge",
     "attributes": ["deleted"],
-    "layer0.tint": scheme.vcs.removed.hex(),
+    "layer0.tint": scheme.vcs.removed.alpha(.4).hex(),
   },
 
-
+  // Sheets
+  {
+    "class": "sheet_contents",
+    "background_modifier": ""
+  },
+  {
+    "class": "sheet_contents",
+    "settings": { "inactive_sheet_dimming": true, },
+    "attributes": ["!highlighted"],
+    "background_modifier": `blend(${scheme.ui.bg.hex()} 0%)`
+  },
 
   // TABS
   {
@@ -323,62 +333,62 @@ export default (scheme: Scheme, kind: string) => [
     "mouse_wheel_switch": false,
     "tab_min_width": 50,
     "tab_overlap": 0,
-    "tab_height": 36,
-    "tab_width": 50,
+    "tab_height": 38,
+    "tab_width": 100,
 
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [10, 0]
   },
   {
     "class": "tabset_control",
-    "settings": ["!enable_tab_scrolling"],
+    "settings": ["mouse_wheel_switches_tabs", "!enable_tab_scrolling"],
     "mouse_wheel_switch": true
   },
   {
     "class": "tabset_control",
     "settings": ["ui_separator"],
+    "tab_overlap": 8,
+    "connector_height": 2,
     "content_margin": [0, 0, 0, 0],
-    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
-    "layer1.opacity": 1,
-    "layer1.texture": "ayu/assets/separator-bottom.png",
+    "layer0.tint": scheme.ui.bg.hex(),
+
+    "layer1.texture": "ayu/assets/tabset-border.png",
     "layer1.tint": scheme.ui.line.hex(),
-    "layer1.inner_margin": [1, 0, 1, 2]
-  },
-  {
-    "class": "tabset_control",
-    "platforms": ["osx"],
-    "settings": ["ui_separator", "!ui_native_titlebar"],
-    "layer2.opacity": 1,
-    "layer2.texture": "ayu/assets/separator-top.png",
-    "layer2.tint": scheme.ui.line.hex(),
-    "layer2.inner_margin": [1, 2, 1, 0]
+    "layer1.inner_margin": [1, 1, 1, 6],
+    "layer1.opacity": 1,
   },
 
+  {
+    "class": "tab_connector",
+    "layer0.texture": "",
+    "layer0.opacity": 1.0,
+    "tint_index": 0,
+  },
+
+  // {
+  //   "class": "tab_connector",
+  //   "settings": { "file_tab_style": ["", "rounded"] },
+  //   "attributes": ["left_overhang"],
+  //   "layer0.texture": "Theme - Default/common/tab_connector_rounded_left_overhang.png",
+  //   "layer0.inner_margin": [12, 0, 0, 0],
+  // },
+  // {
+  //   "class": "tab_connector",
+  //   "settings": { "file_tab_style": ["", "rounded"] },
+  //   "attributes": ["right_overhang"],
+  //   "layer0.texture": "Theme - Default/common/tab_connector_rounded_right_overhang.png",
+  //   "layer0.inner_margin": [0, 0, 12, 0],
+  // },
 
   {
     "class": "tab_control",
-    // Background
-    "layer0.tint": scheme.common.bg.hex(),
-    "layer0.opacity": 1.0,
+    "settings": ["!ui_separator"],
 
-    // Top
-    "layer1.texture": "ayu/assets/separator-top.png",
-    "layer1.tint": scheme.ui.line.hex(),
-    "layer1.inner_margin": [0, 1, 0, 0],
-    "layer1.opacity": 0.0,
-
-    // Right
-    "layer2.texture": "ayu/assets/separator-right.png",
-    "layer2.tint": scheme.ui.line.hex(),
-    "layer2.inner_margin": [0, 0, 1, 0],
-    "layer2.opacity": 0.0,
-
-    // Bottom
-    "layer3.texture": "ayu/assets/separator-bottom.png",
-    "layer3.tint": scheme.ui.line.hex(),
-    "layer3.inner_margin": [0, 0, 0, 1],
-    "layer3.opacity": 0.0,
+    "layer0.texture": "ayu/assets/separator-bottom.png",
+    "layer0.tint": scheme.ui.line.hex(),
+    "layer0.inner_margin": [0, 0, 0, 2],
+    "layer0.opacity": 0.0,
 
     "content_margin": [15, -2, 15, 0],
     "max_margin_trim": 12
@@ -387,56 +397,70 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_control",
     "settings": ["ui_separator"],
 
-    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
+    "layer1.texture": "ayu/assets/tab.png",
+    "layer1.inner_margin": [9, 0, 9, 0],
+    "layer1.opacity": 0,
 
-    "layer1.opacity": 1.0,
+    "layer2.texture": "ayu/assets/tab-border.png",
+    "layer2.inner_margin": [9, 0, 9, 0],
+    "layer2.tint": scheme.ui.line.hex(),
+    "layer2.opacity": 0,
 
-    "layer2.opacity": 1.0,
-
-    "layer3.opacity": 1.0
+    "content_margin": [16, 5, 11, 4],
+    "hit_test_level": 0
   },
+
   // Selected current tab
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["!ui_separator"],
-    "layer3.tint": scheme.common.accent.hex(),
-    "layer3.opacity": 1.0
+    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.opacity": 1.0
   },
   {
-    "class": "tab_control", "attributes": ["selected"],
+    "class": "tab_control", "attributes": ["selected", "highlighted"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.common.bg.hex(),
-    "layer1.tint": scheme.common.accent.hex(),
-    "layer3.opacity": 0.0
+    "layer1.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
+    "layer1.tint": scheme.editor.bg.hex(),
+    "layer2.opacity": 1,
   },
+  {
+    "class": "tab_control", "attributes": ["selected", "!highlighted"],
+    "settings": ["ui_separator"],
+    "layer1.opacity": 1,
+    "layer1.tint": scheme.ui.bg.hex(),
+    "layer2.opacity": 1,
+  },
+
   // Hovered current tab
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["!ui_separator"],
-    "layer3.tint": scheme.common.accent.hex(),
-    "layer3.opacity": 0.3
+    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.common.bg.hex(),
+    // "layer0.tint": scheme.ui.bg.hex(),
   },
+
   // Selected current tab
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["!ui_separator"],
-    "layer3.opacity": 1.0
+    "layer0.opacity": 1.0
   },
   {
     "class": "tab_control", "attributes": ["selected", "hover"],
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.common.bg.hex()
+    // "layer0.tint": scheme.ui.bg.hex()
   },
 
 
   {
     "class": "tab_label",
-    "fg": scheme.common.ui.hex(),
+    "fg": scheme.ui.fg.hex(),
     "font.italic": false,
     "font.bold": false,
     "font.size": 12
@@ -451,13 +475,13 @@ export default (scheme: Scheme, kind: string) => [
   // Tab selected label color
   {
     "class": "tab_label",
-    "parents": [{ "class": "tab_control", "attributes": ["selected"] }],
-    "fg": scheme.common.fg.hex()
+    "parents": [{ "class": "tab_control", "attributes": ["selected", "highlighted"] }],
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "tab_label",
     "parents": [{ "class": "tab_control", "attributes": ["hover"] }],
-    "fg": scheme.common.fg.hex()
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "tab_label",
@@ -472,12 +496,12 @@ export default (scheme: Scheme, kind: string) => [
 
     // Close Icon
     "layer0.texture": "ayu/assets/close.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
 
     // Dirty Icon
     "layer1.texture": "ayu/assets/dirty.png",
-    "layer1.tint": scheme.common.ui.hex(),
+    "layer1.tint": scheme.ui.fg.hex(),
     "layer1.opacity": 0,
   },
   // Default
@@ -531,7 +555,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "scroll_tabs_left_button",
     "content_margin": [12, 15],
     "layer0.texture": "ayu/assets/arrow-left.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -545,7 +569,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "scroll_tabs_right_button",
     "content_margin": [12, 15],
     "layer0.texture": "ayu/assets/arrow-right.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -553,21 +577,12 @@ export default (scheme: Scheme, kind: string) => [
     "attributes": ["hover"],
     "layer0.tint": scheme.common.accent.hex()
   },
-  {
-    "class": "scroll_tabs_right_button",
-    "settings": ["ui_separator"],
-    "layer2.texture": "ayu/assets/separator-right.png",
-    "layer2.tint": scheme.ui.line.hex(),
-    "layer2.opacity": 1,
-    "layer2.inner_margin": [0, 1, 2, 1]
-  },
-
 
   {
     "class": "show_tabs_dropdown_button",
     "content_margin": [12, 12],
     "layer0.texture": "ayu/assets/overflow-menu.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [0, 0]
   },
@@ -590,7 +605,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer1.texture": "ayu/assets/overlay-border.png",
     "layer1.inner_margin": [15, 35, 15, 25],
     "layer1.opacity": 1.0,
-    "layer1.tint": scheme.ui.panel.border.hex(),
+    "layer1.tint": scheme.ui.line.hex(),
 
     "layer2.texture": "ayu/assets/overlay-bg.png",
     "layer2.inner_margin": [15, 35, 15, 25],
@@ -625,7 +640,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": scheme.ui.line.hex()
+    "layer0.tint": scheme.ui.selection.active.hex()
   },
 
 
@@ -645,33 +660,33 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": scheme.ui.line.hex()
+    "layer0.tint": scheme.ui.selection.active.hex()
   },
 
 
   {
     "class": "quick_panel_label",
-    "fg": scheme.common.ui.hex(),
+    "fg": scheme.ui.fg.hex(),
     "match_fg": scheme.common.accent.hex(),
-    "selected_fg": scheme.common.fg.hex(),
+    "selected_fg": scheme.editor.fg.hex(),
     "selected_match_fg": scheme.common.accent.hex()
   },
   {
     "class": "quick_panel_label",
     "parents": [{ "class": "overlay_control" }],
-    "fg": scheme.common.ui.hex(),
+    "fg": scheme.ui.fg.hex(),
     "match_fg": scheme.common.accent.hex(),
-    "selected_fg": scheme.common.fg.hex(),
+    "selected_fg": scheme.editor.fg.hex(),
     "selected_match_fg": scheme.common.accent.hex()
   },
 
 
   {
     "class": "quick_panel_path_label",
-    "fg": scheme.common.ui.fade(0.3).hex(),
-    "match_fg": scheme.common.fg.fade(0.2).hex(),
-    "selected_fg": scheme.common.ui.fade(0.3).hex(),
-    "selected_match_fg": scheme.common.fg.fade(0.2).hex()
+    "fg": scheme.ui.fg.hex(),
+    "match_fg": scheme.editor.fg.hex(),
+    "selected_fg": scheme.ui.fg.hex(),
+    "selected_match_fg": scheme.editor.fg.hex()
   },
 
 
@@ -685,20 +700,20 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "grid_layout_control",
     "settings": ["ui_separator"],
-    "border_size": 1
+    "border_size": 0
   },
 
 
   {
     "class": "minimap_control",
     "settings": ["always_show_minimap_viewport"],
-    "viewport_color": scheme.common.ui.hex(),
+    "viewport_color": scheme.ui.fg.hex(),
     "viewport_opacity": 0.3
   },
   {
     "class": "minimap_control",
     "settings": ["!always_show_minimap_viewport"],
-    "viewport_color": scheme.common.ui.hex(),
+    "viewport_color": scheme.ui.fg.hex(),
     "viewport_opacity": { "target": 0, "speed": 4.0, "interpolation": "smoothstep" }
   },
   {
@@ -714,7 +729,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/unfold.png",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": 0,
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "content_margin": [8, 6, 8, 6]
   },
   {
@@ -759,9 +774,9 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "auto_complete_label",
-    "fg": scheme.common.ui.hex(),
+    "fg": scheme.ui.fg.hex(),
     "match_fg": scheme.common.accent.hex(),
-    "selected_fg": scheme.common.fg.hex(),
+    "selected_fg": scheme.editor.fg.hex(),
     "selected_match_fg": scheme.common.accent.hex(),
     "fg_blend": true
   },
@@ -771,14 +786,14 @@ export default (scheme: Scheme, kind: string) => [
   // PANELS
   {
     "class": "panel_control",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [0, 5]
   },
   {
     "class": "panel_control",
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
     "layer1.inner_margin": [1, 2, 1, 0],
@@ -795,7 +810,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "panel_close_button",
     "layer0.texture": "ayu/assets/close.png",
     "layer0.opacity": 1.0,
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "content_margin": [0, 0] // 8,8 to show
   },
   {
@@ -810,17 +825,17 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "status_bar",
     "layer0.texture": "",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1,
     "layer1.texture": "ayu/assets/separator-top.png",
     "layer1.tint": scheme.ui.line.hex(),
     "layer1.inner_margin": [1, 2, 1, 0],
-    "content_margin": [16, 2]
+    "content_margin": [10, 2]
   },
   {
     "class": "status_bar",
     "settings": ["ui_separator"],
-    "layer0.tint": scheme.common.bg.darken(0.05).hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer1.opacity": 1
   },
 
@@ -828,7 +843,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "panel_button_control",
     "layer0.texture": "ayu/assets/switch-panel.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -852,13 +867,13 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "vcs_branch_icon",
-    "layer0.tint": scheme.common.ui.alpha(0.7).hex()
+    "layer0.tint": scheme.ui.fg.hex()
   },
 
 
   {
     "class": "vcs_changes_annotation",
-    "border_color": scheme.common.ui.alpha(0.7).hex()
+    "border_color": scheme.ui.fg.alpha(0.7).hex()
   },
 
 
@@ -866,14 +881,14 @@ export default (scheme: Scheme, kind: string) => [
   // DIALOGS
   {
     "class": "dialog",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0
   },
 
 
   {
     "class": "progress_bar_control",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0
   },
 
@@ -902,11 +917,11 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "scroll_bar_control",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0,
 
     "layer1.texture": "ayu/assets/scrollbar-vertical-wide.png",
-    "layer1.tint": scheme.common.ui.hex(),
+    "layer1.tint": scheme.ui.fg.hex(),
     "layer1.opacity": 0.1,
     "layer1.inner_margin": [0, 10]
   },
@@ -951,14 +966,14 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "scroll_track_control",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0
   },
 
 
   {
     "class": "scroll_corner_control",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.bg.hex(),
     "layer0.opacity": 1.0
   },
 
@@ -966,7 +981,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "puck_control",
     "layer0.texture": "ayu/assets/scrollbar-vertical-wide.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 0.3,
     "layer0.inner_margin": [0, 10],
     "content_margin": [6, 12]
@@ -1029,7 +1044,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.opacity": 0,
     "layer1.texture": "ayu/assets/input-search.png",
     "layer1.opacity": 1,
-    "layer1.tint": scheme.common.ui.hex(),
+    "layer1.tint": scheme.ui.fg.hex(),
     "layer1.inner_margin": [60, 0, 0, 0],
     "content_margin": [50, 7, 10, 4]
   },
@@ -1039,7 +1054,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "dropdown_button_control",
     "content_margin": [12, 12],
     "layer0.texture": "ayu/assets/overflow-menu.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -1055,7 +1070,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "button_control",
     "content_margin": [15, 9, 15, 10],
     "min_size": [60, 0],
-    "layer0.tint": scheme.common.accent.alpha(0.1).hex(),
+    "layer0.tint": scheme.common.accent.hex(),
     "layer0.texture": "ayu/assets/input-bg.png",
     "layer0.inner_margin": [10, 8],
     "layer0.opacity": 0
@@ -1071,7 +1086,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "icon_button_control",
     "layer0.tint": [0, 0, 0],
     "layer0.opacity": 0,
-    "layer2.tint": scheme.common.fg.hex(),
+    "layer2.tint": scheme.editor.fg.hex(),
     "layer2.opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" },
     "content_margin": [10, 5]
   },
@@ -1080,7 +1095,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_regex",
     "layer0.texture": "ayu/assets/regex.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1094,7 +1109,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_case",
     "layer0.texture": "ayu/assets/matchcase.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1108,7 +1123,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_whole_word",
     "layer0.texture": "ayu/assets/word.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1122,7 +1137,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_wrap",
     "layer0.texture": "ayu/assets/wrap.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1136,7 +1151,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_in_selection",
     "layer0.texture": "ayu/assets/inselection.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1150,7 +1165,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_highlight",
     "layer0.texture": "ayu/assets/highlight.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1164,7 +1179,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_preserve_case",
     "layer0.texture": "ayu/assets/replace-preserve-case.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1178,7 +1193,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_context",
     "layer0.texture": "ayu/assets/context.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1192,7 +1207,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_use_buffer",
     "layer0.texture": "ayu/assets/buffer.png",
-    "layer0.tint": scheme.common.ui.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [12, 12]
   },
@@ -1202,12 +1217,37 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.tint": scheme.common.accent.hex()
   },
 
+  {
+    "class": "icon_use_gitignore",
+    "layer0.texture": "ayu/assets/gitignore.png",
+    "layer0.tint": scheme.ui.fg.hex(),
+    "layer0.opacity": 1.0,
+    "content_margin": [12, 12]
+  },
+  {
+    "class": "icon_use_gitignore",
+    "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
+    "layer0.tint": scheme.common.accent.hex()
+  },
+
+  {
+    "class": "sidebar_button_control",
+    "layer0.texture": "ayu/assets/sidebar.png",
+    "layer0.tint": scheme.ui.fg.hex(),
+    "layer0.opacity": 1.0,
+    "content_margin": [12, 12]
+  },
+  {
+    "class": "sidebar_button_control",
+    "attributes": ["hover"],
+    "layer0.tint": scheme.common.accent.hex(),
+  },
 
 
   // LABELS
   {
     "class": "label_control",
-    "color": scheme.common.ui.hex(),
+    "color": scheme.ui.fg.hex(),
     "shadow_color": [0, 0, 0, 0],
     "shadow_offset": [0, 0],
     "font.bold": false,
@@ -1216,18 +1256,18 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "label_control",
     "parents": [{ "class": "status_bar" }],
-    "color": scheme.common.ui.hex(),
+    "color": scheme.ui.fg.hex(),
     "font.bold": false
   },
   {
     "class": "label_control",
     "parents": [{ "class": "button_control" }],
-    "color": scheme.common.ui.hex()
+    "color": scheme.ui.fg.hex()
   },
   {
     "class": "label_control",
     "parents": [{ "class": "button_control", "attributes": ["hover"] }],
-    "color": scheme.common.accent.hex()
+    "color": scheme.common.accentFg.hex()
   },
 
 
@@ -1241,16 +1281,16 @@ export default (scheme: Scheme, kind: string) => [
   // TOOL TIPS
   {
     "class": "tool_tip_control",
-    "layer0.tint": scheme.common.bg.hex(),
+    "layer0.tint": scheme.ui.fg.hex(),
     "layer0.inner_margin": [0, 0],
     "layer0.opacity": 1.0,
-    "content_margin": [10, 6]
+    "content_margin": [6, 3]
   },
 
 
   {
     "class": "tool_tip_label_control",
-    "color": scheme.common.ui.hex(),
-    "font.size": 13
+    "color": scheme.ui.bg.hex(),
+    "font.size": 12
   },
 ]

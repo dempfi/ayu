@@ -1,47 +1,46 @@
 {
 	"name": "ayu",
 	"globals": {
-		"background": "#0a0e14",
-		"foreground": "#b3b1ad",
-		"invisibles": "#b3b1ad4d",
+		"background": "#0d1017",
+		"foreground": "#bfbdb6",
+		"invisibles": "#bfbdb64d",
 		"caret": "#e6b450",
 		"block_caret": "#e6b4504d",
-		"line_highlight": "#00010a",
+		"line_highlight": "#131721",
 		"accent": "#e6b450",
-		"popup_css": "\n      html, body {\n        background-color: #0d1016;\n        color: #b3b1ad;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(57,186,230, .7);\n      }\n    ",
-		"gutter": "#0a0e14",
-		"gutter_foreground": "#4d556699",
+		"popup_css": "\n      html, body {\n        background-color: #0f131a;\n        color: #bfbdb6;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(57,186,230, .7);\n      }\n    ",
+		"gutter": "#0d1017",
+		"gutter_foreground": "#6c738099",
 		"line_diff_width": "2",
-		"line_diff_added": "#91b362",
-		"line_diff_modified": "#6994bf",
-		"line_diff_deleted": "#d96c75",
-		"selection": "#273747",
-		"selection_border": "#304357",
+		"line_diff_added": "#7fd962b3",
+		"line_diff_modified": "#73b8ffb3",
+		"line_diff_deleted": "#f26d78b3",
+		"selection": "#409fff4d",
+		"selection_border": "#409fff4d",
 		"selection_border_width": "1",
-		"inactive_selection": "#1b2733",
-		"inactive_selection_foreground": "#b3b1ad4d",
+		"inactive_selection": "#409fff21",
 		"selection_corner_style": "round",
-		"selection_corner_radius": "3",
+		"selection_corner_radius": "4",
 		"highlight": "#e6b45066",
 		"find_highlight": "#e6b450",
-		"find_highlight_foreground": "#0a0e14",
-		"guide": "#4d556666",
-		"active_guide": "#4d5566b3",
-		"stack_guide": "#4d556666",
-		"shadow": "#0a0e144d",
-		"shadow_width": "0"
+		"find_highlight_foreground": "#0d1017",
+		"guide": "#6c738033",
+		"active_guide": "#6c738080",
+		"stack_guide": "#6c738066",
+		"shadow": "#0d10174d",
+		"shadow_width": "3"
 	},
 	"rules": [
 		{
 			"name": "Comment",
 			"scope": "comment",
 			"font_style": "italic",
-			"foreground": "#626a73"
+			"foreground": "#acb6bf8c"
 		},
 		{
 			"name": "String",
 			"scope": "string, constant.other.symbol",
-			"foreground": "#c2d94c"
+			"foreground": "#aad94c"
 		},
 		{
 			"name": "Regular Expressions and Escape Characters",
@@ -61,12 +60,12 @@
 		{
 			"name": "Constants",
 			"scope": "meta.constant, entity.name.constant",
-			"foreground": "#ffee99"
+			"foreground": "#d2a6ff"
 		},
 		{
 			"name": "Variable",
 			"scope": "variable",
-			"foreground": "#b3b1ad"
+			"foreground": "#bfbdb6"
 		},
 		{
 			"name": "Member Variable",
@@ -102,12 +101,12 @@
 		{
 			"name": "Separators like ; or ,",
 			"scope": "punctuation.separator, punctuation.terminator",
-			"foreground": "#b3b1adb3"
+			"foreground": "#bfbdb6b3"
 		},
 		{
 			"name": "Punctuation",
 			"scope": "punctuation.section",
-			"foreground": "#b3b1ad"
+			"foreground": "#bfbdb6"
 		},
 		{
 			"name": "Accessor",
@@ -142,7 +141,7 @@
 		{
 			"name": "Function arguments",
 			"scope": "variable.parameter, meta.parameter",
-			"foreground": "#ffee99"
+			"foreground": "#d2a6ff"
 		},
 		{
 			"name": "Function call",
@@ -157,7 +156,7 @@
 		{
 			"name": "Imports and packages",
 			"scope": "entity.name.import, entity.name.package",
-			"foreground": "#c2d94c"
+			"foreground": "#aad94c"
 		},
 		{
 			"name": "Entity name",
@@ -198,7 +197,7 @@
 		{
 			"name": "Invalid",
 			"scope": "invalid",
-			"foreground": "#ff3333"
+			"foreground": "#d95757"
 		},
 		{
 			"name": "diff.header",
@@ -218,7 +217,7 @@
 		{
 			"name": "CSS browser prefix",
 			"scope": "source.css support.type, source.sass support.type, source.scss support.type, source.less support.type, source.stylus support.type",
-			"foreground": "#626a73"
+			"foreground": "#acb6bf8c"
 		},
 		{
 			"name": "CSS Properties",
@@ -229,7 +228,7 @@
 		{
 			"name": "Search Results Nums",
 			"scope": "constant.numeric.line-number.find-in-files - match",
-			"foreground": "#626a73"
+			"foreground": "#acb6bf8c"
 		},
 		{
 			"name": "Search Results Match Nums",
@@ -239,17 +238,17 @@
 		{
 			"name": "Search Results Lines",
 			"scope": "entity.name.filename.find-in-files",
-			"foreground": "#c2d94c"
+			"foreground": "#aad94c"
 		},
 		{
 			"scope": "message.error",
-			"foreground": "#ff3333"
+			"foreground": "#d95757"
 		},
 		{
 			"name": "Markup heading",
 			"scope": "markup.heading, markup.heading entity.name",
 			"font_style": "bold",
-			"foreground": "#c2d94c"
+			"foreground": "#aad94c"
 		},
 		{
 			"name": "Markup links",
@@ -276,19 +275,19 @@
 		{
 			"name": "Markup Code",
 			"scope": "markup.raw",
-			"background": "#b3b1ad05"
+			"background": "#bfbdb605"
 		},
 		{
 			"name": "Markup Code Inline",
 			"scope": "markup.raw.inline",
-			"background": "#b3b1ad0f"
+			"background": "#bfbdb60f"
 		},
 		{
 			"name": "Markdown Separator",
 			"scope": "meta.separator",
 			"font_style": "bold",
-			"background": "#b3b1ad0f",
-			"foreground": "#626a73"
+			"background": "#bfbdb60f",
+			"foreground": "#acb6bf8c"
 		},
 		{
 			"name": "Markup Blockquote",
@@ -304,17 +303,17 @@
 		{
 			"name": "Markup added",
 			"scope": "markup.inserted",
-			"foreground": "#91b362"
+			"foreground": "#7fd962"
 		},
 		{
 			"name": "Markup modified",
 			"scope": "markup.changed",
-			"foreground": "#6994bf"
+			"foreground": "#73b8ff"
 		},
 		{
 			"name": "Markup removed",
 			"scope": "markup.deleted",
-			"foreground": "#d96c75"
+			"foreground": "#f26d78"
 		},
 		{
 			"name": "Markup Strike",
@@ -324,7 +323,7 @@
 		{
 			"name": "Markup Table",
 			"scope": "markup.table",
-			"background": "#b3b1ad0f",
+			"background": "#bfbdb60f",
 			"foreground": "#39bae6"
 		},
 		{
@@ -335,14 +334,14 @@
 		{
 			"name": "Markdown - Line Break",
 			"scope": "text.html.markdown meta.dummy.line-break",
-			"background": "#626a73",
-			"foreground": "#626a73"
+			"background": "#acb6bf8c",
+			"foreground": "#acb6bf8c"
 		},
 		{
 			"name": "Markdown - Raw Block Fenced",
 			"scope": "punctuation.definition.markdown",
-			"background": "#b3b1ad",
-			"foreground": "#626a73"
+			"background": "#bfbdb6",
+			"foreground": "#acb6bf8c"
 		}
 	]
 }

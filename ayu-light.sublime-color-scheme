@@ -1,42 +1,41 @@
 {
 	"name": "ayu",
 	"globals": {
-		"background": "#fafafa",
-		"foreground": "#575f66",
-		"invisibles": "#575f664d",
-		"caret": "#ff9940",
-		"block_caret": "#ff99404d",
+		"background": "#fcfcfc",
+		"foreground": "#5c6166",
+		"invisibles": "#5c61664d",
+		"caret": "#ffaa33",
+		"block_caret": "#ffaa334d",
 		"line_highlight": "#8a91991a",
-		"accent": "#ff9940",
-		"popup_css": "\n      html, body {\n        background-color: #ffffff;\n        color: #575f66;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(85,180,212, .7);\n      }\n    ",
-		"gutter": "#fafafa",
+		"accent": "#ffaa33",
+		"popup_css": "\n      html, body {\n        background-color: #f3f4f5;\n        color: #5c6166;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(85,180,212, .7);\n      }\n    ",
+		"gutter": "#fcfcfc",
 		"gutter_foreground": "#8a919966",
 		"line_diff_width": "2",
-		"line_diff_added": "#99bf4d",
-		"line_diff_modified": "#709ecc",
-		"line_diff_deleted": "#f27983",
-		"selection": "#d1e4f4",
-		"selection_border": "#e1e1e2",
+		"line_diff_added": "#6cbf43b3",
+		"line_diff_modified": "#478accb3",
+		"line_diff_deleted": "#ff7383b3",
+		"selection": "#035bd626",
+		"selection_border": "#035bd626",
 		"selection_border_width": "1",
-		"inactive_selection": "#e7e8e9",
-		"inactive_selection_foreground": "#575f664d",
+		"inactive_selection": "#035bd612",
 		"selection_corner_style": "round",
-		"selection_corner_radius": "3",
-		"highlight": "#ff994066",
-		"find_highlight": "#ff9940",
-		"find_highlight_foreground": "#fafafa",
+		"selection_corner_radius": "4",
+		"highlight": "#ffaa3366",
+		"find_highlight": "#ffaa33",
+		"find_highlight_foreground": "#fcfcfc",
 		"guide": "#8a91992e",
 		"active_guide": "#8a919959",
 		"stack_guide": "#8a919966",
-		"shadow": "#fafafa4d",
-		"shadow_width": "0"
+		"shadow": "#fcfcfc4d",
+		"shadow_width": "3"
 	},
 	"rules": [
 		{
 			"name": "Comment",
 			"scope": "comment",
 			"font_style": "italic",
-			"foreground": "#abb0b6"
+			"foreground": "#787b8099"
 		},
 		{
 			"name": "String",
@@ -51,12 +50,12 @@
 		{
 			"name": "Number",
 			"scope": "constant.numeric",
-			"foreground": "#ff9940"
+			"foreground": "#ffaa33"
 		},
 		{
 			"name": "Built-in constants",
 			"scope": "constant.language",
-			"foreground": "#ff9940"
+			"foreground": "#ffaa33"
 		},
 		{
 			"name": "Constants",
@@ -66,7 +65,7 @@
 		{
 			"name": "Variable",
 			"scope": "variable",
-			"foreground": "#575f66"
+			"foreground": "#5c6166"
 		},
 		{
 			"name": "Member Variable",
@@ -102,12 +101,12 @@
 		{
 			"name": "Separators like ; or ,",
 			"scope": "punctuation.separator, punctuation.terminator",
-			"foreground": "#575f66b3"
+			"foreground": "#5c6166b3"
 		},
 		{
 			"name": "Punctuation",
 			"scope": "punctuation.section",
-			"foreground": "#575f66"
+			"foreground": "#5c6166"
 		},
 		{
 			"name": "Accessor",
@@ -198,7 +197,7 @@
 		{
 			"name": "Invalid",
 			"scope": "invalid",
-			"foreground": "#f51818"
+			"foreground": "#e65050"
 		},
 		{
 			"name": "diff.header",
@@ -218,7 +217,7 @@
 		{
 			"name": "CSS browser prefix",
 			"scope": "source.css support.type, source.sass support.type, source.scss support.type, source.less support.type, source.stylus support.type",
-			"foreground": "#abb0b6"
+			"foreground": "#787b8099"
 		},
 		{
 			"name": "CSS Properties",
@@ -229,7 +228,7 @@
 		{
 			"name": "Search Results Nums",
 			"scope": "constant.numeric.line-number.find-in-files - match",
-			"foreground": "#abb0b6"
+			"foreground": "#787b8099"
 		},
 		{
 			"name": "Search Results Match Nums",
@@ -243,7 +242,7 @@
 		},
 		{
 			"scope": "message.error",
-			"foreground": "#f51818"
+			"foreground": "#e65050"
 		},
 		{
 			"name": "Markup heading",
@@ -276,19 +275,19 @@
 		{
 			"name": "Markup Code",
 			"scope": "markup.raw",
-			"background": "#575f6605"
+			"background": "#5c616605"
 		},
 		{
 			"name": "Markup Code Inline",
 			"scope": "markup.raw.inline",
-			"background": "#575f660f"
+			"background": "#5c61660f"
 		},
 		{
 			"name": "Markdown Separator",
 			"scope": "meta.separator",
 			"font_style": "bold",
-			"background": "#575f660f",
-			"foreground": "#abb0b6"
+			"background": "#5c61660f",
+			"foreground": "#787b8099"
 		},
 		{
 			"name": "Markup Blockquote",
@@ -304,17 +303,17 @@
 		{
 			"name": "Markup added",
 			"scope": "markup.inserted",
-			"foreground": "#99bf4d"
+			"foreground": "#6cbf43"
 		},
 		{
 			"name": "Markup modified",
 			"scope": "markup.changed",
-			"foreground": "#709ecc"
+			"foreground": "#478acc"
 		},
 		{
 			"name": "Markup removed",
 			"scope": "markup.deleted",
-			"foreground": "#f27983"
+			"foreground": "#ff7383"
 		},
 		{
 			"name": "Markup Strike",
@@ -324,7 +323,7 @@
 		{
 			"name": "Markup Table",
 			"scope": "markup.table",
-			"background": "#575f660f",
+			"background": "#5c61660f",
 			"foreground": "#55b4d4"
 		},
 		{
@@ -335,14 +334,14 @@
 		{
 			"name": "Markdown - Line Break",
 			"scope": "text.html.markdown meta.dummy.line-break",
-			"background": "#abb0b6",
-			"foreground": "#abb0b6"
+			"background": "#787b8099",
+			"foreground": "#787b8099"
 		},
 		{
 			"name": "Markdown - Raw Block Fenced",
 			"scope": "punctuation.definition.markdown",
-			"background": "#575f66",
-			"foreground": "#abb0b6"
+			"background": "#5c6166",
+			"foreground": "#787b8099"
 		}
 	]
 }
