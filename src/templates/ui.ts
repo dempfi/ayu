@@ -4,22 +4,23 @@ export default (scheme: Scheme, kind: string) => [
   // WINDOWS
   {
     "class": "title_bar",
+    "settings": ["!ui_native_titlebar"],
+    "platforms": ["osx", "linux"],
     "bg": scheme.editor.bg.hex(),
     "fg": scheme.ui.fg.hex()
   },
   {
     "class": "title_bar",
-    "settings": ["ui_native_titlebar"],
-    "bg": "",
-    "fg": ""
-  },
-  {
-    "class": "title_bar",
-    "settings": ["ui_separator"],
+    "settings": ["!ui_native_titlebar", "ui_separator"],
+    "platforms": ["osx", "linux"],
     "bg": scheme.ui.bg.hex()
   },
 
-
+  {
+    "class": "title_bar",
+    "platforms": ["windows"],
+    "style": kind === 'light' ? 'light' : 'dark'
+  },
 
   // SIDEBAR
   {
@@ -754,7 +755,7 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "auto_complete",
-    "row_padding": [12, 6],
+    "row_padding": 0,
     "layer0.tint": scheme.ui.panel.bg.hex(),
     "layer0.opacity": 1.0
   },
@@ -762,7 +763,7 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "table_row",
-    "layer0.tint": scheme.ui.line.hex(),
+    "layer0.tint": scheme.ui.selection.active.hex(),
     "layer0.opacity": 0.0
   },
   {
@@ -771,14 +772,290 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.opacity": 1.0
   },
 
-
   {
     "class": "auto_complete_label",
-    "fg": scheme.ui.fg.hex(),
+    "fg": "transparent",
     "match_fg": scheme.common.accent.hex(),
-    "selected_fg": scheme.editor.fg.hex(),
+    "selected_fg": "transparent",
     "selected_match_fg": scheme.common.accent.hex(),
     "fg_blend": true
+  },
+  {
+    "class": "auto_complete_hint",
+    "opacity": 0.7,
+    "font.italic": true
+  },
+
+  {
+    "class": "kind_container",
+    // Extra margin on the left makes the
+    // italic kind_label look visually centered
+    "content_margin": [6, 0, 5, 0],
+    "layer0.tint": "var(--background)",
+    "layer0.opacity": 0.0,
+    "layer1.tint": "white",
+    "layer1.opacity": 0.0,
+  },
+  {
+    "class": "kind_container",
+    "parents":[ { "class": "auto_complete", "attributes": ["file_light"] } ],
+    "layer1.tint": "black",
+  },
+  {
+    "class": "kind_container",
+    "parents":
+      [
+        { "class": "auto_complete" },
+        { "class": "table_row", "attributes": ["selected"] },
+      ],
+    "layer1.tint": "white",
+  },
+  {
+    "class": "kind_container",
+    "parents":
+      [
+        { "class": "auto_complete", "attributes": ["file_light"] },
+        { "class": "table_row", "attributes": ["selected"] },
+      ],
+    "layer1.tint": "black",
+  },
+  {
+    "class": "kind_label",
+    "font.size": "1.1rem",
+    "font.bold": true,
+    "font.italic": true,
+    "color": scheme.ui.fg.hex(),
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "quick_panel" }],
+    "font.size": "1.4rem"
+  },
+  {
+    "class": "kind_container kind_function",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.func.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_function" }],
+    "color": scheme.syntax.func.hex(),
+  },
+  {
+    "class": "kind_container kind_keyword",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.keyword.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_keyword" }],
+    "color": scheme.syntax.keyword.hex(),
+  },
+  {
+    "class": "kind_container kind_markup",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.tag.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_markup" }],
+    "color": scheme.syntax.tag.hex()
+  },
+  {
+    "class": "kind_container kind_namespace",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.entity.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_namespace" }],
+    "color": scheme.syntax.entity.hex()
+  },
+  {
+    "class": "kind_container kind_navigation",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.special.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_navigation" }],
+    "color": scheme.syntax.special.hex()
+  },
+  {
+    "class": "kind_container kind_snippet",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.markup.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_snippet" }],
+    "color": scheme.syntax.markup.hex()
+  },
+  {
+    "class": "kind_container kind_type",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.entity.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_type" }],
+    "color": scheme.syntax.entity.hex()
+  },
+  {
+    "class": "kind_container kind_variable",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.comment.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_variable" }],
+    "color": scheme.syntax.comment.hex(),
+  },
+  {
+    "class": "kind_container kind_color_redish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.markup.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_redish" }],
+    "color": scheme.syntax.markup.hex()
+  },
+  {
+    "class": "kind_container kind_color_orangish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.keyword.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_orangish" }],
+    "color": scheme.syntax.keyword.hex()
+  },
+  {
+    "class": "kind_container kind_color_yellowish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.func.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_yellowish" }],
+    "color": scheme.syntax.func.hex()
+  },
+  {
+    "class": "kind_container kind_color_greenish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.string.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_greenish" }],
+    "color": scheme.syntax.string.hex()
+  },
+  {
+    "class": "kind_container kind_color_cyanish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.regexp.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_cyanish" }],
+    "color": scheme.syntax.regexp.hex()
+  },
+  {
+    "class": "kind_container kind_color_bluish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.tag.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_bluish" }],
+    "color": scheme.syntax.tag.hex()
+  },
+  {
+    "class": "kind_container kind_color_purplish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.constant.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_purplish" }],
+    "color": scheme.syntax.constant.hex()
+  },
+  {
+    "class": "kind_container kind_color_pinkish",
+    "layer0.opacity": 0.5,
+    "layer1.tint": scheme.syntax.operator.hex(),
+    "layer1.opacity": 0.1,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_pinkish" }],
+    "color": scheme.syntax.operator.hex()
+  },
+  {
+    "class": "kind_container kind_color_dark",
+    "layer0.opacity": 0.5,
+    "layer1.tint": "black",
+    "layer1.opacity": 0.5,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_dark" }],
+    "color": "white"
+  },
+  {
+    "class": "kind_container kind_color_light",
+    "layer0.opacity": 0.5,
+    "layer1.tint": "white",
+    "layer1.opacity": 1.0,
+  },
+  {
+    "class": "kind_label",
+    "parents": [{ "class": "kind_container kind_color_light" }],
+    "color": "#555"
+  },
+  {
+    "class": "symbol_container",
+    "content_margin": [4, 3, 4, 3]
+  },
+  {
+    "class": "trigger_container",
+    "content_margin": [4, 3, 4, 3]
+  },
+  {
+    "class": "auto_complete_detail_pane",
+    "layer0.opacity": 1.0,
+    "layer0.tint": scheme.ui.panel.bg.hex(),
+    "content_margin": [8, 5, 8, 5]
+  },
+  {
+    "class": "auto_complete_info",
+    "spacing": 8,
+  },
+  {
+    "class": "auto_complete_kind_name_label",
+    "font.size": "0.9rem",
+    "font.italic": true,
+    "border_color": scheme.ui.fg.hex()
+  },
+  {
+    "class": "auto_complete_details",
+    "monospace_background_color": scheme.ui.panel.bg.hex()
   },
 
 
@@ -1045,8 +1322,8 @@ export default (scheme: Scheme, kind: string) => [
     "layer1.texture": "ayu/assets/input-search.png",
     "layer1.opacity": 1,
     "layer1.tint": scheme.ui.fg.hex(),
-    "layer1.inner_margin": [60, 0, 0, 0],
-    "content_margin": [50, 7, 10, 4]
+    "layer1.inner_margin": [42, 26, 0, 0],
+    "content_margin": [50, 5, 10, 5]
   },
 
 
