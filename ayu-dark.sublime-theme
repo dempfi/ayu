@@ -4,12 +4,8 @@
 		"settings": [
 			"!ui_native_titlebar"
 		],
-		"platforms": [
-			"osx",
-			"linux"
-		],
 		"bg": "#0d1017",
-		"fg": "#565b66"
+		"fg": "#bfbdb6"
 	},
 	{
 		"class": "title_bar",
@@ -17,18 +13,7 @@
 			"!ui_native_titlebar",
 			"ui_separator"
 		],
-		"platforms": [
-			"osx",
-			"linux"
-		],
 		"bg": "#0b0e14"
-	},
-	{
-		"class": "title_bar",
-		"platforms": [
-			"windows"
-		],
-		"style": "dark"
 	},
 	{
 		"class": "sidebar_container",

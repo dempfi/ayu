@@ -5,21 +5,13 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "title_bar",
     "settings": ["!ui_native_titlebar"],
-    "platforms": ["osx", "linux"],
     "bg": scheme.editor.bg.hex(),
-    "fg": scheme.ui.fg.hex()
+    "fg": scheme.editor.fg.hex()
   },
   {
     "class": "title_bar",
     "settings": ["!ui_native_titlebar", "ui_separator"],
-    "platforms": ["osx", "linux"],
     "bg": scheme.ui.bg.hex()
-  },
-
-  {
-    "class": "title_bar",
-    "platforms": ["windows"],
-    "style": kind === 'light' ? 'light' : 'dark'
   },
 
   // SIDEBAR
