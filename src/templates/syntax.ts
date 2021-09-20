@@ -157,6 +157,12 @@ export default (scheme: Scheme) => ({
       foreground: scheme.syntax.operator.hex()
     },
 
+    // interface
+    {
+      name:"Interface",
+      scope: "entity.name.interface,meta.interface",
+      foreground:scheme.syntax.tag.hex()
+    },
 
     // ------
     // Types
