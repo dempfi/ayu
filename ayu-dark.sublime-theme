@@ -987,6 +987,10 @@
 		"selected_match_fg": "#bfbdb6"
 	},
 	{
+		"class": "quick_panel_detail_label",
+		"link_color": "#59c2ff"
+	},
+	{
 		"class": "grid_layout_control",
 		"border_size": 0,
 		"border_color": "#1b1f26"

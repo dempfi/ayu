@@ -672,8 +672,6 @@ export default (scheme: Scheme, kind: string) => [
     "selected_fg": scheme.editor.fg.hex(),
     "selected_match_fg": scheme.common.accent.hex()
   },
-
-
   {
     "class": "quick_panel_path_label",
     "fg": scheme.ui.fg.hex(),
@@ -681,7 +679,10 @@ export default (scheme: Scheme, kind: string) => [
     "selected_fg": scheme.ui.fg.hex(),
     "selected_match_fg": scheme.editor.fg.hex()
   },
-
+  {
+    "class": "quick_panel_detail_label",
+    "link_color": scheme.syntax.entity.hex()
+  },
 
 
   // VIEWS

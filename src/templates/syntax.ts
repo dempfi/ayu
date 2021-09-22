@@ -66,7 +66,7 @@ export default (scheme: Scheme) => ({
 
     {
       name: 'String',
-      scope: 'string, constant.other.symbol',
+      scope: 'string - meta.template, constant.other.symbol, string.quoted',
       foreground: scheme.syntax.string.hex()
     },
     {
@@ -157,6 +157,16 @@ export default (scheme: Scheme) => ({
       foreground: scheme.syntax.operator.hex()
     },
 
+    {
+      name: 'JavaScript/TypeScript interpolation punctuation',
+      scope: 'punctuation.definition.template-expression',
+      foreground: scheme.syntax.keyword.hex()
+    },
+    {
+      name: 'Ruby interpolation punctuation',
+      scope: 'punctuation.section.interpolation',
+      foreground: scheme.syntax.keyword.hex()
+    },
 
     // ------
     // Types
@@ -318,7 +328,7 @@ export default (scheme: Scheme) => ({
     {
       name: 'Markup links',
       scope: 'markup.underline.link, string.other.link',
-      foreground: scheme.syntax.tag.hex()
+      foreground: scheme.syntax.entity.hex()
     },
     {
       name: 'Markup Italic',

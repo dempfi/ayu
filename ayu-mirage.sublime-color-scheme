@@ -39,7 +39,7 @@
 		},
 		{
 			"name": "String",
-			"scope": "string, constant.other.symbol",
+			"scope": "string - meta.template, constant.other.symbol, string.quoted",
 			"foreground": "#d5ff80"
 		},
 		{
@@ -112,6 +112,16 @@
 			"name": "Accessor",
 			"scope": "punctuation.accessor",
 			"foreground": "#f29e74"
+		},
+		{
+			"name": "JavaScript/TypeScript interpolation punctuation",
+			"scope": "punctuation.definition.template-expression",
+			"foreground": "#ffad66"
+		},
+		{
+			"name": "Ruby interpolation punctuation",
+			"scope": "punctuation.section.interpolation",
+			"foreground": "#ffad66"
 		},
 		{
 			"name": "Types fixes",
@@ -253,7 +263,7 @@
 		{
 			"name": "Markup links",
 			"scope": "markup.underline.link, string.other.link",
-			"foreground": "#5ccfe6"
+			"foreground": "#73d0ff"
 		},
 		{
 			"name": "Markup Italic",
