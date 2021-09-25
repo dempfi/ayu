@@ -18,7 +18,7 @@ export default (scheme: Scheme, name: string) => `<?xml version="1.0" encoding="
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>${scheme.ui.panel.bg.hex()}</string>
+        <string>${scheme.ui.popup.bg.hex()}</string>
         <key>caret</key>
         <string>${scheme.common.accent.hex()}</string>
         <key>foreground</key>
@@ -26,7 +26,7 @@ export default (scheme: Scheme, name: string) => `<?xml version="1.0" encoding="
         <key>invisibles</key>
         <string>${scheme.editor.gutter.normal.hex()}</string>
         <key>lineHighlight</key>
-        <string>${scheme.ui.line.hex()}</string>
+        <string>${scheme.editor.line.hex()}</string>
         <key>inactiveSelection</key>
         <string>${scheme.editor.selection.inactive.hex()}</string>
         <key>selection</key>

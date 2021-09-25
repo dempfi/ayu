@@ -592,8 +592,8 @@ export default (scheme: Scheme, kind: string) => [
     "class": "overlay_control",
     "layer0.texture": "ayu/assets/overlay-shadow.png",
     "layer0.inner_margin": [15, 35, 15, 25],
-    "layer0.opacity": 0.6,
-    "layer0.tint": scheme.ui.panel.shadow.hex(),
+    "layer0.opacity": 1,
+    "layer0.tint": scheme.ui.popup.shadow.hex(),
 
     "layer1.texture": "ayu/assets/overlay-border.png",
     "layer1.inner_margin": [15, 35, 15, 25],
@@ -603,7 +603,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer2.texture": "ayu/assets/overlay-bg.png",
     "layer2.inner_margin": [15, 35, 15, 25],
     "layer2.opacity": 1.0,
-    "layer2.tint": scheme.ui.panel.bg.hex(),
+    "layer2.tint": scheme.ui.popup.bg.hex(),
 
     "content_margin": [10, 35, 10, 20]
   },
@@ -611,49 +611,56 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "quick_panel",
-    "row_padding": [32, 12],
-    "layer0.tint": scheme.ui.panel.bg.hex(),
+    "row_padding": [13, 7],
+    "layer0.tint": scheme.ui.popup.bg.hex(),
     "layer0.opacity": 1.0
   },
   {
     "class": "quick_panel",
     "parents": [{ "class": "overlay_control" }],
-    "row_padding": [24, 8],
-    "layer0.tint": scheme.ui.panel.bg.hex(),
+    "row_padding": [13, 7],
+    "layer0.tint": scheme.ui.popup.bg.hex(),
     "layer0.opacity": 1.0
   },
 
 
   {
     "class": "mini_quick_panel_row",
-    "layer0.tint": scheme.ui.panel.bg.hex(),
-    "layer0.inner_margin": [2, 2, 2, 2],
-    "layer0.opacity": 1.0
+    "layer0.texture": "ayu/assets/tree-highlight.png",
+    "layer0.tint": scheme.ui.selection.active.hex(),
+    "layer0.inner_margin": [8, 4],
+    "layer0.opacity": 0,
+
+    "layer1.texture": "ayu/assets/tree-highlight-border.png",
+    "layer1.tint": scheme.ui.selection.active.hex(),
+    "layer1.inner_margin": [8, 4],
+    "layer1.opacity": 0
   },
   {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": scheme.ui.selection.active.hex()
+    "layer0.opacity": 1,
+    "layer1.opacity": 1
   },
 
 
   {
     "class": "quick_panel_row",
-    "layer0.texture": "",
-    "layer0.tint": scheme.ui.panel.bg.hex(),
-    "layer0.inner_margin": 0,
-    "layer0.opacity": 1.0
-  },
-  {
-    "class": "quick_panel_row",
-    "parents": [{ "class": "overlay_control" }],
-    "layer0.tint": scheme.ui.panel.bg.hex(),
-    "layer0.opacity": 1.0
+    "layer0.texture": "ayu/assets/tree-highlight.png",
+    "layer0.tint": scheme.ui.selection.active.hex(),
+    "layer0.inner_margin": [8, 4],
+    "layer0.opacity": 0,
+
+    "layer1.texture": "ayu/assets/tree-highlight-border.png",
+    "layer1.tint": scheme.ui.selection.active.hex(),
+    "layer1.inner_margin": [8, 4],
+    "layer1.opacity": 0
   },
   {
     "class": "quick_panel_row",
     "attributes": ["selected"],
-    "layer0.tint": scheme.ui.selection.active.hex()
+    "layer0.opacity": 1,
+    "layer1.opacity": 1
   },
 
 
@@ -739,30 +746,54 @@ export default (scheme: Scheme, kind: string) => [
 
 
   {
+    "class": "popup_shadow",
+    "layer0.texture": "ayu/assets/popup-shadow.png",
+    "layer0.inner_margin": [14, 11, 14, 15],
+    "layer0.opacity": 1,
+    "layer0.tint": scheme.ui.popup.shadow.hex(),
+    "layer0.draw_center": false,
+
+    "layer1.texture": "ayu/assets/popup-border.png",
+    "layer1.inner_margin": [14, 11, 14, 15],
+    "layer1.opacity": 1,
+    "layer1.tint": scheme.ui.line.hex(),
+    "layer1.draw_center": false,
+
+    "content_margin": [10, 7, 10, 13]
+  },
+  {
     "class": "popup_control",
-    "layer0.tint": scheme.ui.panel.bg.hex(),
-    "layer0.opacity": 1.0,
-    "content_margin": [0, 0]
+
+    "layer0.texture": "ayu/assets/popup-bg.png",
+    "layer0.inner_margin": [4, 4, 4, 4],
+    "layer0.opacity": 1,
+    "layer0.tint": scheme.ui.popup.bg.hex(),
+
+    "content_margin": [0, 4]
   },
 
 
   {
     "class": "auto_complete",
-    "row_padding": 0,
-    "layer0.tint": scheme.ui.panel.bg.hex(),
-    "layer0.opacity": 1.0
+    "row_padding": [5, 0]
   },
-
-
   {
     "class": "table_row",
+    "layer0.texture": "ayu/assets/tree-highlight.png",
     "layer0.tint": scheme.ui.selection.active.hex(),
-    "layer0.opacity": 0.0
+    "layer0.inner_margin": [8, 4],
+    "layer0.opacity": 0,
+
+    "layer1.texture": "ayu/assets/tree-highlight-border.png",
+    "layer1.tint": scheme.ui.selection.active.hex(),
+    "layer1.inner_margin": [8, 4],
+    "layer1.opacity": 0
   },
   {
     "class": "table_row",
     "attributes": ["selected"],
-    "layer0.opacity": 1.0
+    "layer0.opacity": 1.0,
+    "layer1.opacity": 1.0
   },
 
   {
@@ -781,40 +812,26 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "kind_container",
-    // Extra margin on the left makes the
-    // italic kind_label look visually centered
-    "content_margin": [6, 0, 5, 0],
-    "layer0.tint": "var(--background)",
-    "layer0.opacity": 0.0,
-    "layer1.tint": "white",
-    "layer1.opacity": 0.0,
-  },
-  {
-    "class": "kind_container",
-    "parents":[ { "class": "auto_complete", "attributes": ["file_light"] } ],
-    "layer1.tint": "black",
-  },
-  {
-    "class": "kind_container",
-    "parents":
-      [
-        { "class": "auto_complete" },
-        { "class": "table_row", "attributes": ["selected"] },
-      ],
-    "layer1.tint": "white",
-  },
-  {
-    "class": "kind_container",
-    "parents":
-      [
-        { "class": "auto_complete", "attributes": ["file_light"] },
-        { "class": "table_row", "attributes": ["selected"] },
-      ],
-    "layer1.tint": "black",
+    "layer0.texture": "ayu/assets/kind-bg.png",
+    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.inner_margin": [4, 4, 7, 4],
+    "layer0.opacity": 0,
+
+    "layer1.texture": "ayu/assets/kind-bg.png",
+    "layer1.tint": scheme.ui.popup.bg.alpha(0).hex(),
+    "layer1.inner_margin": [4, 4, 7, 4],
+    "layer1.opacity": 0.3,
+
+    "layer2.texture": "ayu/assets/kind-border.png",
+    "layer2.tint": scheme.ui.popup.bg.alpha(0).hex(),
+    "layer2.inner_margin": [4, 4, 7, 4],
+    "layer2.opacity": 0.1,
+
+    "content_margin": [4, 0, 6, 0]
   },
   {
     "class": "kind_label",
-    "font.size": "1.1rem",
+    "font.size": "1rem",
     "font.bold": true,
     "font.italic": true,
     "color": scheme.ui.fg.hex(),
@@ -822,13 +839,13 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "kind_label",
     "parents": [{ "class": "quick_panel" }],
-    "font.size": "1.4rem"
+    "font.size": "1.1rem"
   },
   {
     "class": "kind_container kind_function",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.func.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.func.hex(),
   },
   {
     "class": "kind_label",
@@ -837,9 +854,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_keyword",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.keyword.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.keyword.hex(),
   },
   {
     "class": "kind_label",
@@ -848,9 +865,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_markup",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.tag.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.tag.hex(),
   },
   {
     "class": "kind_label",
@@ -859,9 +876,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_namespace",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.entity.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.entity.hex(),
   },
   {
     "class": "kind_label",
@@ -870,9 +887,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_navigation",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.special.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.special.hex(),
   },
   {
     "class": "kind_label",
@@ -881,9 +898,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_snippet",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.markup.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.markup.hex(),
   },
   {
     "class": "kind_label",
@@ -892,9 +909,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_type",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.entity.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.entity.hex(),
   },
   {
     "class": "kind_label",
@@ -903,9 +920,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_variable",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.comment.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.comment.hex(),
   },
   {
     "class": "kind_label",
@@ -914,9 +931,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_redish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.markup.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.markup.hex(),
   },
   {
     "class": "kind_label",
@@ -925,9 +942,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_orangish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.keyword.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.keyword.hex(),
   },
   {
     "class": "kind_label",
@@ -936,9 +953,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_yellowish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.func.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.func.hex(),
   },
   {
     "class": "kind_label",
@@ -947,9 +964,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_greenish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.string.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.string.hex(),
   },
   {
     "class": "kind_label",
@@ -958,9 +975,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_cyanish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.regexp.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.regexp.hex(),
   },
   {
     "class": "kind_label",
@@ -969,9 +986,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_bluish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.tag.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.tag.hex(),
   },
   {
     "class": "kind_label",
@@ -980,9 +997,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_purplish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.constant.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.constant.hex(),
   },
   {
     "class": "kind_label",
@@ -991,9 +1008,9 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_pinkish",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": scheme.syntax.operator.hex(),
-    "layer1.opacity": 0.1,
+    "layer2.tint": scheme.syntax.operator.hex(),
   },
   {
     "class": "kind_label",
@@ -1002,20 +1019,20 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "kind_container kind_color_dark",
-    "layer0.opacity": 0.5,
-    "layer1.tint": "black",
-    "layer1.opacity": 0.5,
+    "layer0.opacity": 1,
+    "layer1.tint": scheme.ui.fg.hex(),
+    "layer2.tint": scheme.ui.fg.hex(),
   },
   {
     "class": "kind_label",
     "parents": [{ "class": "kind_container kind_color_dark" }],
-    "color": "white"
+    "color": scheme.ui.fg.hex()
   },
   {
     "class": "kind_container kind_color_light",
-    "layer0.opacity": 0.5,
+    "layer0.opacity": 1,
     "layer1.tint": "white",
-    "layer1.opacity": 1.0,
+    "layer2.tint": "white",
   },
   {
     "class": "kind_label",
@@ -1033,12 +1050,11 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "auto_complete_detail_pane",
     "layer0.opacity": 1.0,
-    "layer0.tint": scheme.ui.panel.bg.hex(),
-    "content_margin": [8, 5, 8, 5]
-  },
-  {
-    "class": "auto_complete_info",
-    "spacing": 8,
+    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer1.opacity": 1,
+    "layer1.tint": scheme.ui.popup.bg.hex(),
+
+    "content_margin": [8, 10, 8, 5]
   },
   {
     "class": "auto_complete_kind_name_label",
@@ -1048,7 +1064,8 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "auto_complete_details",
-    "monospace_background_color": scheme.ui.panel.bg.hex()
+    "background_color": scheme.ui.popup.bg.hex(),
+    "monospace_background_color": scheme.ui.popup.bg.hex()
   },
 
 
@@ -1198,7 +1215,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "scroll_bar_control",
     "parents": [{ "class": "overlay_control" }],
-    "layer0.tint": scheme.ui.panel.bg.hex()
+    "layer0.tint": scheme.ui.popup.bg.hex()
   },
   {
     "class": "scroll_bar_control",
@@ -1298,7 +1315,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/input-bg.png",
     "layer0.opacity": 1,
     "layer0.inner_margin": [10, 8],
-    "layer0.tint": scheme.ui.panel.bg.hex(),
+    "layer0.tint": scheme.ui.popup.bg.hex(),
 
     "layer1.texture": "ayu/assets/input-border.png",
     "layer1.opacity": 1,
@@ -1312,11 +1329,36 @@ export default (scheme: Scheme, kind: string) => [
     "parents": [{ "class": "overlay_control" }],
     "layer0.texture": "",
     "layer0.opacity": 0,
-    "layer1.texture": "ayu/assets/input-search.png",
+    "layer1.texture": "ayu/assets/input-prompt.png",
     "layer1.opacity": 1,
-    "layer1.tint": scheme.ui.fg.hex(),
-    "layer1.inner_margin": [42, 26, 0, 0],
-    "content_margin": [50, 5, 10, 5]
+    "layer1.tint": scheme.ui.fg.alpha(1).hex(),
+    "layer1.inner_margin": [36, 26, 0, 0],
+    "content_margin": [38, 5, 10, 5]
+  },
+  {
+    "class": "text_line_control",
+    "parents": [{ "class": "overlay_control goto_file" }],
+    "layer1.texture": "ayu/assets/input-search.png"
+  },
+  {
+    "class": "text_line_control",
+    "parents": [{ "class": "overlay_control command_palette" }],
+    "layer1.texture": "ayu/assets/input-command.png"
+  },
+  {
+    "class": "text_line_control",
+    "parents": [{ "class": "overlay_control goto_symbol" }],
+    "layer1.texture": "ayu/assets/input-symbol.png"
+  },
+  {
+    "class": "text_line_control",
+    "parents": [{ "class": "overlay_control goto_symbol_in_project" }],
+    "layer1.texture": "ayu/assets/input-symbol.png"
+  },
+  {
+    "class": "text_line_control",
+    "parents": [{ "class": "overlay_control goto_word" }],
+    "layer1.texture": "ayu/assets/input-word.png"
   },
 
 

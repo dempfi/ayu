@@ -8,17 +8,18 @@
 		"block_caret": "#ffaa334d",
 		"line_highlight": "#8a91991a",
 		"accent": "#ffaa33",
-		"popup_css": "\n      html, body {\n        background-color: #f3f4f5;\n        color: #5c6166;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(85,180,212, .7);\n      }\n    ",
+		"popup_css": "\n      html, body {\n        background-color: transparent;\n        color: #5c6166;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(85,180,212, .7);\n      }\n    ",
 		"gutter": "#fcfcfc",
 		"gutter_foreground": "#8a919966",
 		"line_diff_width": "2",
 		"line_diff_added": "#6cbf43b3",
 		"line_diff_modified": "#478accb3",
 		"line_diff_deleted": "#ff7383b3",
-		"selection": "#035bd626",
-		"selection_border": "#035bd626",
+		"selection": "#036dd626",
+		"selection_border": "#036dd626",
 		"selection_border_width": "1",
-		"inactive_selection": "#035bd612",
+		"inactive_selection": "#5696d61a",
+		"inactive_selection_border": "#5696d61a",
 		"selection_corner_style": "round",
 		"selection_corner_radius": "4",
 		"highlight": "#ffaa3366",
@@ -126,7 +127,7 @@
 		{
 			"name": "Types fixes",
 			"scope": "source.java storage.type, source.haskell storage.type, source.c storage.type",
-			"foreground": "#399ee6"
+			"foreground": "#22a4e6"
 		},
 		{
 			"name": "Inherited class type",
@@ -171,7 +172,7 @@
 		{
 			"name": "Entity name",
 			"scope": "entity.name, source.js meta.function-call.constructor variable.type",
-			"foreground": "#399ee6"
+			"foreground": "#22a4e6"
 		},
 		{
 			"name": "Tag",
@@ -202,7 +203,7 @@
 		{
 			"name": "Decorators/annotation",
 			"scope": "meta.decorator variable.other, meta.decorator punctuation.decorator, storage.type.annotation, variable.annotation, punctuation.definition.annotation",
-			"foreground": "#e6ba7e"
+			"foreground": "#e6b673"
 		},
 		{
 			"name": "Invalid",
@@ -222,7 +223,7 @@
 		{
 			"name": "CSS tag names",
 			"scope": "source.css entity.name.tag, source.sass entity.name.tag, source.scss entity.name.tag, source.less entity.name.tag, source.stylus entity.name.tag",
-			"foreground": "#399ee6"
+			"foreground": "#22a4e6"
 		},
 		{
 			"name": "CSS browser prefix",
@@ -263,7 +264,7 @@
 		{
 			"name": "Markup links",
 			"scope": "markup.underline.link, string.other.link",
-			"foreground": "#399ee6"
+			"foreground": "#22a4e6"
 		},
 		{
 			"name": "Markup Italic",
@@ -328,7 +329,7 @@
 		{
 			"name": "Markup Strike",
 			"scope": "markup.strike",
-			"foreground": "#e6ba7e"
+			"foreground": "#e6b673"
 		},
 		{
 			"name": "Markup Table",

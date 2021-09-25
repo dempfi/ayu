@@ -18,7 +18,7 @@ export default (scheme: Scheme) => ({
 
     popup_css: `
       html, body {
-        background-color: ${scheme.ui.panel.bg.hex()};
+        background-color: transparent;
         color: ${scheme.editor.fg.hex()};
       }
       body {
@@ -41,6 +41,7 @@ export default (scheme: Scheme) => ({
     selection_border: scheme.editor.selection.active.hex(),
     selection_border_width: "1",
     inactive_selection: scheme.editor.selection.inactive.hex(),
+    inactive_selection_border: scheme.editor.selection.inactive.hex(),
     selection_corner_style: "round",
     selection_corner_radius: "4",
 
