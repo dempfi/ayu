@@ -8,7 +8,7 @@
 		"block_caret": "#e6b4504d",
 		"line_highlight": "#161a24",
 		"accent": "#e6b450",
-		"popup_css": "\n      html, body {\n        background-color: transparent;\n        color: #bfbdb6;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(57,186,230, .7);\n      }\n    ",
+		"popup_css": "\n      html, body {\n        background-color: #141821;\n        color: #bfbdb6;\n        --mdpopups-font-mono: \"PragmataPro Mono Liga\", \"sf mono\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n        --mdpopups-bg: #141821;\n        --mdpopups-link: #59c2ff;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(89,194,255, .7);\n      }\n    ",
 		"gutter": "#10141c",
 		"gutter_foreground": "#6c738099",
 		"line_diff_width": "2",

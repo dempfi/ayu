@@ -21,9 +21,9 @@ const syntax = (kind: SchemeName) => fs.writeFileSync(
 const widget = (kind: SchemeName) => fs.writeFileSync(
   path.join(process.cwd(), `/widgets/Widget - ayu-${kind}.stTheme`),
   templates.widget(ayu[kind], kind)
-)
+);
 
-;['light', 'dark', 'mirage'].map((kind: SchemeName) => {
+['light', 'dark', 'mirage'].map((kind: SchemeName) => {
   widget(kind)
   syntax(kind)
   ui(kind)

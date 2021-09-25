@@ -18,14 +18,17 @@ export default (scheme: Scheme) => ({
 
     popup_css: `
       html, body {
-        background-color: transparent;
+        background-color: ${scheme.ui.popup.bg.hex()};
         color: ${scheme.editor.fg.hex()};
+        --mdpopups-font-mono: "PragmataPro Mono Liga", "sf mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        --mdpopups-bg: ${scheme.ui.popup.bg.hex()};
+        --mdpopups-link: ${scheme.syntax.entity.hex()};
       }
       body {
         padding: 1px 3px;
       }
       a {
-        color: rgba(${scheme.syntax.tag.rgb()}, .7);
+        color: rgba(${scheme.syntax.entity.rgb()}, .7);
       }
     `,
 
