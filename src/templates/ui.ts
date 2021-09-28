@@ -411,17 +411,17 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.opacity": 1.0
   },
   {
-    "class": "tab_control", "attributes": ["selected", "highlighted"],
-    "settings": ["ui_separator"],
-    "layer1.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
-    "layer1.tint": scheme.editor.bg.hex(),
-    "layer2.opacity": 1,
-  },
-  {
     "class": "tab_control", "attributes": ["selected", "!highlighted"],
     "settings": ["ui_separator"],
     "layer1.opacity": 1,
     "layer1.tint": scheme.ui.bg.hex(),
+    "layer2.opacity": 1,
+  },
+  {
+    "class": "tab_control", "attributes": ["selected", "highlighted"],
+    "settings": ["ui_separator"],
+    "layer1.opacity": { "target": 1, "speed": 1.0, "interpolation": "smoothstep" },
+    "layer1.tint": scheme.editor.bg.hex(),
     "layer2.opacity": 1,
   },
 

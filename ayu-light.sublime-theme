@@ -588,6 +588,19 @@
 		"class": "tab_control",
 		"attributes": [
 			"selected",
+			"!highlighted"
+		],
+		"settings": [
+			"ui_separator"
+		],
+		"layer1.opacity": 1,
+		"layer1.tint": "#f8f9fa",
+		"layer2.opacity": 1
+	},
+	{
+		"class": "tab_control",
+		"attributes": [
+			"selected",
 			"highlighted"
 		],
 		"settings": [
@@ -599,19 +612,6 @@
 			"interpolation": "smoothstep"
 		},
 		"layer1.tint": "#fcfcfc",
-		"layer2.opacity": 1
-	},
-	{
-		"class": "tab_control",
-		"attributes": [
-			"selected",
-			"!highlighted"
-		],
-		"settings": [
-			"ui_separator"
-		],
-		"layer1.opacity": 1,
-		"layer1.tint": "#f8f9fa",
 		"layer2.opacity": 1
 	},
 	{
