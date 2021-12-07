@@ -22,17 +22,17 @@ export default (scheme: Scheme, name: string) => `<?xml version="1.0" encoding="
         <key>caret</key>
         <string>${scheme.common.accent.hex()}</string>
         <key>foreground</key>
-        <string>${scheme.common.fg.hex()}</string>
+        <string>${scheme.editor.fg.hex()}</string>
         <key>invisibles</key>
-        <string>${scheme.ui.gutter.normal.hex()}</string>
+        <string>${scheme.editor.gutter.normal.hex()}</string>
         <key>lineHighlight</key>
         <string>${scheme.ui.line.hex()}</string>
         <key>inactiveSelection</key>
-        <string>${scheme.ui.selection.inactive.hex()}</string>
+        <string>${scheme.editor.selection.inactive.hex()}</string>
         <key>selection</key>
-        <string>${scheme.ui.selection.bg.hex()}</string>
+        <string>${scheme.editor.selection.active.hex()}</string>
         <key>selectionBorder</key>
-        <string>${scheme.ui.selection.border.hex()}</string>
+        <string>${scheme.editor.selection.active.hex()}</string>
       </dict>
     </dict>
     <dict>
