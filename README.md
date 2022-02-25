@@ -149,7 +149,7 @@ and install manually [latest supported version](https://github.com/dempfi/ayu/re
 - `ayu` colors as NPM package: https://github.com/ayu-theme/ayu-colors
 - `ayu` for VSCode: https://github.com/teabyii/vscode-ayu
 - `ayu` for XCode: https://github.com/vburojevic/ayu-xcode-theme
-- `ayu` for [Kakoune](https://github.com/mawww/kakoune): https://github.com/icantjuddle/kak-ayu
+- `ayu` for [Kakoune](https://github.com/mawww/kakoune): https://github.com/icantjuddle/ayu-kak
 
 <div align="right"><sup>
   made with ❤️ by <a href="https://github.com/dempfi">@dempfi</a>
