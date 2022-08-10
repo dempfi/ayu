@@ -176,7 +176,7 @@ export default (scheme: Scheme) => ({
     // Types
     {
       name: 'Types fixes',
-      scope: 'source.java storage.type, source.haskell storage.type, source.c storage.type',
+      scope: 'source.java storage.type, source.haskell storage.type, source.c storage.type, source.zig storage.type',
       foreground: scheme.syntax.entity.hex()
     },
     {
