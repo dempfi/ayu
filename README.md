@@ -150,6 +150,8 @@ and install manually [latest supported version](https://github.com/dempfi/ayu/re
 - `ayu` for VSCode: https://github.com/teabyii/vscode-ayu
 - `ayu` for XCode: https://github.com/vburojevic/ayu-xcode-theme
 - `ayu` for [Kakoune](https://github.com/mawww/kakoune): https://github.com/icantjuddle/ayu-kak
+- `ayu` for Gnome terminal/iTerm: select ayu theme from https://github.com/Gogh-Co/Gogh/
+- `ayu` for Vim: https://github.com/ayu-theme/ayu-vim (also vim-airline via `:AirlineThemes ayu`)  
 
 <div align="right"><sup>
   made with ❤️ by <a href="https://github.com/dempfi">@dempfi</a>
