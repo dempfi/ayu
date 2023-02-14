@@ -150,7 +150,7 @@ and install manually [latest supported version](https://github.com/dempfi/ayu/re
 - `ayu` for VSCode: https://github.com/teabyii/vscode-ayu
 - `ayu` for XCode: https://github.com/vburojevic/ayu-xcode-theme
 - `ayu` for [Kakoune](https://github.com/mawww/kakoune): https://github.com/icantjuddle/ayu-kak
-- `ayu` for Lite XL: https://github.com/juliardi/lite-xl-ayu-theme
+- `ayu` for [Lite XL](https://github.com/lite-xl/lite-xl): https://github.com/juliardi/lite-xl-ayu-theme
 
 <div align="right"><sup>
   made with ❤️ by <a href="https://github.com/dempfi">@dempfi</a>
