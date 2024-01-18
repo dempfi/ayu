@@ -593,17 +593,17 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/overlay-shadow.png",
     "layer0.inner_margin": [15, 35, 15, 25],
     "layer0.opacity": 1,
-    "layer0.tint": scheme.ui.popup.shadow.hex(),
+    "layer0.tint": scheme.ui.panel.shadow.hex(),
 
     "layer1.texture": "ayu/assets/overlay-border.png",
     "layer1.inner_margin": [15, 35, 15, 25],
     "layer1.opacity": 1.0,
-    "layer1.tint": scheme.ui.line.hex(),
+    "layer1.tint": scheme.editor.bg.hex(),
 
     "layer2.texture": "ayu/assets/overlay-bg.png",
     "layer2.inner_margin": [15, 35, 15, 25],
     "layer2.opacity": 1.0,
-    "layer2.tint": scheme.ui.popup.bg.hex(),
+    "layer2.tint": scheme.editor.bg.hex(),
 
     "content_margin": [10, 35, 10, 20]
   },
@@ -612,14 +612,14 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "quick_panel",
     "row_padding": [13, 7],
-    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1.0
   },
   {
     "class": "quick_panel",
     "parents": [{ "class": "overlay_control" }],
     "row_padding": [13, 7],
-    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.opacity": 1.0
   },
 
@@ -750,7 +750,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/popup-shadow.png",
     "layer0.inner_margin": [14, 11, 14, 15],
     "layer0.opacity": 1,
-    "layer0.tint": scheme.ui.popup.shadow.hex(),
+    "layer0.tint": scheme.ui.panel.shadow.hex(),
     "layer0.draw_center": false,
 
     "layer1.texture": "ayu/assets/popup-border.png",
@@ -767,7 +767,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/popup-bg.png",
     "layer0.inner_margin": [4, 4, 4, 4],
     "layer0.opacity": 1,
-    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.tint": scheme.ui.panel.bg.hex(),
 
     "content_margin": [0, 4]
   },
@@ -813,17 +813,17 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "kind_container",
     "layer0.texture": "ayu/assets/kind-bg.png",
-    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.tint": scheme.ui.panel.bg.hex(),
     "layer0.inner_margin": [4, 4, 7, 4],
     "layer0.opacity": 0,
 
     "layer1.texture": "ayu/assets/kind-bg.png",
-    "layer1.tint": scheme.ui.popup.bg.alpha(0).hex(),
+    "layer1.tint": scheme.ui.panel.bg.alpha(0).hex(),
     "layer1.inner_margin": [4, 4, 7, 4],
     "layer1.opacity": 0.3,
 
     "layer2.texture": "ayu/assets/kind-border.png",
-    "layer2.tint": scheme.ui.popup.bg.alpha(0).hex(),
+    "layer2.tint": scheme.ui.panel.bg.alpha(0).hex(),
     "layer2.inner_margin": [4, 4, 7, 4],
     "layer2.opacity": 0.1,
 
@@ -1050,9 +1050,9 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "auto_complete_detail_pane",
     "layer0.opacity": 1.0,
-    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.tint": scheme.ui.panel.bg.hex(),
     "layer1.opacity": 1,
-    "layer1.tint": scheme.ui.popup.bg.hex(),
+    "layer1.tint": scheme.ui.panel.bg.hex(),
 
     "content_margin": [8, 10, 8, 5]
   },
@@ -1064,8 +1064,8 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "auto_complete_details",
-    "background_color": scheme.ui.popup.bg.hex(),
-    "monospace_background_color": scheme.ui.popup.bg.hex()
+    "background_color": scheme.ui.panel.bg.hex(),
+    "monospace_background_color": scheme.ui.panel.bg.hex()
   },
 
 
@@ -1215,7 +1215,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "scroll_bar_control",
     "parents": [{ "class": "overlay_control" }],
-    "layer0.tint": scheme.ui.popup.bg.hex()
+    "layer0.tint": scheme.ui.panel.bg.hex()
   },
   {
     "class": "scroll_bar_control",
@@ -1307,20 +1307,19 @@ export default (scheme: Scheme, kind: string) => [
     "layer0.texture": "ayu/assets/scrollbar-horizontal-wide.png"
   },
 
-
-
   // INPUTS
   {
     "class": "text_line_control",
+    "color_scheme_tint": scheme.editor.bg.hex(),
     "layer0.texture": "ayu/assets/input-bg.png",
     "layer0.opacity": 1,
     "layer0.inner_margin": [10, 8],
-    "layer0.tint": scheme.ui.popup.bg.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
 
     "layer1.texture": "ayu/assets/input-border.png",
     "layer1.opacity": 1,
     "layer1.inner_margin": [10, 8],
-    "layer1.tint": scheme.ui.line.hex(),
+    "layer1.tint": scheme.ui.bg.hex(),
     "content_margin": [10, 7, 10, 5]
   },
   // Textline input inside overlay panels
@@ -1382,7 +1381,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "button_control",
     "content_margin": [15, 9, 15, 10],
     "min_size": [60, 0],
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.editor.bg.hex(),
     "layer0.texture": "ayu/assets/input-bg.png",
     "layer0.inner_margin": [10, 8],
     "layer0.opacity": 0
@@ -1579,7 +1578,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "label_control",
     "parents": [{ "class": "button_control", "attributes": ["hover"] }],
-    "color": scheme.common.accentFg.hex()
+    "color": scheme.common.accent.hex()
   },
 
 
