@@ -40,7 +40,7 @@
 			1
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#161921"
+		"layer1.tint": "#171b24"
 	},
 	{
 		"class": "sidebar_tree",
@@ -506,7 +506,7 @@
 		],
 		"layer0.tint": "#1f2430",
 		"layer1.texture": "ayu/assets/tabset-border.png",
-		"layer1.tint": "#161921",
+		"layer1.tint": "#171b24",
 		"layer1.inner_margin": [
 			1,
 			1,
@@ -527,7 +527,7 @@
 			"!ui_separator"
 		],
 		"layer0.texture": "ayu/assets/separator-bottom.png",
-		"layer0.tint": "#161921",
+		"layer0.tint": "#171b24",
 		"layer0.inner_margin": [
 			0,
 			0,
@@ -563,7 +563,7 @@
 			9,
 			0
 		],
-		"layer2.tint": "#161921",
+		"layer2.tint": "#171b24",
 		"layer2.opacity": 0,
 		"content_margin": [
 			16,
@@ -869,7 +869,7 @@
 			25
 		],
 		"layer0.opacity": 1,
-		"layer0.tint": "#0000004d",
+		"layer0.tint": "#12151cb3",
 		"layer1.texture": "ayu/assets/overlay-border.png",
 		"layer1.inner_margin": [
 			15,
@@ -878,7 +878,7 @@
 			25
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#161921",
+		"layer1.tint": "#242936",
 		"layer2.texture": "ayu/assets/overlay-bg.png",
 		"layer2.inner_margin": [
 			15,
@@ -887,7 +887,7 @@
 			25
 		],
 		"layer2.opacity": 1,
-		"layer2.tint": "#282e3b",
+		"layer2.tint": "#242936",
 		"content_margin": [
 			10,
 			35,
@@ -901,7 +901,7 @@
 			13,
 			7
 		],
-		"layer0.tint": "#282e3b",
+		"layer0.tint": "#242936",
 		"layer0.opacity": 1
 	},
 	{
@@ -915,7 +915,7 @@
 			13,
 			7
 		],
-		"layer0.tint": "#282e3b",
+		"layer0.tint": "#242936",
 		"layer0.opacity": 1
 	},
 	{
@@ -1001,7 +1001,7 @@
 	{
 		"class": "grid_layout_control",
 		"border_size": 0,
-		"border_color": "#161921"
+		"border_color": "#171b24"
 	},
 	{
 		"class": "grid_layout_control",
@@ -1081,7 +1081,7 @@
 			15
 		],
 		"layer0.opacity": 1,
-		"layer0.tint": "#0000004d",
+		"layer0.tint": "#12151cb3",
 		"layer0.draw_center": false,
 		"layer1.texture": "ayu/assets/popup-border.png",
 		"layer1.inner_margin": [
@@ -1091,7 +1091,7 @@
 			15
 		],
 		"layer1.opacity": 1,
-		"layer1.tint": "#161921",
+		"layer1.tint": "#171b24",
 		"layer1.draw_center": false,
 		"content_margin": [
 			10,
@@ -1110,7 +1110,7 @@
 			4
 		],
 		"layer0.opacity": 1,
-		"layer0.tint": "#282e3b",
+		"layer0.tint": "#1c212b",
 		"content_margin": [
 			0,
 			4
@@ -1164,7 +1164,7 @@
 	{
 		"class": "kind_container",
 		"layer0.texture": "ayu/assets/kind-bg.png",
-		"layer0.tint": "#282e3b",
+		"layer0.tint": "#1c212b",
 		"layer0.inner_margin": [
 			4,
 			4,
@@ -1173,7 +1173,7 @@
 		],
 		"layer0.opacity": 0,
 		"layer1.texture": "ayu/assets/kind-bg.png",
-		"layer1.tint": "#282e3b00",
+		"layer1.tint": "#1c212b00",
 		"layer1.inner_margin": [
 			4,
 			4,
@@ -1182,7 +1182,7 @@
 		],
 		"layer1.opacity": 0.3,
 		"layer2.texture": "ayu/assets/kind-border.png",
-		"layer2.tint": "#282e3b00",
+		"layer2.tint": "#1c212b00",
 		"layer2.inner_margin": [
 			4,
 			4,
@@ -1504,9 +1504,9 @@
 	{
 		"class": "auto_complete_detail_pane",
 		"layer0.opacity": 1,
-		"layer0.tint": "#282e3b",
+		"layer0.tint": "#1c212b",
 		"layer1.opacity": 1,
-		"layer1.tint": "#282e3b",
+		"layer1.tint": "#1c212b",
 		"content_margin": [
 			8,
 			10,
@@ -1522,8 +1522,8 @@
 	},
 	{
 		"class": "auto_complete_details",
-		"background_color": "#282e3b",
-		"monospace_background_color": "#282e3b"
+		"background_color": "#1c212b",
+		"monospace_background_color": "#1c212b"
 	},
 	{
 		"class": "panel_control",
@@ -1541,7 +1541,7 @@
 		],
 		"layer0.tint": "#1f2430",
 		"layer1.texture": "ayu/assets/separator-top.png",
-		"layer1.tint": "#161921",
+		"layer1.tint": "#171b24",
 		"layer1.inner_margin": [
 			1,
 			2,
@@ -1576,7 +1576,7 @@
 		"layer0.tint": "#242936",
 		"layer0.opacity": 1,
 		"layer1.texture": "ayu/assets/separator-top.png",
-		"layer1.tint": "#161921",
+		"layer1.tint": "#171b24",
 		"layer1.inner_margin": [
 			1,
 			2,
@@ -1683,7 +1683,7 @@
 				"class": "overlay_control"
 			}
 		],
-		"layer0.tint": "#282e3b"
+		"layer0.tint": "#1c212b"
 	},
 	{
 		"class": "scroll_bar_control",
@@ -1843,20 +1843,21 @@
 	},
 	{
 		"class": "text_line_control",
+		"color_scheme_tint": "#242936",
 		"layer0.texture": "ayu/assets/input-bg.png",
 		"layer0.opacity": 1,
 		"layer0.inner_margin": [
 			10,
 			8
 		],
-		"layer0.tint": "#282e3b",
+		"layer0.tint": "#242936",
 		"layer1.texture": "ayu/assets/input-border.png",
 		"layer1.opacity": 1,
 		"layer1.inner_margin": [
 			10,
 			8
 		],
-		"layer1.tint": "#161921",
+		"layer1.tint": "#1f2430",
 		"content_margin": [
 			10,
 			7,
@@ -1963,7 +1964,7 @@
 			60,
 			0
 		],
-		"layer0.tint": "#ffcc66",
+		"layer0.tint": "#242936",
 		"layer0.texture": "ayu/assets/input-bg.png",
 		"layer0.inner_margin": [
 			10,
@@ -2279,7 +2280,7 @@
 				]
 			}
 		],
-		"color": "#805500"
+		"color": "#ffcc66"
 	},
 	{
 		"class": "title_label_control",

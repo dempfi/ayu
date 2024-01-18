@@ -18,10 +18,10 @@ export default (scheme: Scheme) => ({
 
     popup_css: `
       html, body {
-        background-color: ${scheme.ui.popup.bg.hex()};
+        background-color: ${scheme.ui.panel.bg.hex()};
         color: ${scheme.editor.fg.hex()};
         --mdpopups-font-mono: "PragmataPro Mono Liga", "sf mono", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        --mdpopups-bg: ${scheme.ui.popup.bg.hex()};
+        --mdpopups-bg: ${scheme.ui.panel.bg.hex()};
         --mdpopups-link: ${scheme.syntax.entity.hex()};
       }
       body {
@@ -421,6 +421,11 @@ export default (scheme: Scheme) => ({
       scope: 'punctuation.definition.markdown',
       background: scheme.editor.fg.hex(),
       foreground: scheme.syntax.comment.hex()
+    },
+    {
+      name: "Mapping Key Names",
+      scope: "meta.mapping.key string",
+      foreground: scheme.syntax.keyword.hex(),
     }
   ]
 })

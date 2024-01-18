@@ -18,7 +18,7 @@ export default (scheme: Scheme, name: string) => `<?xml version="1.0" encoding="
       <key>settings</key>
       <dict>
         <key>background</key>
-        <string>${scheme.ui.popup.bg.hex()}</string>
+        <string>${scheme.ui.panel.bg.hex()}</string>
         <key>caret</key>
         <string>${scheme.common.accent.hex()}</string>
         <key>foreground</key>
