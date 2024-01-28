@@ -315,7 +315,7 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "sheet_contents",
-    "settings": { "inactive_sheet_dimming": true, },
+    "settings": ["inactive_sheet_dimming"],
     "attributes": ["!highlighted"],
     "background_modifier": `blend(${scheme.ui.bg.hex()} 0%)`
   },

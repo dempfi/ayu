@@ -461,9 +461,9 @@
 	},
 	{
 		"class": "sheet_contents",
-		"settings": {
-			"inactive_sheet_dimming": true
-		},
+		"settings": [
+			"inactive_sheet_dimming"
+		],
 		"attributes": [
 			"!highlighted"
 		],
