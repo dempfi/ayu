@@ -1522,6 +1522,11 @@
 	},
 	{
 		"class": "auto_complete_details",
+		"parents": [
+			{
+				"class": "auto_complete_detail_pane",
+			}
+		],
 		"background_color": "#282e3b",
 		"monospace_background_color": "#282e3b"
 	},
