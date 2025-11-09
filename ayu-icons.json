@@ -535,6 +535,7 @@
     "tikz": "matlab",
     "ts": "typescript",
     "tsx": "typescript",
+    "mts": "typescript",
     "ttf": "font",
     "twig": "twig",
     "txt": "text",
