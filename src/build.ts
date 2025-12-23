@@ -3,7 +3,7 @@ import * as path from 'path'
 import template, { SchemeName } from './template'
 
 const filePath = (variant: string, bordered: boolean) =>
-  path.join(process.cwd(), `/ayu-${variant}${bordered ? '-bordered' : ''}.json`)
+  path.join(process.cwd(), `/ayu-${variant}${bordered ? '' : '-unbordered'}.json`)
 
 ;['light', 'dark', 'mirage'].map((variant: SchemeName) => {
   const bordered = JSON.stringify(template(variant, true), null, '\t')

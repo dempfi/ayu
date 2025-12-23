@@ -25,7 +25,7 @@
       "iconPath": "./icons/file_type_angular.svg"
     },
     "apache": {
-      "iconPath": "./icons/file_type_apache@2x.png"
+      "iconPath": "./icons/file_type_apache.png"
     },
     "applescript": {
       "iconPath": "./icons/file_type_applescript@2x.png"

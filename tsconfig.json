@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "inlineSourceMap": true,
-    "declaration": true,
-    "module": "commonjs",
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
     "baseUrl": "src",
-    "target": "ES5",
     "rootDir": "src",
-    "outDir": "dist",
-    "jsx": "react"
+    "outDir": "dist"
   },
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "test"]
 }

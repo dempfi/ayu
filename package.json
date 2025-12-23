@@ -14,7 +14,8 @@
     "email": "teabyii@gmail.com"
   },
   "engines": {
-    "vscode": "^1.13.0"
+    "vscode": "^1.13.0",
+    "node": ">=22.18.0"
   },
   "categories": [
     "Themes"
@@ -34,9 +35,9 @@
         "path": "./ayu-dark.json"
       },
       {
-        "label": "Ayu Dark Bordered",
+        "label": "Ayu Dark Unbordered",
         "uiTheme": "vs-dark",
-        "path": "./ayu-dark-bordered.json"
+        "path": "./ayu-dark-unbordered.json"
       },
       {
         "label": "Ayu Light",
@@ -44,9 +45,9 @@
         "path": "./ayu-light.json"
       },
       {
-        "label": "Ayu Light Bordered",
+        "label": "Ayu Light Unbordered",
         "uiTheme": "vs",
-        "path": "./ayu-light-bordered.json"
+        "path": "./ayu-light-unbordered.json"
       },
       {
         "label": "Ayu Mirage",
@@ -54,9 +55,9 @@
         "path": "./ayu-mirage.json"
       },
       {
-        "label": "Ayu Mirage Bordered",
+        "label": "Ayu Mirage Unbordered",
         "uiTheme": "vs-dark",
-        "path": "./ayu-mirage-bordered.json"
+        "path": "./ayu-mirage-unbordered.json"
       }
     ],
     "iconThemes": [
@@ -68,16 +69,15 @@
     ]
   },
   "scripts": {
-    "build": "ts-node ./src/build.ts",
-    "package": "vsce package",
-    "start": "npm run build; npm run package",
+    "start": "tsx --watch ./src/build.ts",
+    "build": "tsx ./src/build.ts && vsce package",
     "publish": "vsce publish"
   },
   "devDependencies": {
-    "@types/node": "^16.6.0",
-    "ayu": "^8.0.1",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.3",
+    "@types/node": "^20.10.0",
+    "ayu": "^9.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
     "vsce": "^1.96.1"
   }
 }
