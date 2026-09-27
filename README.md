@@ -73,13 +73,13 @@ Or add to your user settings *(Preferences > Settings)*:
 
 ```json
 "ui_native_titlebar": true,   // native titlebar on macOS
-"ui_separator": true,         // separators between panels
+"ui_separator": false,        // hide separators between panels (shown by default)
 "ui_wide_scrollbars": true    // wider scrollbars
 ```
 
 ### File Icons
 
-For file icons, install [A File Icon](https://github.com/SublimeText/AFileIcon) package.
+ayu ships its own file icons, the same set as ayu for VS Code. Sublime Text needs the [A File Icon](https://github.com/SublimeText/AFileIcon) package to show them: it decides which icon each file gets, and ayu supplies the artwork. File types without an ayu icon keep A File Icon's own.
 
 ### Custom UI Fonts
 

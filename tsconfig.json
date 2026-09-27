@@ -1,16 +1,14 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
-    "inlineSourceMap": true,
-    "declaration": true,
-    "module": "commonjs",
-    "baseUrl": "src",
-    "target": "ES5",
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "types": ["node"],
     "rootDir": "src",
-    "outDir": "dist"
+    "noEmit": true
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src"]
 }

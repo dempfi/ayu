@@ -2,6 +2,7 @@ import * as fs from 'fs'
 import * as ayu from 'ayu'
 import * as path from 'path'
 import * as templates from './templates'
+import buildIcons from './icons'
 
 type SchemeName = 'light' | 'dark' | 'mirage'
 
@@ -23,8 +24,10 @@ const widget = (kind: SchemeName) => fs.writeFileSync(
   templates.widget(ayu[kind], kind)
 );
 
-['light', 'dark', 'mirage'].map((kind: SchemeName) => {
+for (const kind of ['light', 'dark', 'mirage'] as SchemeName[]) {
   widget(kind)
   syntax(kind)
   ui(kind)
-})
+}
+
+console.log(`Icons: ${buildIcons(process.cwd())}`)

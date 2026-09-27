@@ -8,11 +8,11 @@
 		"block_caret": "#e6b4504d",
 		"line_highlight": "#161a24",
 		"accent": "#e6b450",
-		"popup_css": "\n      html, body {\n        background-color: #141821;\n        color: #bfbdb6;\n        --mdpopups-font-mono: \"PragmataPro Mono Liga\", \"sf mono\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n        --mdpopups-bg: #141821;\n        --mdpopups-link: #59c2ff;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(89,194,255, .7);\n      }\n    ",
+		"popup_css": "\n      html, body {\n        background-color: #0f131a;\n        color: #bfbdb6;\n        --mdpopups-font-mono: \"PragmataPro Mono Liga\", \"sf mono\", Consolas, \"Liberation Mono\", Menlo, Courier, monospace;\n        --mdpopups-bg: #0f131a;\n        --mdpopups-link: #59c2ff;\n      }\n      body {\n        padding: 1px 3px;\n      }\n      a {\n        color: rgba(89,194,255, .7);\n      }\n    ",
 		"gutter": "#10141c",
-		"gutter_foreground": "#6c738099",
+		"gutter_foreground": "#5a6378a6",
 		"line_diff_width": "2",
-		"line_diff_added": "#7fd962b3",
+		"line_diff_added": "#70bf56b3",
 		"line_diff_modified": "#73b8ffb3",
 		"line_diff_deleted": "#f26d78b3",
 		"selection": "#3388ff40",
@@ -25,9 +25,9 @@
 		"highlight": "#e6b45066",
 		"find_highlight": "#e6b450",
 		"find_highlight_foreground": "#10141c",
-		"guide": "#6c73804d",
-		"active_guide": "#6c738080",
-		"stack_guide": "#6c738066",
+		"guide": "#5a637842",
+		"active_guide": "#5a6378a1",
+		"stack_guide": "#5a637866",
 		"shadow": "#10141c4d",
 		"shadow_width": "3"
 	},
@@ -36,7 +36,7 @@
 			"name": "Comment",
 			"scope": "comment",
 			"font_style": "italic",
-			"foreground": "#acb6bf8c"
+			"foreground": "#5a6673"
 		},
 		{
 			"name": "String",
@@ -203,7 +203,7 @@
 		{
 			"name": "Decorators/annotation",
 			"scope": "meta.decorator variable.other, meta.decorator punctuation.decorator, storage.type.annotation, variable.annotation, punctuation.definition.annotation",
-			"foreground": "#e6b673"
+			"foreground": "#e6c08a"
 		},
 		{
 			"name": "Invalid",
@@ -228,7 +228,7 @@
 		{
 			"name": "CSS browser prefix",
 			"scope": "source.css support.type, source.sass support.type, source.scss support.type, source.less support.type, source.stylus support.type",
-			"foreground": "#acb6bf8c"
+			"foreground": "#5a6673"
 		},
 		{
 			"name": "CSS Properties",
@@ -239,7 +239,7 @@
 		{
 			"name": "Search Results Nums",
 			"scope": "constant.numeric.line-number.find-in-files - match",
-			"foreground": "#acb6bf8c"
+			"foreground": "#5a6673"
 		},
 		{
 			"name": "Search Results Match Nums",
@@ -298,7 +298,7 @@
 			"scope": "meta.separator",
 			"font_style": "bold",
 			"background": "#bfbdb60f",
-			"foreground": "#acb6bf8c"
+			"foreground": "#5a6673"
 		},
 		{
 			"name": "Markup Blockquote",
@@ -314,7 +314,7 @@
 		{
 			"name": "Markup added",
 			"scope": "markup.inserted",
-			"foreground": "#7fd962"
+			"foreground": "#70bf56"
 		},
 		{
 			"name": "Markup modified",
@@ -329,7 +329,7 @@
 		{
 			"name": "Markup Strike",
 			"scope": "markup.strike",
-			"foreground": "#e6b673"
+			"foreground": "#e6c08a"
 		},
 		{
 			"name": "Markup Table",
@@ -345,14 +345,14 @@
 		{
 			"name": "Markdown - Line Break",
 			"scope": "text.html.markdown meta.dummy.line-break",
-			"background": "#acb6bf8c",
-			"foreground": "#acb6bf8c"
+			"background": "#5a6673",
+			"foreground": "#5a6673"
 		},
 		{
 			"name": "Markdown - Raw Block Fenced",
 			"scope": "punctuation.definition.markdown",
 			"background": "#bfbdb6",
-			"foreground": "#acb6bf8c"
+			"foreground": "#5a6673"
 		}
 	]
 }

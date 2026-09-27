@@ -7,14 +7,14 @@ export default (scheme: Scheme) => ({
     background: scheme.editor.bg.hex(),
     foreground: scheme.editor.fg.hex(),
     invisibles: scheme.editor.fg.alpha(.3).hex(),
-    caret: scheme.common.accent.hex(),
-    block_caret: scheme.common.accent.alpha(.3).hex(),
+    caret: scheme.common.accent.tint.hex(),
+    block_caret: scheme.common.accent.tint.alpha(.3).hex(),
     line_highlight: scheme.editor.line.hex(),
 
     // misspelling: ,
     // fold_marker: ,
     // minimap_border: ,
-    accent: scheme.common.accent.hex(),
+    accent: scheme.common.accent.tint.hex(),
 
     popup_css: `
       html, body {
@@ -33,7 +33,7 @@ export default (scheme: Scheme) => ({
     `,
 
     gutter: scheme.editor.bg.hex(),
-    gutter_foreground: scheme.editor.gutter.normal.hex(),
+    gutter_foreground: scheme.editor.lineNumber.normal.hex(),
 
     line_diff_width: "2",
     line_diff_added: scheme.vcs.added.alpha(.7).hex(),
@@ -48,8 +48,8 @@ export default (scheme: Scheme) => ({
     selection_corner_style: "round",
     selection_corner_radius: "4",
 
-    highlight: scheme.common.accent.alpha(.4).hex(),
-    find_highlight: scheme.common.accent.hex(),
+    highlight: scheme.common.accent.tint.alpha(.4).hex(),
+    find_highlight: scheme.common.accent.tint.hex(),
     find_highlight_foreground: scheme.editor.bg.hex(),
 
     guide: scheme.editor.indentGuide.normal.hex(),
@@ -83,12 +83,12 @@ export default (scheme: Scheme) => ({
     {
       name: 'Number',
       scope: 'constant.numeric',
-      foreground: scheme.common.accent.hex()
+      foreground: scheme.common.accent.tint.hex()
     },
     {
       name: 'Built-in constants',
       scope: 'constant.language',
-      foreground: scheme.common.accent.hex()
+      foreground: scheme.common.accent.tint.hex()
     },
     {
       name: 'Constants',

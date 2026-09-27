@@ -1,6 +1,7 @@
 {
   "name": "ayu",
   "version": "5.0.3",
+  "private": true,
   "description": "Sublime theme",
   "repository": {
     "type": "git",
@@ -11,16 +12,20 @@
   "bugs": {
     "url": "https://github.com/dempfi/ayu/issues"
   },
-  "scripts": {
-    "build": "ts-node ./src/build.ts",
-    "start": "watch 'yarn build' ./src"
-  },
   "homepage": "https://github.com/dempfi/ayu#readme",
-  "dependencies": {
-    "@types/node": "^16.7.11",
-    "ayu": "^8.0.1",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.2",
-    "watch": "^1.0.2"
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "build": "tsx ./src/build.ts",
+    "start": "tsx --watch ./src/build.ts",
+    "sync-icons": "curl -fsSL https://raw.githubusercontent.com/SublimeText/AFileIcon/master/icons/icons.json -o src/afi-icons.json"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^24.19.0",
+    "ayu": "file:../ayu-colors",
+    "tsx": "^4.23.15",
+    "typescript": "^6.0.3"
   }
 }

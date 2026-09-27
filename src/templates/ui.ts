@@ -171,7 +171,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "close_button",
     "attributes": ["hover"],
     "layer0.opacity": 1.0,
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -186,7 +186,7 @@ export default (scheme: Scheme, kind: string) => [
     "layer1.opacity": 1,
 
     "layer2.texture": "ayu/assets/folder-open.png",
-    "layer2.tint": scheme.common.accent.hex(),
+    "layer2.tint": scheme.common.accent.tint.hex(),
     "layer2.opacity": 0.0
   },
   {
@@ -198,7 +198,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_folder",
     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-    "layer1.tint": scheme.common.accent.hex()
+    "layer1.tint": scheme.common.accent.tint.hex()
   },
   {
     "class": "icon_folder",
@@ -228,7 +228,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_folder",
     "parents": [{ "class": "tree_row", "attributes": ["selected"] }],
-    "layer1.tint": scheme.common.accent.hex()
+    "layer1.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -252,7 +252,7 @@ export default (scheme: Scheme, kind: string) => [
       "loop": true,
       "frame_time": 0.075
     },
-    "layer1.tint": scheme.common.accent.hex(),
+    "layer1.tint": scheme.common.accent.tint.hex(),
 
     "layer0.opacity": 0.0,
     "content_margin": [8, 8]
@@ -273,12 +273,12 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_folder_dup",
     "parents": [{ "class": "tree_row", "attributes": ["hover"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
   {
     "class": "icon_folder_dup",
     "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -407,7 +407,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["selected"],
     "settings": ["!ui_separator"],
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.common.accent.tint.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -429,7 +429,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "tab_control", "attributes": ["hover"],
     "settings": ["!ui_separator"],
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.common.accent.tint.hex(),
     "layer0.opacity": 1.0
   },
   {
@@ -463,7 +463,7 @@ export default (scheme: Scheme, kind: string) => [
     "settings": ["highlight_modified_tabs"],
     "font.italic": true,
     "attributes": ["dirty"],
-    "fg": scheme.common.accent.hex()
+    "fg": scheme.common.accent.tint.hex()
   },
   // Tab selected label color
   {
@@ -508,7 +508,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "tab_close_button",
     "settings": ["show_tab_close_buttons", "highlight_modified_tabs"],
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
   // Dirty tab
   {
@@ -532,7 +532,7 @@ export default (scheme: Scheme, kind: string) => [
     "parents": [{ "class": "tab_control", "attributes": ["selected", "dirty"] }],
     "layer0.opacity": 0, // Close Icon
     "layer1.opacity": 1.0, // Dirty Icon
-    "layer1.tint": scheme.common.accent.hex()
+    "layer1.tint": scheme.common.accent.tint.hex()
   },
   // Selected dirty tab on hover
   {
@@ -554,7 +554,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "scroll_tabs_left_button",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -568,7 +568,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "scroll_tabs_right_button",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
   {
@@ -582,7 +582,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "show_tabs_dropdown_button",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -667,17 +667,17 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "quick_panel_label",
     "fg": scheme.ui.fg.hex(),
-    "match_fg": scheme.common.accent.hex(),
+    "match_fg": scheme.common.accent.tint.hex(),
     "selected_fg": scheme.editor.fg.hex(),
-    "selected_match_fg": scheme.common.accent.hex()
+    "selected_match_fg": scheme.common.accent.tint.hex()
   },
   {
     "class": "quick_panel_label",
     "parents": [{ "class": "overlay_control" }],
     "fg": scheme.ui.fg.hex(),
-    "match_fg": scheme.common.accent.hex(),
+    "match_fg": scheme.common.accent.tint.hex(),
     "selected_fg": scheme.editor.fg.hex(),
-    "selected_match_fg": scheme.common.accent.hex()
+    "selected_match_fg": scheme.common.accent.tint.hex()
   },
   {
     "class": "quick_panel_path_label",
@@ -696,7 +696,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "grid_layout_control",
     "border_size": 0,
-    "border_color": scheme.ui.line.hex('blend')
+    "border_color": scheme.ui.line.blend(scheme.ui.bg).hex()
   },
   {
     "class": "grid_layout_control",
@@ -736,7 +736,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "fold_button_control",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.common.accent.tint.hex(),
   },
   {
     "class": "fold_button_control",
@@ -799,9 +799,9 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "auto_complete_label",
     "fg": "transparent",
-    "match_fg": scheme.common.accent.hex(),
+    "match_fg": scheme.common.accent.tint.hex(),
     "selected_fg": "transparent",
-    "selected_match_fg": scheme.common.accent.hex(),
+    "selected_match_fg": scheme.common.accent.tint.hex(),
     "fg_blend": true
   },
   {
@@ -1103,7 +1103,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "panel_close_button",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1136,7 +1136,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "panel_button_control",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1182,7 +1182,7 @@ export default (scheme: Scheme, kind: string) => [
 
   {
     "class": "progress_gauge_control",
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.common.accent.tint.hex(),
     "layer0.opacity": 1.0,
     "content_margin": [0, 6]
   },
@@ -1329,6 +1329,7 @@ export default (scheme: Scheme, kind: string) => [
     "parents": [{ "class": "overlay_control" }],
     "layer0.texture": "",
     "layer0.opacity": 0,
+    "color_scheme_tint": scheme.ui.popup.bg.hex(),
     "layer1.texture": "ayu/assets/input-prompt.png",
     "layer1.opacity": 1,
     "layer1.tint": scheme.ui.fg.alpha(1).hex(),
@@ -1372,7 +1373,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "dropdown_button_control",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1382,7 +1383,7 @@ export default (scheme: Scheme, kind: string) => [
     "class": "button_control",
     "content_margin": [15, 9, 15, 10],
     "min_size": [60, 0],
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.common.accent.tint.hex(),
     "layer0.texture": "ayu/assets/input-bg.png",
     "layer0.inner_margin": [10, 8],
     "layer0.opacity": 0
@@ -1414,7 +1415,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_regex",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1428,7 +1429,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_case",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1442,7 +1443,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_whole_word",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1456,7 +1457,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_wrap",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1470,7 +1471,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_in_selection",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1484,7 +1485,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_highlight",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1498,7 +1499,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_preserve_case",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1512,7 +1513,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_context",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
 
@@ -1526,7 +1527,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_use_buffer",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
   {
@@ -1539,7 +1540,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "icon_use_gitignore",
     "parents": [{ "class": "icon_button_control", "attributes": ["selected"] }],
-    "layer0.tint": scheme.common.accent.hex()
+    "layer0.tint": scheme.common.accent.tint.hex()
   },
 
   {
@@ -1552,7 +1553,7 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "sidebar_button_control",
     "attributes": ["hover"],
-    "layer0.tint": scheme.common.accent.hex(),
+    "layer0.tint": scheme.common.accent.tint.hex(),
   },
 
 
@@ -1579,13 +1580,13 @@ export default (scheme: Scheme, kind: string) => [
   {
     "class": "label_control",
     "parents": [{ "class": "button_control", "attributes": ["hover"] }],
-    "color": scheme.common.accentFg.hex()
+    "color": scheme.common.accent.on.hex()
   },
 
 
   {
     "class": "title_label_control",
-    "color": scheme.common.accent.hex()
+    "color": scheme.common.accent.tint.hex()
   },
 
 

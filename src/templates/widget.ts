@@ -20,11 +20,11 @@ export default (scheme: Scheme, name: string) => `<?xml version="1.0" encoding="
         <key>background</key>
         <string>${scheme.ui.popup.bg.hex()}</string>
         <key>caret</key>
-        <string>${scheme.common.accent.hex()}</string>
+        <string>${scheme.common.accent.tint.hex()}</string>
         <key>foreground</key>
         <string>${scheme.editor.fg.hex()}</string>
         <key>invisibles</key>
-        <string>${scheme.editor.gutter.normal.hex()}</string>
+        <string>${scheme.editor.lineNumber.normal.hex()}</string>
         <key>lineHighlight</key>
         <string>${scheme.editor.line.hex()}</string>
         <key>inactiveSelection</key>

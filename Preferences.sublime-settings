@@ -3,7 +3,7 @@
     "ui_native_titlebar": false,
 
     // ayu theme: Show separators between panels
-    "ui_separator": false,
+    "ui_separator": true,
 
     // ayu theme: Display wider scrollbars
     "ui_wide_scrollbars": false
