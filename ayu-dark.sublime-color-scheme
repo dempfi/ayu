@@ -353,6 +353,54 @@
 			"scope": "punctuation.definition.markdown",
 			"background": "#bfbdb6",
 			"foreground": "#5a6673"
+		},
+		{
+			"name": "Region redish",
+			"scope": "region.redish",
+			"background": "#f0717854",
+			"foreground": "#f07178"
+		},
+		{
+			"name": "Region orangish",
+			"scope": "region.orangish",
+			"background": "#ff8f4054",
+			"foreground": "#ff8f40"
+		},
+		{
+			"name": "Region yellowish",
+			"scope": "region.yellowish",
+			"background": "#ffb45454",
+			"foreground": "#ffb454"
+		},
+		{
+			"name": "Region greenish",
+			"scope": "region.greenish",
+			"background": "#aad94c54",
+			"foreground": "#aad94c"
+		},
+		{
+			"name": "Region cyanish",
+			"scope": "region.cyanish",
+			"background": "#39bae654",
+			"foreground": "#39bae6"
+		},
+		{
+			"name": "Region bluish",
+			"scope": "region.bluish",
+			"background": "#59c2ff54",
+			"foreground": "#59c2ff"
+		},
+		{
+			"name": "Region purplish",
+			"scope": "region.purplish",
+			"background": "#d2a6ff54",
+			"foreground": "#d2a6ff"
+		},
+		{
+			"name": "Region pinkish",
+			"scope": "region.pinkish",
+			"background": "#f2966854",
+			"foreground": "#f29668"
 		}
 	]
 }

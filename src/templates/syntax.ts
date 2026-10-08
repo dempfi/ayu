@@ -421,6 +421,23 @@ export default (scheme: Scheme) => ({
       scope: 'punctuation.definition.markdown',
       background: scheme.editor.fg.hex(),
       foreground: scheme.syntax.comment.hex()
-    }
+    },
+    ...regions(scheme)
   ]
 })
+
+const regions = (scheme: Scheme) => Object.entries({
+  redish: scheme.syntax.markup,
+  orangish: scheme.syntax.keyword,
+  yellowish: scheme.syntax.func,
+  greenish: scheme.syntax.string,
+  cyanish: scheme.syntax.tag,
+  bluish: scheme.syntax.entity,
+  purplish: scheme.syntax.constant,
+  pinkish: scheme.syntax.operator
+}).map(([hue, color]) => ({
+  name: `Region ${hue}`,
+  scope: `region.${hue}`,
+  background: color.alpha(.33).hex(),
+  foreground: color.hex()
+}))
