@@ -731,8 +731,7 @@
 	{
 		"class": "tab_close_button",
 		"settings": [
-			"show_tab_close_buttons",
-			"highlight_modified_tabs"
+			"show_tab_close_buttons"
 		],
 		"attributes": [
 			"hover"
@@ -1522,7 +1521,6 @@
 	},
 	{
 		"class": "auto_complete_details",
-		"background_color": "#ffffff",
 		"monospace_background_color": "#ffffff"
 	},
 	{

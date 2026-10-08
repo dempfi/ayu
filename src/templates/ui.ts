@@ -506,7 +506,7 @@ export default (scheme: Scheme, kind: string) => [
   // Hover
   {
     "class": "tab_close_button",
-    "settings": ["show_tab_close_buttons", "highlight_modified_tabs"],
+    "settings": ["show_tab_close_buttons"],
     "attributes": ["hover"],
     "layer0.tint": scheme.common.accent.tint.hex()
   },
@@ -1064,7 +1064,6 @@ export default (scheme: Scheme, kind: string) => [
   },
   {
     "class": "auto_complete_details",
-    "background_color": scheme.ui.popup.bg.hex(),
     "monospace_background_color": scheme.ui.popup.bg.hex()
   },
 
