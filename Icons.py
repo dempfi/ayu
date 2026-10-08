@@ -2,15 +2,15 @@
 A File Icon Installer
 """
 
-import os
 import sublime
 
 ICONS_PACKAGE = "A File Icon"
 PKGCTRL_SETTINGS = "Package Control.sublime-settings"
 
-THEME_NAME = os.path.splitext(
-    os.path.basename(os.path.dirname(__file__))
-)[0]
+try:
+    THEME_NAME = __spec__.parent
+except NameError:
+    THEME_NAME = __name__.split(".")[0]
 
 MSG = """\
 <div id="afi-installer">
