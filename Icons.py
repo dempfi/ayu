@@ -52,10 +52,15 @@ def on_navigate(href):
 
 
 def install():
+    import package_control
+
     print("Installing `{}` ...".format(ICONS_PACKAGE))
-    sublime.active_window().run_command(
-        "advanced_install_package", {"packages": ICONS_PACKAGE}
-    )
+    if getattr(package_control, "__version__", "").startswith("3."):
+        sublime.active_window().run_command(
+            "advanced_install_package", {"packages": ICONS_PACKAGE}
+        )
+    else:
+        sublime.run_command("install_packages", {"packages": [ICONS_PACKAGE]})
     hide()
 
 
