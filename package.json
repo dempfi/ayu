@@ -19,12 +19,13 @@
   "scripts": {
     "build": "tsx ./src/build.ts",
     "start": "tsx --watch ./src/build.ts",
+    "test": "tsx --test src/templates/*.test.ts",
     "sync-icons": "curl -fsSL https://raw.githubusercontent.com/SublimeText/AFileIcon/master/icons/icons.json -o src/afi-icons.json"
   },
   "devDependencies": {
     "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^24.19.0",
-    "ayu": "file:../ayu-colors",
+    "ayu": "^9.1.0",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3"
   }
